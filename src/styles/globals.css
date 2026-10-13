@@ -1,0 +1,688 @@
+/*
+ * ─────────────────────────────────────────────────────────────────────────
+ *  THE CHARISMA CODE — DESIGN SYSTEM
+ *  Change colours, fonts, corner radius and spacing here.
+ * ─────────────────────────────────────────────────────────────────────────
+ *
+ *  1. Brand colours (@theme)        → used as Tailwind classes, e.g. bg-paper, text-ink, bg-accent
+ *  2. Page themes                   → corporate (default) · wedding · kids  (set per page in the CMS)
+ *  3. Typography helpers            → .heading-xl, .heading-lg, .heading-md, .lead
+ *  4. Components                    → .btn, .container-site, form fields
+ *  5. Motion                        → gentle reveal on scroll, switched off for "reduce motion" users
+ */
+@import 'tailwindcss';
+
+/* ── 1. Brand tokens ───────────────────────────────────────────────────── */
+@theme {
+  /* Ivory taken from the background of the original logo, so the logo sits seamlessly on it */
+  --color-paper: #f9f3ea;
+  --color-paper-deep: #f1e8da;
+  --color-line: #ddd3c3;
+
+  /* "Stage" charcoal — derived from the logo ink (#4b5151) */
+  --color-ink: #1e2322;
+  --color-ink-soft: #4a5252;
+  --color-muted: #5f6765;
+  --color-on-dark-muted: #a9b0ad;
+
+  /* Spark: the single accent colour. Text-safe on ivory (5.2:1) and on the soft tint (4.7:1). */
+  --color-spark: #b93a1a;
+  --color-spark-bright: #ff6a3d; /* the same accent, brighter for dark backgrounds */
+
+  /* Wedding palette */
+  --color-blush: #fbf3ee;
+  --color-blush-deep: #f3e5dd;
+  --color-rosewood: #9c4a3e;
+  --color-rosewood-light: #e8b4a4;
+
+  /* Kids & youth palette (backgrounds with dark text on top) */
+  --color-kid-sun: #ffc845;
+  --color-kid-sky: #8fd0ff;
+  --color-kid-mint: #8ee3c2;
+  --color-kid-coral: #ff9a7a;
+  --color-kid-coral-text: #b53a12; /* deeper coral, readable as text */
+
+  /* Form fields and messages */
+  --color-field-border: #b9ae9c; /* 3:1 against ivory */
+  --color-field-bg: #fffdf9;
+  --color-placeholder: #6c706d;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdf1ef;
+  --color-danger-ink: #7a1a10;
+
+  /* Theme-aware tokens (overridden by data-theme below) */
+  --color-accent: var(--color-spark);
+  --color-surface: var(--color-paper);
+  --color-surface-alt: var(--color-paper-deep);
+
+  /* Fonts (loaded in src/styles/fonts.ts) */
+  --font-display: var(--font-display-family), 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-sans: var(--font-body-family), 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Noto Sans SC', system-ui, sans-serif;
+
+  /* Corner radius system: buttons are pills, cards/images 10px, inputs 8px */
+  --radius-card: 10px;
+  --radius-media: 10px;
+  --radius-field: 8px;
+}
+
+/* ── 2. Page themes ──────────────────────────────────────────────────────
+ * The theme is chosen per page in the CMS (<main data-theme="…">).
+ * body:has(…) lets the header and footer follow the same accent colour. */
+body:has(> main[data-theme='wedding']),
+[data-theme='wedding'] {
+  --color-accent: var(--color-rosewood);
+  --color-surface: var(--color-blush);
+  --color-surface-alt: var(--color-blush-deep);
+  --radius-card: 14px;
+}
+
+body:has(> main[data-theme='kids']),
+[data-theme='kids'] {
+  --color-accent: var(--color-kid-coral-text);
+  --radius-card: 24px;
+  --radius-media: 24px;
+}
+
+/* Kids & Youth: colourful accents on the same components (playful, still on-brand) */
+[data-theme='kids'] .hero-spark {
+  background-color: var(--color-kid-sun);
+  box-shadow: -140px 260px 0 -40px var(--color-kid-sky);
+}
+[data-theme='kids'] .feature-card:nth-child(4n + 1) {
+  background-color: var(--color-kid-sun);
+}
+[data-theme='kids'] .feature-card:nth-child(4n + 2) {
+  background-color: var(--color-kid-sky);
+}
+[data-theme='kids'] .feature-card:nth-child(4n + 3) {
+  background-color: var(--color-kid-mint);
+}
+[data-theme='kids'] .feature-card:nth-child(4n + 4) {
+  background-color: var(--color-kid-coral);
+}
+[data-theme='kids'] .feature-card p {
+  color: var(--color-ink);
+}
+[data-theme='kids'] .feature-number {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background-color: var(--color-kid-sun);
+  color: var(--color-ink);
+  font-size: 1rem;
+}
+[data-theme='kids'] .media-frame--tilt {
+  rotate: -3deg;
+}
+
+/* Dark "stage" sections switch the accent to its bright version */
+@layer components {
+  .tone-dark {
+    --color-accent: var(--color-spark-bright);
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+}
+body:has(> main[data-theme='wedding']) .tone-dark,
+[data-theme='wedding'] .tone-dark {
+  --color-accent: var(--color-rosewood-light);
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  :lang(zh) body,
+  body:lang(zh) {
+    line-height: 1.8;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-paper);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* ── 3. Typography helpers ─────────────────────────────────────────────── */
+@utility heading-xl {
+  font-family: var(--font-display);
+  font-weight: 640;
+  font-variation-settings: 'wdth' 86;
+  font-size: clamp(2.5rem, 4.4vw + 0.9rem, 4.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.032em;
+}
+/* Long hero headlines (more than ~40 characters) use a slightly smaller size */
+@utility heading-xl-long {
+  font-family: var(--font-display);
+  font-weight: 640;
+  font-variation-settings: 'wdth' 86;
+  font-size: clamp(2.3rem, 3vw + 0.9rem, 3.9rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+@utility heading-lg {
+  font-family: var(--font-display);
+  font-weight: 620;
+  font-variation-settings: 'wdth' 88;
+  font-size: clamp(2rem, 2.4vw + 1.1rem, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.026em;
+}
+@utility heading-md {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variation-settings: 'wdth' 92;
+  font-size: clamp(1.3rem, 0.6vw + 1.1rem, 1.65rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+}
+@utility lead {
+  font-size: clamp(1.075rem, 0.35vw + 1rem, 1.25rem);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+@utility eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-accent);
+}
+
+/* Words wrapped in *asterisks* in the CMS become highlights */
+@layer components {
+  .text-highlight {
+    color: var(--color-accent);
+    font-style: normal;
+  }
+}
+[data-theme='wedding'] .heading-xl,
+[data-theme='wedding'] .heading-xl-long,
+[data-theme='wedding'] .heading-lg {
+  font-weight: 420;
+  letter-spacing: -0.02em;
+}
+[data-theme='kids'] .heading-xl,
+[data-theme='kids'] .heading-xl-long,
+[data-theme='kids'] .heading-lg {
+  font-weight: 760;
+  font-variation-settings: 'wdth' 100;
+}
+
+/* Long-form text (blog articles, legal page) */
+.prose-body {
+  max-width: 68ch;
+}
+.prose-body > * + * {
+  margin-top: 1.1em;
+}
+.prose-body h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-top: 2em;
+  font-weight: 620;
+}
+.prose-body h3 {
+  font-size: 1.35rem;
+  margin-top: 1.6em;
+  font-weight: 600;
+}
+.prose-body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.prose-body ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+.prose-body blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.1rem;
+  font-size: 1.15em;
+}
+.prose-body img {
+  border-radius: var(--radius-media);
+}
+
+/* ── 4. Components ─────────────────────────────────────────────────────── */
+@utility container-site {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 3rem;
+  }
+}
+
+@utility section-space {
+  padding-block: 4.5rem;
+  @media (width >= 48rem) {
+    padding-block: 6.5rem;
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 560;
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn svg {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn:hover svg.arrow {
+    transform: translateX(3px);
+  }
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-paper);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-ink);
+  }
+  .tone-dark .btn-primary {
+    color: var(--color-ink);
+  }
+  .tone-dark .btn-primary:hover {
+    background-color: var(--color-paper);
+  }
+  .btn-secondary {
+    border: 1.5px solid color-mix(in srgb, currentColor 28%, transparent);
+    color: inherit;
+  }
+  .btn-secondary:hover {
+    border-color: currentColor;
+  }
+
+  /* Form fields */
+  .field-label {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 560;
+    margin-bottom: 0.4rem;
+  }
+  .field-input {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: var(--radius-field);
+    border: 1.5px solid var(--color-field-border);
+    background-color: var(--color-field-bg);
+    color: var(--color-ink);
+    font-size: 1rem;
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .field-input::placeholder {
+    color: var(--color-placeholder);
+  }
+  .field-input:focus {
+    outline: none;
+    border-color: var(--color-ink);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 30%, transparent);
+  }
+  .field-input[aria-invalid='true'] {
+    border-color: var(--color-danger);
+  }
+  .field-error {
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    color: var(--color-danger);
+  }
+  .form-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: var(--radius-field);
+    border: 1px solid color-mix(in srgb, var(--color-danger) 30%, transparent);
+    background-color: var(--color-danger-soft);
+    color: var(--color-danger-ink);
+    font-size: 0.95rem;
+    outline: none;
+  }
+  .field-hint {
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    color: var(--color-muted);
+  }
+}
+
+/* Two sections in a row with the same background share one gap instead of two */
+.section-space.bg-surface + .section-space.bg-surface,
+.section-space.bg-surface-alt + .section-space.bg-surface-alt {
+  padding-top: 0;
+}
+
+/* Comparison strip titles (e.g. group sizes): big, short, display type */
+@utility strip-title {
+  font-family: var(--font-display);
+  font-weight: 620;
+  font-variation-settings: 'wdth' 86;
+  font-size: clamp(1.9rem, 2vw + 1.2rem, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Client logos: drawn in one colour that follows the section (needs a transparent logo file) */
+.client-logo {
+  display: inline-block;
+  flex: none;
+  max-width: 100%; /* in a narrow cell the logo scales down inside its box */
+  color: var(--color-ink-soft);
+  opacity: 0;
+  transition:
+    color 0.2s ease,
+    opacity 0.5s ease-out;
+}
+/* Logos switch on after the page has loaded, so they never slow down the hero (DeferredLogos.tsx) */
+[data-logos-ready] .client-logo {
+  background-color: currentColor;
+  -webkit-mask: var(--logo) center / contain no-repeat;
+  mask: var(--logo) center / contain no-repeat;
+  opacity: 1;
+}
+.tone-dark .client-logo {
+  color: color-mix(in srgb, var(--color-paper) 82%, transparent);
+}
+@media (hover: hover) and (pointer: fine) {
+  .client-list li:hover .client-logo {
+    color: var(--color-ink);
+  }
+  .tone-dark .client-list li:hover .client-logo {
+    color: var(--color-paper);
+  }
+}
+@media (forced-colors: active) {
+  [data-logos-ready] .client-logo {
+    forced-color-adjust: none;
+    background-color: CanvasText;
+  }
+}
+
+/* Run of show: cue numbers on one rail */
+.cue-number {
+  font-family: var(--font-display);
+  font-weight: 620;
+  font-variation-settings: 'wdth' 86;
+  font-size: clamp(2.1rem, 1.6vw + 1.6rem, 3rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent);
+}
+
+/* Before a cue goes live it is quieter, but still readable (at least 3:1 at every frame) */
+.cue-number {
+  --cue-dim: var(--color-muted);
+}
+.tone-dark .cue-number {
+  --cue-dim: color-mix(in srgb, var(--color-paper) 50%, var(--color-ink));
+}
+.cue-rail {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Stage hero: photos lit like follow-spots on a dark stage.
+ * The inner shadow is the light falling off at the edge of the beam. */
+/* Sections sit at fractional pixel positions; this 1px of ink hides the ivory page showing through the seam */
+.stage-hero {
+  box-shadow: 0 1px 0 0 var(--color-ink);
+}
+
+/* A soft wash of stage light behind the spotlights (a layer of its own, so text always sits on solid ink) */
+.stage-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(
+    ellipse 60% 70% at 78% 42%,
+    color-mix(in srgb, var(--color-paper) 7%, transparent),
+    transparent 70%
+  );
+  /* fades out before the bottom edge, so the hero flows into the next dark section without a seam */
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent);
+  mask-image: linear-gradient(to bottom, black 60%, transparent);
+  pointer-events: none;
+}
+.spotlight::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 70px 18px color-mix(in srgb, var(--color-ink) 70%, transparent);
+  pointer-events: none;
+}
+.spotlight--small::after {
+  box-shadow: inset 0 0 30px 8px color-mix(in srgb, var(--color-ink) 60%, transparent);
+}
+[data-theme='wedding'] .spotlight,
+[data-theme='kids'] .spotlight {
+  border-radius: var(--radius-media);
+}
+
+/* ── 5. Motion ─────────────────────────────────────────────────────────── */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 70s linear infinite;
+}
+.marquee:hover .marquee-track,
+.marquee[data-paused] .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    width: auto;
+    flex-wrap: wrap;
+    padding-inline: 1.25rem;
+  }
+  .marquee-track > ul {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+  .marquee-duplicate,
+  .marquee-control {
+    display: none !important;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Sections settle 16px into place. Opacity is never touched, so nothing is hidden at rest. */
+@keyframes settle {
+  from {
+    transform: translateY(16px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Stage hero: the follow-spot starts as a pool of light on the subject and widens to the full circle */
+@keyframes follow-spot {
+  from {
+    clip-path: circle(22% at var(--spot-x, 50%) var(--spot-y, 44%));
+  }
+  to {
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+@keyframes spot-settle {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Run of show: a cue "goes live" as it reaches the reader, and the rail fills toward the next one */
+@keyframes cue-live {
+  from {
+    color: var(--cue-dim);
+  }
+  to {
+    color: var(--color-accent);
+  }
+}
+@keyframes cue-fill {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/*
+ * Motion thesis (approved): the site moves like a stage being lit. One authored moment
+ * (the follow-spot on the homepage hero), then quiet scroll-linked cues. CSS only;
+ * transform, opacity and clip-path; one easing for every arrival.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero entrance: elements appear one after another */
+  .rise {
+    animation: rise-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(var(--rise-order, 0) * 90ms);
+  }
+
+  .stage-hero .spotlight {
+    animation: follow-spot 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stage-hero .spotlight img {
+    animation: spot-settle 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stage-hero .spotlight--small,
+  .stage-hero .spotlight--small img {
+    animation-delay: 180ms;
+  }
+
+  /* Scroll-linked motion (modern browsers only; others show the final state) */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: settle linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+
+    .cue {
+      view-timeline: --cue block;
+    }
+    .cue-number {
+      animation: cue-live linear both;
+      animation-timeline: --cue;
+      animation-range: cover 15% cover 35%;
+    }
+    .cue-rail::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-accent);
+      transform-origin: top;
+      animation: cue-fill linear both;
+      animation-timeline: --cue;
+      animation-range: cover 35% cover 75%;
+    }
+  }
+
+  .lift {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .zoom-on-hover img {
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  /* Kids pages: cards hop slightly when hovered */
+  [data-theme='kids'] .feature-card {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Hover effects only where a real pointer can hover (phones never get stuck states) */
+  @media (hover: hover) and (pointer: fine) {
+    .lift:hover {
+      transform: translateY(-4px);
+    }
+    .zoom-on-hover:hover img {
+      transform: scale(1.035);
+    }
+    [data-theme='kids'] .feature-card:hover {
+      transform: translateY(-6px) rotate(-1deg);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+import { Quotes } from '@phosphor-icons/react/ssr'
+
+import type { Where } from 'payload'
+
+import { findPublished } from '@/lib/cms'
+import type { Testimonial, TestimonialsBlock as TestimonialsData } from '@/payload-types'
+
+import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+
+const sourceLabels: Record<string, string> = {
+  'google-review': 'Google review',
+  linkedin: 'LinkedIn',
+}
+
+/** "Google review", "LinkedIn"… or null for other sources. */
+export const testimonialSourceLabel = (source: Testimonial['source']) => sourceLabels[source] ?? null
+
+function Attribution({ testimonial }: { testimonial: Testimonial }) {
+  const details = [testimonial.authorRole, testimonial.organisation].filter(Boolean).join(', ')
+  const source = testimonialSourceLabel(testimonial.source)
+  return (
+    <footer className="mt-6 text-[0.95rem]">
+      <cite className="not-italic font-semibold text-ink in-[.tone-dark]:text-paper">{testimonial.authorName}</cite>
+      {details && <span className="block text-ink-soft in-[.tone-dark]:text-on-dark-muted">{details}</span>}
+      {source && <span className="block text-sm text-muted">{source}</span>}
+    </footer>
+  )
+}
+
+/** Only testimonials with permission (or public reviews) are ever shown. */
+export async function TestimonialsBlock({ block, context }: { block: TestimonialsData; context: BlockContext }) {
+  const allowed = (item: Testimonial) => item.permission !== 'pending'
+  let testimonials: Testimonial[]
+
+  if (block.source === 'manual') {
+    testimonials = (block.testimonials ?? [])
+      .filter((item): item is Testimonial => typeof item === 'object' && item !== null)
+      .filter(allowed)
+  } else {
+    const where: Where = { permission: { not_equals: 'pending' } }
+    if (block.category && block.category !== 'all') where.category = { equals: block.category }
+    testimonials = await findPublished('testimonials', {
+      locale: context.locale,
+      where,
+      sort: '-createdAt',
+      limit: block.limit ?? 3,
+    })
+  }
+
+  if (!testimonials.length) return null
+  const [featured, ...others] = testimonials
+  const titleId = headingId(block)
+
+  return (
+    <Section id={block.anchorId} tone="light" labelledBy={block.heading ? titleId : undefined}>
+      <div className="container-site">
+        <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} />
+
+        <div className={`grid gap-12 lg:grid-cols-12 lg:gap-16 ${block.heading ? 'mt-12' : ''}`}>
+          <blockquote className={`reveal ${others.length ? 'lg:col-span-7' : 'lg:col-span-10'}`}>
+            <Quotes size={44} weight="fill" className="text-accent" aria-hidden />
+            <p className="mt-5 font-display text-[clamp(1.45rem,1.2vw+1.1rem,2.1rem)] font-medium leading-[1.3] tracking-tight">
+              {featured.quote}
+            </p>
+            <Attribution testimonial={featured} />
+          </blockquote>
+
+          {others.length > 0 && (
+            <div className="grid content-start gap-10 lg:col-span-5 lg:border-l lg:border-line lg:pl-12">
+              {others.map((testimonial) => (
+                <blockquote key={testimonial.id} className="reveal">
+                  <p className="text-[1.0625rem] leading-relaxed text-ink">{testimonial.quote}</p>
+                  <Attribution testimonial={testimonial} />
+                </blockquote>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </Section>
+  )
+}
