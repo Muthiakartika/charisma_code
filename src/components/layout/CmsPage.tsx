@@ -12,7 +12,7 @@ import { defaultLocale, isLocale, type Locale } from '@/i18n/config'
 import { getDictionary, type Dictionary } from '@/i18n/dictionaries'
 import { findPublished, getPage, getSiteSettings, type SiteSettings } from '@/lib/cms'
 import { contactLinks } from '@/lib/contact'
-import { resolveLink } from '@/lib/links'
+import { resolveLink, type ResolvedLink } from '@/lib/links'
 import { pagePath } from '@/lib/paths'
 import { breadcrumbSchema, buildMetadata, personSchema, serviceSchema, type Crumb } from '@/lib/seo'
 import type { Page } from '@/payload-types'
@@ -26,27 +26,26 @@ export const toLocale = (value: string): Locale => (isLocale(value) ? value : de
 type Block = NonNullable<Page['layout']>[number]
 
 /**
- * The main action for the phone action bar:
+ * The page's main action, used by the phone action bar and repeated between sections:
  * - pages with an enquiry form jump to it, using the hero's button label when it points there
  *   (e.g. "Request a proposal", "Check availability");
  * - other pages use the header button (e.g. "Let's Talk").
  */
-function mobileAction(
+function mainAction(
   blocks: Block[],
   firstBlock: Block | undefined,
   settings: SiteSettings,
   locale: Locale,
   dict: Dictionary,
-): { href: string; label: string } | null {
+): ResolvedLink | null {
   const form = blocks.find((block) => block.blockType === 'enquiryForm' && !block.hidden)
   if (form) {
     const anchor = `#${form.anchorId ?? 'enquire'}`
     const heroButton = firstBlock?.blockType === 'hero' ? resolveLink(firstBlock.primaryButton, locale) : null
     const label = heroButton?.href.endsWith(anchor) ? heroButton.label : dict.form.jumpToForm
-    return { href: anchor, label }
+    return { href: anchor, label, external: false }
   }
-  const cta = resolveLink(settings.header.ctaButton, locale)
-  return cta ? { href: cta.href, label: cta.label } : null
+  return resolveLink(settings.header.ctaButton, locale)
 }
 
 /** Pages where the founder's Person structured data is useful. */
@@ -72,7 +71,7 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
   const firstBlock = blocks.find((block) => !block.hidden)
   const startsWithHero = firstBlock?.blockType === 'hero'
   const service = linkedServices[0]
-  const action = mobileAction(blocks, firstBlock, settings, locale, dict)
+  const action = mainAction(blocks, firstBlock, settings, locale, dict)
   const whatsapp = contactLinks(settings.contact).whatsapp
 
   return (
@@ -88,7 +87,11 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
         </header>
       )}
 
-      <RenderBlocks blocks={blocks} context={{ locale, dict, settings, pageTitle: page.title, breadcrumbs }} />
+      <RenderBlocks
+        blocks={blocks}
+        context={{ locale, dict, settings, pageTitle: page.title, breadcrumbs }}
+        pageAction={action}
+      />
       {action && (
         <MobileActionBar action={action} whatsapp={whatsapp && { href: whatsapp.href, label: dict.common.whatsapp }} />
       )}

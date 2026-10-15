@@ -4,7 +4,7 @@ import { YouTubePlayer } from '@/components/ui/YouTubePlayer'
 import { getYoutubeId } from '@/lib/youtube'
 import type { VideoBlock as VideoData } from '@/payload-types'
 
-import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+import { BlockAction, headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 export function VideoBlock({ block, context }: { block: VideoData; context: BlockContext }) {
   const videoId = getYoutubeId(block.youtubeUrl)
@@ -35,6 +35,8 @@ export function VideoBlock({ block, context }: { block: VideoData; context: Bloc
             </figcaption>
           )}
         </figure>
+
+        <BlockAction action={context.action} className="mt-10" />
       </div>
     </Section>
   )

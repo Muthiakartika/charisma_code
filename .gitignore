@@ -9,6 +9,8 @@ next-env.d.ts
 
 # local database (npm run db:local) and uploaded files in development
 /.local-database/
+/.tools/
+/.backups/
 /media/
 /private-uploads/
 

@@ -21,7 +21,7 @@ export function FounderIntroBlock({ block, context }: { block: FounderIntroData;
           {block.quote && (
             <p
               className={`relative -mt-14 ml-6 mr-0 max-w-[88%] rounded-[var(--radius-card)] p-6 font-display text-xl font-semibold leading-snug tracking-tight sm:ml-10 ${
-                stage ? 'bg-accent text-ink' : 'bg-ink text-paper'
+                stage ? 'bg-action text-on-action' : 'bg-ink text-paper'
               }`}
             >
               &ldquo;{block.quote}&rdquo;

@@ -1,13 +1,13 @@
 import type { ProcessStepsBlock as ProcessStepsData } from '@/payload-types'
 
-import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+import { BlockAction, headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 /**
  * A "run of show": the steps of working together, in order, like the cue sheet
  * an emcee holds on the night. Each cue sits on one rail that runs down the page.
- * The heading stays in view on large screens while the cues scroll past.
+ * The heading (and the page's main action, when given) stays in view on large screens while the cues scroll past.
  */
-export function ProcessStepsBlock({ block }: { block: ProcessStepsData; context: BlockContext }) {
+export function ProcessStepsBlock({ block, context }: { block: ProcessStepsData; context: BlockContext }) {
   const titleId = headingId(block)
   const dark = block.tone === 'dark'
   const lastIndex = block.steps.length - 1
@@ -18,6 +18,7 @@ export function ProcessStepsBlock({ block }: { block: ProcessStepsData; context:
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-28">
             <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} intro={block.intro} />
+            <BlockAction action={context.action} className="mt-9" />
           </div>
         </div>
 

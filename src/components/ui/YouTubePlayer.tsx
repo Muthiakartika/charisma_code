@@ -50,7 +50,7 @@ export function YouTubePlayer({ videoId, title, playLabel, poster }: Props) {
       <span aria-hidden className="absolute inset-0 bg-ink/25 transition-colors group-hover:bg-ink/10" />
       <span
         aria-hidden
-        className="absolute left-1/2 top-1/2 inline-flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-paper transition-transform group-hover:scale-105"
+        className="absolute left-1/2 top-1/2 inline-flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-action text-on-action transition-transform group-hover:scale-105"
       >
         <Play size={30} weight="fill" />
       </span>

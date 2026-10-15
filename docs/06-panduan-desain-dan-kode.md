@@ -3,11 +3,12 @@
 ## 1. Arah desain singkat: "The Spotlight Studio"
 
 - **Satu brand, tiga nuansa**: tipografi, logo, jarak, dan komponen sama di seluruh situs. Yang berubah per halaman hanya warna aksen, latar, dan bentuk sudut:
-  - **Corporate** (default): ivory + charcoal "panggung" + aksen *Spark* (vermilion). Tegas & terstruktur.
+  - **Corporate** (default): ivory + charcoal "panggung" + aksen *Spark* (oranye) + section peach. Tegas, hangat & berwarna.
   - **Wedding**: latar blush, aksen rosewood, foto berbentuk lengkung (arch), judul lebih ringan.
   - **Kids & Youth**: kartu kuning/biru/mint/coral, sudut bulat besar, foto sedikit miring, animasi "lompat" kecil saat hover.
 - **Warna ivory diambil dari latar logo asli** agar logo raster menyatu tanpa kotak.
-- **Font**: *Bricolage Grotesque* (judul) + *Geist* (teks). Teks Mandarin memakai font sistem (PingFang/YaHei) agar cepat.
+- **Font**: *Plus Jakarta Sans* (judul, bersih & tebal) + *Geist* (teks). Teks Mandarin memakai font sistem (PingFang/YaHei) agar cepat.
+- **Masukan klien (Okt 2026)**: judul harus lebih bersih dibaca, lebih banyak aksi, lebih berwarna, dan warna aksi **oranye** (bukan merah). Karena itu: font judul diganti, tombol aksi oranye dengan teks gelap, section "tinted" berwarna peach, dan tombol aksi utama halaman diulang otomatis di antara section (lihat bagian 2a).
 - **Ciri khas**: section gelap seperti panggung dengan foto di dalam **lingkaran sorot lampu** (hero *Stage* di homepage), langkah kerja seperti **cue sheet run-of-show** emcee, foto "selfie dengan kerumunan" khas De Zhong, dan tulisan **English & 中文** yang terlihat (bukan hanya diklaim).
 - **Aturan rasa (tasteskill + Impeccable)**: satu warna aksen per halaman; tanpa tanda pisah panjang (— atau –) di teks yang tampil, tulis "20 to 50"; nomor hanya bila urutan bermakna; satu gaya bullet (`src/components/ui/Bullet.tsx`); hover hanya untuk perangkat dengan mouse.
 - **Hasil kritik desain** tersimpan di `.impeccable/critique/` (skor & daftar masalah) sebagai riwayat.
@@ -17,24 +18,40 @@
 Buka **`src/styles/globals.css`**, bagian `@theme`:
 
 ```css
---color-paper: #f9f3ea;   /* latar ivory */
---color-ink: #1e2322;     /* teks & section gelap */
---color-spark: #b93a1a;   /* warna aksen utama (tombol, sorotan) */
+--color-paper: #f9f3ea;        /* latar ivory */
+--color-peach: #fde6d2;        /* latar section "tinted" */
+--color-ink: #1e2322;          /* teks & section gelap */
+--color-flame: #f7741f;        /* oranye aksi: tombol, band CTA, lingkaran, bullet */
+--color-flame-text: #e0560b;   /* kata yang di-*highlight* di judul (latar terang) */
+--color-spark: #ad440d;        /* teks aksen kecil di latar terang (eyebrow, label) */
+--color-spark-bright: #ff8a3d; /* aksen & tombol di section gelap */
 ```
 
 Ganti nilai hex → simpan → website langsung berubah (saat `npm run dev`).
-Kelas Tailwind otomatis ikut: `bg-paper`, `text-ink`, `bg-accent`, dst.
+Kelas Tailwind otomatis ikut: `bg-paper`, `text-ink`, `bg-action`, `text-accent`, dst.
 
-⚠️ Cek kontras: teks harus minimal **4.5:1** terhadap latar (gunakan https://webaim.org/resources/contrastchecker/). Warna sekarang sudah lolos WCAG AA.
+Komponen tidak memakai hex di atas secara langsung, tetapi token yang mengikuti tema halaman:
+
+| Token | Dipakai untuk | Kelas |
+|---|---|---|
+| `--color-action` + `--color-on-action` | blok warna yang bisa diklik/menonjol (tombol utama, band CTA) + warna teks di atasnya | `bg-action text-on-action` |
+| `--color-accent` | teks/ikon aksen kecil | `text-accent` |
+| `--color-highlight` | kata `*berbintang*` di judul, nomor langkah | otomatis |
+
+⚠️ Cek kontras: teks harus minimal **4.5:1** terhadap latar (gunakan https://webaim.org/resources/contrastchecker/). Oranye aksi hanya lolos dengan **teks gelap** (5.7:1); teks putih di atas oranye gagal (2.8:1), jadi jangan diganti putih. Warna sekarang sudah lolos WCAG AA.
 
 Warna tema Wedding & Kids ada di bagian **"2. Page themes"** di file yang sama.
+
+## 2a. Tombol aksi yang diulang otomatis
+
+Agar pengunjung tidak pernah lebih dari ±2 section dari sebuah tombol, `src/components/blocks/RenderBlocks.tsx` menambahkan tombol aksi utama halaman (sama dengan bar aksi di HP, mis. "Check your D&D date" atau "Let's Talk") di akhir blok **Text & Image** (yang tidak punya tombol), **Process Steps**, **Feature Grid**, **Testimonials** dan **Video**. Aturannya: blok menawarkan tombol setelah ada satu section tanpa tombol, kecuali blok berikutnya sudah punya tombol atau form sendiri. Tidak perlu diatur di CMS.
 
 ## 3. Mengubah font
 
 Buka **`src/styles/fonts.ts`**. Contoh mengganti font teks ke *Manrope*:
 
 ```ts
-import { Bricolage_Grotesque, Manrope } from 'next/font/google'
+import { Manrope, Plus_Jakarta_Sans } from 'next/font/google'
 
 export const bodyFont = Manrope({
   subsets: ['latin'],

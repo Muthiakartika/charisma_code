@@ -54,7 +54,7 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
         >
           {highlights.map((item, index) => (
             <li key={item.id ?? index} className="flex items-center gap-2.5">
-              <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-accent" />
+              <span aria-hidden className="h-2 w-2 rounded-full bg-action" />
               {item.text}
             </li>
           ))}
@@ -138,7 +138,7 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
             {/* The "spark": a spotlight disc behind the main photo */}
             <div
               aria-hidden
-              className="hero-spark rise absolute -right-3 -top-4 aspect-square w-[46%] rounded-full bg-accent sm:-right-6 sm:-top-6"
+              className="hero-spark rise absolute -right-3 -top-4 aspect-square w-[46%] rounded-full bg-action sm:-right-6 sm:-top-6"
               style={order(2)}
             />
             <div className="media-frame absolute bottom-[8%] right-0 top-0 w-[78%] overflow-hidden rounded-[var(--radius-media)] bg-paper-deep in-data-[theme=wedding]:rounded-t-full">

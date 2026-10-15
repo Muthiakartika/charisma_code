@@ -5,6 +5,8 @@
  */
 import type { ComponentType } from 'react'
 
+import type { Locale } from '@/i18n/config'
+import { resolveLink, type ResolvedLink } from '@/lib/links'
 import type { Page } from '@/payload-types'
 
 import { CallToActionBlock } from './CallToAction'
@@ -54,14 +56,63 @@ const components: Record<LayoutBlock['blockType'], BlockComponent> = {
   richText: RichTextBlock as BlockComponent,
 }
 
+/** Blocks that can close with the page's main action button. */
+const canOfferAction = new Set<LayoutBlock['blockType']>(['textImage', 'processSteps', 'featureGrid', 'testimonials', 'video'])
+
+/** True when the block already asks the visitor to do something (its own button or a form). */
+function hasOwnAction(block: LayoutBlock, locale: Locale): boolean {
+  switch (block.blockType) {
+    case 'hero':
+    case 'cta':
+      return Boolean(resolveLink(block.primaryButton, locale) ?? resolveLink(block.secondaryButton, locale))
+    case 'textImage':
+    case 'founderIntro':
+    case 'featuredProjects':
+      return Boolean(resolveLink(block.button, locale))
+    case 'enquiryForm':
+    case 'applicationForm':
+      return true
+    default:
+      return false
+  }
+}
+
+/**
+ * Picks the blocks that repeat the page's main action, so a visitor is never more than
+ * about two sections away from a button: a block offers it after a section without one,
+ * unless the next block already has its own button or form.
+ */
+function blocksOfferingAction(blocks: LayoutBlock[], locale: Locale): Set<number> {
+  const offering = new Set<number>()
+  let quietSections = 0
+  blocks.forEach((block, index) => {
+    if (hasOwnAction(block, locale)) {
+      quietSections = 0
+      return
+    }
+    const next = blocks[index + 1]
+    if (canOfferAction.has(block.blockType) && quietSections >= 1 && next && !hasOwnAction(next, locale)) {
+      offering.add(index)
+      quietSections = 0
+      return
+    }
+    quietSections += 1
+  })
+  return offering
+}
+
 export function RenderBlocks({
   blocks,
   context,
+  pageAction,
 }: {
   blocks: Page['layout']
-  context: Omit<BlockContext, 'isFirst'>
+  context: Omit<BlockContext, 'isFirst' | 'action'>
+  /** The page's main action (the same one as the phone action bar). */
+  pageAction?: ResolvedLink | null
 }) {
   const visible = (blocks ?? []).filter((block) => !block.hidden)
+  const offering = pageAction ? blocksOfferingAction(visible, context.locale) : new Set<number>()
   return (
     <>
       {visible.map((block, index) => {
@@ -71,7 +122,7 @@ export function RenderBlocks({
           <Component
             key={block.id ?? index}
             block={block as never}
-            context={{ ...context, isFirst: index === 0 }}
+            context={{ ...context, isFirst: index === 0, action: offering.has(index) ? pageAction : null }}
           />
         )
       })}

@@ -80,7 +80,7 @@ export function EnquiryForm({
                 <li key={step} className="flex gap-4">
                   <span
                     aria-hidden
-                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ink font-display text-sm font-semibold text-paper"
+                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-action font-display text-sm font-bold text-on-action"
                   >
                     {index + 1}
                   </span>

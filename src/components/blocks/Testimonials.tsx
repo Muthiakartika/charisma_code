@@ -5,7 +5,7 @@ import type { Where } from 'payload'
 import { findPublished } from '@/lib/cms'
 import type { Testimonial, TestimonialsBlock as TestimonialsData } from '@/payload-types'
 
-import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+import { BlockAction, headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 const sourceLabels: Record<string, string> = {
   'google-review': 'Google review',
@@ -58,7 +58,7 @@ export async function TestimonialsBlock({ block, context }: { block: Testimonial
 
         <div className={`grid gap-12 lg:grid-cols-12 lg:gap-16 ${block.heading ? 'mt-12' : ''}`}>
           <blockquote className={`reveal ${others.length ? 'lg:col-span-7' : 'lg:col-span-10'}`}>
-            <Quotes size={44} weight="fill" className="text-accent" aria-hidden />
+            <Quotes size={48} weight="fill" className="text-action" aria-hidden />
             <p className="mt-5 font-display text-[clamp(1.45rem,1.2vw+1.1rem,2.1rem)] font-medium leading-[1.3] tracking-tight">
               {featured.quote}
             </p>
@@ -76,6 +76,8 @@ export async function TestimonialsBlock({ block, context }: { block: Testimonial
             </div>
           )}
         </div>
+
+        <BlockAction action={context.action} className="mt-12" />
       </div>
     </Section>
   )

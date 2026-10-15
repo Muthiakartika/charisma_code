@@ -3,10 +3,12 @@
  */
 import type { ReactNode } from 'react'
 
+import { ButtonLink } from '@/components/ui/ButtonLink'
 import { HighlightText } from '@/components/ui/HighlightText'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { SiteSettings } from '@/lib/cms'
+import type { ResolvedLink } from '@/lib/links'
 import type { Crumb } from '@/lib/seo'
 
 /** Information every block receives besides its own CMS fields. */
@@ -18,6 +20,18 @@ export type BlockContext = {
   breadcrumbs: Crumb[]
   /** The first block on a page renders the page's <h1> and loads its image first. */
   isFirst: boolean
+  /** The page's main action (e.g. "Check your D&D date"), set when this block should offer it (see RenderBlocks). */
+  action?: ResolvedLink | null
+}
+
+/** The page's main action button at the end of a block. Renders nothing when the block was not given one. */
+export function BlockAction({ action, className = '' }: { action?: ResolvedLink | null; className?: string }) {
+  if (!action) return null
+  return (
+    <div className={className}>
+      <ButtonLink link={action} />
+    </div>
+  )
 }
 
 type Tone = 'light' | 'tinted' | 'dark' | null | undefined

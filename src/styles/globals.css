@@ -25,9 +25,18 @@
   --color-muted: #5f6765;
   --color-on-dark-muted: #a9b0ad;
 
-  /* Spark: the single accent colour. Text-safe on ivory (5.2:1) and on the soft tint (4.7:1). */
-  --color-spark: #b93a1a;
-  --color-spark-bright: #ff6a3d; /* the same accent, brighter for dark backgrounds */
+  /* Spark orange: the brand accent, in three strengths so it stays readable everywhere.
+   *  - flame:       buttons, CTA bands, discs, bullets (dark ink text on top, 5.7:1)
+   *  - flame-text:  highlighted words in headings on light backgrounds (large text, 3:1+)
+   *  - spark:       small accent text on light backgrounds, e.g. eyebrows and labels (4.7:1+)
+   *  - spark-bright: accent text and buttons on dark backgrounds (6.8:1 on ink) */
+  --color-flame: #f7741f;
+  --color-flame-text: #e0560b;
+  --color-spark: #ad440d;
+  --color-spark-bright: #ff8a3d;
+
+  /* Warm peach tint for alternating sections, so the page has colour, not only beige */
+  --color-peach: #fde6d2;
 
   /* Wedding palette */
   --color-blush: #fbf3ee;
@@ -50,10 +59,16 @@
   --color-danger-soft: #fdf1ef;
   --color-danger-ink: #7a1a10;
 
-  /* Theme-aware tokens (overridden by data-theme below) */
+  /* Theme-aware tokens (overridden by data-theme below)
+   *  accent    → accent-coloured text and icons (text-accent, eyebrows)
+   *  highlight → *highlighted* words in headings
+   *  action    → filled buttons and colour blocks (bg-action), with on-action text on top */
   --color-accent: var(--color-spark);
+  --color-highlight: var(--color-flame-text);
+  --color-action: var(--color-flame);
+  --color-on-action: var(--color-ink);
   --color-surface: var(--color-paper);
-  --color-surface-alt: var(--color-paper-deep);
+  --color-surface-alt: var(--color-peach);
 
   /* Fonts (loaded in src/styles/fonts.ts) */
   --font-display: var(--font-display-family), 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
@@ -72,6 +87,9 @@
 body:has(> main[data-theme='wedding']),
 [data-theme='wedding'] {
   --color-accent: var(--color-rosewood);
+  --color-highlight: var(--color-rosewood);
+  --color-action: var(--color-rosewood);
+  --color-on-action: var(--color-paper);
   --color-surface: var(--color-blush);
   --color-surface-alt: var(--color-blush-deep);
   --radius-card: 14px;
@@ -80,6 +98,9 @@ body:has(> main[data-theme='wedding']),
 body:has(> main[data-theme='kids']),
 [data-theme='kids'] {
   --color-accent: var(--color-kid-coral-text);
+  --color-highlight: var(--color-kid-coral-text);
+  --color-action: var(--color-kid-coral-text);
+  --color-on-action: var(--color-paper);
   --radius-card: 24px;
   --radius-media: 24px;
 }
@@ -123,6 +144,9 @@ body:has(> main[data-theme='kids']),
 @layer components {
   .tone-dark {
     --color-accent: var(--color-spark-bright);
+    --color-highlight: var(--color-spark-bright);
+    --color-action: var(--color-spark-bright);
+    --color-on-action: var(--color-ink);
     background-color: var(--color-ink);
     color: var(--color-paper);
   }
@@ -130,6 +154,8 @@ body:has(> main[data-theme='kids']),
 body:has(> main[data-theme='wedding']) .tone-dark,
 [data-theme='wedding'] .tone-dark {
   --color-accent: var(--color-rosewood-light);
+  --color-highlight: var(--color-rosewood-light);
+  --color-action: var(--color-rosewood-light);
 }
 
 /* ── Base ──────────────────────────────────────────────────────────────── */
@@ -175,38 +201,35 @@ body:has(> main[data-theme='wedding']) .tone-dark,
 }
 
 /* ── 3. Typography helpers ─────────────────────────────────────────────── */
+/* Headings: one clean, bold sans at normal width, with only light tightening so letters never crowd */
 @utility heading-xl {
   font-family: var(--font-display);
-  font-weight: 640;
-  font-variation-settings: 'wdth' 86;
-  font-size: clamp(2.5rem, 4.4vw + 0.9rem, 4.75rem);
-  line-height: 1.02;
-  letter-spacing: -0.032em;
+  font-weight: 800;
+  font-size: clamp(2.35rem, 3.4vw + 1rem, 4.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
 }
 /* Long hero headlines (more than ~40 characters) use a slightly smaller size */
 @utility heading-xl-long {
   font-family: var(--font-display);
-  font-weight: 640;
-  font-variation-settings: 'wdth' 86;
-  font-size: clamp(2.3rem, 3vw + 0.9rem, 3.9rem);
-  line-height: 1.04;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  font-size: clamp(2.15rem, 2.5vw + 0.95rem, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.024em;
 }
 @utility heading-lg {
   font-family: var(--font-display);
-  font-weight: 620;
-  font-variation-settings: 'wdth' 88;
-  font-size: clamp(2rem, 2.4vw + 1.1rem, 3.25rem);
-  line-height: 1.06;
-  letter-spacing: -0.026em;
+  font-weight: 780;
+  font-size: clamp(1.85rem, 1.9vw + 1.1rem, 2.85rem);
+  line-height: 1.12;
+  letter-spacing: -0.022em;
 }
 @utility heading-md {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-variation-settings: 'wdth' 92;
-  font-size: clamp(1.3rem, 0.6vw + 1.1rem, 1.65rem);
-  line-height: 1.18;
-  letter-spacing: -0.015em;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 0.5vw + 1.05rem, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.012em;
 }
 @utility lead {
   font-size: clamp(1.075rem, 0.35vw + 1rem, 1.25rem);
@@ -223,21 +246,20 @@ body:has(> main[data-theme='wedding']) .tone-dark,
 /* Words wrapped in *asterisks* in the CMS become highlights */
 @layer components {
   .text-highlight {
-    color: var(--color-accent);
+    color: var(--color-highlight);
     font-style: normal;
   }
 }
 [data-theme='wedding'] .heading-xl,
 [data-theme='wedding'] .heading-xl-long,
 [data-theme='wedding'] .heading-lg {
-  font-weight: 420;
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 [data-theme='kids'] .heading-xl,
 [data-theme='kids'] .heading-xl-long,
 [data-theme='kids'] .heading-lg {
-  font-weight: 760;
-  font-variation-settings: 'wdth' 100;
+  font-weight: 800;
 }
 
 /* Long-form text (blog articles, legal page) */
@@ -310,7 +332,7 @@ body:has(> main[data-theme='wedding']) .tone-dark,
     min-height: 3rem;
     padding: 0.75rem 1.5rem;
     border-radius: 999px;
-    font-weight: 560;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.2;
     white-space: nowrap;
@@ -318,6 +340,7 @@ body:has(> main[data-theme='wedding']) .tone-dark,
       background-color 0.25s ease,
       color 0.25s ease,
       border-color 0.25s ease,
+      box-shadow 0.25s ease,
       transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .btn:active {
@@ -329,22 +352,44 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   .btn:hover svg.arrow {
     transform: translateX(3px);
   }
+  /* The action button: bright orange with dark text, so it is the first thing the eye finds */
   .btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-paper);
+    background-color: var(--color-action);
+    color: var(--color-on-action);
+    box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--color-action) 75%, transparent);
   }
   .btn-primary:hover {
     background-color: var(--color-ink);
-  }
-  .tone-dark .btn-primary {
-    color: var(--color-ink);
+    color: var(--color-paper);
+    box-shadow: 0 8px 22px -10px color-mix(in srgb, var(--color-ink) 70%, transparent);
   }
   .tone-dark .btn-primary:hover {
     background-color: var(--color-paper);
+    color: var(--color-ink);
   }
   .btn-secondary {
     border: 1.5px solid color-mix(in srgb, currentColor 28%, transparent);
     color: inherit;
+  }
+
+  /* Orange call-to-action bands: a soft follow-spot of light in the corner */
+  .cta-spark {
+    --color-accent: var(--color-on-action); /* focus rings and accents stay visible on orange */
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .cta-spark::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -45%;
+    right: -12%;
+    width: min(720px, 90vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, color-mix(in srgb, #fff 30%, transparent), transparent 62%);
+    pointer-events: none;
   }
   .btn-secondary:hover {
     border-color: currentColor;
@@ -414,11 +459,10 @@ body:has(> main[data-theme='wedding']) .tone-dark,
 /* Comparison strip titles (e.g. group sizes): big, short, display type */
 @utility strip-title {
   font-family: var(--font-display);
-  font-weight: 620;
-  font-variation-settings: 'wdth' 86;
-  font-size: clamp(1.9rem, 2vw + 1.2rem, 2.75rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 1.8vw + 1.2rem, 2.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -461,13 +505,12 @@ body:has(> main[data-theme='wedding']) .tone-dark,
 /* Run of show: cue numbers on one rail */
 .cue-number {
   font-family: var(--font-display);
-  font-weight: 620;
-  font-variation-settings: 'wdth' 86;
-  font-size: clamp(2.1rem, 1.6vw + 1.6rem, 3rem);
+  font-weight: 800;
+  font-size: clamp(2rem, 1.4vw + 1.5rem, 2.8rem);
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   font-variant-numeric: tabular-nums;
-  color: var(--color-accent);
+  color: var(--color-highlight);
 }
 
 /* Before a cue goes live it is quieter, but still readable (at least 3:1 at every frame) */
@@ -489,15 +532,15 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   box-shadow: 0 1px 0 0 var(--color-ink);
 }
 
-/* A soft wash of stage light behind the spotlights (a layer of its own, so text always sits on solid ink) */
+/* A soft wash of warm stage light behind the spotlights (a layer of its own, so text always sits on solid ink) */
 .stage-hero::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
   background-image: radial-gradient(
-    ellipse 60% 70% at 78% 42%,
-    color-mix(in srgb, var(--color-paper) 7%, transparent),
+    ellipse 55% 65% at 78% 42%,
+    color-mix(in srgb, var(--color-flame) 26%, transparent),
     transparent 70%
   );
   /* fades out before the bottom edge, so the hero flows into the next dark section without a seam */
@@ -599,7 +642,7 @@ body:has(> main[data-theme='wedding']) .tone-dark,
     color: var(--cue-dim);
   }
   to {
-    color: var(--color-accent);
+    color: var(--color-highlight);
   }
 }
 @keyframes cue-fill {
@@ -654,7 +697,7 @@ body:has(> main[data-theme='wedding']) .tone-dark,
       content: '';
       position: absolute;
       inset: 0;
-      background-color: var(--color-accent);
+      background-color: var(--color-action);
       transform-origin: top;
       animation: cue-fill linear both;
       animation-timeline: --cue;

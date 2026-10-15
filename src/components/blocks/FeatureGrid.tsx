@@ -1,7 +1,7 @@
 import { Bullet } from '@/components/ui/Bullet'
 import type { FeatureGridBlock as FeatureGridData } from '@/payload-types'
 
-import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+import { BlockAction, headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 const columnClasses: Record<string, string> = {
   '2': 'sm:grid-cols-2',
@@ -16,7 +16,7 @@ const stripColumns: Record<number, string> = {
   4: 'md:grid-cols-2 lg:grid-cols-4',
 }
 
-export function FeatureGridBlock({ block }: { block: FeatureGridData; context: BlockContext }) {
+export function FeatureGridBlock({ block, context }: { block: FeatureGridData; context: BlockContext }) {
   const titleId = headingId(block)
   const dark = block.tone === 'dark'
   const muted = dark ? 'text-on-dark-muted' : 'text-ink-soft'
@@ -91,6 +91,8 @@ export function FeatureGridBlock({ block }: { block: FeatureGridData; context: B
             ))}
           </ListTag>
         )}
+
+        <BlockAction action={context.action} className="mt-12" />
       </div>
     </Section>
   )

@@ -8,7 +8,7 @@ import type { TextImageBlock as TextImageData } from '@/payload-types'
 import { headingId, Section, type BlockContext } from './shared'
 
 export function TextImageBlock({ block, context }: { block: TextImageData; context: BlockContext }) {
-  const button = resolveLink(block.button, context.locale)
+  const button = resolveLink(block.button, context.locale) ?? context.action
   const imageLeft = block.imagePosition === 'left'
   const portrait = block.imageShape === 'portrait'
   const dark = block.tone === 'dark'

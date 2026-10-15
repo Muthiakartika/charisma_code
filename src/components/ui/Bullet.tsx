@@ -8,7 +8,7 @@ export function Bullet({ small = false }: { small?: boolean }) {
   return (
     <span
       aria-hidden
-      className={`inline-flex shrink-0 items-center justify-center rounded-full bg-accent text-paper in-[.tone-dark]:text-ink ${
+      className={`inline-flex shrink-0 items-center justify-center rounded-full bg-action text-on-action ${
         small ? 'mt-1 h-4 w-4' : 'mt-0.5 h-6 w-6'
       }`}
     >
