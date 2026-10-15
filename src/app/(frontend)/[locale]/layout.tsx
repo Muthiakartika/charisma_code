@@ -3,12 +3,15 @@
  * Page content lives in the page.tsx files next to this file.
  */
 import '@/styles/globals.css'
+import '@/components/palette/palettes.css'
 
 import type { Metadata } from 'next'
 
 import { Analytics } from '@/components/analytics/Analytics'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
+import { PalettePreview } from '@/components/palette/PalettePreview'
+import { PaletteScript } from '@/components/palette/PaletteScript'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { defaultLocale, isLocale, languageTags, locales } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
@@ -48,13 +51,16 @@ export default async function SiteLayout({ children, params }: LayoutProps<'/[lo
   const dict = getDictionary(locale)
 
   return (
-    <html lang={languageTags[locale]} className={`${displayFont.variable} ${bodyFont.variable}`}>
+    // suppressHydrationWarning: PaletteScript may add data-palette to <html> before React starts.
+    <html lang={languageTags[locale]} className={`${displayFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
       <body>
+        <PaletteScript />
         <Header settings={settings} locale={locale} dict={dict} />
         {children}
         <Footer settings={settings} locale={locale} dict={dict} />
         <JsonLd data={organizationSchema(settings)} />
         <Analytics measurementId={gaId} />
+        <PalettePreview />
       </body>
     </html>
   )

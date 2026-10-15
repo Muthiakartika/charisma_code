@@ -1,23 +1,23 @@
 /**
- * Homepage colour options: an overview with a link to each option (preview for the client, not indexed).
+ * Colour previews: an overview with a link that opens the whole website in each colour
+ * (preview for the client, not indexed). See src/components/palette/palettes.ts.
  */
 import { ArrowRight } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 
-import { colourOptions } from '@/components/colour-options/HomeColourOption'
 import { toLocale } from '@/components/layout/CmsPage'
+import { originalPalette, paletteHref, palettes } from '@/components/palette/palettes'
 import { CmsImage } from '@/components/ui/CmsImage'
 import { getPage } from '@/lib/cms'
 import { localizePath } from '@/lib/paths'
 import type { HeroBlock, Media } from '@/payload-types'
 
 export const metadata: Metadata = {
-  title: 'Homepage colour options',
+  title: 'Website colour options',
   robots: { index: false, follow: false },
 }
 
-type Colours = (typeof colourOptions)[number]['colours']
+type Colours = { fill: string; bright: string; tint: string }
 
 /** A small sketch of the homepage's first screen (the dark stage) in the option's colours. */
 function Thumbnail({ colours, photo }: { colours: Colours; photo: Media | null }) {
@@ -44,6 +44,11 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
   const home = await getPage('home', locale)
   const hero = home?.layout?.find((block): block is HeroBlock => block.blockType === 'hero')
   const photo = hero?.images?.find((image): image is Media => typeof image === 'object' && image !== null) ?? null
+  const homePath = localizePath('/', locale)
+  const cards = [
+    ...palettes.map((palette) => ({ ...palette, href: paletteHref(palette.slug, homePath) })),
+    { slug: 'original', ...originalPalette, href: paletteHref(null, homePath) },
+  ]
 
   return (
     <main id="main" data-theme="corporate" className="bg-surface">
@@ -52,36 +57,38 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
           <div className="max-w-3xl">
             <p className="eyebrow mb-4">For review</p>
             <h1 className="heading-xl">
-              The homepage in <em className="text-highlight">three colours</em>.
+              The whole website in <em className="text-highlight">another colour</em>.
             </h1>
             <p className="lead mt-6 text-ink-soft">
-              Same design, same content. Only the accent colour changes: buttons, highlighted words, the stage light and the
-              coloured sections. The current orange is included for comparison.
+              Open a colour and click around: every page stays in that colour, from the homepage to weddings, workshops and
+              articles. The switcher at the bottom right changes colour on any page, and the cross returns to the current
+              orange.
             </p>
           </div>
 
           <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {colourOptions.map((option) => (
-              <li key={option.slug}>
-                <Link
-                  href={localizePath(`/colour-options/${option.slug}`, locale)}
+            {cards.map((card) => (
+              <li key={card.slug}>
+                {/* A full page load (not client navigation), so the colour is applied before the page is drawn */}
+                <a
+                  href={card.href}
                   className="lift group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-line bg-paper"
                 >
-                  <Thumbnail colours={option.colours} photo={photo} />
+                  <Thumbnail colours={card.colours} photo={photo} />
                   <span className="flex flex-1 flex-col p-6">
                     <span aria-hidden className="flex gap-1.5">
-                      {[option.colours.fill, option.colours.bright, option.colours.tint].map((colour) => (
+                      {[card.colours.fill, card.colours.bright, card.colours.tint].map((colour) => (
                         <span key={colour} className="h-5 w-5 rounded-full border border-ink/10" style={{ backgroundColor: colour }} />
                       ))}
                     </span>
-                    <span className="heading-md mt-4 block">{option.name}</span>
-                    <span className="mt-2 block flex-1 text-[0.95rem] text-ink-soft">{option.summary}</span>
+                    <span className="heading-md mt-4 block">{card.name}</span>
+                    <span className="mt-2 block flex-1 text-[0.95rem] text-ink-soft">{card.summary}</span>
                     <span className="mt-6 inline-flex items-center gap-2 font-semibold text-accent">
-                      View homepage
+                      View the website
                       <ArrowRight size={18} weight="bold" className="transition-transform group-hover:translate-x-1" aria-hidden />
                     </span>
                   </span>
-                </Link>
+                </a>
               </li>
             ))}
           </ol>

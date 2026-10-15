@@ -1,22 +1,19 @@
 /**
- * The homepage in one colour option, e.g. /colour-options/yellow (preview for the client, not indexed).
+ * Old homepage-only colour links (e.g. /colour-options/yellow) now open the whole
+ * website in that colour (/?palette=yellow), so links already shared keep working.
  */
-import type { Metadata } from 'next'
+import { notFound, redirect } from 'next/navigation'
 
-import { findColourOption, HomeColourOption } from '@/components/colour-options/HomeColourOption'
+import { toLocale } from '@/components/layout/CmsPage'
+import { isPaletteSlug, paletteHref } from '@/components/palette/palettes'
+import { localizePath } from '@/lib/paths'
 
 type Props = { params: Promise<{ locale: string; palette: string }> }
 
-export default async function HomeColourOptionPage({ params }: Props) {
+export default async function ColourOptionRedirect({ params }: Props) {
   const { locale, palette } = await params
-  return <HomeColourOption option={palette} locale={locale} />
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { palette } = await params
-  const found = findColourOption(palette)
-  return {
-    title: found ? `Homepage colour: ${found.name}` : 'Homepage colour options',
-    robots: { index: false, follow: false },
-  }
+  const home = localizePath('/', toLocale(locale))
+  if (palette === 'current') redirect(paletteHref(null, home))
+  if (!isPaletteSlug(palette)) notFound()
+  redirect(paletteHref(palette, home))
 }
