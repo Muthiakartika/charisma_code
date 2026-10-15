@@ -31,7 +31,7 @@ type Block = NonNullable<Page['layout']>[number]
  *   (e.g. "Request a proposal", "Check availability");
  * - other pages use the header button (e.g. "Let's Talk").
  */
-function mainAction(
+export function mainAction(
   blocks: Block[],
   firstBlock: Block | undefined,
   settings: SiteSettings,

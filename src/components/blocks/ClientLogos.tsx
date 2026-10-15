@@ -6,7 +6,7 @@ import { Marquee } from '@/components/ui/Marquee'
 import { findPublished } from '@/lib/cms'
 import type { Client, ClientLogosBlock as ClientLogosData, Media, Testimonial } from '@/payload-types'
 
-import { headingId, type BlockContext } from './shared'
+import { headingId, toneClasses, type BlockContext } from './shared'
 import { testimonialSourceLabel } from './Testimonials'
 
 const logoOf = (client: Client): Media | null =>
@@ -82,7 +82,7 @@ export async function ClientLogosBlock({ block, context }: { block: ClientLogosD
 
   if (!clients.length) return null
   const titleId = headingId(block)
-  const tone = block.tone === 'dark' ? 'tone-dark' : block.tone === 'tinted' ? 'bg-surface-alt' : 'bg-surface'
+  const tone = toneClasses[block.tone ?? 'light'] ?? toneClasses.light
   const heading = block.heading && (
     <h2 id={titleId} className="max-w-xl text-[1.05rem] font-semibold text-ink in-[.tone-dark]:text-paper">
       <HighlightText text={block.heading} />

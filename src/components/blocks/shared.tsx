@@ -34,12 +34,14 @@ export function BlockAction({ action, className = '' }: { action?: ResolvedLink 
   )
 }
 
-type Tone = 'light' | 'tinted' | 'dark' | null | undefined
+type Tone = 'light' | 'tinted' | 'dark' | 'spark' | null | undefined
 
-const toneClasses: Record<string, string> = {
+export const toneClasses: Record<string, string> = {
   light: 'bg-surface',
   tinted: 'bg-surface-alt',
   dark: 'tone-dark',
+  /** Orange colour block. Not offered in the CMS yet; used by the homepage design options. */
+  spark: 'tone-spark',
 }
 
 export function Section({

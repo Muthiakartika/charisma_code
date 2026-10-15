@@ -158,6 +158,33 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   --color-action: var(--color-rosewood-light);
 }
 
+/* Orange colour-block sections. Only ink text is readable on orange (5.7:1),
+ * so the softer text colours, accents and buttons all switch to ink here. */
+@layer components {
+  .tone-spark {
+    --color-accent: var(--color-ink);
+    --color-highlight: var(--color-ink);
+    --color-action: var(--color-ink);
+    --color-on-action: var(--color-paper);
+    --color-ink-soft: var(--color-ink);
+    --color-muted: var(--color-ink);
+    --color-surface-alt: #ffa266;
+    background-color: var(--color-flame);
+    color: var(--color-ink);
+  }
+  /* Highlighted words keep the ink colour and get an ivory underline instead */
+  .tone-spark .text-highlight {
+    text-decoration: underline;
+    text-decoration-color: var(--color-paper);
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.14em;
+  }
+  .tone-spark .btn-primary:hover {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+}
+
 /* ── Base ──────────────────────────────────────────────────────────────── */
 @layer base {
   html {
