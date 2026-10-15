@@ -126,7 +126,7 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
   // ── Split: text left, photo collage right ───────────────────
   const [main, second, third] = images
   return (
-    <section id={block.anchorId ?? undefined} className="hero-split relative overflow-hidden bg-surface">
+    <section id={block.anchorId ?? undefined} className="relative overflow-hidden bg-surface">
       <div className="container-site grid items-center gap-12 pb-14 pt-8 lg:grid-cols-12 lg:gap-8 lg:pb-16 lg:pt-12">
         <div className={isLongHeading ? 'lg:col-span-7' : 'lg:col-span-6'}>
           {breadcrumbs.length > 1 && <div className="mb-10">{crumbs}</div>}
