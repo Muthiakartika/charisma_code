@@ -7,7 +7,7 @@ import type { Post } from '@/payload-types'
 
 export const formatDate = (date: string | null | undefined, locale: Locale) =>
   date
-    ? new Intl.DateTimeFormat(locale === 'zh' ? 'zh-SG' : 'en-SG', { day: 'numeric', month: 'long', year: 'numeric' }).format(
+    ? new Intl.DateTimeFormat(locale === 'zh' ? 'zh-SG' : 'en-SG', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Singapore' }).format(
         new Date(date),
       )
     : null

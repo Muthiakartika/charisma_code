@@ -1,0 +1,198 @@
+/*
+ * Light homepage hero options (see hero-options.ts). Every colour comes from the design
+ * tokens, so the colour previews (yellow, purple, light orange) restyle these heroes too.
+ * Motion follows the approved thesis: one follow-spot moment, one easing, CSS only.
+ */
+
+/* ── 1. Daylight ── */
+/* A pool of warm light behind the photos (a layer of its own, so text sits on plain ivory) */
+.hero-daylight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  --daylight-glow: color-mix(in srgb, var(--color-peach) 70%, var(--color-flame));
+  background-image: radial-gradient(ellipse 70% 38% at 50% 78%, var(--daylight-glow), transparent 72%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+@media (width >= 64rem) {
+  .hero-daylight::before {
+    background-image: radial-gradient(ellipse 44% 62% at 76% 46%, var(--daylight-glow), transparent 72%);
+  }
+}
+.daylight-ring {
+  overflow: visible;
+}
+.daylight-ring circle {
+  fill: none;
+  stroke: var(--color-action);
+  stroke-width: 0.9;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  /* the ring is drawn from the top, clockwise */
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* ── 2. Spotlight beam ── */
+/* A soft-edged cone of light from above the stage, fading in toward the floor */
+.beam-light {
+  background-image: conic-gradient(
+    from 158deg at 50% 0%,
+    transparent 0deg,
+    color-mix(in srgb, var(--color-field-bg) 94%, transparent) 7deg,
+    color-mix(in srgb, var(--color-field-bg) 94%, transparent) 37deg,
+    transparent 44deg
+  );
+  /* fades in from above and melts into the pool of light on the floor */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 48%, black 86%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 48%, black 86%, transparent);
+  transform-origin: 50% 0;
+  pointer-events: none;
+}
+/* Where the beam lands on the floor */
+.beam-pool {
+  background-image: radial-gradient(closest-side, color-mix(in srgb, var(--color-field-bg) 92%, transparent), transparent);
+  pointer-events: none;
+}
+
+/* ── 3. Colour block ── */
+.block-panel {
+  transform-origin: 100% 50%;
+}
+/* A soft follow-spot on the colour, behind the main photo (like the orange CTA bands) */
+.block-glow {
+  background-image: radial-gradient(circle, color-mix(in srgb, #fff 34%, transparent), transparent 62%);
+  pointer-events: none;
+}
+:root[data-palette='purple'] .block-glow {
+  background-image: radial-gradient(circle, color-mix(in srgb, #fff 18%, transparent), transparent 62%);
+}
+/* Line art in the block (PanelLineArt.tsx): thin lines in a soft white, blended into the
+ * block colour, so it reads as a light sketch rather than an illustration */
+.panel-art {
+  --panel-art-line: color-mix(in srgb, var(--color-action) 64%, #fff);
+  color: var(--panel-art-line);
+  pointer-events: none;
+}
+/* White lines barely show on yellow, so the yellow block gets a slightly deeper gold */
+:root[data-palette='yellow'] .panel-art {
+  --panel-art-line: color-mix(in srgb, var(--color-action) 82%, var(--color-ink));
+}
+/* Curtain valance: one swag, repeated across the top of the block */
+.panel-art__valance {
+  background-color: var(--panel-art-line);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
+    repeat-x 0 0 / 160px 64px;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
+    repeat-x 0 0 / 160px 64px;
+}
+.panel-art__swing {
+  transform-box: view-box;
+  transform-origin: 210px 88px; /* the clamp on the pipe */
+}
+
+/* ── Motion ── */
+@keyframes light-spot-open {
+  from {
+    clip-path: circle(22% at var(--spot-x, 50%) var(--spot-y, 44%));
+  }
+  to {
+    /* 75% covers every corner, so tall (arched) photos are never cropped */
+    clip-path: circle(75% at 50% 50%);
+  }
+}
+@keyframes ring-trace {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* The follow-spot swings across and settles on the host */
+@keyframes beam-find {
+  from {
+    opacity: 0;
+    transform: rotate(-11deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes block-wipe {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: none;
+  }
+}
+/* The hanging lamp swings in on its clamp and comes to rest aimed at the host */
+@keyframes lamp-swing {
+  from {
+    transform: rotate(9deg);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes art-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .light-spot {
+    animation: light-spot-open 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .light-spot img {
+    animation: spot-settle 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .light-spot--small,
+  .light-spot--small img {
+    animation-delay: 180ms;
+  }
+
+  .daylight-ring circle {
+    animation: ring-trace 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  }
+
+  .beam-light {
+    animation: beam-find 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-beam .light-spot,
+  .hero-beam .light-spot img {
+    animation-delay: 220ms;
+  }
+  .hero-beam .light-spot--small,
+  .hero-beam .light-spot--small img {
+    animation-delay: 400ms;
+  }
+
+  .block-panel {
+    animation: block-wipe 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-block .light-spot,
+  .hero-block .light-spot img {
+    animation-delay: 160ms;
+  }
+  .hero-block .light-spot--small,
+  .hero-block .light-spot--small img {
+    animation-delay: 340ms;
+  }
+  /* The sketch fades in once the block has wiped in; the lamp also swings to rest */
+  .panel-art {
+    animation: art-appear 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  }
+  .panel-art__swing {
+    animation: lamp-swing 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  }
+}

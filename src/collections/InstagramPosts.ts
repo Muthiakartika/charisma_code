@@ -35,7 +35,7 @@ export const InstagramPosts: CollectionConfig<'instagram-posts'> = {
       // A readable title for the admin list, made from the caption or the date.
       ({ data }) => {
         const date = data.postedAt
-          ? new Intl.DateTimeFormat('en-SG', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(data.postedAt))
+          ? new Intl.DateTimeFormat('en-SG', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Singapore' }).format(new Date(data.postedAt))
           : ''
         const caption = typeof data.caption === 'string' ? data.caption.trim().split('\n')[0].slice(0, 60) : ''
         data.title = caption ? `${caption} (${date})` : `Instagram post, ${date}`

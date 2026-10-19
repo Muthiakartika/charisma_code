@@ -9,7 +9,7 @@ import type { FounderUpdate, FounderUpdatesBlock as FounderUpdatesData, Instagra
 import { headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 const formatDate = (date: string, locale: string) =>
-  new Intl.DateTimeFormat(locale === 'zh' ? 'zh-SG' : 'en-SG', { day: 'numeric', month: 'long', year: 'numeric' }).format(
+  new Intl.DateTimeFormat(locale === 'zh' ? 'zh-SG' : 'en-SG', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Singapore' }).format(
     new Date(date),
   )
 
