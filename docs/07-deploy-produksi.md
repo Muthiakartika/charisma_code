@@ -85,6 +85,8 @@ npm run migrate:wordpress
 
 Setelah itu, semua perubahan konten dilakukan lewat `/admin`.
 
+> **Penting:** seed dari komputer lokal membuat tabel dalam mode *dev push*, bukan lewat migrasi. Akibatnya `payload migrate` di build Vercel berhenti dan bertanya *"Would you like to proceed?"*, lalu build menggantung (Okt 2026). Perbaikannya sekali saja: jalankan isi `scripts/production-db-catch-up.sql` di SQL editor database produksi, lalu Redeploy. Mulai sekarang, setiap perintah dari komputer lokal yang diarahkan ke database produksi (seed, `migrate:wordpress`, skrip lain) harus memakai mode production, mis. `npx cross-env NODE_ENV=production npm run migrate:wordpress`. Tanpa itu penanda *dev push* muncul lagi (sudah diuji, Okt 2026). Untuk database baru: jalankan `npm run migrate` dulu, lalu seed dengan cara yang sama.
+
 ## Langkah 6 — Uji staging sebelum launch
 
 ```bash
