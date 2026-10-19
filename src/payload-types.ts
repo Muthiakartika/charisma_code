@@ -225,7 +225,11 @@ export interface Page {
  * via the `definition` "HeroBlock".
  */
 export interface HeroBlock {
-  variant?: ('split' | 'stage' | 'photo' | 'simple') | null;
+  variant?: ('split' | 'stage' | 'colourBlock' | 'photo' | 'simple') | null;
+  /**
+   * A soft line drawing in the block of colour, shown on desktop screens behind the photos.
+   */
+  lineArt?: ('spotlight' | 'curtain' | 'skyline' | 'none') | null;
   eyebrow?: string | null;
   /**
    * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
@@ -251,7 +255,7 @@ export interface HeroBlock {
     url?: string | null;
   };
   /**
-   * Split layout: up to 3 photos (the first one is the largest). Stage layout: up to 2 photos. Full photo layout: the first photo is used. Set the focal point on each photo (Media → photo → focal point) so faces stay in frame.
+   * Split layout: up to 3 photos (the first one is the largest). Stage and Colour block layouts: up to 2 photos. Full photo layout: the first photo is used. Set the focal point on each photo (Media → photo → focal point) so faces stay in frame.
    */
   images?: (number | Media)[] | null;
   /**
@@ -1614,6 +1618,7 @@ export interface PagesSelect<T extends boolean = true> {
  */
 export interface HeroBlockSelect<T extends boolean = true> {
   variant?: T;
+  lineArt?: T;
   eyebrow?: T;
   heading?: T;
   subheading?: T;

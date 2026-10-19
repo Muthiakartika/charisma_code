@@ -57,9 +57,11 @@ export function buildPages(ids: SeedIds) {
       },
       layout: [
         {
-          // A dark stage: the crowd photos sit in spotlight circles.
+          // Light, with the crowd photos stepping out of a block of brand colour and a stage
+          // spotlight drawn behind them. (Before 2026-10-19 this was the dark 'stage' layout.)
           blockType: 'hero',
-          variant: 'stage',
+          variant: 'colourBlock',
+          lineArt: 'spotlight',
           heading: 'We get *the whole room* involved.',
           subheading:
             'Corporate team building, emceeing and workshops in Singapore, designed and hosted by bilingual emcee Chia De Zhong.',
@@ -68,7 +70,7 @@ export function buildPages(ids: SeedIds) {
           images: [img('communityEventCrowd'), img('festiveTeamSelfie')],
           highlights: [{ text: 'Hosted in English & 中文' }, { text: 'Founder-led' }, { text: 'Based in Singapore' }],
         },
-        { blockType: 'clientLogos', heading: 'Brands and organisations we have *worked with*.', tone: 'dark' },
+        { blockType: 'clientLogos', heading: 'Brands and organisations we have *worked with*.', tone: 'tinted' },
         {
           blockType: 'textImage',
           heading: 'Team building that starts with *your objectives*.',

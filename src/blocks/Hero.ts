@@ -16,9 +16,26 @@ export const HeroBlock: Block = {
       options: [
         { label: 'Split — text left, photos right (recommended)', value: 'split' },
         { label: 'Stage — dark stage, photos in spotlight circles', value: 'stage' },
+        { label: 'Colour block — light, photos stepping out of a block of brand colour (homepage)', value: 'colourBlock' },
         { label: 'Full photo — text over a large photo', value: 'photo' },
         { label: 'Simple — text only (for inner pages)', value: 'simple' },
       ],
+    },
+    {
+      name: 'lineArt',
+      label: 'Line art in the block of colour',
+      type: 'select',
+      defaultValue: 'spotlight',
+      options: [
+        { label: 'Stage spotlight', value: 'spotlight' },
+        { label: 'Stage curtain', value: 'curtain' },
+        { label: 'Singapore skyline', value: 'skyline' },
+        { label: 'None', value: 'none' },
+      ],
+      admin: {
+        condition: (_, siblingData) => siblingData?.variant === 'colourBlock',
+        description: 'A soft line drawing in the block of colour, shown on desktop screens behind the photos.',
+      },
     },
     eyebrowField,
     headingField(true, 90),
@@ -45,7 +62,7 @@ export const HeroBlock: Block = {
       admin: {
         condition: (_, siblingData) => siblingData?.variant !== 'simple',
         description:
-          'Split layout: up to 3 photos (the first one is the largest). Stage layout: up to 2 photos. Full photo layout: the first photo is used. Set the focal point on each photo (Media → photo → focal point) so faces stay in frame.',
+          'Split layout: up to 3 photos (the first one is the largest). Stage and Colour block layouts: up to 2 photos. Full photo layout: the first photo is used. Set the focal point on each photo (Media → photo → focal point) so faces stay in frame.',
       },
     },
     {

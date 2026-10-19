@@ -1,5 +1,6 @@
 /*
- * Light homepage hero options (see hero-options.ts). Every colour comes from the design
+ * Light homepage hero options 1 and 2 (see hero-options.ts). Option 3, Colour block, is now
+ * part of the website itself (src/styles/globals.css). Every colour comes from the design
  * tokens, so the colour previews (yellow, purple, light orange) restyle these heroes too.
  * Motion follows the approved thesis: one follow-spot moment, one easing, CSS only.
  */
@@ -58,42 +59,6 @@
   pointer-events: none;
 }
 
-/* ── 3. Colour block ── */
-.block-panel {
-  transform-origin: 100% 50%;
-}
-/* A soft follow-spot on the colour, behind the main photo (like the orange CTA bands) */
-.block-glow {
-  background-image: radial-gradient(circle, color-mix(in srgb, #fff 34%, transparent), transparent 62%);
-  pointer-events: none;
-}
-:root[data-palette='purple'] .block-glow {
-  background-image: radial-gradient(circle, color-mix(in srgb, #fff 18%, transparent), transparent 62%);
-}
-/* Line art in the block (PanelLineArt.tsx): thin lines in a soft white, blended into the
- * block colour, so it reads as a light sketch rather than an illustration */
-.panel-art {
-  --panel-art-line: color-mix(in srgb, var(--color-action) 64%, #fff);
-  color: var(--panel-art-line);
-  pointer-events: none;
-}
-/* White lines barely show on yellow, so the yellow block gets a slightly deeper gold */
-:root[data-palette='yellow'] .panel-art {
-  --panel-art-line: color-mix(in srgb, var(--color-action) 82%, var(--color-ink));
-}
-/* Curtain valance: one swag, repeated across the top of the block */
-.panel-art__valance {
-  background-color: var(--panel-art-line);
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
-    repeat-x 0 0 / 160px 64px;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
-    repeat-x 0 0 / 160px 64px;
-}
-.panel-art__swing {
-  transform-box: view-box;
-  transform-origin: 210px 88px; /* the clamp on the pipe */
-}
-
 /* ── Motion ── */
 @keyframes light-spot-open {
   from {
@@ -123,31 +88,6 @@
     transform: none;
   }
 }
-@keyframes block-wipe {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: none;
-  }
-}
-/* The hanging lamp swings in on its clamp and comes to rest aimed at the host */
-@keyframes lamp-swing {
-  from {
-    transform: rotate(9deg);
-  }
-  to {
-    transform: none;
-  }
-}
-@keyframes art-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .light-spot {
@@ -175,24 +115,5 @@
   .hero-beam .light-spot--small,
   .hero-beam .light-spot--small img {
     animation-delay: 400ms;
-  }
-
-  .block-panel {
-    animation: block-wipe 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .hero-block .light-spot,
-  .hero-block .light-spot img {
-    animation-delay: 160ms;
-  }
-  .hero-block .light-spot--small,
-  .hero-block .light-spot--small img {
-    animation-delay: 340ms;
-  }
-  /* The sketch fades in once the block has wiped in; the lamp also swings to rest */
-  .panel-art {
-    animation: art-appear 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
-  }
-  .panel-art__swing {
-    animation: lamp-swing 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
   }
 }

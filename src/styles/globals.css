@@ -564,6 +564,34 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   border-radius: var(--radius-media);
 }
 
+/* Colour block hero: a light page with a tall block of brand colour, the photos stepping out of it */
+.block-hero__panel {
+  transform-origin: 100% 50%; /* wipes in from the screen edge */
+}
+/* A soft follow-spot on the colour, behind the main photo (like the orange CTA bands) */
+.block-hero__glow {
+  background-image: radial-gradient(circle, color-mix(in srgb, #fff 34%, transparent), transparent 62%);
+  pointer-events: none;
+}
+/* Line art in the block (HeroLineArt.tsx): thin lines in a soft white blended into the block colour */
+.hero-art {
+  --hero-art-line: color-mix(in srgb, var(--color-action) 64%, #fff);
+  color: var(--hero-art-line);
+  pointer-events: none;
+}
+/* Curtain valance: one swag, repeated across the top of the block */
+.hero-art__valance {
+  background-color: var(--hero-art-line);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
+    repeat-x 0 0 / 160px 64px;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='64' viewBox='0 0 160 64' fill='none' stroke='black' stroke-width='1.25' stroke-linecap='round'%3E%3Cpath d='M0 1.5H160M0 2Q80 70 160 2M12 2Q80 52 148 2M26 2Q80 34 134 2M0.75 2V26'/%3E%3C/svg%3E")
+    repeat-x 0 0 / 160px 64px;
+}
+.hero-art__swing {
+  transform-box: view-box;
+  transform-origin: 210px 88px; /* the clamp on the pipe */
+}
+
 /* ── 5. Motion ─────────────────────────────────────────────────────────── */
 @keyframes marquee {
   from {
@@ -636,6 +664,42 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   }
 }
 
+/* Colour block hero: the block wipes in from the edge, the photos open like the follow-spot
+ * (ending wider than the circle, so the photo's soft shadow is not cut off), the hanging lamp
+ * swings to rest and the sketch fades in */
+@keyframes block-spot {
+  from {
+    clip-path: circle(22% at var(--spot-x, 50%) var(--spot-y, 44%));
+  }
+  to {
+    clip-path: circle(75% at 50% 50%);
+  }
+}
+@keyframes block-wipe {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes lamp-swing {
+  from {
+    transform: rotate(9deg);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes art-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Run of show: a cue "goes live" as it reaches the reader, and the rail fills toward the next one */
 @keyframes cue-live {
   from {
@@ -675,6 +739,26 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   .stage-hero .spotlight--small,
   .stage-hero .spotlight--small img {
     animation-delay: 180ms;
+  }
+
+  .block-hero__panel {
+    animation: block-wipe 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .block-hero__photo {
+    animation: block-spot 0.9s cubic-bezier(0.16, 1, 0.3, 1) 160ms both;
+  }
+  .block-hero__photo img {
+    animation: spot-settle 0.9s cubic-bezier(0.16, 1, 0.3, 1) 160ms both;
+  }
+  .block-hero__photo--small,
+  .block-hero__photo--small img {
+    animation-delay: 340ms;
+  }
+  .hero-art {
+    animation: art-appear 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  }
+  .hero-art__swing {
+    animation: lamp-swing 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
   }
 
   /* Scroll-linked motion (modern browsers only; others show the final state) */

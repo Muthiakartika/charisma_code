@@ -96,3 +96,11 @@
 :root[data-palette='purple'] .cta-spark::before {
   background: radial-gradient(circle, color-mix(in srgb, #fff 10%, transparent), transparent 62%);
 }
+:root[data-palette='purple'] .block-hero__glow {
+  background-image: radial-gradient(circle, color-mix(in srgb, #fff 18%, transparent), transparent 62%);
+}
+
+/* Colour block hero: white line art barely shows on yellow, so the yellow block gets a slightly deeper gold */
+:root[data-palette='yellow'] .hero-art {
+  --hero-art-line: color-mix(in srgb, var(--color-action) 82%, var(--color-ink));
+}

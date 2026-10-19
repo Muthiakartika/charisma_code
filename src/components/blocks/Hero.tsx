@@ -7,6 +7,7 @@ import { HighlightText, stripHighlight } from '@/components/ui/HighlightText'
 import { resolveLink } from '@/lib/links'
 import type { HeroBlock as HeroBlockData, Media } from '@/payload-types'
 
+import { HeroLineArt } from './HeroLineArt'
 import type { BlockContext } from './shared'
 
 const order = (n: number) => ({ '--rise-order': n }) as CSSProperties
@@ -88,6 +89,57 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
                   style={spotOrigin(smallSpot)}
                 >
                   <CmsImage media={smallSpot} sizes="(min-width: 1024px) 16vw, 36vw" className="object-cover" />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  // ── Colour block: light, photos stepping out of a block of brand colour ─
+  if (block.variant === 'colourBlock' && images[0]) {
+    const [main, second] = images
+    return (
+      <section id={block.anchorId ?? undefined} className="block-hero relative isolate overflow-hidden bg-surface">
+        {/*
+          Desktop: the block of colour runs from 40% into the photo column to the screen edge,
+          full height, with the line art inside. Its left edge, worked out from the grid below
+          (1320px container, 3rem padding, 2rem gaps): 50% + 254px on wide screens, 70% - 10px below 1320px.
+        */}
+        <div
+          aria-hidden
+          className="block-hero__panel absolute inset-y-0 right-0 -z-10 hidden overflow-hidden bg-action lg:left-[min(calc(50%+254px),calc(70%-10px))] lg:block"
+        >
+          <HeroLineArt art={block.lineArt ?? 'spotlight'} />
+        </div>
+        <div className="container-site grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-8 lg:pb-20 lg:pt-16">
+          <div className="relative z-10 lg:col-span-6">
+            {breadcrumbs.length > 1 && <div className="mb-10">{crumbs}</div>}
+            {text()}
+          </div>
+
+          <div className="relative lg:col-span-6">
+            {/* Phones and tablets: a band of colour behind the photos, reaching past the column to both screen edges */}
+            <div
+              aria-hidden
+              className="block-hero__panel absolute -bottom-[50vh] -left-[50vw] -right-[50vw] top-[22%] -z-10 bg-action lg:hidden"
+            />
+            <div className="relative mx-auto aspect-[1/0.92] w-full max-w-[560px]">
+              <div aria-hidden className="block-hero__glow absolute left-[-31%] top-[-36%] aspect-square w-[140%] rounded-full" />
+              <div
+                className="block-hero__photo absolute left-[2%] top-0 aspect-square w-[74%] overflow-hidden rounded-full bg-paper-deep shadow-[0_30px_60px_-30px_color-mix(in_srgb,var(--color-ink)_55%,transparent)]"
+                style={spotOrigin(main)}
+              >
+                <CmsImage media={main} sizes="(min-width: 1024px) 30vw, 74vw" priority={isFirst} className="object-cover" />
+              </div>
+              {second && (
+                <div
+                  className="block-hero__photo block-hero__photo--small absolute bottom-0 right-[4%] aspect-square w-[38%] overflow-hidden rounded-full border-[6px] border-surface bg-paper-deep"
+                  style={spotOrigin(second)}
+                >
+                  <CmsImage media={second} sizes="(min-width: 1024px) 16vw, 38vw" className="object-cover" />
                 </div>
               )}
             </div>

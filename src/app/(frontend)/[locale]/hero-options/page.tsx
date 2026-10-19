@@ -6,7 +6,7 @@ import { ArrowRight } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-import { heroOptions, type HeroOptionSlug } from '@/components/hero-options/hero-options'
+import { heroOptions, previousHero, type HeroPreviewSlug } from '@/components/hero-options/hero-options'
 import { toLocale } from '@/components/layout/CmsPage'
 import { originalPalette, paletteHref, palettes } from '@/components/palette/palettes'
 import { CmsImage } from '@/components/ui/CmsImage'
@@ -31,7 +31,7 @@ function SketchText({ onDark = false }: { onDark?: boolean }) {
 }
 
 /** A small sketch of the homepage's first screen in each option, using the real photo. */
-function Sketch({ option, photo }: { option: HeroOptionSlug | 'current'; photo: Media | null }) {
+function Sketch({ option, photo }: { option: HeroPreviewSlug; photo: Media | null }) {
   const image = <CmsImage media={photo} sizes="128px" className="object-cover" />
 
   if (option === 'daylight') {
@@ -85,10 +85,10 @@ export default async function HeroOptionsPage({ params }: { params: Promise<{ lo
       href: localizePath(`/hero-options/${option.slug}`, locale),
     })),
     {
-      slug: 'current' as const,
-      name: 'Current (dark)',
-      summary: 'Today’s dark stage, for comparison.',
-      href: localizePath('/', locale),
+      slug: previousHero.slug,
+      name: previousHero.name,
+      summary: previousHero.summary,
+      href: localizePath(`/hero-options/${previousHero.slug}`, locale),
     },
   ]
   const colours = [
@@ -106,8 +106,8 @@ export default async function HeroOptionsPage({ params }: { params: Promise<{ lo
               A <em className="text-highlight">lighter</em> first screen.
             </h1>
             <p className="lead mt-6 text-ink-soft">
-              Three light versions of the homepage hero, with the same headline, photos and buttons. Each one opens the full
-              homepage, so you can see how it leads into the rest of the page.
+              Three light versions of the homepage hero, with the same headline, photos and buttons. Option 3 is now live on
+              the homepage, and the previous dark stage is kept here for reference. Each one opens the full homepage.
             </p>
           </div>
 

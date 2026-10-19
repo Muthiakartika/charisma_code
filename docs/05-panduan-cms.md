@@ -58,7 +58,7 @@ Bungkus kata dengan bintang: `Experiences built around *your people*.` → "your
 
 | Blok | Kegunaan |
 |---|---|
-| **Hero** | Bagian pembuka: judul, subjudul, 2 tombol, foto, dan maks. 3 *highlights* pendek (mis. "Hosted in English & 中文"). Layout: *Split* (foto kanan), *Stage* (latar gelap, 2 foto dalam lingkaran sorot lampu, dipakai di homepage), *Full photo*, *Simple* (teks saja) |
+| **Hero** | Bagian pembuka: judul, subjudul, 2 tombol, foto, dan maks. 3 *highlights* pendek (mis. "Hosted in English & 中文"). Layout: *Split* (foto kanan), *Colour block* (latar terang, 2 foto lingkaran keluar dari blok warna brand, dengan **Line art** samar di blok: lampu sorot, tirai panggung, skyline Singapura, atau tanpa; dipakai di homepage), *Stage* (latar gelap, 2 foto dalam lingkaran sorot lampu, desain homepage sebelum 19 Okt 2026), *Full photo*, *Simple* (teks saja) |
 | **Text and Image** | Teks + foto + poin-poin + tombol. Latar: terang/krem/gelap |
 | **Feature Grid** | Daftar poin: *List* (bergaris, tanpa nomor, pilihan utama), *Numbered* (hanya bila urutan penting), *Comparison strip* (perbandingan 2 sampai 4 kolom dengan judul pendek besar, mis. ukuran grup), *Cards*, atau *Checklist* |
 | **Process Steps** | Langkah bernomor seperti *run-of-show* emcee: nomor "menyala" dan garisnya terisi saat pengunjung scroll |
@@ -97,7 +97,9 @@ Di layar HP, setelah pengunjung melewati hero, muncul bar kecil di bawah layar b
 ## 3. Mengedit homepage
 
 **Pages → Home**. Urutan section saat ini:
-Hero (*Stage*) → Client Logo Grid (latar gelap, menyambung hero) → Text and Image (Team Building) → Service Cards → Process Steps → Featured Projects → Founder Introduction (*Stage*, foto di panggung) → Testimonials → Founder's Updates → Call to Action.
+Hero (*Colour block*, line art *Stage spotlight*) → Client Logo Grid (Background *Soft tint*, peach) → Text and Image (Team Building) → Service Cards → Process Steps → Featured Projects → Founder Introduction (*Stage*, foto di panggung) → Testimonials → Founder's Updates → Call to Action.
+
+**Kembali ke desain homepage lama (gelap):** di Hero pilih Layout *Stage*, lalu di Client Logo Grid pilih Background *Dark (stage)*, kemudian Publish. Tampilan lamanya juga bisa dilihat kapan saja tanpa mengubah apa pun di `/hero-options/dark-stage`.
 
 - Foto hero: buka blok **Hero** → *Photos* (foto pertama = lingkaran besar, foto kedua = lingkaran kecil). Atur **focal point** setiap foto (lihat bagian Foto): sorot lampu pada animasi pembuka dimulai dari titik ini, jadi letakkan di wajah De Zhong.
 - Proyek yang tampil: centang **Feature on the homepage** di proyek (Portfolio Projects).
@@ -109,7 +111,7 @@ Hero (*Stage*) → Client Logo Grid (latar gelap, menyambung hero) → Text and 
 
 - Unggah lewat **Content → Media** atau langsung dari field foto.
 - **Alt text wajib**: jelaskan isi foto (penting untuk aksesibilitas & SEO).
-- Klik foto → atur **focal point** (titik fokus) agar crop tetap menampilkan wajah/aksi. Pada hero *Stage*, animasi sorot lampu juga mulai dari titik ini.
+- Klik foto → atur **focal point** (titik fokus) agar crop tetap menampilkan wajah/aksi. Pada hero *Stage* dan *Colour block*, animasi sorot lampu juga mulai dari titik ini.
 - Centang **Placeholder — replace with a better photo** untuk foto sementara. Foto seperti ini sudah ditandai untuk halaman team building (belum ada foto team building asli).
 - Format yang diterima: JPG, PNG, WebP, AVIF, PDF. Website otomatis mengecilkan & mengonversi foto ke AVIF/WebP.
 

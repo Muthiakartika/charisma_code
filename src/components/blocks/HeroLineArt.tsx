@@ -1,21 +1,20 @@
 /**
- * Line art inside the "Colour block" hero's block of colour (desktop only), in three choices.
- * Drawn tone on tone: thin lines in a slightly deeper shade of the block colour, so they read
- * as a soft sketch behind the photos rather than an illustration (see .panel-art in
- * hero-options.css). The colours follow the colour previews. Decorative only (aria-hidden).
+ * Line art inside the "Colour block" hero's block of colour (desktop only), chosen per page
+ * in the CMS (Hero → Line art). Thin lines in a soft white blended into the block colour,
+ * so they read as a light sketch behind the photos rather than an illustration
+ * (see .hero-art in src/styles/globals.css). Decorative only (aria-hidden).
  */
+import type { HeroBlock } from '@/payload-types'
 
-export const lineArts = [
+export type LineArtSlug = NonNullable<HeroBlock['lineArt']>
+
+/** The choices in the CMS, in the same order (also used by the preview pages in /hero-options) */
+export const lineArts: { slug: LineArtSlug; name: string }[] = [
   { slug: 'spotlight', name: 'Spotlight' },
   { slug: 'curtain', name: 'Stage curtain' },
   { slug: 'skyline', name: 'Singapore skyline' },
   { slug: 'none', name: 'None' },
-] as const
-
-export type LineArtSlug = (typeof lineArts)[number]['slug']
-
-export const toLineArt = (value: string | string[] | undefined): LineArtSlug =>
-  lineArts.find((art) => art.slug === value)?.slug ?? lineArts[0].slug
+]
 
 const svgProps = {
   'aria-hidden': true,
@@ -41,11 +40,11 @@ function Spotlight() {
       {...svgProps}
       viewBox="0 0 320 660"
       preserveAspectRatio="xMidYMin meet"
-      className="panel-art absolute right-[5%] top-0 h-full w-[300px] overflow-visible"
+      className="hero-art absolute right-[5%] top-0 h-full w-[300px] overflow-visible"
     >
       <defs>
         {/* The dotted rays fade out toward the photo (coordinates of the lamp, before rotation) */}
-        <linearGradient id="panel-art-ray" gradientUnits="userSpaceOnUse" x1="-80" y1="0" x2="-470" y2="0">
+        <linearGradient id="hero-art-ray" gradientUnits="userSpaceOnUse" x1="-80" y1="0" x2="-470" y2="0">
           <stop offset="0" stopColor="currentColor" />
           <stop offset="1" stopColor="currentColor" stopOpacity="0" />
         </linearGradient>
@@ -56,13 +55,13 @@ function Spotlight() {
       <path d="M286 150C322 120 300 46 214 40" />
 
       {/* The lamp swings in on its clamp and settles */}
-      <g className="panel-art__swing">
+      <g className="hero-art__swing">
         <g transform="translate(210 92) scale(1.3)" strokeWidth={1}>
           <rect x="-10" y="-8" width="20" height="14" rx="3" />
           <rect x="-4" y="6" width="8" height="52" rx="3" className="fill-action" />
           <g transform="translate(0 60) rotate(-18)">
             {/* Two dotted rays fanning out toward the photo */}
-            <g stroke="url(#panel-art-ray)" strokeDasharray="1 8">
+            <g stroke="url(#hero-art-ray)" strokeDasharray="1 8">
               <path d="M-80 -26L-470 -142" />
               <path d="M-80 26L-470 142" />
             </g>
@@ -107,13 +106,13 @@ const folds = [
 function Curtain() {
   return (
     <>
-      {/* The valance repeats across the whole width of the block (a mask tile, see .panel-art__valance) */}
-      <span aria-hidden className="panel-art panel-art__valance absolute inset-x-0 top-0 h-16" />
+      {/* The valance repeats across the whole width of the block (a mask tile, see .hero-art__valance) */}
+      <span aria-hidden className="hero-art hero-art__valance absolute inset-x-0 top-0 h-16" />
       <svg
         {...svgProps}
         viewBox="0 0 220 660"
         preserveAspectRatio="none"
-        className="panel-art absolute right-0 top-0 h-full w-[200px]"
+        className="hero-art absolute right-0 top-0 h-full w-[200px]"
       >
         {folds.map((fold) => (
           <path
@@ -138,7 +137,7 @@ function Skyline() {
       {...svgProps}
       viewBox="0 96 720 204"
       preserveAspectRatio="xMaxYMax meet"
-      className="panel-art absolute bottom-0 right-0 w-[125%] max-w-[1000px]"
+      className="hero-art absolute bottom-0 right-0 w-[125%] max-w-[1000px]"
     >
       {/* City blocks */}
       <path d="M0 270V196H34V270M40 270V164H66V270M72 270V208H104V270" />
@@ -170,7 +169,7 @@ function Skyline() {
 }
 
 /** The chosen line art, inside the block of colour */
-export function PanelLineArt({ art }: { art: LineArtSlug }) {
+export function HeroLineArt({ art }: { art: LineArtSlug }) {
   if (art === 'spotlight') return <Spotlight />
   if (art === 'curtain') return <Curtain />
   if (art === 'skyline') return <Skyline />

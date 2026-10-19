@@ -9,7 +9,7 @@
 - **Warna ivory diambil dari latar logo asli** agar logo raster menyatu tanpa kotak.
 - **Font**: *Plus Jakarta Sans* (judul, bersih & tebal) + *Geist* (teks). Teks Mandarin memakai font sistem (PingFang/YaHei) agar cepat.
 - **Masukan klien (Okt 2026)**: judul harus lebih bersih dibaca, lebih banyak aksi, lebih berwarna, dan warna aksi **oranye** (bukan merah). Karena itu: font judul diganti, tombol aksi oranye dengan teks gelap, section "tinted" berwarna peach, dan tombol aksi utama halaman diulang otomatis di antara section (lihat bagian 2a).
-- **Ciri khas**: section gelap seperti panggung dengan foto di dalam **lingkaran sorot lampu** (hero *Stage* di homepage), langkah kerja seperti **cue sheet run-of-show** emcee, foto "selfie dengan kerumunan" khas De Zhong, dan tulisan **English & 中文** yang terlihat (bukan hanya diklaim).
+- **Ciri khas**: section gelap seperti panggung dengan foto di dalam **lingkaran sorot lampu** (hero *Stage*; sejak 19 Okt 2026 homepage memakai hero terang *Colour block*: foto lingkaran keluar dari blok warna brand, dengan line art lampu sorot yang samar), langkah kerja seperti **cue sheet run-of-show** emcee, foto "selfie dengan kerumunan" khas De Zhong, dan tulisan **English & 中文** yang terlihat (bukan hanya diklaim).
 - **Aturan rasa (tasteskill + Impeccable)**: satu warna aksen per halaman; tanpa tanda pisah panjang (— atau –) di teks yang tampil, tulis "20 to 50"; nomor hanya bila urutan bermakna; satu gaya bullet (`src/components/ui/Bullet.tsx`); hover hanya untuk perangkat dengan mouse.
 - **Hasil kritik desain** tersimpan di `.impeccable/critique/` (skor & daftar masalah) sebagai riwayat.
 
@@ -109,6 +109,7 @@ Di komponen server: `import { Phone } from '@phosphor-icons/react/ssr'`; di komp
 |---|---|---|
 | `.rise` | Teks hero muncul berurutan | 800 ms, jeda 90 ms per baris |
 | **Follow-spot** | Hero *Stage*: sorot lampu mulai dari focal point foto lalu melebar ke lingkaran penuh | 900 ms, lingkaran kecil +180 ms |
+| **Colour block** | Hero *Colour block*: blok warna masuk dari tepi layar, foto terbuka seperti follow-spot, lampu line art berayun lalu diam, sketsa muncul pelan | blok 900 ms; foto +160 ms (kecil +340 ms); line art 1 s mulai 600 ms |
 | **Cue live** | Process Steps: nomor berubah dari abu-abu ke aksen, garis terisi menuju cue berikutnya | terikat posisi scroll |
 | `.reveal` (settle) | Section bergeser 16px ke posisi akhir saat di-scroll. **Tidak pernah tersembunyi** (opacity tidak disentuh) | terikat posisi scroll |
 | Marquee | Daftar klien berjalan pelan, berhenti saat hover atau tombol jeda | 60 s per putaran |
