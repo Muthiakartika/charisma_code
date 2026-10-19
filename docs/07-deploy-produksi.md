@@ -47,7 +47,7 @@ Repo lokal sudah di-*init* (`git init`) tetapi belum ada commit maupun remote. B
 ## Langkah 4 — Vercel
 
 1. *Add New Project* → pilih repo GitHub.
-2. **Build Command**: `npm run ci` (menjalankan migrasi database lalu build).
+2. **Build Command**: sudah diatur otomatis lewat file `vercel.json` di project (`npm run ci`: menjalankan migrasi database lalu build), jadi tidak perlu diubah di dashboard. Tanpa ini Vercel hanya menjalankan `npm run build`, migrasi terlewat, dan build gagal dengan error database `42703` (kolom tidak ditemukan).
 3. **Environment Variables** (Settings → Environment Variables):
 
 | Variabel | Production | Preview (staging) |
