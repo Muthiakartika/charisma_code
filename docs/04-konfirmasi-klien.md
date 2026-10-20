@@ -49,9 +49,19 @@ Item di bawah ini **belum bisa diverifikasi** dari website lama. Selama belum di
 
 | # | Item | Status |
 |---|---|---|
-| 29 | Judul homepage baru **"We get the whole room involved."**, subjudul yang menyebut nama De Zhong, dan highlight *Hosted in English & 中文 · Founder-led · Based in Singapore* | Usulan copy, *Needs client review* |
+| 29 | Judul homepage baru **"We get the whole room involved."**, subjudul yang menyebut nama De Zhong, dan highlight *Hosted in English & 中文 · Founder-led team · Based in Singapore* (chip kedua diubah 20 Okt 2026) | Usulan copy, *Needs client review* |
 | 30 | Strip bukti di halaman Team Building memakai kutipan **Jaz Hang** (ulasan Google, konteks *Pool party*, ditulis apa adanya). Idealnya diganti testimoni klien team building korporat (lihat #2) | Ditampilkan dengan label konteks yang jujur |
 | 31 | Bagian founder di homepage kini memakai foto De Zhong memegang mikrofon di acara malam (foto *Placeholder*). Lebih baik: foto profesional di panggung acara korporat | Perlu foto dari klien |
 | 32 | Strip "Planned for your group size" memakai rentang **Under 20 / 20 to 100 / Over 100**, mengikuti batas di form enquiry | Sesuaikan dengan kapasitas sebenarnya (lihat #24) |
 | 33 | **Feed Instagram di homepage**: 7 dari 9 postingan terbaru bersifat pribadi (di rumah, dua tanpa baju, gym, klinik gigi), beberapa juga menampilkan orang lain. Semuanya tampil karena diminta "postingan terbaru" | Klien memilih mana yang disembunyikan (CMS → Instagram Posts → *Show on website*), atau setelah API tersambung, kita filter otomatis (mis. hanya postingan dengan hashtag tertentu) |
 | 34 | **Akses API Instagram**: akun @deprinceofzhong harus akun Professional (Creator/Business); token dari aplikasi Meta (berlaku 60 hari, diperpanjang otomatis oleh server) | Menunggu token dari pemilik akun untuk menyambungkan sinkronisasi otomatis |
+
+## E. Dari masukan De Zhong di WhatsApp (19 sampai 20 Okt 2026)
+
+| # | Item | Status |
+|---|---|---|
+| 35 | Section baru **"What is The Charisma Code?"** di homepage (blok *Statement*): judul *"Charisma is not a gift. It is a code anyone can learn."*, paragraf filosofi, daftar peran *Emcee · Singer · Pianist · Actor · Charisma coach*, dan baris *Hosted in English & 中文* | Draf filosofi, *Needs client review* |
+| 36 | Janji inti di copy: team building *"genuinely fun, and actually works"* / *"Not games for the sake of games"*; emcee *"guarantees the fun"* dengan *"over 15 years on stage"* | Kata-kata klien sendiri, tetap perlu dicek |
+| 37 | Suara "saya + tim": *"Founder-led. Crew-delivered."*, section About *"The crew behind the spark"*. Nama, foto, dan peran anggota crew/partner belum ada | Perlu daftar crew dari klien untuk section tim |
+| 38 | Section berlatar *Soft tint* kini ivory yang lebih dalam (`#f1e8da`), bukan peach, agar warna brand sekitar 15% (tombol, sorotan, blok warna, band CTA) dan selaras dengan kartu nama/lanyard | Warna utama (orange atau kuning) belum final, menunggu tes kartu nama |
+| 39 | Banner homepage tetap *Colour block* (desain tidak diubah). Hanya teksnya yang kini "saya + tim": subjudul *"led by bilingual emcee Chia De Zhong and his team"*, chip *Founder-led team*. Section Instagram berganti judul jadi *"Behind the scenes"*. Usulan Jonas (foto full width De Zhong menyanyi bersama orkestra) belum diterapkan | Perlu foto resolusi tinggi dari klien bila banner jadi diganti |

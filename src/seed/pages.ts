@@ -63,23 +63,35 @@ export function buildPages(ids: SeedIds) {
           variant: 'colourBlock',
           lineArt: 'spotlight',
           heading: 'We get *the whole room* involved.',
+          // Text only reads "me + team" (2026-10-20); layout, photos and line art unchanged
           subheading:
-            'Corporate team building, emceeing and workshops in Singapore, designed and hosted by bilingual emcee Chia De Zhong.',
+            'Corporate team building, emceeing and workshops in Singapore, led by bilingual emcee Chia De Zhong and his team.',
           primaryButton: page('See team building', 'corporate-team-building'),
           secondaryButton: letsTalk,
           images: [img('communityEventCrowd'), img('festiveTeamSelfie')],
-          highlights: [{ text: 'Hosted in English & 中文' }, { text: 'Founder-led' }, { text: 'Based in Singapore' }],
+          highlights: [{ text: 'Hosted in English & 中文' }, { text: 'Founder-led team' }, { text: 'Based in Singapore' }],
         },
         { blockType: 'clientLogos', heading: 'Brands and organisations we have *worked with*.', tone: 'tinted' },
         {
-          blockType: 'textImage',
-          heading: 'Team building that starts with *your objectives*.',
+          // What "The Charisma Code" means (client asked for this, 2026-10-20). Draft for De Zhong's approval.
+          blockType: 'statement',
+          eyebrow: 'What is The Charisma Code?',
+          heading: 'Charisma is not a gift. It is a *code* anyone can learn.',
           body:
-            'Most team building is picked from a menu. Ours starts with a conversation about your people: what you want them to feel, practise or talk about after the session.\n\nFrom there we design and facilitate a programme for your group size, venue and budget, and host it with the same energy De Zhong brings to stages across Singapore.',
+            'De Zhong has spent over 15 years on stage as an emcee, singer, pianist and actor, and more than five years in classrooms helping people speak with confidence. The Charisma Code is what both taught him: how to read a room, make every person feel included and give them the confidence to join in.\n\nIt is how we host every event, design every programme and coach every speaker. We bring the spark. You shine.',
+          roles: [{ text: 'Emcee' }, { text: 'Singer' }, { text: 'Pianist' }, { text: 'Actor' }, { text: 'Charisma coach' }],
+          languages: 'Hosted in *English & 中文*',
+          button: page('Explore communication coaching', 'communication-coaching'),
+        },
+        {
+          blockType: 'textImage',
+          heading: 'Team building that is *fun with a purpose*.',
+          body:
+            'Not games for the sake of games. Every session starts with a conversation about your people: what you want them to feel, practise or talk about after the session.\n\nFrom there our team designs and facilitates a programme for your group size, venue and budget, and hosts it with the same energy De Zhong brings to stages across Singapore.',
           points: [
+            { text: 'Genuinely fun, never generic' },
             { text: 'Designed around your objectives' },
-            { text: 'Facilitated in English and Mandarin' },
-            { text: 'Planned for your group size and venue' },
+            { text: 'Facilitated in English and 中文' },
             { text: 'Debriefed so it carries back to work' },
           ],
           image: img('largeGroupCarnival'),
@@ -116,9 +128,10 @@ export function buildPages(ids: SeedIds) {
         },
         {
           blockType: 'founderIntro',
-          heading: 'Founder-led, from the first call to the *final applause*.',
+          // "Me + my partners/team", not only "me" (client, 2026-10-20)
+          heading: 'Founder-led. *Crew-delivered.*',
           body:
-            'The Charisma Code was founded by Chia De Zhong, a bilingual English and Mandarin emcee, singer-pianist, actor and educator. He has hosted and performed for over 15 years, from the inaugural Singapore Youth Olympic Games in 2010 to corporate dinners, weddings and community celebrations.\n\nDe Zhong leads every engagement personally and works with a trusted network of facilitators, performers and event partners, so you have one point of contact and a team that delivers.',
+            'The Charisma Code was founded by Chia De Zhong (谢德忠), a bilingual English and Mandarin emcee, singer-pianist, actor and educator. He has hosted and performed for over 15 years, from the inaugural Singapore Youth Olympic Games in 2010 to corporate dinners, weddings and community celebrations.\n\nToday De Zhong leads a crew of facilitators, hosts, performers and event partners he trusts. You get his personal attention from the first call, and a team on the day that knows exactly what you want to achieve.',
           // On stage, microphone in hand: the persona clients book, not a studio portrait.
           portrait: img('eveningPartyCrowd'),
           quote: 'Trust me on this: We Bring the Spark, You Shine.',
@@ -128,7 +141,7 @@ export function buildPages(ids: SeedIds) {
             { text: 'Performed at Esplanade Studio and Drama Centre Theatre' },
             { text: 'Corporate Communications, Singapore Management University' },
           ],
-          button: page('About The Charisma Code', 'about'),
+          button: page('Meet De Zhong and the crew', 'about'),
           mood: 'stage',
         },
         {
@@ -139,8 +152,8 @@ export function buildPages(ids: SeedIds) {
         },
         {
           blockType: 'founderUpdates',
-          heading: "Founder's Updates",
-          intro: 'Behind the scenes of recent events, performances and projects.',
+          heading: 'Behind the scenes',
+          intro: 'Recent events, performances and projects from De Zhong and the crew.',
           source: 'instagram',
           limit: 6,
           instagramLabel: 'Follow @deprinceofzhong',
@@ -169,13 +182,14 @@ export function buildPages(ids: SeedIds) {
         {
           blockType: 'hero',
           variant: 'split',
-          heading: 'Corporate team building that goes beyond *generic activities*.',
+          // Core promise (client, 2026-10-20): fun that also delivers on the organisation's objectives
+          heading: "Corporate team building that's *genuinely fun*, and actually works.",
           subheading:
-            'Facilitated programmes designed around your goals, people, group size and budget. Bilingual, founder-led and planned with care.',
+            'Not games for the sake of games. Every activity ties back to what your organisation wants from the session, planned around your people, group size and budget, and delivered by our facilitation team.',
           primaryButton: url('Request a proposal', '/corporate-team-building#enquire'),
           secondaryButton: url('See how it works', '/corporate-team-building#approach'),
           images: [img('communityEventCrowd'), img('corporateChristmasBallroom')],
-          highlights: [{ text: 'Facilitated in English & 中文' }, { text: 'Designed around your objectives' }],
+          highlights: [{ text: 'Facilitated in English & 中文' }, { text: 'Fun, with a purpose' }],
         },
         {
           // Proof straight after the promise: who we have worked with, and one client in their own words.
@@ -188,9 +202,9 @@ export function buildPages(ids: SeedIds) {
         },
         {
           blockType: 'textImage',
-          heading: 'Why *tailor-made* matters',
+          heading: 'Fun on the day. *Still useful* on Monday.',
           body:
-            'Off-the-shelf team building can be fun on the day and forgotten by Monday. When a session is designed around a real objective, such as helping a new team trust each other or getting departments talking, the activities become a shared experience your people keep referring back to.\n\nFacilitation is more than running games. It is reading the room and guiding a group toward an outcome, so everyone takes part, whatever their role or language.',
+            'Games for the sake of games can be fun on the day and forgotten by Monday. When every activity ties back to a real objective, such as helping a new team trust each other or getting departments talking, the laughter becomes a shared experience your people keep referring back to.\n\nFacilitation is more than running games. It is reading the room and guiding a group toward an outcome, so everyone takes part, whatever their role or language.',
           points: [
             { text: 'We read the room and adjust in real time' },
             { text: 'Everyone takes part, whatever their role' },
@@ -290,12 +304,14 @@ export function buildPages(ids: SeedIds) {
         {
           blockType: 'hero',
           variant: 'split',
-          heading: 'A bilingual corporate emcee who *reads the room*.',
+          // Core promise (client, 2026-10-20): guaranteed fun from someone with real years in the industry
+          heading: 'A corporate emcee who *guarantees the fun*.',
           subheading:
-            'Professional English and Mandarin hosting for conferences, launches, award nights and company celebrations across Singapore.',
+            'Confident, charismatic hosting in English and 中文, backed by over 15 years on stage. For conferences, launches, award nights and company celebrations across Singapore.',
           primaryButton: url('Check availability', '/corporate-emcee#enquire'),
           secondaryButton: url('Watch the hosting reel', '/corporate-emcee#reel'),
           images: [img('founderHeadshot'), img('corporateChristmasBallroom')],
+          highlights: [{ text: 'Over 15 years on stage' }, { text: 'Hosted in English & 中文' }],
         },
         {
           blockType: 'textImage',
@@ -816,12 +832,13 @@ export function buildPages(ids: SeedIds) {
           blockType: 'hero',
           variant: 'split',
           heading: 'The story behind *the stage*.',
-          subheading: 'A boutique experiential and events studio founded by bilingual emcee, performer and educator Chia De Zhong.',
+          subheading:
+            'A boutique experiential and events studio, founded by bilingual emcee, performer and educator Chia De Zhong and delivered by a crew he trusts.',
           images: [img('founderHeadshot'), img('corporateChristmasBallroom')],
         },
         {
           blockType: 'founderIntro',
-          heading: 'Meet Chia De Zhong',
+          heading: 'Meet Chia De Zhong *谢德忠*',
           body:
             'De Zhong is a Singapore-based bilingual emcee, singer, actor, content creator and educator, and a Corporate Communications graduate of Singapore Management University.\n\nOne of his earliest professional milestones was hosting at the inaugural Singapore Youth Olympic Games in 2010. Since then he has hosted corporate dinners and dances, award ceremonies, weddings, product launches, roadshows and community events, and performed at venues including the Esplanade Studio and Drama Centre Theatre.\n\nWith more than five years of teaching and training experience, he also helps children, teenagers and adults build confidence through communication and performance.',
           portrait: img('founderWhiteShirt'),
@@ -840,7 +857,7 @@ export function buildPages(ids: SeedIds) {
           items: [
             { title: 'Charisma can be learned', text: 'It is not reserved for natural extroverts. It is about communicating, connecting and expressing yourself authentically.' },
             { title: 'People first', text: 'Every programme starts with the people in the room, never with a template.' },
-            { title: 'Personal and professional', text: 'The care of a founder-led studio with the reliability your organisation expects.' },
+            { title: 'Founder-led, crew-delivered', text: 'De Zhong’s personal care from the first call, with a trusted crew that delivers on the day.' },
           ],
           style: 'list',
           columns: '3',
@@ -848,9 +865,9 @@ export function buildPages(ids: SeedIds) {
         },
         {
           blockType: 'textImage',
-          heading: 'Our partner network',
+          heading: 'The *crew* behind the spark',
           body:
-            'Depending on your event, we bring in trusted partners for fringe performances and activities, sound systems, venue rental, photography and videography. You deal with one point of contact; we coordinate the rest.',
+            'The Charisma Code is more than one person. De Zhong works with a crew of facilitators, hosts and performers, and brings in trusted partners for fringe activities, sound systems, venue rental, photography and videography when your event needs them.\n\nYou deal with one point of contact; the crew takes care of the rest.',
           image: img('somaGroup'),
           imagePosition: 'right',
           imageShape: 'landscape',

@@ -70,6 +70,7 @@ Bungkus kata dengan bintang: `Experiences built around *your people*.` → "your
 | **Blog list** | Daftar artikel (halaman Insights) |
 | **Testimonials** | Testimoni (manual atau per kategori) |
 | **Founder Introduction** | Profil founder + kutipan + fakta |
+| **Statement** | Ide besar brand di latar gelap panggung: judul, paragraf, daftar peran yang tampil besar seperti poster teater (menyala satu per satu saat di-scroll), dan baris bahasa (mis. `Hosted in *English & 中文*`). Dipakai di homepage untuk "What is The Charisma Code?" |
 | **Founder's Updates** | 3 update terbaru dari koleksi Founder's Updates |
 | **Gallery** | 3–12 foto (mosaik atau grid) |
 | **Video** | Video YouTube (dimuat hanya saat diklik, agar cepat) |
@@ -97,7 +98,7 @@ Di layar HP, setelah pengunjung melewati hero, muncul bar kecil di bawah layar b
 ## 3. Mengedit homepage
 
 **Pages → Home**. Urutan section saat ini:
-Hero (*Colour block*, line art *Stage spotlight*) → Client Logo Grid (Background *Soft tint*, peach) → Text and Image (Team Building) → Service Cards → Process Steps → Featured Projects → Founder Introduction (*Stage*, foto di panggung) → Testimonials → Founder's Updates → Call to Action.
+Hero (*Colour block*, line art *Stage spotlight*) → Client Logo Grid (Background *Soft tint*, ivory gelap) → Statement ("What is The Charisma Code?") → Text and Image (Team Building) → Service Cards → Process Steps → Featured Projects → Founder Introduction (*Stage*, foto di panggung) → Testimonials → Founder's Updates → Call to Action.
 
 **Kembali ke desain homepage lama (gelap):** di Hero pilih Layout *Stage*, lalu di Client Logo Grid pilih Background *Dark (stage)*, kemudian Publish. Tampilan lamanya juga bisa dilihat kapan saja tanpa mengubah apa pun di `/hero-options/dark-stage`.
 

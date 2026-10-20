@@ -184,6 +184,7 @@ export interface Page {
         | PostArchiveBlock
         | TestimonialsBlock
         | FounderIntroBlock
+        | StatementBlock
         | FounderUpdatesBlock
         | GalleryBlock
         | VideoBlock
@@ -891,6 +892,57 @@ export interface FounderIntroBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StatementBlock".
+ */
+export interface StatementBlock {
+  eyebrow?: string | null;
+  /**
+   * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
+   */
+  heading: string;
+  /**
+   * Leave an empty line between paragraphs.
+   */
+  body: string;
+  /**
+   * Short words, e.g. Emcee, Singer, Pianist.
+   */
+  roles?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * e.g. Hosted in *English & 中文*. Words in *asterisks* are highlighted.
+   */
+  languages?: string | null;
+  /**
+   * Leave the button text empty to hide this link.
+   */
+  button?: {
+    label?: string | null;
+    type?: ('page' | 'custom') | null;
+    page?: (number | null) | Page;
+    /**
+     * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+     */
+    url?: string | null;
+  };
+  /**
+   * Hidden sections stay saved but are not shown on the website.
+   */
+  hidden?: boolean | null;
+  /**
+   * Optional. Lets buttons jump to this section, e.g. "enquire" → /page#enquire
+   */
+  anchorId?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'statement';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "FounderUpdatesBlock".
  */
 export interface FounderUpdatesBlock {
@@ -1587,6 +1639,7 @@ export interface PagesSelect<T extends boolean = true> {
         postArchive?: T | PostArchiveBlockSelect<T>;
         testimonials?: T | TestimonialsBlockSelect<T>;
         founderIntro?: T | FounderIntroBlockSelect<T>;
+        statement?: T | StatementBlockSelect<T>;
         founderUpdates?: T | FounderUpdatesBlockSelect<T>;
         gallery?: T | GalleryBlockSelect<T>;
         video?: T | VideoBlockSelect<T>;
@@ -1863,6 +1916,34 @@ export interface FounderIntroBlockSelect<T extends boolean = true> {
         url?: T;
       };
   mood?: T;
+  hidden?: T;
+  anchorId?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StatementBlock_select".
+ */
+export interface StatementBlockSelect<T extends boolean = true> {
+  eyebrow?: T;
+  heading?: T;
+  body?: T;
+  roles?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
+  languages?: T;
+  button?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+      };
   hidden?: T;
   anchorId?: T;
   id?: T;

@@ -32,7 +32,7 @@ export const services: Array<{
     priority: 1,
     audience: 'corporate',
     summary:
-      'Facilitated team building designed around your objectives, your people and your group size. Never a generic activity off a menu.',
+      'Team building that is genuinely fun and built around your objectives, your people and your group size. Never games for the sake of games.',
     image: 'festiveTeamSelfie',
     pageSlug: 'corporate-team-building',
   },
@@ -41,7 +41,8 @@ export const services: Array<{
     title: 'Corporate Emcee',
     priority: 2,
     audience: 'corporate',
-    summary: 'Bilingual English and Mandarin hosting for conferences, launches, award nights and company celebrations.',
+    summary:
+      'Guaranteed fun from a bilingual English and Mandarin host with over 15 years on stage, for conferences, launches, award nights and celebrations.',
     image: 'founderHeadshot',
     pageSlug: 'corporate-emcee',
   },

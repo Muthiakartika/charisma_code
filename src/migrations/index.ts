@@ -3,6 +3,7 @@ import * as migration_20261012_064509_design_stage_blocks from './20261012_06450
 import * as migration_20261012_064510_feature_grid_default_list from './20261012_064510_feature_grid_default_list';
 import * as migration_20261012_083622_instagram_posts from './20261012_083622_instagram_posts';
 import * as migration_20261019_024755_hero_colour_block from './20261019_024755_hero_colour_block';
+import * as migration_20261020_013046_statement_block from './20261020_013046_statement_block';
 
 export const migrations = [
   {
@@ -28,6 +29,11 @@ export const migrations = [
   {
     up: migration_20261019_024755_hero_colour_block.up,
     down: migration_20261019_024755_hero_colour_block.down,
-    name: '20261019_024755_hero_colour_block'
+    name: '20261019_024755_hero_colour_block',
+  },
+  {
+    up: migration_20261020_013046_statement_block.up,
+    down: migration_20261020_013046_statement_block.down,
+    name: '20261020_013046_statement_block'
   },
 ];

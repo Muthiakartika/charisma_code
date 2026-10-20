@@ -19,6 +19,7 @@ import { ProjectArchiveBlock } from './ProjectArchive'
 import { ProgramCardsBlock } from './ProgramCards'
 import { RichTextBlock } from './RichText'
 import { ServiceCardsBlock } from './ServiceCards'
+import { StatementBlock } from './Statement'
 import { TestimonialsBlock } from './Testimonials'
 import { TextImageBlock } from './TextImage'
 import { VideoBlock } from './Video'
@@ -36,6 +37,7 @@ export const pageBlocks = [
   PostArchiveBlock,
   TestimonialsBlock,
   FounderIntroBlock,
+  StatementBlock,
   FounderUpdatesBlock,
   GalleryBlock,
   VideoBlock,

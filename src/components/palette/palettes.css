@@ -21,7 +21,7 @@
   --color-action: var(--color-flame);
   --color-on-action: var(--color-ink);
   --color-surface: var(--color-paper);
-  --color-surface-alt: var(--color-peach);
+  --color-surface-alt: var(--color-paper-deep);
 }
 
 /* ── Purple: ivory text on the buttons (5.4:1), lavender on the dark stage ── */
@@ -38,7 +38,7 @@
   --color-action: var(--color-flame);
   --color-on-action: var(--color-paper);
   --color-surface: var(--color-paper);
-  --color-surface-alt: var(--color-peach);
+  --color-surface-alt: var(--color-paper-deep);
 }
 
 /* ── Light orange: ink text on the buttons (7.5:1) ── */
@@ -55,7 +55,7 @@
   --color-action: var(--color-flame);
   --color-on-action: var(--color-ink);
   --color-surface: var(--color-paper);
-  --color-surface-alt: var(--color-peach);
+  --color-surface-alt: var(--color-paper-deep);
 }
 
 /* Dark "stage" sections (and the footer) use the bright version of every palette,
