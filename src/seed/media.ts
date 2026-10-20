@@ -7,6 +7,9 @@ import type { ImageSpec } from './helpers'
 
 const WP = 'https://www.thecharismacode.co/wp-content/uploads'
 
+/** The file name a seeded photo gets in the Media collection (and in .seed-cache/). */
+export const seedFileName = (url: string) => decodeURIComponent(url.split('/').pop() ?? 'file').replace(/[^\w.-]+/g, '-')
+
 export const seedImages = {
   founderHeadshot: {
     url: `${WP}/2026/09/Headshot-1152x1536.jpg`,

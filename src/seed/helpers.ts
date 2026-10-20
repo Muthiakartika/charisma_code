@@ -7,6 +7,8 @@ import { JSDOM } from 'jsdom'
 import path from 'path'
 import type { CollectionSlug, Payload, Where } from 'payload'
 
+import { seedFileName } from './media'
+
 /** The seed runs outside Next.js, so cache revalidation is switched off. */
 export const seedContext = { disableRevalidate: true }
 
@@ -15,7 +17,7 @@ const CACHE_DIR = path.resolve(process.cwd(), '.seed-cache')
 /** Downloads a file once and keeps it in .seed-cache/ so re-running the seed is fast. */
 export async function downloadToCache(url: string): Promise<{ buffer: Buffer; name: string; mimetype: string }> {
   fs.mkdirSync(CACHE_DIR, { recursive: true })
-  const name = decodeURIComponent(url.split('/').pop() ?? 'file').replace(/[^\w.-]+/g, '-')
+  const name = seedFileName(url)
   const cached = path.join(CACHE_DIR, name)
   if (!fs.existsSync(cached)) {
     const response = await fetch(url)

@@ -15,6 +15,13 @@ export type SeedIds = {
 
 type Link = { label: string; type: 'page' | 'custom'; page?: number; url?: string }
 
+/** Adds blockName (the label editors see on each section in the admin) from the block's heading. */
+export const withBlockNames = (layout: ReturnType<typeof buildPages>[number]['layout']) =>
+  layout.map((block) => ({
+    blockName: 'heading' in block && block.heading ? String(block.heading).replaceAll('*', '').slice(0, 60) : undefined,
+    ...block,
+  }))
+
 export function buildPages(ids: SeedIds) {
   const page = (label: string, slug: string): Link => ({ label, type: 'page', page: ids.pages[slug] })
   const url = (label: string, href: string): Link => ({ label, type: 'custom', url: href })

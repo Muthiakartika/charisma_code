@@ -23,7 +23,7 @@ import { clientLogos } from './client-logos'
 import { decodeEntities, htmlToLexical, importImage, importLocalImage, seedContext, upsert } from './helpers'
 import { seedImages, type SeedImageKey } from './media'
 import { instagramPosts } from './instagram-posts'
-import { buildPages, type SeedIds } from './pages'
+import { buildPages, withBlockNames, type SeedIds } from './pages'
 
 const published = { _status: 'published' as const }
 const review = { reviewStatus: 'needs-client-review' as const }
@@ -226,11 +226,7 @@ for (const pageData of buildPages(ids)) {
     data: {
       title: pageData.title,
       theme: pageData.theme as 'corporate' | 'wedding' | 'kids',
-      // blockName = the label editors see on each section in the admin
-      layout: pageData.layout.map((block) => ({
-        blockName: 'heading' in block && block.heading ? String(block.heading).replaceAll('*', '').slice(0, 60) : undefined,
-        ...block,
-      })) as never,
+      layout: withBlockNames(pageData.layout) as never,
       meta: pageData.meta,
       chineseTranslation: 'not-started',
       ...review,
