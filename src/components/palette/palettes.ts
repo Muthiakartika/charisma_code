@@ -1,7 +1,7 @@
 /**
  * Colour previews for the whole website (for the client to compare, not a visitor feature).
  *
- * Each colour has its own link: /colour-options/orange-yellow (or yellow, purple, light-orange). It opens the
+ * Each colour has its own link: /colour-options/yellow (or purple, light-orange). It opens the
  * homepage in that colour, and every page from then on uses it until the browser is closed or
  * /colour-options/current is opened (back to the current orange). /colour-options lists them all.
  * Behind the scenes the link adds ?palette=…; the colours themselves are in palettes.css and
@@ -16,12 +16,6 @@ export const PALETTE_COOKIE = 'tcc_palette'
 
 /** `colours` are only used to draw the cards on /colour-options. */
 export const palettes = [
-  {
-    slug: 'orange-yellow',
-    name: 'Orange + yellow',
-    summary: 'Orange for buttons and colour blocks, yellow for the light: the marker behind highlighted words and the glow of the stage lights.',
-    colours: { fill: '#f7741f', bright: '#ffc93c' },
-  },
   {
     slug: 'yellow',
     name: 'Yellow',
