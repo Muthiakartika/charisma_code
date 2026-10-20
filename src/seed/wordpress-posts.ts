@@ -1,7 +1,7 @@
 /**
  * Imports the blog posts from the existing WordPress website into "Blog Posts".
- * Used by `npm run migrate:wordpress` (src/seed/migrate-wordpress.ts) and by the migration
- * 20261020_033925_wordpress_posts, which imports them on Vercel during a deploy.
+ * Used by `npm run migrate:wordpress` (src/seed/migrate-wordpress.ts) and by
+ * src/seed/import-missing-posts.ts, which imports the missing ones on every deploy (npm run ci).
  *
  *  - Slugs follow docs/03-peta-migrasi-url.md (old URLs 301-redirect to /insights/{slug})
  *  - Featured and inline images are copied into the Media library
