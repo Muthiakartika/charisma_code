@@ -48,6 +48,7 @@ Repo lokal sudah di-*init* (`git init`) tetapi belum ada commit maupun remote. B
 
 1. *Add New Project* → pilih repo GitHub.
 2. **Build Command**: sudah diatur otomatis lewat file `vercel.json` di project (`npm run ci`: menjalankan migrasi database lalu build), jadi tidak perlu diubah di dashboard. Tanpa ini Vercel hanya menjalankan `npm run build`, migrasi terlewat, dan build gagal dengan error database `42703` (kolom tidak ditemukan).
+   **Region fungsi**: `vercel.json` juga mengatur `"regions": ["sin1"]` (Singapura), dekat database Neon. Tanpa ini Vercel memakai `iad1` (Washington DC): setiap foto dari `/api/media/file` butuh ±4,5 detik dan pengoptimal gambar kadang gagal (`INVALID_IMAGE_OPTIMIZE_REQUEST`), sehingga foto tampil kosong (Okt 2026). Cek di header `x-vercel-id`: harus `sin1::sin1::…`.
 3. **Environment Variables** (Settings → Environment Variables):
 
 | Variabel | Production | Preview (staging) |
