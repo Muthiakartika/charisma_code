@@ -28,7 +28,7 @@ export function CallToActionBlock({ block, context }: { block: CallToActionData;
       <div className="container-site grid gap-12 py-20 md:py-24 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-8">
           {block.eyebrow && <p className={`mb-4 text-sm font-semibold ${onColour ? '' : 'eyebrow'}`}>{block.eyebrow}</p>}
-          <h2 id={titleId} className="heading-xl max-w-3xl [&_.text-highlight]:text-inherit [&_.text-highlight]:underline [&_.text-highlight]:decoration-2 [&_.text-highlight]:underline-offset-[0.12em]">
+          <h2 id={titleId} className="heading-xl max-w-3xl [&_.text-highlight]:bg-none [&_.text-highlight]:text-inherit [&_.text-highlight]:underline [&_.text-highlight]:decoration-2 [&_.text-highlight]:underline-offset-[0.12em]">
             <HighlightText text={block.heading} />
           </h2>
           {block.text && <p className="lead mt-6">{block.text}</p>}

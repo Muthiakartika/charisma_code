@@ -10,7 +10,6 @@ import type { Metadata } from 'next'
 import { Analytics } from '@/components/analytics/Analytics'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
-import { PalettePreview } from '@/components/palette/PalettePreview'
 import { PaletteScript } from '@/components/palette/PaletteScript'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { defaultLocale, isLocale, languageTags, locales } from '@/i18n/config'
@@ -60,7 +59,6 @@ export default async function SiteLayout({ children, params }: LayoutProps<'/[lo
         <Footer settings={settings} locale={locale} dict={dict} />
         <JsonLd data={organizationSchema(settings)} />
         <Analytics measurementId={gaId} />
-        <PalettePreview />
       </body>
     </html>
   )

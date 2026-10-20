@@ -3,12 +3,12 @@
 ## 1. Arah desain singkat: "The Spotlight Studio"
 
 - **Satu brand, tiga nuansa**: tipografi, logo, jarak, dan komponen sama di seluruh situs. Yang berubah per halaman hanya warna aksen, latar, dan bentuk sudut:
-  - **Corporate** (default): ivory + charcoal "panggung" + aksen *Spark* (oranye) + section peach. Tegas, hangat & berwarna.
+  - **Corporate** (default): ivory + charcoal "panggung" + aksen *Spark* (oranye). Section selang-seling berwarna ivory lebih dalam (sejak 20 Okt 2026, sebelumnya peach), sehingga warna brand hanya sekitar 15% halaman: tombol, kata sorotan, blok warna di banner, band CTA. Selaras dengan kartu nama & lanyard klien.
   - **Wedding**: latar blush, aksen rosewood, foto berbentuk lengkung (arch), judul lebih ringan.
   - **Kids & Youth**: kartu kuning/biru/mint/coral, sudut bulat besar, foto sedikit miring, animasi "lompat" kecil saat hover.
 - **Warna ivory diambil dari latar logo asli** agar logo raster menyatu tanpa kotak.
 - **Font**: *Plus Jakarta Sans* (judul, bersih & tebal) + *Geist* (teks). Teks Mandarin memakai font sistem (PingFang/YaHei) agar cepat.
-- **Masukan klien (Okt 2026)**: judul harus lebih bersih dibaca, lebih banyak aksi, lebih berwarna, dan warna aksi **oranye** (bukan merah). Karena itu: font judul diganti, tombol aksi oranye dengan teks gelap, section "tinted" berwarna peach, dan tombol aksi utama halaman diulang otomatis di antara section (lihat bagian 2a).
+- **Masukan klien (Okt 2026)**: judul harus lebih bersih dibaca, lebih banyak aksi, lebih berwarna, dan warna aksi **oranye** (bukan merah). Karena itu: font judul diganti, tombol aksi oranye dengan teks gelap, section "tinted" berwarna peach (20 Okt 2026 diganti ivory lebih dalam, lihat di atas), dan tombol aksi utama halaman diulang otomatis di antara section (lihat bagian 2a).
 - **Ciri khas**: section gelap seperti panggung dengan foto di dalam **lingkaran sorot lampu** (hero *Stage*; sejak 19 Okt 2026 homepage memakai hero terang *Colour block*: foto lingkaran keluar dari blok warna brand, dengan line art lampu sorot yang samar), langkah kerja seperti **cue sheet run-of-show** emcee, foto "selfie dengan kerumunan" khas De Zhong, dan tulisan **English & 中文** yang terlihat (bukan hanya diklaim).
 - **Aturan rasa (tasteskill + Impeccable)**: satu warna aksen per halaman; tanpa tanda pisah panjang (— atau –) di teks yang tampil, tulis "20 to 50"; nomor hanya bila urutan bermakna; satu gaya bullet (`src/components/ui/Bullet.tsx`); hover hanya untuk perangkat dengan mouse.
 - **Hasil kritik desain** tersimpan di `.impeccable/critique/` (skor & daftar masalah) sebagai riwayat.
@@ -19,10 +19,10 @@ Buka **`src/styles/globals.css`**, bagian `@theme`:
 
 ```css
 --color-paper: #f9f3ea;        /* latar ivory */
---color-peach: #fde6d2;        /* latar section "tinted" */
+--color-paper-deep: #f1e8da;   /* latar section "tinted" (lewat --color-surface-alt) */
 --color-ink: #1e2322;          /* teks & section gelap */
---color-flame: #f7741f;        /* oranye aksi: tombol, band CTA, lingkaran, bullet */
---color-flame-text: #e0560b;   /* kata yang di-*highlight* di judul (latar terang) */
+--color-flame: #f7741f;        /* oranye aksi: tombol, band CTA, lingkaran, bullet, marker sorotan */
+--color-flame-text: #e0560b;   /* nomor langkah di latar terang */
 --color-spark: #ad440d;        /* teks aksen kecil di latar terang (eyebrow, label) */
 --color-spark-bright: #ff8a3d; /* aksen & tombol di section gelap */
 ```
@@ -36,7 +36,8 @@ Komponen tidak memakai hex di atas secara langsung, tetapi token yang mengikuti 
 |---|---|---|
 | `--color-action` + `--color-on-action` | blok warna yang bisa diklik/menonjol (tombol utama, band CTA) + warna teks di atasnya | `bg-action text-on-action` |
 | `--color-accent` | teks/ikon aksen kecil | `text-accent` |
-| `--color-highlight` | kata `*berbintang*` di judul, nomor langkah | otomatis |
+| `--color-highlight` | kata `*berbintang*` di section gelap, nomor langkah | otomatis |
+| `--color-marker` | garis "stabilo" di belakang kata `*berbintang*` di latar terang (teks tetap hitam). Ungu memakai lavender agar teks tetap terbaca. Halaman Wedding & Kids tetap memakai warna teks tema | otomatis |
 
 ⚠️ Cek kontras: teks harus minimal **4.5:1** terhadap latar (gunakan https://webaim.org/resources/contrastchecker/). Oranye aksi hanya lolos dengan **teks gelap** (5.7:1); teks putih di atas oranye gagal (2.8:1), jadi jangan diganti putih. Warna sekarang sudah lolos WCAG AA.
 

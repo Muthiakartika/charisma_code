@@ -32,6 +32,7 @@
   --color-flame-text: #7442d9; /* highlighted words on light sections, 5:1+ */
   --color-spark: #6a35c9; /* small accent text on light sections, 5.9:1+ */
   --color-spark-bright: #b794ff; /* on the dark stage, 6.6:1 */
+  --color-marker: var(--color-spark-bright); /* behind highlighted words: ink text on lavender, 6.6:1 */
   --color-peach: #f0eafc;
   --color-accent: var(--color-spark);
   --color-highlight: var(--color-flame-text);
@@ -67,22 +68,6 @@
   --color-on-action: var(--color-ink);
 }
 
-/* Yellow text cannot be read on light backgrounds, so highlighted words keep the ink colour
- * and get a yellow marker behind them. On the dark stage they are simply yellow. */
-:root[data-palette='yellow'] .text-highlight {
-  color: var(--color-ink);
-  background-image: linear-gradient(transparent 58%, var(--color-flame) 58%, var(--color-flame) 94%, transparent 94%);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-:root[data-palette='yellow'] .tone-dark .text-highlight {
-  color: var(--color-highlight);
-  background-image: none;
-}
-:root[data-palette='yellow'] .cta-spark .text-highlight {
-  color: inherit;
-  background-image: none;
-}
 /* Pure yellow light over the charcoal stage turns olive, so the stage light is a warmer amber */
 :root[data-palette='yellow'] .stage-hero::before {
   background-image: radial-gradient(

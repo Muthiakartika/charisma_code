@@ -1,6 +1,6 @@
 /**
- * Old homepage-only colour links (e.g. /colour-options/yellow) now open the whole
- * website in that colour (/?palette=yellow), so links already shared keep working.
+ * Each colour's own link, e.g. /colour-options/yellow: opens the whole website in that colour
+ * (/?palette=yellow). /colour-options/current goes back to the current orange.
  */
 import { notFound, redirect } from 'next/navigation'
 

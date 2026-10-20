@@ -1,12 +1,12 @@
 /**
- * Colour previews: an overview with a link that opens the whole website in each colour
- * (preview for the client, not indexed). See src/components/palette/palettes.ts.
+ * Colour previews: an overview with each colour's own link (/colour-options/yellow …), which opens
+ * the whole website in that colour (preview for the client, not indexed). See src/components/palette/palettes.ts.
  */
 import { ArrowRight } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 
 import { toLocale } from '@/components/layout/CmsPage'
-import { originalPalette, paletteHref, palettes } from '@/components/palette/palettes'
+import { colourOptionPath, originalPalette, palettes } from '@/components/palette/palettes'
 import { CmsImage } from '@/components/ui/CmsImage'
 import { getPage } from '@/lib/cms'
 import { localizePath } from '@/lib/paths'
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
-type Colours = { fill: string; bright: string; tint: string }
+type Colours = { fill: string; bright: string }
 
 /** A small sketch of the homepage's first screen (the dark stage) in the option's colours. */
 function Thumbnail({ colours, photo }: { colours: Colours; photo: Media | null }) {
@@ -44,10 +44,9 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
   const home = await getPage('home', locale)
   const hero = home?.layout?.find((block): block is HeroBlock => block.blockType === 'hero')
   const photo = hero?.images?.find((image): image is Media => typeof image === 'object' && image !== null) ?? null
-  const homePath = localizePath('/', locale)
   const cards = [
-    ...palettes.map((palette) => ({ ...palette, href: paletteHref(palette.slug, homePath) })),
-    { slug: 'original', ...originalPalette, href: paletteHref(null, homePath) },
+    ...palettes.map((palette) => ({ ...palette, href: localizePath(colourOptionPath(palette.slug), locale) })),
+    { slug: 'current', ...originalPalette, href: localizePath(colourOptionPath('current'), locale) },
   ]
 
   return (
@@ -60,9 +59,8 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
               The whole website in <em className="text-highlight">another colour</em>.
             </h1>
             <p className="lead mt-6 text-ink-soft">
-              Open a colour and click around: every page stays in that colour, from the homepage to weddings, workshops and
-              articles. The switcher at the bottom right changes colour on any page, and the cross returns to the current
-              orange.
+              Each colour has its own link. Open one and click around: every page stays in that colour, from the homepage to
+              weddings, workshops and articles. Open another colour&apos;s link to switch, or Current orange to go back.
             </p>
           </div>
 
@@ -77,7 +75,7 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
                   <Thumbnail colours={card.colours} photo={photo} />
                   <span className="flex flex-1 flex-col p-6">
                     <span aria-hidden className="flex gap-1.5">
-                      {[card.colours.fill, card.colours.bright, card.colours.tint].map((colour) => (
+                      {[card.colours.fill, card.colours.bright].map((colour) => (
                         <span key={colour} className="h-5 w-5 rounded-full border border-ink/10" style={{ backgroundColor: colour }} />
                       ))}
                     </span>

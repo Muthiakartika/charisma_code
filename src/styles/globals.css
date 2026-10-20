@@ -62,10 +62,12 @@
 
   /* Theme-aware tokens (overridden by data-theme below)
    *  accent    → accent-coloured text and icons (text-accent, eyebrows)
-   *  highlight → *highlighted* words in headings
+   *  highlight → *highlighted* words on the dark stage, step numbers
+   *  marker    → the stroke behind *highlighted* words on light backgrounds (ink text on top)
    *  action    → filled buttons and colour blocks (bg-action), with on-action text on top */
   --color-accent: var(--color-spark);
   --color-highlight: var(--color-flame-text);
+  --color-marker: var(--color-flame);
   --color-action: var(--color-flame);
   --color-on-action: var(--color-ink);
   --color-surface: var(--color-paper);
@@ -247,11 +249,31 @@ body:has(> main[data-theme='wedding']) .tone-dark,
   color: var(--color-accent);
 }
 
-/* Words wrapped in *asterisks* in the CMS become highlights */
+/* Words wrapped in *asterisks* in the CMS become highlights. On light backgrounds the words stay ink
+ * with a marker stroke of the brand colour behind them; on the dark stage they are the bright brand colour. */
 @layer components {
   .text-highlight {
+    /* Tailwind also reads this class as its utility "color: var(--color-highlight)", which wins over
+     * this layer, so the text colour is set through that variable */
+    --color-highlight: var(--color-ink);
     color: var(--color-highlight);
     font-style: normal;
+    background-image: linear-gradient(
+      transparent 58%,
+      var(--color-marker) 58%,
+      var(--color-marker) 94%,
+      transparent 94%
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  /* Wedding and kids pages keep their own accent as the text colour (both are too dark for a marker
+   * under ink text), unless a colour preview is on */
+  .tone-dark .text-highlight,
+  :root:not([data-palette]) [data-theme='wedding'] .text-highlight,
+  :root:not([data-palette]) [data-theme='kids'] .text-highlight {
+    --color-highlight: inherit;
+    background-image: none;
   }
 }
 [data-theme='wedding'] .heading-xl,
