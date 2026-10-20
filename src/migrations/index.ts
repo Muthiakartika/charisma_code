@@ -6,6 +6,7 @@ import * as migration_20261019_024755_hero_colour_block from './20261019_024755_
 import * as migration_20261020_013046_statement_block from './20261020_013046_statement_block';
 import * as migration_20261020_015053_team_block from './20261020_015053_team_block';
 import * as migration_20261020_032234_client_feedback_content from './20261020_032234_client_feedback_content';
+import * as migration_20261020_033925_wordpress_posts from './20261020_033925_wordpress_posts';
 
 export const migrations = [
   {
@@ -46,6 +47,11 @@ export const migrations = [
   {
     up: migration_20261020_032234_client_feedback_content.up,
     down: migration_20261020_032234_client_feedback_content.down,
-    name: '20261020_032234_client_feedback_content'
+    name: '20261020_032234_client_feedback_content',
+  },
+  {
+    up: migration_20261020_033925_wordpress_posts.up,
+    down: migration_20261020_033925_wordpress_posts.down,
+    name: '20261020_033925_wordpress_posts'
   },
 ];
