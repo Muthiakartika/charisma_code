@@ -8,9 +8,13 @@
  *  - YouTube embeds become links (the page stays fast)
  *  - Yoast SEO titles/descriptions are kept; every post is marked "Needs client review"
  */
+import { HeadObjectCommand, S3Client } from '@aws-sdk/client-s3'
+import fs from 'fs'
+import path from 'path'
 import type { Payload } from 'payload'
 
-import { decodeEntities, htmlToLexical, importImage, upsert } from './helpers'
+import { decodeEntities, downloadToCache, htmlToLexical, importImage, seedContext, upsert } from './helpers'
+import { seedFileName } from './media'
 
 const WP_API = 'https://www.thecharismacode.co/wp-json/wp/v2'
 
@@ -168,4 +172,101 @@ export async function importWordPressPosts(payload: Payload, { onlyMissing = fal
 
   log(`Done: ${imported} imported${onlyMissing ? `, ${existing.size} already there` : ''}.`)
   return imported
+}
+
+/**
+ * Re-uploads blog photos whose Media record exists but whose file is missing from storage
+ * (Oct 2026: a shared seed context made the R2 plugin skip every upload after the first one).
+ * Checks R2 when it is configured, otherwise the local media folder. Each missing file is
+ * downloaded again from WordPress and put back on the same Media record, so every post that
+ * shows it is fixed too. Returns the number of repaired photos.
+ */
+export async function repairMissingPostImages(payload: Payload) {
+  const log = (message: string) => payload.logger.info(`[wordpress] ${message}`)
+  const bucket = process.env.R2_BUCKET
+  const r2 = bucket
+    ? new S3Client({
+        endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+        region: 'auto',
+        credentials: {
+          accessKeyId: process.env.R2_ACCESS_KEY_ID || '',
+          secretAccessKey: process.env.R2_SECRET_ACCESS_KEY || '',
+        },
+      })
+    : null
+  const mediaFolder = path.resolve(process.cwd(), 'media')
+  const fileExists = async (prefix: string | null | undefined, filename: string) => {
+    if (!r2) return fs.existsSync(path.join(mediaFolder, filename))
+    try {
+      await r2.send(new HeadObjectCommand({ Bucket: bucket, Key: `${prefix || 'media'}/${filename}` }))
+      return true
+    } catch (error) {
+      if ((error as { $metadata?: { httpStatusCode?: number } }).$metadata?.httpStatusCode === 404) return false
+      throw error
+    }
+  }
+
+  const { docs } = await payload.find({ collection: 'media', limit: 2000, depth: 0, pagination: false })
+  const missing: typeof docs = []
+  for (const doc of docs) {
+    if (doc.filename && !(await fileExists(doc.prefix, doc.filename))) missing.push(doc)
+  }
+  if (missing.length === 0) {
+    log('all photos are in storage')
+    return 0
+  }
+  log(`${missing.length} photos have no file in storage, finding them on WordPress`)
+
+  // Where each photo came from: the same addresses the import uses
+  const response = await fetch(`${WP_API}/posts?per_page=100`).catch(() => null)
+  if (!response?.ok) {
+    payload.logger.warn('[wordpress] repair skipped: the WordPress website could not be reached')
+    return 0
+  }
+  const posts = (await response.json()) as WpPost[]
+  const sources = new Map<string, string>()
+  const remember = (url: string) => {
+    if (!sources.has(seedFileName(url))) sources.set(seedFileName(url), url)
+  }
+  for (const post of posts) {
+    if (post.featured_media) {
+      const media = (await (await fetch(`${WP_API}/media/${post.featured_media}`)).json().catch(() => null)) as {
+        source_url?: string
+        media_details?: { sizes?: Record<string, { source_url: string }> }
+      } | null
+      const url = media?.media_details?.sizes?.['1536x1536']?.source_url ?? media?.source_url
+      if (url) remember(url)
+    }
+    for (const match of post.content.rendered.matchAll(/<img[^>]*src="([^"]+)"/gi)) {
+      const src = match[1]
+      if (!src.includes('thecharismacode.co/wp-content/uploads')) continue
+      remember(src.replace(/-\d+x\d+(?=\.\w+$)/, ''))
+      remember(src)
+    }
+  }
+
+  let repaired = 0
+  for (const doc of missing) {
+    const url = sources.get(doc.filename as string)
+    if (!url) {
+      log(`no WordPress source for ${doc.filename}, left as it is`)
+      continue
+    }
+    try {
+      const file = await downloadToCache(url)
+      await payload.update({
+        collection: 'media',
+        id: doc.id,
+        data: {},
+        file: { data: file.buffer, mimetype: file.mimetype, name: file.name, size: file.buffer.length },
+        context: seedContext(),
+      })
+      repaired += 1
+      log(`repaired ${doc.filename}`)
+    } catch (error) {
+      payload.logger.warn({ err: error }, `[wordpress] could not repair ${doc.filename}`)
+    }
+  }
+  log(`Repair done: ${repaired} of ${missing.length} photos`)
+  return repaired
 }

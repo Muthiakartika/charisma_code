@@ -9,8 +9,13 @@ import type { CollectionSlug, Payload, Where } from 'payload'
 
 import { seedFileName } from './media'
 
-/** The seed runs outside Next.js, so cache revalidation is switched off. */
-export const seedContext = { disableRevalidate: true }
+/**
+ * Context for Local API calls from the seed: it runs outside Next.js, so cache revalidation is switched off.
+ * A new object for every call: Payload and the R2 storage plugin write flags into the context
+ * (skipCloudStorage), and with one shared object the flag stayed on, so every later upload was skipped
+ * and its file never reached R2 (Oct 2026).
+ */
+export const seedContext = () => ({ disableRevalidate: true })
 
 const CACHE_DIR = path.resolve(process.cwd(), '.seed-cache')
 
@@ -57,14 +62,14 @@ export async function importImage(payload: Payload, spec: ImageSpec): Promise<nu
   const focal = spec.focal ? { focalX: spec.focal.x, focalY: spec.focal.y } : {}
   if (existing.docs[0]) {
     if (spec.focal) {
-      await payload.update({ collection: 'media', id: existing.docs[0].id, data: focal, context: seedContext })
+      await payload.update({ collection: 'media', id: existing.docs[0].id, data: focal, context: seedContext() })
     }
     return existing.docs[0].id
   }
 
   const doc = await payload.create({
     collection: 'media',
-    context: seedContext,
+    context: seedContext(),
     data: { alt: spec.alt, needsReplacement: Boolean(spec.needsReplacement), ...focal },
     file: { data: file.buffer, mimetype: file.mimetype, name: file.name, size: file.buffer.length },
   })
@@ -89,11 +94,11 @@ export async function importLocalImage(payload: Payload, filePath: string, alt: 
   const doc = existing.docs[0]
   if (doc) {
     if (doc.filesize !== buffer.length) {
-      await payload.update({ collection: 'media', id: doc.id, data: { alt }, file, context: seedContext })
+      await payload.update({ collection: 'media', id: doc.id, data: { alt }, file, context: seedContext() })
     }
     return doc.id
   }
-  const created = await payload.create({ collection: 'media', data: { alt }, file, context: seedContext })
+  const created = await payload.create({ collection: 'media', data: { alt }, file, context: seedContext() })
   return created.id
 }
 
@@ -110,12 +115,12 @@ export async function upsert<T extends CollectionSlug>(
       collection,
       id: existing.docs[0].id,
       data: data as never,
-      context: seedContext,
+      context: seedContext(),
       draft: false,
     })
     return updated.id as number
   }
-  const created = await payload.create({ collection, data: data as never, context: seedContext, draft: false })
+  const created = await payload.create({ collection, data: data as never, context: seedContext(), draft: false })
   return created.id as number
 }
 

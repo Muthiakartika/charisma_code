@@ -26,8 +26,8 @@ const CHANGED_PAGES = [
 const CHANGED_SERVICES = ['team-building', 'corporate-emcee', 'dinner-and-dance']
 const NEW_PAGE = { slug: 'chinese-new-year-emcee', title: 'Chinese New Year Emcee' }
 
-/** Runs outside Next.js (migration or script), so cache revalidation is switched off. */
-const context = { disableRevalidate: true }
+/** Runs outside Next.js, so cache revalidation is switched off. A new object per call (see seedContext in helpers.ts). */
+const context = () => ({ disableRevalidate: true })
 const published = { _status: 'published' as const }
 
 type MenuLink = { page?: number | { id: number } | null }
@@ -82,7 +82,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
       collection: 'pages',
       data: { title: NEW_PAGE.title, slug: NEW_PAGE.slug, generateSlug: false, ...published },
       draft: false,
-      context,
+      context: context(),
       req,
     })
     pageIds[NEW_PAGE.slug] = created.id
@@ -111,7 +111,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
         ...published,
       },
       draft: false,
-      context,
+      context: context(),
       req,
     })
     log(`updated page ${pageData.slug}`)
@@ -125,7 +125,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
       id: serviceIds[service.key],
       data: { summary: service.summary, ...published },
       draft: false,
-      context,
+      context: context(),
       req,
     })
   }
@@ -145,7 +145,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
       description: 'Annual dinners in English and 中文',
     })
     emceeing.children = children
-    await payload.updateGlobal({ slug: 'navigation', data: { mainMenu: navigation.mainMenu }, context, req })
+    await payload.updateGlobal({ slug: 'navigation', data: { mainMenu: navigation.mainMenu }, context: context(), req })
     log('added Chinese New Year to the Emceeing menu')
   }
 
@@ -157,7 +157,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
     const after = links.findIndex((entry) => linksTo(entry.link, dinnerPageId))
     links.splice(after + 1, 0, { link: { label: 'Chinese New Year Emcee', type: 'page', page: newPageId } })
     column.links = links
-    await payload.updateGlobal({ slug: 'footer', data: { columns: footer.columns }, context, req })
+    await payload.updateGlobal({ slug: 'footer', data: { columns: footer.columns }, context: context(), req })
     log('added Chinese New Year Emcee to the footer')
   }
 
@@ -173,7 +173,7 @@ export async function applyClientFeedbackContent(payload: Payload, req?: Payload
           link: { label: 'Check your date', type: 'custom', url: '/dinner-and-dance-emcee#enquire' },
         },
       },
-      context,
+      context: context(),
       req,
     })
     log('prepared the announcement bar (switched off)')

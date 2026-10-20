@@ -210,7 +210,7 @@ for (const pageData of [...buildPages(placeholderIds), { slug: 'legal', title: '
     (
       await payload.create({
         collection: 'pages',
-        context: seedContext,
+        context: seedContext(),
         data: { title: pageData.title, slug: pageData.slug, generateSlug: false, ...published },
       })
     ).id
@@ -221,7 +221,7 @@ for (const pageData of buildPages(ids)) {
   await payload.update({
     collection: 'pages',
     id: pageIds[pageData.slug],
-    context: seedContext,
+    context: seedContext(),
     draft: false,
     data: {
       title: pageData.title,
@@ -244,7 +244,7 @@ try {
   await payload.update({
     collection: 'pages',
     id: pageIds.legal,
-    context: seedContext,
+    context: seedContext(),
     draft: false,
     data: {
       title: 'Terms & Privacy',
@@ -264,7 +264,7 @@ for (const service of services) {
   await payload.update({
     collection: 'services',
     id: serviceIds[service.key],
-    context: seedContext,
+    context: seedContext(),
     draft: false,
     data: { page: pageIds[service.pageSlug], ...published },
   })
@@ -276,7 +276,7 @@ const pageLink = (label: string, slug: string) => ({ label, type: 'page' as cons
 
 await payload.updateGlobal({
   slug: 'header',
-  context: seedContext,
+  context: seedContext(),
   data: {
     ctaButton: pageLink("Let's Talk", 'contact'),
     // D&D season message, ready but switched off until the client approves it (tick "enabled" in Header)
@@ -290,7 +290,7 @@ await payload.updateGlobal({
 
 await payload.updateGlobal({
   slug: 'navigation',
-  context: seedContext,
+  context: seedContext(),
   data: {
     mainMenu: [
       { link: pageLink('Team Building', 'corporate-team-building'), children: [] },
@@ -320,7 +320,7 @@ await payload.updateGlobal({
 
 await payload.updateGlobal({
   slug: 'footer',
-  context: seedContext,
+  context: seedContext(),
   data: {
     tagline: 'We Bring the Spark, You Shine.',
     blurb:
@@ -364,7 +364,7 @@ await payload.updateGlobal({
 
 await payload.updateGlobal({
   slug: 'contact-information',
-  context: seedContext,
+  context: seedContext(),
   data: {
     email: 'hello@thecharismacode.co',
     phone: '+65 9437 8083',
@@ -377,7 +377,7 @@ await payload.updateGlobal({
 
 await payload.updateGlobal({
   slug: 'social-links',
-  context: seedContext,
+  context: seedContext(),
   data: {
     instagram: 'https://www.instagram.com/deprinceofzhong',
     facebook: 'https://www.facebook.com/deprinceofzhong',
@@ -388,7 +388,7 @@ await payload.updateGlobal({
 
 await payload.updateGlobal({
   slug: 'seo-defaults',
-  context: seedContext,
+  context: seedContext(),
   data: {
     siteName: 'The Charisma Code',
     titleSuffix: ' | The Charisma Code',

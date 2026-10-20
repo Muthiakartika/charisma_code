@@ -2,6 +2,7 @@
  * Runs on every deploy (npm run ci, after the migrations): imports the WordPress blog posts that
  * are not in the database yet, so a database seeded without them catches up without anyone needing
  * the database password. Once every post is there it only checks and finishes in a few seconds.
+ * It also re-uploads blog photos whose file is missing from storage.
  *
  * Each post is saved on its own. (As a migration this failed: Neon closes a database transaction
  * that stays open while photos upload, error 25P03.) Posts edited in the CMS are never touched.
@@ -13,7 +14,7 @@
 import config from '@payload-config'
 import { getPayload } from 'payload'
 
-import { importWordPressPosts } from './wordpress-posts'
+import { importWordPressPosts, repairMissingPostImages } from './wordpress-posts'
 
 const stop = (error: unknown) => {
   console.warn('[wordpress] import stopped, the next deploy continues where it left off:', error)
@@ -25,6 +26,8 @@ process.on('unhandledRejection', stop)
 try {
   const payload = await getPayload({ config })
   await importWordPressPosts(payload, { onlyMissing: true, skipWhenUnreachable: true })
+  // Puts back blog photos whose file never reached storage (see repairMissingPostImages)
+  await repairMissingPostImages(payload)
 } catch (error) {
   stop(error)
 }
