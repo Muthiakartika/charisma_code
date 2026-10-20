@@ -64,7 +64,7 @@ export default async function ColourOptionsPage({ params }: { params: Promise<{ 
             </p>
           </div>
 
-          <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map((card) => (
               <li key={card.slug}>
                 {/* A full page load (not client navigation), so the colour is applied before the page is drawn */}

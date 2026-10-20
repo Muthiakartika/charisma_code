@@ -7,6 +7,26 @@
  * where they are declared. Every colour pair passes WCAG AA, like the main palette.
  */
 
+/* ── Orange + yellow: orange for action (buttons, colour blocks, CTA bands, bullets), yellow for light
+ * (the marker behind highlighted words, and highlights and glows on the dark stage). Same pairs as
+ * the current orange, so every combination passes WCAG AA; ink on the yellow marker is 10.4:1. ── */
+:root[data-palette='orange-yellow'],
+:root[data-palette='orange-yellow'] body,
+:root[data-palette='orange-yellow'] [data-theme] {
+  --color-flame: #f7741f;
+  --color-flame-text: #e0560b;
+  --color-spark: #ad440d;
+  --color-spark-bright: #ff8a3d; /* buttons on the dark stage stay orange */
+  --color-peach: #fde6d2;
+  --color-accent: var(--color-spark);
+  --color-highlight: var(--color-flame-text);
+  --color-action: var(--color-flame);
+  --color-on-action: var(--color-ink);
+  --color-surface: var(--color-paper);
+  --color-surface-alt: var(--color-paper-deep);
+  --color-marker: #ffc93c;
+}
+
 /* ── Yellow: ink text on the buttons (10.4:1) ── */
 :root[data-palette='yellow'],
 :root[data-palette='yellow'] body,
@@ -66,6 +86,35 @@
   --color-highlight: var(--color-spark-bright);
   --color-action: var(--color-spark-bright);
   --color-on-action: var(--color-ink);
+}
+
+/* Orange + yellow: on the dark stage the light is yellow (highlighted words, step numbers, small accents),
+ * the buttons stay orange */
+:root[data-palette='orange-yellow'] .tone-dark {
+  --color-accent: #ffd15c; /* 11:1 on ink */
+  --color-highlight: #ffd15c;
+}
+/* ... and the follow-spots are yellow light: on the orange colour block, the CTA bands and the dark stage
+ * (warm amber there, because pure yellow over charcoal turns olive) */
+:root[data-palette='orange-yellow'] .block-hero__glow {
+  background-image: radial-gradient(circle, color-mix(in srgb, #ffd15c 40%, transparent), transparent 62%);
+}
+:root[data-palette='orange-yellow'] .cta-spark::before {
+  background: radial-gradient(circle, color-mix(in srgb, #ffd15c 55%, transparent), transparent 62%);
+}
+:root[data-palette='orange-yellow'] .stage-hero::before {
+  background-image: radial-gradient(
+    ellipse 55% 65% at 78% 42%,
+    color-mix(in srgb, #ffae2b 24%, transparent),
+    transparent 70%
+  );
+}
+:root[data-palette='orange-yellow'] .statement::before {
+  background-image: radial-gradient(
+    ellipse 45% 60% at 82% 38%,
+    color-mix(in srgb, #ffae2b 18%, transparent),
+    transparent 70%
+  );
 }
 
 /* Pure yellow light over the charcoal stage turns olive, so the stage light is a warmer amber */
