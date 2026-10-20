@@ -27,6 +27,7 @@ import { RichTextBlock } from './RichTextSection'
 import { ServiceCardsBlock } from './ServiceCards'
 import type { BlockContext } from './shared'
 import { StatementBlock } from './Statement'
+import { TeamBlock } from './Team'
 import { TestimonialsBlock } from './Testimonials'
 import { TextImageBlock } from './TextImage'
 import { VideoBlock } from './Video'
@@ -48,6 +49,7 @@ const components: Record<LayoutBlock['blockType'], BlockComponent> = {
   testimonials: TestimonialsBlock as BlockComponent,
   founderIntro: FounderIntroBlock as BlockComponent,
   statement: StatementBlock as BlockComponent,
+  team: TeamBlock as BlockComponent,
   founderUpdates: FounderUpdatesBlock as BlockComponent,
   gallery: GalleryBlock as BlockComponent,
   video: VideoBlock as BlockComponent,

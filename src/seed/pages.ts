@@ -371,7 +371,7 @@ export function buildPages(ids: SeedIds) {
       meta: {
         title: 'Dinner and Dance Emcee Singapore | D&D Host with Games & Lucky Draws',
         description:
-          'D&D emcee in Singapore for corporate dinners and year-end parties: bilingual hosting, audience games, lucky draws and a programme that keeps the night moving.',
+          'D&D emcee in Singapore for year-end parties and Chinese New Year dinners: bilingual hosting, games, lucky draws and a programme that keeps the night moving.',
         image: img('eveningPartyCrowd'),
       },
       layout: [
@@ -380,10 +380,29 @@ export function buildPages(ids: SeedIds) {
           variant: 'split',
           heading: 'A Dinner & Dance emcee for nights your team *talks about*.',
           subheading:
-            'Year-end parties and annual D&Ds hosted with games, lucky draws, bilingual banter and a programme that keeps the energy up.',
+            'Year-end parties, annual D&Ds and Chinese New Year dinners, hosted in English and 中文 with games, lucky draws and a programme that keeps the energy up.',
           primaryButton: url('Check your D&D date', '/dinner-and-dance-emcee#enquire'),
           secondaryButton: url('See a D&D we hosted', '/our-work/the-banyan-group-dinner-and-dance'),
           images: [img('eveningPartyCrowd'), img('banyanDnd')],
+          highlights: [{ text: 'Hosted in English & 中文' }, { text: 'Year-end and Chinese New Year dinners' }],
+        },
+        {
+          // D&D season (Nov to Feb) is the busiest time for company dinners in Singapore (2026-10-20)
+          blockType: 'featureGrid',
+          heading: 'D&D season fills up *early*',
+          intro:
+            'Most company dinners in Singapore happen between November and March, and popular Friday and Saturday nights go first. Share your date early to check availability.',
+          items: [
+            { title: 'Nov to Dec', text: 'Year-end parties, celebrating the year with the whole company.' },
+            {
+              title: 'Jan to Mar',
+              text: 'Chinese New Year dinners, hosted in English and 中文 so every table feels part of the celebration.',
+            },
+            { title: 'All year', text: 'Annual dinners, milestones, anniversaries and appreciation nights.' },
+          ],
+          style: 'strip',
+          columns: '3',
+          tone: 'tinted',
         },
         {
           blockType: 'textImage',
@@ -433,6 +452,88 @@ export function buildPages(ids: SeedIds) {
           testimonials: [ids.testimonials['alphonsus-ang'], ids.testimonials['jaz-hang']],
         },
         enquiry('dinner-and-dance', 'Plan your *D&D*', 'Share your date, venue, headcount and the mood you want for the night.'),
+      ],
+    },
+
+    // ── Chinese New Year Emcee (seasonal landing page, 2026-10-20) ──────────
+    // Peak season for company dinners runs from January to March; the bilingual angle matters most here.
+    {
+      slug: 'chinese-new-year-emcee',
+      title: 'Chinese New Year Emcee',
+      theme: 'corporate',
+      meta: {
+        title: 'Chinese New Year Emcee Singapore | Bilingual Annual Dinner Host',
+        description:
+          'Bilingual English and Mandarin emcee for Chinese New Year and annual dinners in Singapore, with games, lucky draws and a programme every table enjoys.',
+        image: img('compassAwards'),
+      },
+      layout: [
+        {
+          blockType: 'hero',
+          variant: 'split',
+          heading: 'A bilingual emcee for your *Chinese New Year* dinner.',
+          subheading:
+            'Annual dinners and Chinese New Year celebrations hosted in English and 中文, so speeches, games and lucky draws land with every table.',
+          primaryButton: url('Check your date', '/chinese-new-year-emcee#enquire'),
+          secondaryButton: url('Watch the hosting reel', '/chinese-new-year-emcee#reel'),
+          images: [img('compassAwards'), img('corporateChristmasBallroom')],
+          highlights: [{ text: 'Hosted in English & 中文' }, { text: 'Over 15 years on stage' }],
+        },
+        {
+          blockType: 'featureGrid',
+          heading: 'Why a bilingual host matters at *Chinese New Year*',
+          intro:
+            'A Chinese New Year dinner brings together colleagues who are most at home in English, in Mandarin, or in both. A bilingual emcee keeps everyone in the same celebration.',
+          items: [
+            { title: 'Every table included', text: 'Welcome, speeches, games and announcements in English and Mandarin, so nobody misses the moment.' },
+            { title: 'Natural switching', text: 'Moving naturally between English and Mandarin, so the programme keeps its pace.' },
+            { title: 'Festive energy', text: 'Games, banter and lucky draws that build the excitement toward the grand prize.' },
+          ],
+          style: 'list',
+          columns: '3',
+          tone: 'light',
+        },
+        {
+          blockType: 'processSteps',
+          heading: 'Planning your *Chinese New Year* dinner',
+          steps: [
+            { title: 'Share your date', text: 'Chinese New Year dinners cluster between January and March, so tell us your date as early as you can.' },
+            { title: 'Programme and script', text: 'We go through the run of show, speeches and segments with your team, in both languages.' },
+            { title: 'Games and lucky draws', text: 'We plan games and draw moments that suit your crowd, headcount and venue.' },
+            { title: 'Hosting on the night', text: 'A confident bilingual welcome, smooth transitions and a strong finish, on time.' },
+          ],
+          tone: 'tinted',
+        },
+        {
+          blockType: 'textImage',
+          heading: 'One host, *two languages*, one celebration',
+          body:
+            'Speeches, toasts, games and lucky draws all compete for the same evening. De Zhong keeps the programme moving and on time, reads which tables need more attention, and switches language whenever the moment calls for it.\n\nHe has hosted company dinners, award ceremonies and celebrations across Singapore for over 15 years, including The Banyan Group’s Dinner & Dance at Mandai Rainforest Resort.',
+          image: img('banyanDnd'),
+          imagePosition: 'right',
+          imageShape: 'landscape',
+          button: page('See our D&D hosting', 'dinner-and-dance-emcee'),
+          tone: 'light',
+        },
+        {
+          blockType: 'video',
+          anchorId: 'reel',
+          heading: 'Hosting reel',
+          youtubeUrl: 'https://youtu.be/Wo9XVBQohEg',
+          caption: "Chia De Zhong's hosting reel (2023).",
+          tone: 'dark',
+        },
+        {
+          blockType: 'testimonials',
+          heading: 'What clients say',
+          source: 'manual',
+          testimonials: [ids.testimonials['alphonsus-ang'], ids.testimonials['ra-dl'], ids.testimonials['sheena-mulani']],
+        },
+        enquiry(
+          'dinner-and-dance',
+          'Check your *Chinese New Year* date',
+          'Share your date, venue, headcount and the languages your guests speak, and we will confirm availability.',
+        ),
       ],
     },
 
@@ -608,22 +709,45 @@ export function buildPages(ids: SeedIds) {
       meta: {
         title: 'Kids & Youth Programmes Singapore | Confidence & Public Speaking',
         description:
-          'Confidence, public speaking and creative workshops for schools, camps and youth groups in Singapore, plus playful team building for kids.',
+          'Confidence, public speaking and creative programmes for schools, camps and youth groups in Singapore, because confidence is a skill every child can learn.',
         image: img('marisStellaClass'),
       },
       layout: [
         {
           blockType: 'hero',
           variant: 'split',
-          heading: 'Programmes where young people find *their voice*.',
+          // Own voice, same confidence thread as the rest of the site (client, 2026-10-20). Draft for review.
+          heading: 'Where young people learn to *speak up and shine*.',
           subheading:
-            'Confidence, communication and creative workshops for schools, camps and youth groups, plus playful team building for kids.',
+            'Confidence, public speaking and creative programmes for schools, camps and youth groups, built on one belief: confidence is a skill every young person can learn.',
           primaryButton: url('Plan a school programme', '/kids-youth-programs#enquire'),
           images: [img('kidsPartyHosting'), img('marisStellaClass')],
+          highlights: [{ text: 'For schools, camps and youth groups' }, { text: 'Taught by a professional emcee and actor' }],
+        },
+        {
+          blockType: 'featureGrid',
+          heading: 'How we build *confidence*',
+          intro:
+            'The same idea behind everything we do: charisma is not a gift, it is a skill. For young people, it grows in three steps.',
+          items: [
+            { title: 'Play first', text: 'Games and warm-ups get everyone laughing, so nobody feels put on the spot.' },
+            {
+              title: 'Practise in a safe space',
+              text: 'Every young person gets a turn, with encouragement and clear feedback. Mistakes are part of the fun.',
+            },
+            {
+              title: 'A moment to shine',
+              text: 'Programmes build toward something to be proud of, such as a talk, a performance or a short film.',
+            },
+          ],
+          style: 'numbered',
+          columns: '3',
+          tone: 'tinted',
         },
         {
           blockType: 'featureGrid',
           heading: 'What we teach',
+          intro: 'Every topic is a different way to practise the same thing: speaking up and believing in your ideas.',
           items: [
             { title: 'Public speaking and confidence', text: 'Speaking up, presenting and believing in your ideas.' },
             { title: 'Acting and drama', text: 'Expression, teamwork and imagination through performance.' },
@@ -665,7 +789,7 @@ export function buildPages(ids: SeedIds) {
           youtubeUrl: 'https://youtu.be/4FZJoAGRiRU',
           tone: 'light',
         },
-        enquiry('kids-youth', 'Plan a programme for *young people*', 'Tell us about your school or group, the age range and what you would like participants to gain.'),
+        enquiry('kids-youth', 'Help your students *find their voice*', 'Tell us about your school or group, the age range and what you would like participants to gain.'),
       ],
     },
 
@@ -850,6 +974,23 @@ export function buildPages(ids: SeedIds) {
             { text: 'Trainer with Zenitant, Edublitz and Aktivate' },
           ],
           mood: 'stage',
+        },
+        {
+          // Ready for the crew (client, 2026-10-20). Hidden until the client sends the names, roles
+          // and photos of the people who agreed to be shown; then add them and untick "Hide this section".
+          blockType: 'team',
+          heading: 'Meet the *team*',
+          intro: 'The facilitators, hosts and performers who bring the spark to your event.',
+          members: [
+            {
+              name: 'Chia De Zhong',
+              role: 'Founder & Emcee',
+              photo: img('founderBowTie'),
+              bio: 'Bilingual emcee, singer-pianist, actor and charisma coach.',
+            },
+          ],
+          tone: 'light',
+          hidden: true,
         },
         {
           blockType: 'featureGrid',

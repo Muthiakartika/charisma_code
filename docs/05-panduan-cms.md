@@ -37,7 +37,7 @@ Pages, Blog Posts, Portfolio Projects, Services, Programs, FAQs, Testimonials da
 - Tab **SEO**: judul SEO, deskripsi, gambar untuk share sosial media, dan pratinjau tampilan di Google.
 - Sidebar kanan:
   - **Visual style** — *Corporate* (default), *Wedding* (hangat & elegan), *Kids & Youth* (ceria).
-  - **Slug** — alamat halaman. ⚠️ **Jangan ubah slug halaman inti** (`home`, `corporate-team-building`, `corporate-emcee`, `dinner-and-dance-emcee`, `corporate-workshops`, `communication-coaching`, `wedding-emcee`, `kids-youth-programs`, `creative-campaigns`, `event-support`, `services`, `our-work`, `about`, `insights`, `contact`, `work-with-us`, `legal`) karena alamatnya ditentukan oleh folder di kode.
+  - **Slug** — alamat halaman. ⚠️ **Jangan ubah slug halaman inti** (`home`, `corporate-team-building`, `corporate-emcee`, `dinner-and-dance-emcee`, `chinese-new-year-emcee`, `corporate-workshops`, `communication-coaching`, `wedding-emcee`, `kids-youth-programs`, `creative-campaigns`, `event-support`, `services`, `our-work`, `about`, `insights`, `contact`, `work-with-us`, `legal`) karena alamatnya ditentukan oleh folder di kode.
   - **Chinese translation (中文)** — lihat bagian 9.
   - **Content review** — catatan internal: *Needs client review* / *Approved by client*. Tidak tampil di website.
 
@@ -72,6 +72,7 @@ Bungkus kata dengan bintang: `Experiences built around *your people*.` → "your
 | **Founder Introduction** | Profil founder + kutipan + fakta |
 | **Statement** | Ide besar brand di latar gelap panggung: judul, paragraf, daftar peran yang tampil besar seperti poster teater (menyala satu per satu saat di-scroll), dan baris bahasa (mis. `Hosted in *English & 中文*`). Dipakai di homepage untuk "What is The Charisma Code?" |
 | **Founder's Updates** | 3 update terbaru dari koleksi Founder's Updates |
+| **Team** | Foto, nama, peran, dan bio singkat anggota tim (maks. 12). Tanpa foto, inisial nama yang tampil. Di halaman About sudah ada tapi disembunyikan: isi anggota crew lalu hilangkan centang *Hide this section* |
 | **Gallery** | 3–12 foto (mosaik atau grid) |
 | **Video** | Video YouTube (dimuat hanya saat diklik, agar cepat) |
 | **FAQ** | Tanya-jawab per layanan |

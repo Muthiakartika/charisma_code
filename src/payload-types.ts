@@ -185,6 +185,7 @@ export interface Page {
         | TestimonialsBlock
         | FounderIntroBlock
         | StatementBlock
+        | TeamBlock
         | FounderUpdatesBlock
         | GalleryBlock
         | VideoBlock
@@ -943,6 +944,43 @@ export interface StatementBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TeamBlock".
+ */
+export interface TeamBlock {
+  eyebrow?: string | null;
+  /**
+   * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
+   */
+  heading: string;
+  intro?: string | null;
+  /**
+   * Only add people who have agreed to be shown on the website.
+   */
+  members: {
+    name: string;
+    /**
+     * e.g. Facilitator, Emcee, Singer
+     */
+    role?: string | null;
+    photo?: (number | null) | Media;
+    bio?: string | null;
+    id?: string | null;
+  }[];
+  tone?: ('light' | 'tinted' | 'dark') | null;
+  /**
+   * Hidden sections stay saved but are not shown on the website.
+   */
+  hidden?: boolean | null;
+  /**
+   * Optional. Lets buttons jump to this section, e.g. "enquire" → /page#enquire
+   */
+  anchorId?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'team';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "FounderUpdatesBlock".
  */
 export interface FounderUpdatesBlock {
@@ -1640,6 +1678,7 @@ export interface PagesSelect<T extends boolean = true> {
         testimonials?: T | TestimonialsBlockSelect<T>;
         founderIntro?: T | FounderIntroBlockSelect<T>;
         statement?: T | StatementBlockSelect<T>;
+        team?: T | TeamBlockSelect<T>;
         founderUpdates?: T | FounderUpdatesBlockSelect<T>;
         gallery?: T | GalleryBlockSelect<T>;
         video?: T | VideoBlockSelect<T>;
@@ -1944,6 +1983,29 @@ export interface StatementBlockSelect<T extends boolean = true> {
         page?: T;
         url?: T;
       };
+  hidden?: T;
+  anchorId?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TeamBlock_select".
+ */
+export interface TeamBlockSelect<T extends boolean = true> {
+  eyebrow?: T;
+  heading?: T;
+  intro?: T;
+  members?:
+    | T
+    | {
+        name?: T;
+        role?: T;
+        photo?: T;
+        bio?: T;
+        id?: T;
+      };
+  tone?: T;
   hidden?: T;
   anchorId?: T;
   id?: T;

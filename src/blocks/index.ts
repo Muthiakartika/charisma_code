@@ -20,6 +20,7 @@ import { ProgramCardsBlock } from './ProgramCards'
 import { RichTextBlock } from './RichText'
 import { ServiceCardsBlock } from './ServiceCards'
 import { StatementBlock } from './Statement'
+import { TeamBlock } from './Team'
 import { TestimonialsBlock } from './Testimonials'
 import { TextImageBlock } from './TextImage'
 import { VideoBlock } from './Video'
@@ -38,6 +39,7 @@ export const pageBlocks = [
   TestimonialsBlock,
   FounderIntroBlock,
   StatementBlock,
+  TeamBlock,
   FounderUpdatesBlock,
   GalleryBlock,
   VideoBlock,

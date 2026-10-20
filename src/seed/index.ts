@@ -281,7 +281,15 @@ const pageLink = (label: string, slug: string) => ({ label, type: 'page' as cons
 await payload.updateGlobal({
   slug: 'header',
   context: seedContext,
-  data: { ctaButton: pageLink("Let's Talk", 'contact'), announcement: { enabled: false } },
+  data: {
+    ctaButton: pageLink("Let's Talk", 'contact'),
+    // D&D season message, ready but switched off until the client approves it (tick "enabled" in Header)
+    announcement: {
+      enabled: false,
+      text: 'Planning a year-end or Chinese New Year dinner? Popular dates go early.',
+      link: { label: 'Check your date', type: 'custom', url: '/dinner-and-dance-emcee#enquire' },
+    },
+  },
 })
 
 await payload.updateGlobal({
@@ -295,6 +303,7 @@ await payload.updateGlobal({
         children: [
           { link: pageLink('Corporate Emcee', 'corporate-emcee'), description: 'Conferences, launches and award nights' },
           { link: pageLink('Dinner & Dance', 'dinner-and-dance-emcee'), description: 'Annual D&Ds, games and lucky draws' },
+          { link: pageLink('Chinese New Year', 'chinese-new-year-emcee'), description: 'Annual dinners in English and 中文' },
           { link: pageLink('Weddings', 'wedding-emcee'), description: 'Bilingual hosting with live singing' },
         ],
       },
@@ -327,6 +336,7 @@ await payload.updateGlobal({
           { link: pageLink('Team Building', 'corporate-team-building') },
           { link: pageLink('Corporate Emcee', 'corporate-emcee') },
           { link: pageLink('Dinner & Dance Emcee', 'dinner-and-dance-emcee') },
+          { link: pageLink('Chinese New Year Emcee', 'chinese-new-year-emcee') },
           { link: pageLink('Corporate Workshops', 'corporate-workshops') },
           { link: pageLink('Communication Coaching', 'communication-coaching') },
         ],

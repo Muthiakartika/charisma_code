@@ -17,6 +17,7 @@ const PRIORITY: Record<string, number> = {
   '/corporate-team-building': 0.95,
   '/corporate-emcee': 0.9,
   '/dinner-and-dance-emcee': 0.9,
+  '/chinese-new-year-emcee': 0.85,
   '/corporate-workshops': 0.85,
 }
 

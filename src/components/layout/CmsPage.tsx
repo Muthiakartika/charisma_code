@@ -49,7 +49,7 @@ export function mainAction(
 }
 
 /** Pages where the founder's Person structured data is useful. */
-const founderPages = ['home', 'about', 'corporate-emcee', 'wedding-emcee', 'dinner-and-dance-emcee']
+const founderPages = ['home', 'about', 'corporate-emcee', 'wedding-emcee', 'dinner-and-dance-emcee', 'chinese-new-year-emcee']
 
 export async function CmsPage({ slug, locale: rawLocale }: { slug: string; locale: string }) {
   const locale = toLocale(rawLocale)

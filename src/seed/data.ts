@@ -51,7 +51,8 @@ export const services: Array<{
     title: 'Dinner & Dance Emcee',
     priority: 3,
     audience: 'corporate',
-    summary: 'High-energy D&D hosting with games, lucky draws and a programme that keeps the whole night moving.',
+    summary:
+      'High-energy, bilingual hosting for year-end and Chinese New Year dinners, with games, lucky draws and a programme that keeps the night moving.',
     image: 'eveningPartyCrowd',
     pageSlug: 'dinner-and-dance-emcee',
   },

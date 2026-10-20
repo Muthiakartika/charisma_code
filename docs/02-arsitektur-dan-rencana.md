@@ -9,6 +9,7 @@ Prioritas bisnis tercermin di urutan navigasi, ukuran kartu layanan, dan interna
 ├── /corporate-team-building        ★ Prioritas 1 — landing page utama
 ├── /corporate-emcee                ★ Prioritas 2
 ├── /dinner-and-dance-emcee         ★ Prioritas 3 (intent D&D, beda dari corporate emcee)
+├── /chinese-new-year-emcee         Landing page musim Imlek (Jan to Mar), ditambah 20 Okt 2026
 ├── /corporate-workshops            Prioritas 4
 ├── /communication-coaching         Prioritas 4 (individu & korporat)
 ├── /wedding-emcee                  Prioritas 5 — tema visual "Wedding"
@@ -29,7 +30,7 @@ Prioritas bisnis tercermin di urutan navigasi, ukuran kartu layanan, dan interna
 └── /admin                          Payload CMS
 ```
 
-**Navigasi utama (desktop)**: Team Building · Emceeing ▾ (Corporate Emcee, Dinner & Dance, Weddings) · Workshops ▾ (Corporate Workshops, Communication Coaching, Kids & Youth) · Our Work · About · Insights · tombol **Let's Talk**.
+**Navigasi utama (desktop)**: Team Building · Emceeing ▾ (Corporate Emcee, Dinner & Dance, Chinese New Year, Weddings) · Workshops ▾ (Corporate Workshops, Communication Coaching, Kids & Youth) · Our Work · About · Insights · tombol **Let's Talk**.
 Creative Campaigns & Event Support ada di menu "Services" (footer + halaman /services) karena sekunder.
 
 ## 2. Arah desain: "The Spotlight Studio"
