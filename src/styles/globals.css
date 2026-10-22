@@ -73,7 +73,7 @@
   --color-surface: var(--color-paper);
   /* Alternating sections are a deeper ivory, like the business card and lanyard. The brand colour is
    * kept for the spark moments (buttons, highlights, colour blocks, CTA bands): about 15% of a page.
-   * To bring the peach sections back: var(--color-peach) here and in palettes.css. */
+   * To bring the peach sections back: var(--color-peach) here. */
   --color-surface-alt: var(--color-paper-deep);
 
   /* Fonts (loaded in src/styles/fonts.ts) */
@@ -268,10 +268,10 @@ body:has(> main[data-theme='wedding']) .tone-dark,
     box-decoration-break: clone;
   }
   /* Wedding and kids pages keep their own accent as the text colour (both are too dark for a marker
-   * under ink text), unless a colour preview is on */
+   * under ink text) */
   .tone-dark .text-highlight,
-  :root:not([data-palette]) [data-theme='wedding'] .text-highlight,
-  :root:not([data-palette]) [data-theme='kids'] .text-highlight {
+  [data-theme='wedding'] .text-highlight,
+  [data-theme='kids'] .text-highlight {
     --color-highlight: inherit;
     background-image: none;
   }

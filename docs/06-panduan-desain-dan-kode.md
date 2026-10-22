@@ -37,11 +37,29 @@ Komponen tidak memakai hex di atas secara langsung, tetapi token yang mengikuti 
 | `--color-action` + `--color-on-action` | blok warna yang bisa diklik/menonjol (tombol utama, band CTA) + warna teks di atasnya | `bg-action text-on-action` |
 | `--color-accent` | teks/ikon aksen kecil | `text-accent` |
 | `--color-highlight` | kata `*berbintang*` di section gelap, nomor langkah | otomatis |
-| `--color-marker` | garis "stabilo" di belakang kata `*berbintang*` di latar terang (teks tetap hitam). Ungu memakai lavender agar teks tetap terbaca. Halaman Wedding & Kids tetap memakai warna teks tema | otomatis |
+| `--color-marker` | garis "stabilo" di belakang kata `*berbintang*` di latar terang (teks tetap hitam). Halaman Wedding & Kids tetap memakai warna teks tema | otomatis |
 
 ⚠️ Cek kontras: teks harus minimal **4.5:1** terhadap latar (gunakan https://webaim.org/resources/contrastchecker/). Oranye aksi hanya lolos dengan **teks gelap** (5.7:1); teks putih di atas oranye gagal (2.8:1), jadi jangan diganti putih. Warna sekarang sudah lolos WCAG AA.
 
 Warna tema Wedding & Kids ada di bagian **"2. Page themes"** di file yang sama.
+
+### Warna lain yang pernah dicoba (disimpan sebagai kode saja)
+
+Sampai 21 Okt 2026 website punya link preview warna (`/colour-options/...`). Setelah klien memilih **oranye** (website, kartu nama, dan lanyard), preview itu dihapus supaya kode lebih ringan. Kode warnanya disimpan di sini. Untuk mencoba lagi, ganti nilai di `@theme` `globals.css` dengan satu baris di bawah.
+
+| Warna | `--color-flame` | `--color-flame-text` | `--color-spark` | `--color-spark-bright` | `--color-peach` | Teks di tombol (`--color-on-action`) |
+|---|---|---|---|---|---|---|
+| **Oranye (dipakai)** | #f7741f | #e0560b | #ad440d | #ff8a3d | #fde6d2 | ink (gelap) |
+| Gold terang | #edb94a | #a07000 | #825a00 | #f6c862 | #fdf1d8 | ink |
+| Gold madu | #dfa52f | #9c6c00 | #7f5800 | #f2c25b | #fbeed3 | ink |
+| Kuning | #ffc93c | #a37400 | #856000 | #ffd15c | #fff4d1 | ink |
+| Oranye muda | #ff9a3d | #dc6a10 | #a8500c | #ffa652 | #ffeedd | ink |
+| Ungu | #7442d9 | #7442d9 | #6a35c9 | #b794ff | #f0eafc | paper (ivory) |
+
+Catatan kalau memakai salah satunya:
+- **Kuning & gold**: garis line art di hero Colour block dibuat lebih gelap (`--hero-art-line: color-mix(in srgb, var(--color-action) 82%, var(--color-ink))`), dan cahaya panggung di hero Stage dibuat amber (`#ffae2b` 24%), karena kuning di atas charcoal terlihat kehijauan.
+- **Ungu**: stabilo memakai lavender (`--color-marker: #b794ff`), dan cahaya putih di band CTA serta blok hero dibuat lebih samar.
+- Kode lengkap preview ada di riwayat git: `git show 9ae2cb3:src/components/palette/palettes.css`.
 
 ## 2a. Tombol aksi yang diulang otomatis
 

@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import { heroOptions, previousHero, type HeroPreviewSlug } from '@/components/hero-options/hero-options'
 import { toLocale } from '@/components/layout/CmsPage'
-import { originalPalette, paletteHref, palettes } from '@/components/palette/palettes'
 import { CmsImage } from '@/components/ui/CmsImage'
 import { getPage } from '@/lib/cms'
 import { localizePath } from '@/lib/paths'
@@ -76,7 +75,6 @@ export default async function HeroOptionsPage({ params }: { params: Promise<{ lo
   const home = await getPage('home', locale)
   const hero = home?.layout?.find((block): block is HeroBlock => block.blockType === 'hero')
   const photo = hero?.images?.find((image): image is Media => typeof image === 'object' && image !== null) ?? null
-  const overviewPath = localizePath('/hero-options', locale)
   const cards = [
     ...heroOptions.map((option, index) => ({
       slug: option.slug,
@@ -90,10 +88,6 @@ export default async function HeroOptionsPage({ params }: { params: Promise<{ lo
       summary: previousHero.summary,
       href: localizePath(`/hero-options/${previousHero.slug}`, locale),
     },
-  ]
-  const colours = [
-    ...palettes.map((palette) => ({ name: palette.name, fill: palette.colours.fill, href: paletteHref(palette.slug, overviewPath) })),
-    { name: originalPalette.name, fill: originalPalette.colours.fill, href: paletteHref(null, overviewPath) },
   ]
 
   return (
@@ -131,24 +125,6 @@ export default async function HeroOptionsPage({ params }: { params: Promise<{ lo
               </li>
             ))}
           </ol>
-
-          <div className="mt-12 flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-line pt-8 text-[0.95rem]">
-            <span className="font-semibold">See every option in another colour:</span>
-            <ul className="flex flex-wrap gap-2">
-              {colours.map((colour) => (
-                <li key={colour.name}>
-                  {/* A full page load, so the colour is applied before the page is drawn */}
-                  <a
-                    href={colour.href}
-                    className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 font-medium text-ink-soft transition-colors hover:border-ink hover:text-ink"
-                  >
-                    <span aria-hidden className="h-3 w-3 rounded-full" style={{ backgroundColor: colour.fill }} />
-                    {colour.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </section>
     </main>

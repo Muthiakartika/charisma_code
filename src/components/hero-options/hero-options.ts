@@ -2,8 +2,7 @@
  * Homepage hero options (preview pages for the client, not part of the live navigation).
  *
  * /hero-options shows an overview; /hero-options/{slug} shows the whole homepage with that
- * hero. The content still comes from the CMS (Pages → "home" → Hero), and every option also
- * works with the colour previews (?palette=yellow and so on).
+ * hero. The content still comes from the CMS (Pages → "home" → Hero).
  *
  * The client chose option 3, Colour block: it is now a Hero layout of the website itself
  * (src/components/blocks/Hero.tsx) and the homepage uses it. The previous dark stage
