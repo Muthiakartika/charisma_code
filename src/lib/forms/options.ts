@@ -34,6 +34,7 @@ export const enquiryStatusOptions = [
 
 export const freelancerRoleOptions = [
   { value: 'facilitator', label: 'Facilitator' },
+  { value: 'coach', label: 'Coach' },
   { value: 'emcee', label: 'Emcee' },
   { value: 'host', label: 'Host' },
   { value: 'performer', label: 'Performer' },
@@ -43,6 +44,8 @@ export const freelancerRoleOptions = [
   { value: 'videographer', label: 'Videographer' },
   { value: 'sound-crew', label: 'Sound crew' },
   { value: 'creative-partner', label: 'Creative partner' },
+  { value: 'partner-vendor', label: 'Partner vendor' },
+  { value: 'fringe-activity', label: 'Fringe activity provider' },
   { value: 'other', label: 'Other' },
 ] as const
 

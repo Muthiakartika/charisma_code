@@ -165,6 +165,16 @@ export function buildPages(ids: SeedIds) {
           limit: 6,
           instagramLabel: 'Follow @deprinceofzhong',
         },
+        {
+          blockType: 'cta',
+          anchorId: 'join-our-database',
+          eyebrow: 'Crew and partners',
+          heading: 'Join our *talent and vendor* database.',
+          text: 'Experienced event crew, freelancers, partner vendors, fringe activity providers, facilitators and coaches: get in touch to arrange an interview and be considered for project-based opportunities with us.',
+          primaryButton: url('Join our database', '/work-with-us#apply'),
+          showContactDetails: false,
+          style: 'light',
+        },
         closingCta(
           "Let's plan something *your people* will remember.",
           'Tell us about your objectives, date and group size, and we will come back with ideas and a proposal.',
@@ -1092,9 +1102,9 @@ export function buildPages(ids: SeedIds) {
       title: 'Work With Us',
       theme: 'corporate',
       meta: {
-        title: 'Work With Us | Freelance Facilitators, Emcees & Event Crew Singapore',
+        title: 'Work With Us | Event Crew, Freelancers & Partner Vendors Singapore',
         description:
-          'Join The Charisma Code’s freelance network of facilitators, emcees, performers, singers, crew, photographers, videographers and creative partners in Singapore.',
+          'Join The Charisma Code’s talent and vendor database: event crew, freelancers, partner vendors, fringe activity providers, facilitators and coaches in Singapore.',
       },
       layout: [
         {
@@ -1102,18 +1112,19 @@ export function buildPages(ids: SeedIds) {
           variant: 'simple',
           heading: 'Work with *The Charisma Code*.',
           subheading:
-            'We collaborate with freelance facilitators, emcees, performers, crew and creatives across Singapore. If you love making events better, we would like to hear from you.',
+            'We are building a talent and vendor database for project-based opportunities: experienced event crew, freelancers, partner vendors, fringe activity providers, facilitators and coaches across Singapore.',
           primaryButton: url('Apply now', '/work-with-us#apply'),
         },
         {
           blockType: 'featureGrid',
           heading: 'Who we work with',
           items: [
-            { title: 'Facilitators, emcees and hosts', text: 'People who can hold a room, include everyone and keep a programme on time.' },
-            { title: 'Performers and singers', text: 'Live acts and character performers who love an audience.' },
-            { title: 'Event and sound crew', text: 'Reliable hands for logistics, setup and technical support.' },
-            { title: 'Photographers and videographers', text: 'Storytellers who capture real moments, not just poses.' },
-            { title: 'Creative partners', text: 'Designers, writers and content creators for campaigns and events.' },
+            { title: 'Facilitators and coaches', text: 'People who can hold a room, include everyone and help a group learn something real.' },
+            { title: 'Emcees, hosts and performers', text: 'Voices, live acts and character performers who love an audience.' },
+            { title: 'Event crew and freelancers', text: 'Experienced hands for logistics, setup, sound and on-the-day support.' },
+            { title: 'Partner vendors', text: 'Suppliers we can rely on for venues, AV, props, printing and more.' },
+            { title: 'Fringe activity providers', text: 'Booths, stations and add-on activities that keep guests engaged around the main programme.' },
+            { title: 'Photographers and creatives', text: 'Photographers, videographers, designers and content creators who capture real moments.' },
           ],
           style: 'checklist',
           columns: '2',
@@ -1122,9 +1133,9 @@ export function buildPages(ids: SeedIds) {
         {
           blockType: 'applicationForm',
           anchorId: 'apply',
-          heading: 'Apply as a freelancer',
+          heading: 'Join our talent and vendor database',
           intro:
-            'Your application is reviewed by our team and kept private. We will contact you when there is a project that suits your skills.',
+            'Tell us what you do. Your details are reviewed by our team and kept private. If there is a fit, we will contact you to arrange an interview and keep you in mind for future collaborations.',
         },
       ],
     },

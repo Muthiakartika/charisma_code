@@ -1415,6 +1415,7 @@ export interface FreelancerApplication {
   role?:
     | (
         | 'facilitator'
+        | 'coach'
         | 'emcee'
         | 'host'
         | 'performer'
@@ -1424,6 +1425,8 @@ export interface FreelancerApplication {
         | 'videographer'
         | 'sound-crew'
         | 'creative-partner'
+        | 'partner-vendor'
+        | 'fringe-activity'
         | 'other'
       )
     | null;
