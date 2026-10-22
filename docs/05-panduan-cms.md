@@ -70,7 +70,7 @@ Bungkus kata dengan bintang: `Experiences built around *your people*.` → "your
 | **Blog list** | Daftar artikel (halaman Insights) |
 | **Testimonials** | Testimoni (manual atau per kategori) |
 | **Founder Introduction** | Profil founder + kutipan + fakta |
-| **Statement** | Ide besar brand di latar gelap panggung: judul, paragraf, daftar peran yang tampil besar seperti poster teater (menyala satu per satu saat di-scroll), dan baris bahasa (mis. `Hosted in *English & 中文*`). Dipakai di homepage untuk "What is The Charisma Code?" |
+| **Statement** | Ide besar brand di latar gelap panggung: judul, paragraf, daftar pendek yang tampil besar seperti poster teater (menyala satu per satu saat di-scroll), dan baris bahasa (mis. `Hosted in *English & 中文*`). Dipakai 2 kali: di homepage untuk "What is The Charisma Code?" (daftar = layanan perusahaan: *Team building, Emceeing, Workshops, Coaching, Event support*) dan di About untuk profil founder (daftar = peran De Zhong: *Emcee, Singer, Pianist, Actor, Charisma coach*). Peran penampil (singer, pianist, actor) sengaja **hanya** di profil founder, bukan di halaman perusahaan (permintaan klien 22 Okt 2026) |
 | **Founder's Updates** | 3 update terbaru dari koleksi Founder's Updates |
 | **Team** | Foto, nama, peran, dan bio singkat anggota tim (maks. 12). Tanpa foto, inisial nama yang tampil. Di halaman About sudah ada tapi disembunyikan: isi anggota crew lalu hilangkan centang *Hide this section* |
 | **Gallery** | 3–12 foto (mosaik atau grid) |

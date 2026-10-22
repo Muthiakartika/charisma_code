@@ -4,8 +4,9 @@ import { linkField } from '@/fields/link'
 import { eyebrowField, headingField, sectionSettingsFields } from '@/fields/shared'
 
 /**
- * The big idea behind the brand on the dark stage: what "The Charisma Code" means,
- * the roles De Zhong plays (listed like the bill outside a theatre) and the languages he hosts in.
+ * The big idea behind the brand on the dark stage: what "The Charisma Code" means, a short list
+ * billed like the names outside a theatre and the languages events are hosted in. The homepage
+ * lists what the company does; the About page lists the roles De Zhong plays himself.
  */
 export const StatementBlock: Block = {
   slug: 'statement',
@@ -30,7 +31,10 @@ export const StatementBlock: Block = {
       maxRows: 6,
       labels: { singular: 'Role', plural: 'Roles' },
       fields: [{ name: 'text', type: 'text', localized: true, required: true, maxLength: 24 }],
-      admin: { description: 'Short words, e.g. Emcee, Singer, Pianist.' },
+      admin: {
+        description:
+          'Short words. Homepage: what the company does (Team building, Emceeing). Founder profile: his roles (Emcee, Singer, Pianist).',
+      },
     },
     {
       name: 'languages',

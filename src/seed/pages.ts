@@ -81,12 +81,20 @@ export function buildPages(ids: SeedIds) {
         { blockType: 'clientLogos', heading: 'Brands and organisations we have *worked with*.', tone: 'tinted' },
         {
           // What "The Charisma Code" means (client asked for this, 2026-10-20). Draft for De Zhong's approval.
+          // Since 2026-10-22 it describes the company, not one person: his performer roles (singer,
+          // pianist, actor) moved to the founder's profile on the About page, at his request.
           blockType: 'statement',
           eyebrow: 'What is The Charisma Code?',
           heading: 'Charisma is not a gift. It is a *code* anyone can learn.',
           body:
-            'De Zhong has spent over 15 years on stage as an emcee, singer, pianist and actor, and more than five years in classrooms helping people speak with confidence. The Charisma Code is what both taught him: how to read a room, make every person feel included and give them the confidence to join in.\n\nIt is how we host every event, design every programme and coach every speaker. We bring the spark. You shine.',
-          roles: [{ text: 'Emcee' }, { text: 'Singer' }, { text: 'Pianist' }, { text: 'Actor' }, { text: 'Charisma coach' }],
+            'The Charisma Code is a Singapore experiential studio for team building, emceeing, workshops and communication coaching. Our approach is built on what our founder learned in over 15 years of hosting and five years of training: read the room, make every person feel included and give them the confidence to join in.\n\nIt is how we host every event, design every programme and coach every speaker. We bring the spark. You shine.',
+          roles: [
+            { text: 'Team building' },
+            { text: 'Emceeing' },
+            { text: 'Workshops' },
+            { text: 'Coaching' },
+            { text: 'Event support' },
+          ],
           languages: 'Hosted in *English & 中文*',
           button: page('Explore communication coaching', 'communication-coaching'),
         },
@@ -137,15 +145,16 @@ export function buildPages(ids: SeedIds) {
           blockType: 'founderIntro',
           // "Me + my partners/team", not only "me" (client, 2026-10-20)
           heading: 'Founder-led. *Crew-delivered.*',
+          // Kept to hosting and training: his singing, piano and acting are on the About page (client, 2026-10-22)
           body:
-            'The Charisma Code was founded by Chia De Zhong (谢德忠), a bilingual English and Mandarin emcee, singer-pianist, actor and educator. He has hosted and performed for over 15 years, from the inaugural Singapore Youth Olympic Games in 2010 to corporate dinners, weddings and community celebrations.\n\nToday De Zhong leads a crew of facilitators, hosts, performers and event partners he trusts. You get his personal attention from the first call, and a team on the day that knows exactly what you want to achieve.',
+            'The Charisma Code was founded by Chia De Zhong (谢德忠), a bilingual English and Mandarin emcee and charisma coach. He has hosted for over 15 years, from the inaugural Singapore Youth Olympic Games in 2010 to corporate dinners, award ceremonies and community celebrations.\n\nToday De Zhong leads a crew of facilitators, hosts, performers and event partners he trusts. You get his personal attention from the first call, and a team on the day that knows exactly what you want to achieve.',
           // On stage, microphone in hand: the persona clients book, not a studio portrait.
           portrait: img('eveningPartyCrowd'),
           quote: 'Trust me on this: We Bring the Spark, You Shine.',
           credentials: [
             { text: 'Bilingual emcee in English and Mandarin' },
             { text: 'Host at the Singapore Youth Olympic Games 2010' },
-            { text: 'Performed at Esplanade Studio and Drama Centre Theatre' },
+            { text: 'Trainer with Zenitant, Edublitz and Aktivate' },
             { text: 'Corporate Communications, Singapore Management University' },
           ],
           button: page('Meet De Zhong and the crew', 'about'),
@@ -990,7 +999,19 @@ export function buildPages(ids: SeedIds) {
             { text: 'Featured on MediaCorp Channel 8' },
             { text: 'Trainer with Zenitant, Edublitz and Aktivate' },
           ],
-          mood: 'stage',
+          // Light, so the dark stage of his roles below stands out (2026-10-22)
+          mood: 'warm',
+        },
+        {
+          // The founder's own bill: his performer roles belong on his profile, not on the
+          // company's homepage (client, 2026-10-22).
+          blockType: 'statement',
+          eyebrow: 'On stage and in the classroom',
+          heading: 'One founder, *many stages*.',
+          body:
+            'De Zhong has spent over 15 years on stage as an emcee, singer, pianist and actor, and more than five years in classrooms helping people speak with confidence. Both taught him what The Charisma Code is built on: how to read a room, make every person feel included and give them the confidence to join in.',
+          roles: [{ text: 'Emcee' }, { text: 'Singer' }, { text: 'Pianist' }, { text: 'Actor' }, { text: 'Charisma coach' }],
+          languages: 'Hosts in *English & 中文*',
         },
         {
           // Ready for the crew (client, 2026-10-20). Hidden until the client sends the names, roles

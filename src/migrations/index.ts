@@ -7,6 +7,7 @@ import * as migration_20261020_013046_statement_block from './20261020_013046_st
 import * as migration_20261020_015053_team_block from './20261020_015053_team_block';
 import * as migration_20261020_032234_client_feedback_content from './20261020_032234_client_feedback_content';
 import * as migration_20261021_044318_crew_vendor_database from './20261021_044318_crew_vendor_database';
+import * as migration_20261022_010825_corporate_positioning from './20261022_010825_corporate_positioning';
 
 export const migrations = [
   {
@@ -53,5 +54,10 @@ export const migrations = [
     up: migration_20261021_044318_crew_vendor_database.up,
     down: migration_20261021_044318_crew_vendor_database.down,
     name: '20261021_044318_crew_vendor_database',
+  },
+  {
+    up: migration_20261022_010825_corporate_positioning.up,
+    down: migration_20261022_010825_corporate_positioning.down,
+    name: '20261022_010825_corporate_positioning',
   },
 ];

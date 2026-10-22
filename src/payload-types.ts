@@ -906,7 +906,7 @@ export interface StatementBlock {
    */
   body: string;
   /**
-   * Short words, e.g. Emcee, Singer, Pianist.
+   * Short words. Homepage: what the company does (Team building, Emceeing). Founder profile: his roles (Emcee, Singer, Pianist).
    */
   roles?:
     | {
