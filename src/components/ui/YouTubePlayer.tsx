@@ -8,6 +8,8 @@ type Props = {
   videoId: string
   title: string
   playLabel: string
+  /** YouTube's cover for the video (see getYoutubeCover); the small one when not given. */
+  cover?: string
   /** Optional cover image from the CMS (rendered by the parent). */
   poster?: ReactNode
 }
@@ -16,7 +18,7 @@ type Props = {
  * Lightweight YouTube player: shows a cover image first and only loads YouTube
  * when the visitor presses play (keeps pages fast, no tracking until then).
  */
-export function YouTubePlayer({ videoId, title, playLabel, poster }: Props) {
+export function YouTubePlayer({ videoId, title, playLabel, cover, poster }: Props) {
   const [playing, setPlaying] = useState(false)
 
   if (playing) {
@@ -40,10 +42,10 @@ export function YouTubePlayer({ videoId, title, playLabel, poster }: Props) {
     >
       {poster ?? (
         <Image
-          src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+          src={cover ?? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
           alt=""
           fill
-          sizes="(min-width: 1024px) 70vw, 100vw"
+          sizes="(min-width: 1320px) 1280px, 100vw"
           className="object-cover"
         />
       )}

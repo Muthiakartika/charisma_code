@@ -18,7 +18,7 @@ import { getDictionary } from '@/i18n/dictionaries'
 import { findPublished, getPayloadClient, getProject, getSiteSettings } from '@/lib/cms'
 import { projectPath } from '@/lib/paths'
 import { breadcrumbSchema, buildMetadata, type Crumb } from '@/lib/seo'
-import { getYoutubeId } from '@/lib/youtube'
+import { getYoutubeCover, getYoutubeId } from '@/lib/youtube'
 import type { Media, Testimonial } from '@/payload-types'
 
 export async function generateStaticParams() {
@@ -51,6 +51,7 @@ export default async function ProjectPage({ params }: PageProps<'/[locale]/our-w
     { name: project.title, path: projectPath(project.slug) },
   ]
   const videoId = getYoutubeId(project.videoUrl)
+  const videoCover = videoId ? await getYoutubeCover(videoId) : undefined
   const testimonial = project.testimonial && typeof project.testimonial === 'object' ? (project.testimonial as Testimonial) : null
   const gallery = (project.gallery ?? []).filter((image): image is Media => typeof image === 'object' && image !== null)
   const related = (
@@ -120,7 +121,12 @@ export default async function ProjectPage({ params }: PageProps<'/[locale]/our-w
       {videoId && (
         <section className="container-site pb-16">
           <div className="relative aspect-video overflow-hidden rounded-[var(--radius-media)] bg-ink">
-            <YouTubePlayer videoId={videoId} title={project.title} playLabel={dict.common.playVideo} />
+            <YouTubePlayer
+              videoId={videoId}
+              title={project.title}
+              playLabel={dict.common.playVideo}
+              cover={videoCover}
+            />
           </div>
         </section>
       )}

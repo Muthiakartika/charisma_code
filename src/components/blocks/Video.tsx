@@ -1,7 +1,7 @@
 import { CmsImage } from '@/components/ui/CmsImage'
 import { stripHighlight } from '@/components/ui/HighlightText'
 import { YouTubePlayer } from '@/components/ui/YouTubePlayer'
-import { getYoutubeId } from '@/lib/youtube'
+import { getYoutubeCover, getYoutubeId } from '@/lib/youtube'
 import type { VideoBlock as VideoData } from '@/payload-types'
 
 import {
@@ -14,9 +14,10 @@ import {
   type BlockContext,
 } from './shared'
 
-export function VideoBlock({ block, context }: { block: VideoData; context: BlockContext }) {
+export async function VideoBlock({ block, context }: { block: VideoData; context: BlockContext }) {
   const videoId = getYoutubeId(block.youtubeUrl)
   if (!videoId) return null
+  const cover = block.poster ? undefined : await getYoutubeCover(videoId)
   const titleId = headingId(block)
   const title = stripHighlight(block.heading) || block.caption || context.pageTitle
 
@@ -35,6 +36,7 @@ export function VideoBlock({ block, context }: { block: VideoData; context: Bloc
               videoId={videoId}
               title={title}
               playLabel={context.dict.common.playVideo}
+              cover={cover}
               poster={
                 block.poster ? (
                   <CmsImage
