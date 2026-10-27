@@ -128,6 +128,12 @@ body:has(> main[data-theme='kids']),
 [data-theme='kids'] .feature-card:nth-child(4n + 4) {
   background-color: var(--color-kid-coral);
 }
+/* The closing call-to-action band is sunshine yellow with dark text (Figma kids board) */
+[data-theme='kids'] .cta-spark {
+  --color-accent: var(--color-ink);
+  background-color: var(--color-kid-sun);
+  color: var(--color-ink);
+}
 [data-theme='kids'] .feature-card p {
   color: var(--color-ink);
 }
@@ -421,6 +427,40 @@ body:has(> main[data-theme='wedding']) .tone-dark,
     border-color: currentColor;
   }
 
+  /* Price strip, e.g. "From S$88 per participant · see all rates" */
+  .price-line {
+    font-family: var(--font-display);
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+  /* Icon disc in the booking notes: a light tint of the brand colour */
+  .note-icon {
+    background-color: color-mix(in srgb, var(--color-action) 16%, transparent);
+  }
+
+  /* A soft glow of the brand colour in the corner of a text panel */
+  .band-glow {
+    background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--color-action) 32%, transparent),
+      transparent 68%
+    );
+  }
+
+  /* "Most popular" and similar labels on a card */
+  .card-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--color-action);
+    color: var(--color-on-action);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   /* Form fields */
   .field-label {
     display: block;
@@ -478,7 +518,8 @@ body:has(> main[data-theme='wedding']) .tone-dark,
 
 /* Two sections in a row with the same background share one gap instead of two */
 .section-space.bg-surface + .section-space.bg-surface,
-.section-space.bg-surface-alt + .section-space.bg-surface-alt {
+.section-space.bg-surface-alt + .section-space.bg-surface-alt,
+.section-space.tone-dark + .section-space.tone-dark {
   padding-top: 0;
 }
 

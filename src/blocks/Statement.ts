@@ -16,6 +16,17 @@ export const StatementBlock: Block = {
     eyebrowField,
     headingField(),
     {
+      name: 'tagline',
+      label: 'Big line (optional)',
+      type: 'text',
+      localized: true,
+      maxLength: 120,
+      admin: {
+        description:
+          'When filled in, the heading is shown small (like a label) and this line is shown large under it. Wrap words in *asterisks* to highlight them.',
+      },
+    },
+    {
       name: 'body',
       type: 'textarea',
       localized: true,
@@ -42,7 +53,9 @@ export const StatementBlock: Block = {
       type: 'text',
       localized: true,
       maxLength: 40,
-      admin: { description: 'e.g. Hosted in *English & 中文*. Words in *asterisks* are highlighted.' },
+      admin: {
+        description: 'e.g. Hosted in *English & 中文*. Words in *asterisks* are highlighted.',
+      },
     },
     linkField({ name: 'button', label: 'Button' }),
     ...sectionSettingsFields,

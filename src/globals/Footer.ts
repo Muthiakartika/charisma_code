@@ -35,7 +35,7 @@ export const Footer: GlobalConfig = {
         {
           name: 'links',
           type: 'array',
-          maxRows: 10,
+          maxRows: 14,
           fields: [linkField({ name: 'link', label: 'Link', required: true })],
         },
       ],

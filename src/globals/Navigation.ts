@@ -24,7 +24,7 @@ export const Navigation: GlobalConfig = {
           name: 'children',
           label: 'Dropdown links (optional)',
           type: 'array',
-          maxRows: 6,
+          maxRows: 10,
           fields: [
             linkField({ name: 'link', label: 'Link', required: true }),
             { name: 'description', type: 'text', localized: true, maxLength: 70 },

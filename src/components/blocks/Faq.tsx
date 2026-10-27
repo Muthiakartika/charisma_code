@@ -1,35 +1,60 @@
 import { Plus } from '@phosphor-icons/react/ssr'
 
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Paragraphs } from '@/components/ui/HighlightText'
 import { findPublished } from '@/lib/cms'
+import { faqSchema } from '@/lib/seo'
 import type { Faq, FaqBlock as FaqData } from '@/payload-types'
 
-import { headingId, Section, SectionHeading, type BlockContext } from './shared'
+import { headingId, Section, SectionButtons, SectionHeading, type BlockContext } from './shared'
 
 /** Questions open and close without JavaScript (native <details>), keyboard accessible. */
 export async function FaqBlock({ block, context }: { block: FaqData; context: BlockContext }) {
-  const chosen = (block.faqs ?? []).filter((faq): faq is Faq => typeof faq === 'object' && faq !== null)
-  const serviceId = block.service && typeof block.service === 'object' ? block.service.id : block.service
+  const written = (block.items ?? []).map((item, index) => ({
+    id: item.id ?? String(index),
+    question: item.question,
+    answer: item.answer,
+  }))
+  const chosen = (block.faqs ?? []).filter(
+    (faq): faq is Faq => typeof faq === 'object' && faq !== null,
+  )
+  const serviceId =
+    block.service && typeof block.service === 'object' ? block.service.id : block.service
 
-  const faqs = chosen.length
-    ? chosen
-    : serviceId
-      ? await findPublished('faqs', {
-          locale: context.locale,
-          where: { services: { in: [serviceId] } },
-          sort: 'order',
-          depth: 0,
-        })
-      : []
+  const faqs: { id: string | number; question: string; answer: string }[] = written.length
+    ? written
+    : chosen.length
+      ? chosen
+      : serviceId
+        ? await findPublished('faqs', {
+            locale: context.locale,
+            where: { services: { in: [serviceId] } },
+            sort: 'order',
+            depth: 0,
+          })
+        : []
 
   if (!faqs.length) return null
   const titleId = headingId(block)
 
   return (
-    <Section id={block.anchorId} labelledBy={titleId}>
+    <Section id={block.anchorId} tone={block.tone} labelledBy={titleId}>
       <div className="container-site grid gap-10 lg:grid-cols-12 lg:gap-16">
+        {/* The heading and its button stay in view beside a long list of questions */}
         <div className="lg:col-span-4">
-          <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} intro={block.intro} />
+          <div className="lg:sticky lg:top-28">
+            <SectionHeading
+              id={titleId}
+              eyebrow={block.eyebrow}
+              heading={block.heading}
+              intro={block.intro}
+            />
+            <SectionButtons
+              links={block.buttons}
+              locale={context.locale}
+              className="mt-8 hidden lg:flex"
+            />
+          </div>
         </div>
         <div className="lg:col-span-8">
           {faqs.map((faq) => (
@@ -48,7 +73,13 @@ export async function FaqBlock({ block, context }: { block: FaqData; context: Bl
               </div>
             </details>
           ))}
+          <SectionButtons
+            links={block.buttons}
+            locale={context.locale}
+            className="mt-10 lg:hidden"
+          />
         </div>
+        <JsonLd data={faqSchema(faqs)} />
       </div>
     </Section>
   )

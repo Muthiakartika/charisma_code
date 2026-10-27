@@ -1,4 +1,4 @@
-import type { GroupField } from 'payload'
+import type { ArrayField, GroupField } from 'payload'
 
 type LinkFieldOptions = {
   name?: string
@@ -22,7 +22,8 @@ export const linkField = ({
   label,
   type: 'group',
   admin: {
-    description: description ?? (required ? undefined : 'Leave the button text empty to hide this link.'),
+    description:
+      description ?? (required ? undefined : 'Leave the button text empty to hide this link.'),
   },
   fields: [
     {
@@ -34,7 +35,7 @@ export const linkField = ({
           type: 'text',
           localized: true,
           required,
-          maxLength: 40,
+          maxLength: 60,
           admin: { width: '50%' },
         },
         {
@@ -62,8 +63,26 @@ export const linkField = ({
       type: 'text',
       admin: {
         condition: (_, siblingData) => siblingData?.type === 'custom',
-        description: 'Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…',
+        description:
+          'Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…',
       },
     },
   ],
+})
+
+/**
+ * A row of buttons at the end of a section (the first is the solid action button, the rest are outlined).
+ * WhatsApp links get the WhatsApp icon automatically.
+ */
+export const buttonsField = (maxRows = 3): ArrayField => ({
+  name: 'buttons',
+  label: 'Buttons',
+  type: 'array',
+  maxRows,
+  labels: { singular: 'Button', plural: 'Buttons' },
+  admin: {
+    initCollapsed: true,
+    description: 'The first button is the main one. Leave empty for none.',
+  },
+  fields: linkField({ required: true }).fields,
 })

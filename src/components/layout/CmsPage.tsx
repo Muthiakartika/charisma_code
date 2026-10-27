@@ -14,7 +14,14 @@ import { findPublished, getPage, getSiteSettings, type SiteSettings } from '@/li
 import { contactLinks } from '@/lib/contact'
 import { resolveLink, type ResolvedLink } from '@/lib/links'
 import { pagePath } from '@/lib/paths'
-import { breadcrumbSchema, buildMetadata, personSchema, serviceSchema, type Crumb } from '@/lib/seo'
+import {
+  breadcrumbSchema,
+  buildMetadata,
+  firstPrice,
+  personSchema,
+  serviceSchema,
+  type Crumb,
+} from '@/lib/seo'
 import type { Page } from '@/payload-types'
 
 import { Breadcrumbs } from './Breadcrumbs'
@@ -41,7 +48,8 @@ export function mainAction(
   const form = blocks.find((block) => block.blockType === 'enquiryForm' && !block.hidden)
   if (form) {
     const anchor = `#${form.anchorId ?? 'enquire'}`
-    const heroButton = firstBlock?.blockType === 'hero' ? resolveLink(firstBlock.primaryButton, locale) : null
+    const heroButton =
+      firstBlock?.blockType === 'hero' ? resolveLink(firstBlock.primaryButton, locale) : null
     const label = heroButton?.href.endsWith(anchor) ? heroButton.label : dict.form.jumpToForm
     return { href: anchor, label, external: false }
   }
@@ -49,7 +57,14 @@ export function mainAction(
 }
 
 /** Pages where the founder's Person structured data is useful. */
-const founderPages = ['home', 'about', 'corporate-emcee', 'wedding-emcee', 'dinner-and-dance-emcee', 'chinese-new-year-emcee']
+const founderPages = [
+  'home',
+  'about',
+  'corporate-emcee',
+  'wedding-emcee',
+  'dinner-and-dance-emcee',
+  'chinese-new-year-emcee',
+]
 
 export async function CmsPage({ slug, locale: rawLocale }: { slug: string; locale: string }) {
   const locale = toLocale(rawLocale)
@@ -58,7 +73,8 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
 
   const { isEnabled: isDraft } = await draftMode()
   // Chinese pages are only public once the translation is approved.
-  if (locale === 'zh' && page.chineseTranslation !== 'approved' && !isDraft) redirect(pagePath(slug))
+  if (locale === 'zh' && page.chineseTranslation !== 'approved' && !isDraft)
+    redirect(pagePath(slug))
 
   const [settings, linkedServices] = await Promise.all([
     getSiteSettings(locale),
@@ -66,13 +82,20 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
   ])
   const dict = getDictionary(locale)
   const path = pagePath(slug)
-  const breadcrumbs: Crumb[] = slug === 'home' ? [] : [{ name: dict.common.home, path: '/' }, { name: page.title, path }]
+  const breadcrumbs: Crumb[] =
+    slug === 'home'
+      ? []
+      : [
+          { name: dict.common.home, path: '/' },
+          { name: page.title, path },
+        ]
   const blocks = page.layout ?? []
   const firstBlock = blocks.find((block) => !block.hidden)
   const startsWithHero = firstBlock?.blockType === 'hero'
   const service = linkedServices[0]
   const action = mainAction(blocks, firstBlock, settings, locale, dict)
   const whatsapp = contactLinks(settings.contact).whatsapp
+  const priceFrom = firstBlock?.blockType === 'hero' ? firstPrice(firstBlock.priceLine) : null
 
   return (
     <main id="main" data-theme={page.theme ?? 'corporate'} className="bg-surface">
@@ -93,11 +116,23 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
         pageAction={action}
       />
       {action && (
-        <MobileActionBar action={action} whatsapp={whatsapp && { href: whatsapp.href, label: dict.common.whatsapp }} />
+        <MobileActionBar
+          action={action}
+          whatsapp={whatsapp && { href: whatsapp.href, label: dict.common.whatsapp }}
+        />
       )}
 
       {breadcrumbs.length > 0 && <JsonLd data={breadcrumbSchema(breadcrumbs)} />}
-      {service && <JsonLd data={serviceSchema({ name: service.title, description: service.summary, path })} />}
+      {service && (
+        <JsonLd
+          data={serviceSchema({
+            name: service.title,
+            description: service.summary,
+            path,
+            priceFrom,
+          })}
+        />
+      )}
       {founderPages.includes(slug) && <JsonLd data={personSchema(settings)} />}
     </main>
   )

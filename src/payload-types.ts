@@ -237,7 +237,18 @@ export interface HeroBlock {
    * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
    */
   heading: string;
+  /**
+   * Shown under the main heading as a smaller heading, e.g. what the service is called.
+   */
+  secondHeading?: string | null;
+  /**
+   * Leave an empty line between paragraphs.
+   */
   subheading?: string | null;
+  /**
+   * e.g. "From S$588 · see all rates". To make words a link, write [see all rates](/rates).
+   */
+  priceLine?: string | null;
   primaryButton?: {
     label?: string | null;
     type?: ('page' | 'custom') | null;
@@ -248,6 +259,18 @@ export interface HeroBlock {
     url?: string | null;
   };
   secondaryButton?: {
+    label?: string | null;
+    type?: ('page' | 'custom') | null;
+    page?: (number | null) | Page;
+    /**
+     * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+     */
+    url?: string | null;
+  };
+  /**
+   * Leave the button text empty to hide this link.
+   */
+  tertiaryButton?: {
     label?: string | null;
     type?: ('page' | 'custom') | null;
     page?: (number | null) | Page;
@@ -341,16 +364,31 @@ export interface TextImageBlock {
    */
   heading: string;
   /**
+   * e.g. "From S$588 · see all rates". To make words a link, write [see all rates](/rates).
+   */
+  priceLine?: string | null;
+  /**
    * Leave an empty line between paragraphs.
    */
   body?: string | null;
+  /**
+   * One row per line, cells separated by | . The first line is the header, e.g. "Package | From | Live singing". A cell like /wedding-emcee becomes a link to that page.
+   */
+  table?: string | null;
+  pointsHeading?: string | null;
   points?:
     | {
+        /**
+         * To make words a link, write [words](https://…).
+         */
         text: string;
         id?: string | null;
       }[]
     | null;
-  image: number | Media;
+  /**
+   * Optional. Without a photo the text and the bullet points sit side by side.
+   */
+  image?: (number | null) | Media;
   imagePosition?: ('right' | 'left') | null;
   imageShape?: ('landscape' | 'portrait') | null;
   /**
@@ -365,6 +403,21 @@ export interface TextImageBlock {
      */
     url?: string | null;
   };
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
@@ -391,14 +444,66 @@ export interface FeatureGridBlock {
   intro?: string | null;
   items: {
     title: string;
+    /**
+     * Cards only, e.g. "Most popular"
+     */
+    badge?: string | null;
+    /**
+     * e.g. "From S$888"
+     */
+    priceLine?: string | null;
+    idealFor?: string | null;
     text?: string | null;
+    pointsHeading?: string | null;
+    points?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+    note?: string | null;
+    /**
+     * Leave the button text empty to hide this link.
+     */
+    link?: {
+      label?: string | null;
+      type?: ('page' | 'custom') | null;
+      page?: (number | null) | Page;
+      /**
+       * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+       */
+      url?: string | null;
+    };
+    /**
+     * Optional, e.g. "collaboration" when a section below has that anchor ID.
+     */
+    jumpTo?: string | null;
     id?: string | null;
   }[];
   /**
    * Comparison strip: keep item titles short (e.g. "Under 20"), 2 to 4 items.
    */
-  style?: ('list' | 'numbered' | 'strip' | 'cards' | 'checklist') | null;
+  style?: ('list' | 'numbered' | 'strip' | 'cards' | 'checklist' | 'match' | 'notes') | null;
   columns?: ('2' | '3' | '4') | null;
+  /**
+   * A first line ending in "?" is shown in bold. Leave an empty line between paragraphs.
+   */
+  footnote?: string | null;
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
@@ -428,6 +533,21 @@ export interface ProcessStepsBlock {
     text?: string | null;
     id?: string | null;
   }[];
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
@@ -452,11 +572,28 @@ export interface ServiceCardsBlock {
    */
   heading: string;
   intro?: string | null;
-  layout?: ('priority' | 'grid' | 'list') | null;
+  layout?: ('priority' | 'cards' | 'grid' | 'list') | null;
   /**
    * Leave empty to show all services, ordered by their priority number. Drag to reorder.
    */
   services?: (number | Service)[] | null;
+  footnote?: string | null;
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
    */
@@ -486,6 +623,10 @@ export interface Service {
   priority: number;
   audience: 'corporate' | 'celebrations' | 'youth' | 'creative';
   summary: string;
+  /**
+   * e.g. "From S$888" or "Quoted per project". Only prices the client has approved.
+   */
+  priceLine?: string | null;
   image?: (number | null) | Media;
   /**
    * The page visitors open when they click this service.
@@ -830,6 +971,21 @@ export interface TestimonialsBlock {
   testimonials?: (number | Testimonial)[] | null;
   limit?: number | null;
   /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
    * Hidden sections stay saved but are not shown on the website.
    */
   hidden?: boolean | null;
@@ -878,6 +1034,17 @@ export interface FounderIntroBlock {
      */
     url?: string | null;
   };
+  downloadsHeading?: string | null;
+  /**
+   * PDF files uploaded to Media. The file type and size are shown automatically.
+   */
+  downloads?:
+    | {
+        label: string;
+        file: number | Media;
+        id?: string | null;
+      }[]
+    | null;
   mood?: ('stage' | 'warm') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
@@ -901,6 +1068,10 @@ export interface StatementBlock {
    * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
    */
   heading: string;
+  /**
+   * When filled in, the heading is shown small (like a label) and this line is shown large under it. Wrap words in *asterisks* to highlight them.
+   */
+  tagline?: string | null;
   /**
    * Leave an empty line between paragraphs.
    */
@@ -1045,6 +1216,7 @@ export interface VideoBlock {
    * Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.
    */
   heading?: string | null;
+  intro?: string | null;
   /**
    * The video only loads when a visitor presses play (keeps the page fast).
    */
@@ -1054,6 +1226,21 @@ export interface VideoBlock {
    */
   poster?: (number | null) | Media;
   caption?: string | null;
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
@@ -1083,6 +1270,35 @@ export interface FaqBlock {
    */
   service?: (number | null) | Service;
   faqs?: (number | Faq)[] | null;
+  /**
+   * Questions written here are shown instead of the ones above. Each one is added to the page's FAQ structured data for Google.
+   */
+  items?:
+    | {
+        question: string;
+        /**
+         * Leave an empty line between paragraphs.
+         */
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The first button is the main one. Leave empty for none.
+   */
+  buttons?:
+    | {
+        label: string;
+        type?: ('page' | 'custom') | null;
+        page?: (number | null) | Page;
+        /**
+         * Examples: /our-work · /contact#enquire · https://… · tel:+6594378083 · mailto:hello@…
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  tone?: ('light' | 'tinted' | 'dark') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
    */
@@ -1127,6 +1343,11 @@ export interface CallToActionBlock {
    */
   heading: string;
   text?: string | null;
+  /**
+   * e.g. "From S$588 · see all rates". To make words a link, write [see all rates](/rates).
+   */
+  priceLine?: string | null;
+  image?: (number | null) | Media;
   primaryButton?: {
     label?: string | null;
     type?: ('page' | 'custom') | null;
@@ -1149,7 +1370,7 @@ export interface CallToActionBlock {
    * Taken from Settings → Contact Information.
    */
   showContactDetails?: boolean | null;
-  style?: ('spark' | 'dark' | 'light') | null;
+  style?: ('spark' | 'dark' | 'light' | 'ivory' | 'card') | null;
   /**
    * Hidden sections stay saved but are not shown on the website.
    */
@@ -1716,7 +1937,9 @@ export interface HeroBlockSelect<T extends boolean = true> {
   lineArt?: T;
   eyebrow?: T;
   heading?: T;
+  secondHeading?: T;
   subheading?: T;
+  priceLine?: T;
   primaryButton?:
     | T
     | {
@@ -1726,6 +1949,14 @@ export interface HeroBlockSelect<T extends boolean = true> {
         url?: T;
       };
   secondaryButton?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+      };
+  tertiaryButton?:
     | T
     | {
         label?: T;
@@ -1752,7 +1983,10 @@ export interface HeroBlockSelect<T extends boolean = true> {
 export interface TextImageBlockSelect<T extends boolean = true> {
   eyebrow?: T;
   heading?: T;
+  priceLine?: T;
   body?: T;
+  table?: T;
+  pointsHeading?: T;
   points?:
     | T
     | {
@@ -1769,6 +2003,15 @@ export interface TextImageBlockSelect<T extends boolean = true> {
         type?: T;
         page?: T;
         url?: T;
+      };
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
       };
   tone?: T;
   hidden?: T;
@@ -1788,11 +2031,41 @@ export interface FeatureGridBlockSelect<T extends boolean = true> {
     | T
     | {
         title?: T;
+        badge?: T;
+        priceLine?: T;
+        idealFor?: T;
         text?: T;
+        pointsHeading?: T;
+        points?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        note?: T;
+        link?:
+          | T
+          | {
+              label?: T;
+              type?: T;
+              page?: T;
+              url?: T;
+            };
+        jumpTo?: T;
         id?: T;
       };
   style?: T;
   columns?: T;
+  footnote?: T;
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
   tone?: T;
   hidden?: T;
   anchorId?: T;
@@ -1814,6 +2087,15 @@ export interface ProcessStepsBlockSelect<T extends boolean = true> {
         text?: T;
         id?: T;
       };
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
   tone?: T;
   hidden?: T;
   anchorId?: T;
@@ -1830,6 +2112,17 @@ export interface ServiceCardsBlockSelect<T extends boolean = true> {
   intro?: T;
   layout?: T;
   services?: T;
+  footnote?: T;
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
+  tone?: T;
   hidden?: T;
   anchorId?: T;
   id?: T;
@@ -1928,6 +2221,15 @@ export interface TestimonialsBlockSelect<T extends boolean = true> {
   category?: T;
   testimonials?: T;
   limit?: T;
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
   hidden?: T;
   anchorId?: T;
   id?: T;
@@ -1957,6 +2259,14 @@ export interface FounderIntroBlockSelect<T extends boolean = true> {
         page?: T;
         url?: T;
       };
+  downloadsHeading?: T;
+  downloads?:
+    | T
+    | {
+        label?: T;
+        file?: T;
+        id?: T;
+      };
   mood?: T;
   hidden?: T;
   anchorId?: T;
@@ -1970,6 +2280,7 @@ export interface FounderIntroBlockSelect<T extends boolean = true> {
 export interface StatementBlockSelect<T extends boolean = true> {
   eyebrow?: T;
   heading?: T;
+  tagline?: T;
   body?: T;
   roles?:
     | T
@@ -2051,9 +2362,19 @@ export interface GalleryBlockSelect<T extends boolean = true> {
 export interface VideoBlockSelect<T extends boolean = true> {
   eyebrow?: T;
   heading?: T;
+  intro?: T;
   youtubeUrl?: T;
   poster?: T;
   caption?: T;
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
   tone?: T;
   hidden?: T;
   anchorId?: T;
@@ -2070,6 +2391,23 @@ export interface FaqBlockSelect<T extends boolean = true> {
   intro?: T;
   service?: T;
   faqs?: T;
+  items?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  buttons?:
+    | T
+    | {
+        label?: T;
+        type?: T;
+        page?: T;
+        url?: T;
+        id?: T;
+      };
+  tone?: T;
   hidden?: T;
   anchorId?: T;
   id?: T;
@@ -2083,6 +2421,8 @@ export interface CallToActionBlockSelect<T extends boolean = true> {
   eyebrow?: T;
   heading?: T;
   text?: T;
+  priceLine?: T;
+  image?: T;
   primaryButton?:
     | T
     | {
@@ -2161,6 +2501,7 @@ export interface ServicesSelect<T extends boolean = true> {
   priority?: T;
   audience?: T;
   summary?: T;
+  priceLine?: T;
   image?: T;
   page?: T;
   showInEnquiryForm?: T;

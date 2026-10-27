@@ -1,7 +1,7 @@
 import type { Block } from 'payload'
 
 import { linkField } from '@/fields/link'
-import { eyebrowField, headingField, sectionSettingsFields } from '@/fields/shared'
+import { eyebrowField, headingField, priceLineField, sectionSettingsFields } from '@/fields/shared'
 
 export const HeroBlock: Block = {
   slug: 'hero',
@@ -16,7 +16,10 @@ export const HeroBlock: Block = {
       options: [
         { label: 'Split — text left, photos right (recommended)', value: 'split' },
         { label: 'Stage — dark stage, photos in spotlight circles', value: 'stage' },
-        { label: 'Colour block — light, photos stepping out of a block of brand colour (homepage)', value: 'colourBlock' },
+        {
+          label: 'Colour block — light, photos stepping out of a block of brand colour (homepage)',
+          value: 'colourBlock',
+        },
         { label: 'Full photo — text over a large photo', value: 'photo' },
         { label: 'Simple — text only (for inner pages)', value: 'simple' },
       ],
@@ -34,24 +37,42 @@ export const HeroBlock: Block = {
       ],
       admin: {
         condition: (_, siblingData) => siblingData?.variant === 'colourBlock',
-        description: 'A soft line drawing in the block of colour, shown on desktop screens behind the photos.',
+        description:
+          'A soft line drawing in the block of colour, shown on desktop screens behind the photos.',
       },
     },
     eyebrowField,
     headingField(true, 90),
     {
+      name: 'secondHeading',
+      label: 'Second heading (optional)',
+      type: 'text',
+      localized: true,
+      maxLength: 120,
+      admin: {
+        description:
+          'Shown under the main heading as a smaller heading, e.g. what the service is called.',
+      },
+    },
+    {
       name: 'subheading',
       type: 'textarea',
       localized: true,
-      maxLength: 280,
+      maxLength: 600,
+      admin: { description: 'Leave an empty line between paragraphs.' },
     },
+    priceLineField,
     {
       type: 'row',
       fields: [
         { ...linkField({ name: 'primaryButton', label: 'Main button' }), admin: { width: '50%' } },
-        { ...linkField({ name: 'secondaryButton', label: 'Second button' }), admin: { width: '50%' } },
+        {
+          ...linkField({ name: 'secondaryButton', label: 'Second button' }),
+          admin: { width: '50%' },
+        },
       ],
     },
+    linkField({ name: 'tertiaryButton', label: 'Third button (optional)' }),
     {
       name: 'images',
       label: 'Photos',
@@ -69,10 +90,12 @@ export const HeroBlock: Block = {
       name: 'highlights',
       label: 'Short highlights under the buttons',
       type: 'array',
-      maxRows: 3,
+      maxRows: 6,
       labels: { singular: 'Highlight', plural: 'Highlights' },
-      fields: [{ name: 'text', type: 'text', localized: true, required: true, maxLength: 48 }],
-      admin: { description: 'Optional, e.g. "Hosted in English & 中文". Only facts — no invented numbers.' },
+      fields: [{ name: 'text', type: 'text', localized: true, required: true, maxLength: 60 }],
+      admin: {
+        description: 'Optional, e.g. "Hosted in English & 中文". Only facts — no invented numbers.',
+      },
     },
     ...sectionSettingsFields,
   ],

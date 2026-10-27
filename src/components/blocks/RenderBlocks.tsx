@@ -61,14 +61,29 @@ const components: Record<LayoutBlock['blockType'], BlockComponent> = {
 }
 
 /** Blocks that can close with the page's main action button. */
-const canOfferAction = new Set<LayoutBlock['blockType']>(['textImage', 'processSteps', 'featureGrid', 'testimonials', 'video'])
+const canOfferAction = new Set<LayoutBlock['blockType']>([
+  'textImage',
+  'processSteps',
+  'featureGrid',
+  'testimonials',
+  'video',
+])
 
 /** True when the block already asks the visitor to do something (its own button or a form). */
 function hasOwnAction(block: LayoutBlock, locale: Locale): boolean {
+  if ('buttons' in block && (block.buttons ?? []).some((link) => resolveLink(link, locale)))
+    return true
   switch (block.blockType) {
     case 'hero':
+      return Boolean(
+        resolveLink(block.primaryButton, locale) ??
+        resolveLink(block.secondaryButton, locale) ??
+        resolveLink(block.tertiaryButton, locale),
+      )
     case 'cta':
-      return Boolean(resolveLink(block.primaryButton, locale) ?? resolveLink(block.secondaryButton, locale))
+      return Boolean(
+        resolveLink(block.primaryButton, locale) ?? resolveLink(block.secondaryButton, locale),
+      )
     case 'textImage':
     case 'founderIntro':
     case 'statement':
@@ -96,7 +111,12 @@ function blocksOfferingAction(blocks: LayoutBlock[], locale: Locale): Set<number
       return
     }
     const next = blocks[index + 1]
-    if (canOfferAction.has(block.blockType) && quietSections >= 1 && next && !hasOwnAction(next, locale)) {
+    if (
+      canOfferAction.has(block.blockType) &&
+      quietSections >= 1 &&
+      next &&
+      !hasOwnAction(next, locale)
+    ) {
       offering.add(index)
       quietSections = 0
       return
@@ -127,7 +147,11 @@ export function RenderBlocks({
           <Component
             key={block.id ?? index}
             block={block as never}
-            context={{ ...context, isFirst: index === 0, action: offering.has(index) ? pageAction : null }}
+            context={{
+              ...context,
+              isFirst: index === 0,
+              action: offering.has(index) ? pageAction : null,
+            }}
           />
         )
       })}

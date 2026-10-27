@@ -1,7 +1,7 @@
 /**
  * Runs before every website request (not for /admin or /api).
  *
- *  1. Old WordPress URLs           → 301 to their new address (src/lib/legacy-redirects.ts)
+ *  1. Old WordPress URLs           → 301 to their new address, or 410 when removed (src/lib/legacy-redirects.ts)
  *  2. URLs ending with "/"         → 301 to the same URL without "/" (one hop, no chains)
  *  3. /en/...                      → 301 to the URL without /en (English has no prefix)
  *  4. /zh/...                      → Chinese pages, served as they are
@@ -9,7 +9,7 @@
  */
 import { NextResponse, type NextRequest } from 'next/server'
 
-import { legacyPrefixRedirects, legacyRedirects } from '@/lib/legacy-redirects'
+import { legacyGone, legacyPrefixRedirects, legacyRedirects } from '@/lib/legacy-redirects'
 
 const FILE_PATTERN = /\.[a-z0-9]{2,5}$/i
 
@@ -35,6 +35,8 @@ export function proxy(request: NextRequest) {
     legacyRedirects[withoutSlash] ??
     legacyPrefixRedirects.find((rule) => `${withoutSlash}/`.startsWith(rule.prefix))?.to
   if (legacyTarget) return permanentRedirect(request, legacyTarget)
+  if (legacyGone.has(withoutSlash))
+    return new NextResponse('This page has been removed.', { status: 410 })
 
   // 2. Remove trailing slash
   if (pathname.length > 1 && pathname.endsWith('/')) {

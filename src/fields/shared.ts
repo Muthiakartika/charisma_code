@@ -19,7 +19,8 @@ export const headingField = (required = true, maxLength = 110): TextField => ({
   required,
   maxLength,
   admin: {
-    description: 'Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.',
+    description:
+      'Wrap words in *asterisks* to highlight them, e.g. Experiences built around *your people*.',
   },
 })
 
@@ -59,7 +60,10 @@ export const sectionSettingsFields: Field[] = [
             label: 'Hide this section',
             type: 'checkbox',
             defaultValue: false,
-            admin: { width: '50%', description: 'Hidden sections stay saved but are not shown on the website.' },
+            admin: {
+              width: '50%',
+              description: 'Hidden sections stay saved but are not shown on the website.',
+            },
           },
           {
             name: 'anchorId',
@@ -67,10 +71,13 @@ export const sectionSettingsFields: Field[] = [
             type: 'text',
             admin: {
               width: '50%',
-              description: 'Optional. Lets buttons jump to this section, e.g. "enquire" → /page#enquire',
+              description:
+                'Optional. Lets buttons jump to this section, e.g. "enquire" → /page#enquire',
             },
             validate: (value: unknown) =>
-              !value || /^[a-z0-9-]+$/.test(String(value)) || 'Use lowercase letters, numbers and dashes only.',
+              !value ||
+              /^[a-z0-9-]+$/.test(String(value)) ||
+              'Use lowercase letters, numbers and dashes only.',
           },
         ],
       },
@@ -125,4 +132,20 @@ export const workCategoryOptions = [
 ]
 
 /** Testimonials can also be about events outside the portfolio categories. */
-export const testimonialCategoryOptions = [...workCategoryOptions, { label: 'Other events', value: 'general' }]
+export const testimonialCategoryOptions = [
+  ...workCategoryOptions,
+  { label: 'Other events', value: 'general' },
+]
+
+/** A short price strip, e.g. "From S$88 per participant". Only prices the client has approved. */
+export const priceLineField: TextField = {
+  name: 'priceLine',
+  label: 'Price line',
+  type: 'text',
+  localized: true,
+  maxLength: 200,
+  admin: {
+    description:
+      'e.g. "From S$588 · see all rates". To make words a link, write [see all rates](/rates).',
+  },
+}

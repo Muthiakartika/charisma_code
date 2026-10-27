@@ -1,6 +1,13 @@
 import type { Block } from 'payload'
 
-import { eyebrowField, headingField, introField, sectionSettingsFields } from '@/fields/shared'
+import { buttonsField } from '@/fields/link'
+import {
+  eyebrowField,
+  headingField,
+  introField,
+  sectionSettingsFields,
+  toneField,
+} from '@/fields/shared'
 
 export const ServiceCardsBlock: Block = {
   slug: 'serviceCards',
@@ -15,7 +22,11 @@ export const ServiceCardsBlock: Block = {
       type: 'select',
       defaultValue: 'priority',
       options: [
-        { label: 'Priority — the first service is shown largest (homepage)', value: 'priority' },
+        { label: 'Priority — the first service is shown largest', value: 'priority' },
+        {
+          label: 'Price cards — every service with its price and a button (homepage)',
+          value: 'cards',
+        },
         { label: 'Even grid', value: 'grid' },
         { label: 'Compact list (for "related services")', value: 'list' },
       ],
@@ -26,9 +37,19 @@ export const ServiceCardsBlock: Block = {
       relationTo: 'services',
       hasMany: true,
       admin: {
-        description: 'Leave empty to show all services, ordered by their priority number. Drag to reorder.',
+        description:
+          'Leave empty to show all services, ordered by their priority number. Drag to reorder.',
       },
     },
+    {
+      name: 'footnote',
+      label: 'Text under the cards (optional)',
+      type: 'textarea',
+      localized: true,
+      maxLength: 300,
+    },
+    buttonsField(),
+    toneField,
     ...sectionSettingsFields,
   ],
 }

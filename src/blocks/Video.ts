@@ -1,6 +1,13 @@
 import type { Block } from 'payload'
 
-import { eyebrowField, headingField, sectionSettingsFields, toneField } from '@/fields/shared'
+import { buttonsField } from '@/fields/link'
+import {
+  eyebrowField,
+  headingField,
+  introField,
+  sectionSettingsFields,
+  toneField,
+} from '@/fields/shared'
 import { validateYoutubeUrl } from '@/lib/youtube'
 
 export const VideoBlock: Block = {
@@ -10,13 +17,16 @@ export const VideoBlock: Block = {
   fields: [
     eyebrowField,
     headingField(false),
+    introField(600),
     {
       name: 'youtubeUrl',
       label: 'YouTube link',
       type: 'text',
       required: true,
       validate: (value: unknown) => validateYoutubeUrl(value, true),
-      admin: { description: 'The video only loads when a visitor presses play (keeps the page fast).' },
+      admin: {
+        description: 'The video only loads when a visitor presses play (keeps the page fast).',
+      },
     },
     {
       name: 'poster',
@@ -26,6 +36,7 @@ export const VideoBlock: Block = {
       admin: { description: 'If empty, the YouTube thumbnail is used.' },
     },
     { name: 'caption', type: 'text', localized: true, maxLength: 140 },
+    buttonsField(),
     toneField,
     ...sectionSettingsFields,
   ],

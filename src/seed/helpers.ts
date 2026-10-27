@@ -89,7 +89,13 @@ export async function importLocalImage(payload: Payload, filePath: string, alt: 
     limit: 1,
     depth: 0,
   })
-  const mimetype = /\.jpe?g$/i.test(name) ? 'image/jpeg' : /\.webp$/i.test(name) ? 'image/webp' : 'image/png'
+  const mimetype = /\.jpe?g$/i.test(name)
+    ? 'image/jpeg'
+    : /\.webp$/i.test(name)
+      ? 'image/webp'
+      : /\.pdf$/i.test(name)
+        ? 'application/pdf'
+        : 'image/png'
   const file = { data: buffer, mimetype, name, size: buffer.length }
   const doc = existing.docs[0]
   if (doc) {

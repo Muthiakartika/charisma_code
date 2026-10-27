@@ -17,7 +17,15 @@ export const Services: CollectionConfig<'services'> = {
     defaultColumns: ['title', 'priority', 'audience', 'showInEnquiryForm', 'updatedAt'],
   },
   defaultSort: 'priority',
-  defaultPopulate: { title: true, key: true, summary: true, image: true, page: true, audience: true },
+  defaultPopulate: {
+    title: true,
+    key: true,
+    summary: true,
+    priceLine: true,
+    image: true,
+    page: true,
+    audience: true,
+  },
   access: {
     read: publishedOrLoggedIn,
     create: isContentEditor,
@@ -36,7 +44,8 @@ export const Services: CollectionConfig<'services'> = {
       unique: true,
       index: true,
       validate: (value: unknown) =>
-        /^[a-z0-9-]+$/.test(String(value ?? '')) || 'Use lowercase letters, numbers and dashes, e.g. team-building',
+        /^[a-z0-9-]+$/.test(String(value ?? '')) ||
+        'Use lowercase letters, numbers and dashes, e.g. team-building',
       admin: {
         position: 'sidebar',
         description: 'Used in enquiry records and Google Analytics. Do not change after launch.',
@@ -69,6 +78,17 @@ export const Services: CollectionConfig<'services'> = {
       localized: true,
       required: true,
       maxLength: 200,
+    },
+    {
+      name: 'priceLine',
+      label: 'Price line on the service card',
+      type: 'text',
+      localized: true,
+      maxLength: 60,
+      admin: {
+        description:
+          'e.g. "From S$888" or "Quoted per project". Only prices the client has approved.',
+      },
     },
     { name: 'image', type: 'upload', relationTo: 'media' },
     {

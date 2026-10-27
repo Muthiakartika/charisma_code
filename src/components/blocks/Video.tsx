@@ -4,7 +4,15 @@ import { YouTubePlayer } from '@/components/ui/YouTubePlayer'
 import { getYoutubeId } from '@/lib/youtube'
 import type { VideoBlock as VideoData } from '@/payload-types'
 
-import { BlockAction, headingId, Section, SectionHeading, type BlockContext } from './shared'
+import {
+  BlockAction,
+  hasButtons,
+  headingId,
+  Section,
+  SectionButtons,
+  SectionHeading,
+  type BlockContext,
+} from './shared'
 
 export function VideoBlock({ block, context }: { block: VideoData; context: BlockContext }) {
   const videoId = getYoutubeId(block.youtubeUrl)
@@ -15,7 +23,12 @@ export function VideoBlock({ block, context }: { block: VideoData; context: Bloc
   return (
     <Section id={block.anchorId} tone={block.tone} labelledBy={block.heading ? titleId : undefined}>
       <div className="container-site">
-        <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} />
+        <SectionHeading
+          id={titleId}
+          eyebrow={block.eyebrow}
+          heading={block.heading}
+          intro={block.intro}
+        />
         <figure className={block.heading ? 'mt-10' : ''}>
           <div className="relative aspect-video overflow-hidden rounded-[var(--radius-media)] bg-ink">
             <YouTubePlayer
@@ -24,7 +37,12 @@ export function VideoBlock({ block, context }: { block: VideoData; context: Bloc
               playLabel={context.dict.common.playVideo}
               poster={
                 block.poster ? (
-                  <CmsImage media={block.poster} sizes="(min-width: 1024px) 80vw, 100vw" className="object-cover" alt="" />
+                  <CmsImage
+                    media={block.poster}
+                    sizes="(min-width: 1024px) 80vw, 100vw"
+                    className="object-cover"
+                    alt=""
+                  />
                 ) : undefined
               }
             />
@@ -36,7 +54,10 @@ export function VideoBlock({ block, context }: { block: VideoData; context: Bloc
           )}
         </figure>
 
-        <BlockAction action={context.action} className="mt-10" />
+        <SectionButtons links={block.buttons} locale={context.locale} className="mt-10" />
+        {!hasButtons(block.buttons, context.locale) && (
+          <BlockAction action={context.action} className="mt-10" />
+        )}
       </div>
     </Section>
   )

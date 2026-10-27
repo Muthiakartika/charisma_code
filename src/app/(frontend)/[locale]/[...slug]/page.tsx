@@ -8,13 +8,17 @@ import { notFound, permanentRedirect, redirect } from 'next/navigation'
 
 import { CmsPage, generateCmsMetadata, toLocale } from '@/components/layout/CmsPage'
 import { getCmsRedirect, getPage } from '@/lib/cms'
-import { localizePath } from '@/lib/paths'
+import { localizePath, pagePath } from '@/lib/paths'
 
 export default async function CatchAllPage({ params }: PageProps<'/[locale]/[...slug]'>) {
   const { locale, slug } = await params
   const path = slug.map(decodeURIComponent).join('/')
 
-  if (slug.length === 1 && (await getPage(path, toLocale(locale)))) {
+  if (
+    slug.length === 1 &&
+    pagePath(path) === `/${path}` &&
+    (await getPage(path, toLocale(locale)))
+  ) {
     return <CmsPage slug={path} locale={locale} />
   }
 

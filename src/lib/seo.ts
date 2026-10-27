@@ -12,11 +12,14 @@ import type { Media, SeoDefault } from '@/payload-types'
 import type { SiteSettings } from './cms'
 import { absoluteUrl, localizePath, siteUrl } from './paths'
 
-type MetaFields = {
-  title?: string | null
-  description?: string | null
-  image?: number | Media | null
-} | null | undefined
+type MetaFields =
+  | {
+      title?: string | null
+      description?: string | null
+      image?: number | Media | null
+    }
+  | null
+  | undefined
 
 type BuildMetadataArgs = {
   locale: Locale
@@ -52,7 +55,8 @@ export function buildMetadata({
 }: BuildMetadataArgs): Metadata {
   const suffix = seo.titleSuffix ?? ''
   const fullTitle = meta?.title?.trim() || `${title}${suffix}`
-  const description = meta?.description?.trim() || fallbackDescription || seo.defaultDescription || undefined
+  const description =
+    meta?.description?.trim() || fallbackDescription || seo.defaultDescription || undefined
   const canonicalPath = localizePath(path, locale)
   const ogImage = imageUrl(meta?.image) || imageUrl(fallbackImage) || imageUrl(seo.defaultImage)
 
@@ -95,7 +99,13 @@ const founderId = () => `${siteUrl()}/#founder`
 
 export function organizationSchema(settings: SiteSettings) {
   const { contact, social, seo } = settings
-  const sameAs = [social.instagram, social.facebook, social.linkedin, social.youtube, social.tiktok].filter(Boolean)
+  const sameAs = [
+    social.instagram,
+    social.facebook,
+    social.linkedin,
+    social.youtube,
+    social.tiktok,
+  ].filter(Boolean)
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -122,14 +132,33 @@ export function personSchema(settings: SiteSettings) {
     '@id': founderId(),
     name: seo.founderName,
     jobTitle: seo.founderJobTitle || undefined,
-    alumniOf: seo.founderAlumniOf ? { '@type': 'CollegeOrUniversity', name: seo.founderAlumniOf } : undefined,
+    alumniOf: seo.founderAlumniOf
+      ? { '@type': 'CollegeOrUniversity', name: seo.founderAlumniOf }
+      : undefined,
     knowsLanguage: ['English', 'Mandarin Chinese'],
     worksFor: { '@id': organizationId() },
     sameAs: [social.instagram, social.linkedin].filter(Boolean),
   }
 }
 
-export function serviceSchema({ name, description, path }: { name: string; description?: string | null; path: string }) {
+/** The first price in a price line, e.g. "From S$88 per participant" → 88. */
+export const firstPrice = (priceLine?: string | null) => {
+  const match = priceLine?.match(/S\$\s?(\d[\d,]*)/)
+  return match ? Number(match[1].replace(/,/g, '')) : null
+}
+
+export function serviceSchema({
+  name,
+  description,
+  path,
+  priceFrom,
+}: {
+  name: string
+  description?: string | null
+  path: string
+  /** Only when that price is shown on the page. */
+  priceFrom?: number | null
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -139,6 +168,18 @@ export function serviceSchema({ name, description, path }: { name: string; descr
     serviceType: name,
     provider: { '@id': organizationId() },
     areaServed: { '@type': 'Country', name: 'Singapore' },
+    offers: priceFrom
+      ? {
+          '@type': 'Offer',
+          url: absoluteUrl(path),
+          priceCurrency: 'SGD',
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            minPrice: priceFrom,
+            priceCurrency: 'SGD',
+          },
+        }
+      : undefined,
   }
 }
 
@@ -177,6 +218,20 @@ export function breadcrumbSchema(crumbs: Crumb[]) {
       position: index + 1,
       name: crumb.name,
       item: absoluteUrl(crumb.path),
+    })),
+  }
+}
+
+/** FAQPage structured data: only for questions that are shown on the page. */
+export function faqSchema(items: { question: string; answer: string }[]) {
+  if (!items.length) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer.replace(/\n\s*\n/g, ' ') },
     })),
   }
 }

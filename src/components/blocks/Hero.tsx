@@ -1,14 +1,15 @@
 import type { CSSProperties } from 'react'
 
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { Bullet } from '@/components/ui/Bullet'
 import { ButtonLink } from '@/components/ui/ButtonLink'
 import { CmsImage } from '@/components/ui/CmsImage'
-import { HighlightText, stripHighlight } from '@/components/ui/HighlightText'
+import { HighlightText, Paragraphs, stripHighlight } from '@/components/ui/HighlightText'
 import { resolveLink } from '@/lib/links'
 import type { HeroBlock as HeroBlockData, Media } from '@/payload-types'
 
 import { HeroLineArt } from './HeroLineArt'
-import type { BlockContext } from './shared'
+import { PriceLine, whatsappIcon, type BlockContext } from './shared'
 
 const order = (n: number) => ({ '--rise-order': n }) as CSSProperties
 
@@ -21,7 +22,10 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
   const Heading = isFirst ? 'h1' : 'h2'
   const primary = resolveLink(block.primaryButton, locale)
   const secondary = resolveLink(block.secondaryButton, locale)
-  const images = (block.images ?? []).filter((image): image is Media => typeof image === 'object' && image !== null)
+  const tertiary = resolveLink(block.tertiaryButton, locale)
+  const images = (block.images ?? []).filter(
+    (image): image is Media => typeof image === 'object' && image !== null,
+  )
   const highlights = block.highlights ?? []
   const isLongHeading = stripHighlight(block.heading).length > 40
   const headingClass = isLongHeading ? 'heading-xl-long' : 'heading-xl'
@@ -37,29 +41,47 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
       <Heading className={`${headingClass} rise`} style={order(1)}>
         <HighlightText text={block.heading} />
       </Heading>
-      {block.subheading && (
-        <p className={`lead rise mt-6 ${onDark ? 'text-paper/85' : 'text-ink-soft'}`} style={order(2)}>
-          {block.subheading}
-        </p>
+      {block.secondHeading && (
+        <h2 className="heading-md rise mt-6" style={order(2)}>
+          {block.secondHeading}
+        </h2>
       )}
-      {(primary || secondary) && (
-        <div className="rise mt-9 flex flex-wrap items-center gap-3" style={order(3)}>
-          <ButtonLink link={primary} />
-          <ButtonLink link={secondary} variant="secondary" />
+      {block.subheading && (
+        <div
+          className={`lead rise mt-6 space-y-4 ${onDark ? 'text-paper/85' : 'text-ink-soft'}`}
+          style={order(2)}
+        >
+          <Paragraphs text={block.subheading} />
         </div>
       )}
       {highlights.length > 0 && (
         <ul
-          className={`rise mt-9 flex flex-wrap gap-x-6 gap-y-2.5 text-[0.95rem] font-medium ${onDark ? 'text-paper/80' : 'text-ink-soft'}`}
-          style={order(4)}
+          className={`rise mt-7 grid gap-x-6 gap-y-2.5 text-[0.95rem] font-medium ${highlights.length > 3 ? 'sm:grid-cols-2' : 'sm:flex sm:flex-wrap'} ${onDark ? 'text-paper/80' : 'text-ink-soft'}`}
+          style={order(2)}
         >
           {highlights.map((item, index) => (
-            <li key={item.id ?? index} className="flex items-center gap-2.5">
-              <span aria-hidden className="h-2 w-2 rounded-full bg-action" />
+            <li key={item.id ?? index} className="flex items-start gap-2.5">
+              <Bullet small />
               {item.text}
             </li>
           ))}
         </ul>
+      )}
+      {block.priceLine && (
+        <div className="rise mt-7" style={order(3)}>
+          <PriceLine
+            text={block.priceLine}
+            locale={locale}
+            className={`text-[1.0625rem] ${onDark ? 'text-paper' : 'text-ink'}`}
+          />
+        </div>
+      )}
+      {(primary || secondary || tertiary) && (
+        <div className="rise mt-7 flex flex-wrap items-center gap-3" style={order(3)}>
+          <ButtonLink link={primary} icon={whatsappIcon(primary)} />
+          <ButtonLink link={secondary} variant="secondary" icon={whatsappIcon(secondary)} />
+          <ButtonLink link={tertiary} variant="secondary" icon={whatsappIcon(tertiary)} />
+        </div>
       )}
     </>
   )
@@ -68,10 +90,15 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
   if (block.variant === 'stage' && images[0]) {
     const [spot, smallSpot] = images
     return (
-      <section id={block.anchorId ?? undefined} className="stage-hero tone-dark relative isolate overflow-hidden">
+      <section
+        id={block.anchorId ?? undefined}
+        className="stage-hero tone-dark relative isolate overflow-hidden"
+      >
         <div className="container-site grid items-center gap-12 pb-8 pt-10 sm:pb-12 lg:grid-cols-12 lg:gap-10 lg:pb-24 lg:pt-16">
           <div className="relative z-10 lg:col-span-7">
-            {breadcrumbs.length > 1 && <div className="mb-10 [&_a]:text-paper/80 [&_span]:text-paper/80">{crumbs}</div>}
+            {breadcrumbs.length > 1 && (
+              <div className="mb-10 [&_a]:text-paper/80 [&_span]:text-paper/80">{crumbs}</div>
+            )}
             {text(true)}
           </div>
 
@@ -81,14 +108,23 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
                 className="spotlight absolute right-0 top-0 aspect-square w-[86%] overflow-hidden rounded-full bg-ink-soft"
                 style={spotOrigin(spot)}
               >
-                <CmsImage media={spot} sizes="(min-width: 1024px) 34vw, 80vw" priority={isFirst} className="object-cover" />
+                <CmsImage
+                  media={spot}
+                  sizes="(min-width: 1024px) 34vw, 80vw"
+                  priority={isFirst}
+                  className="object-cover"
+                />
               </div>
               {smallSpot && (
                 <div
                   className="spotlight spotlight--small absolute bottom-0 left-0 aspect-square w-[40%] overflow-hidden rounded-full border-[6px] border-ink bg-ink-soft"
                   style={spotOrigin(smallSpot)}
                 >
-                  <CmsImage media={smallSpot} sizes="(min-width: 1024px) 16vw, 36vw" className="object-cover" />
+                  <CmsImage
+                    media={smallSpot}
+                    sizes="(min-width: 1024px) 16vw, 36vw"
+                    className="object-cover"
+                  />
                 </div>
               )}
             </div>
@@ -102,7 +138,10 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
   if (block.variant === 'colourBlock' && images[0]) {
     const [main, second] = images
     return (
-      <section id={block.anchorId ?? undefined} className="block-hero relative isolate overflow-hidden bg-surface">
+      <section
+        id={block.anchorId ?? undefined}
+        className="block-hero relative isolate overflow-hidden bg-surface"
+      >
         {/*
           Desktop: the block of colour runs from 40% into the photo column to the screen edge,
           full height, with the line art inside. Its left edge, worked out from the grid below
@@ -127,19 +166,31 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
               className="block-hero__panel absolute -bottom-[50vh] -left-[50vw] -right-[50vw] top-[22%] -z-10 bg-action lg:hidden"
             />
             <div className="relative mx-auto aspect-[1/0.92] w-full max-w-[560px]">
-              <div aria-hidden className="block-hero__glow absolute left-[-31%] top-[-36%] aspect-square w-[140%] rounded-full" />
+              <div
+                aria-hidden
+                className="block-hero__glow absolute left-[-31%] top-[-36%] aspect-square w-[140%] rounded-full"
+              />
               <div
                 className="block-hero__photo absolute left-[2%] top-0 aspect-square w-[74%] overflow-hidden rounded-full bg-paper-deep shadow-[0_30px_60px_-30px_color-mix(in_srgb,var(--color-ink)_55%,transparent)]"
                 style={spotOrigin(main)}
               >
-                <CmsImage media={main} sizes="(min-width: 1024px) 30vw, 74vw" priority={isFirst} className="object-cover" />
+                <CmsImage
+                  media={main}
+                  sizes="(min-width: 1024px) 30vw, 74vw"
+                  priority={isFirst}
+                  className="object-cover"
+                />
               </div>
               {second && (
                 <div
                   className="block-hero__photo block-hero__photo--small absolute bottom-0 right-[4%] aspect-square w-[38%] overflow-hidden rounded-full border-[6px] border-surface bg-paper-deep"
                   style={spotOrigin(second)}
                 >
-                  <CmsImage media={second} sizes="(min-width: 1024px) 16vw, 38vw" className="object-cover" />
+                  <CmsImage
+                    media={second}
+                    sizes="(min-width: 1024px) 16vw, 38vw"
+                    className="object-cover"
+                  />
                 </div>
               )}
             </div>
@@ -152,9 +203,20 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
   // ── Full photo ──────────────────────────────────────────────
   if (block.variant === 'photo' && images[0]) {
     return (
-      <section id={block.anchorId ?? undefined} className="tone-dark relative isolate flex min-h-[78dvh] items-end overflow-hidden">
-        <CmsImage media={images[0]} sizes="100vw" priority={isFirst} className="-z-20 object-cover" />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/60 to-ink/5" />
+      <section
+        id={block.anchorId ?? undefined}
+        className="tone-dark relative isolate flex min-h-[78dvh] items-end overflow-hidden"
+      >
+        <CmsImage
+          media={images[0]}
+          sizes="100vw"
+          priority={isFirst}
+          className="-z-20 object-cover"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/60 to-ink/5"
+        />
         <div className="container-site pb-14 pt-40 lg:pb-20">
           <div className="mb-8 [&_a]:text-paper/80 [&_span]:text-paper/80">{crumbs}</div>
           <div className="max-w-3xl">{text(true)}</div>
@@ -203,12 +265,20 @@ export function HeroBlock({ block, context }: { block: HeroBlockData; context: B
             </div>
             {second && (
               <div className="media-frame media-frame--tilt absolute bottom-0 left-0 aspect-[4/5] w-[42%] overflow-hidden rounded-[var(--radius-media)] border-[6px] border-surface bg-paper-deep">
-                <CmsImage media={second} sizes="(min-width: 1024px) 22vw, 42vw" className="object-cover" />
+                <CmsImage
+                  media={second}
+                  sizes="(min-width: 1024px) 22vw, 42vw"
+                  className="object-cover"
+                />
               </div>
             )}
             {third && (
               <div className="absolute left-[6%] top-[10%] hidden aspect-square w-[24%] overflow-hidden rounded-[var(--radius-media)] border-[6px] border-surface bg-paper-deep sm:block">
-                <CmsImage media={third} sizes="(min-width: 1024px) 14vw, 24vw" className="object-cover" />
+                <CmsImage
+                  media={third}
+                  sizes="(min-width: 1024px) 14vw, 24vw"
+                  className="object-cover"
+                />
               </div>
             )}
           </div>

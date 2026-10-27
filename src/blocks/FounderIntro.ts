@@ -26,9 +26,34 @@ export const FounderIntroBlock: Block = {
       type: 'array',
       maxRows: 6,
       fields: [{ name: 'text', type: 'text', localized: true, required: true, maxLength: 90 }],
-      admin: { description: 'Verified facts only, e.g. "Hosted at the Singapore Youth Olympic Games 2010".' },
+      admin: {
+        description:
+          'Verified facts only, e.g. "Hosted at the Singapore Youth Olympic Games 2010".',
+      },
     },
     linkField({ name: 'button', label: 'Button' }),
+    {
+      name: 'downloadsHeading',
+      label: 'Heading above the downloads',
+      type: 'text',
+      localized: true,
+      maxLength: 60,
+    },
+    {
+      name: 'downloads',
+      label: 'Files to download (e.g. CVs)',
+      type: 'array',
+      maxRows: 4,
+      labels: { singular: 'File', plural: 'Files' },
+      admin: {
+        initCollapsed: true,
+        description: 'PDF files uploaded to Media. The file type and size are shown automatically.',
+      },
+      fields: [
+        { name: 'label', type: 'text', localized: true, required: true, maxLength: 40 },
+        { name: 'file', type: 'upload', relationTo: 'media', required: true },
+      ],
+    },
     {
       name: 'mood',
       type: 'select',

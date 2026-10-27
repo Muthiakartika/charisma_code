@@ -15,7 +15,8 @@ import { LivePreviewListener } from '@/components/layout/LivePreviewListener'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { CmsImage } from '@/components/ui/CmsImage'
 import { getDictionary } from '@/i18n/dictionaries'
-import { findPublished, getPayloadClient, getPost, getSiteSettings } from '@/lib/cms'
+import { CmsPage, generateCmsMetadata } from '@/components/layout/CmsPage'
+import { findPublished, getPage, getPayloadClient, getPost, getSiteSettings } from '@/lib/cms'
 import { categoryPath, localizePath, postPath } from '@/lib/paths'
 import { articleSchema, breadcrumbSchema, buildMetadata, type Crumb } from '@/lib/seo'
 import type { Category } from '@/payload-types'
@@ -36,13 +37,22 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
   const { locale: raw, slug } = await params
   const locale = toLocale(raw)
   const post = await getPost(decodeURIComponent(slug), locale)
-  if (!post) notFound()
+  if (!post) {
+    // Pages built in the CMS that live under /insights (e.g. /insights/resources → page "insights-resources")
+    if (await getPage(`insights-${decodeURIComponent(slug)}`, locale)) {
+      return <CmsPage slug={`insights-${decodeURIComponent(slug)}`} locale={raw} />
+    }
+    notFound()
+  }
 
   const { isEnabled: isDraft } = await draftMode()
-  if (locale === 'zh' && post.chineseTranslation !== 'approved' && !isDraft) redirect(postPath(post.slug))
+  if (locale === 'zh' && post.chineseTranslation !== 'approved' && !isDraft)
+    redirect(postPath(post.slug))
 
   const dict = getDictionary(locale)
-  const categories = (post.categories ?? []).filter((item): item is Category => typeof item === 'object' && item !== null)
+  const categories = (post.categories ?? []).filter(
+    (item): item is Category => typeof item === 'object' && item !== null,
+  )
   const primaryCategory = categories[0]
   const crumbs: Crumb[] = [
     { name: dict.common.home, path: '/' },
@@ -53,7 +63,9 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
     ? (
         await findPublished('posts', {
           locale,
-          where: { and: [{ categories: { in: [primaryCategory.id] } }, { id: { not_equals: post.id } }] },
+          where: {
+            and: [{ categories: { in: [primaryCategory.id] } }, { id: { not_equals: post.id } }],
+          },
           sort: '-publishedAt',
           limit: 3,
         })
@@ -69,7 +81,10 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
           <div className="mx-auto mt-12 max-w-3xl">
             <p className="text-sm">
               {primaryCategory && (
-                <Link href={localizePath(categoryPath(primaryCategory.slug), locale)} className="font-semibold text-accent hover:underline">
+                <Link
+                  href={localizePath(categoryPath(primaryCategory.slug), locale)}
+                  className="font-semibold text-accent hover:underline"
+                >
                   {primaryCategory.title}
                 </Link>
               )}
@@ -95,15 +110,26 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
         {post.coverImage && typeof post.coverImage === 'object' && (
           <div className="container-site">
             <div className="relative mx-auto aspect-[16/9] max-w-5xl overflow-hidden rounded-[var(--radius-media)] bg-paper-deep">
-              <CmsImage media={post.coverImage} sizes="(min-width: 1100px) 1024px, 100vw" priority className="object-cover" />
+              <CmsImage
+                media={post.coverImage}
+                sizes="(min-width: 1100px) 1024px, 100vw"
+                priority
+                className="object-cover"
+              />
             </div>
           </div>
         )}
 
         <div className="container-site py-16">
-          <RichText data={post.content} className="prose-body mx-auto text-[1.0938rem] text-ink-soft [&_h2]:text-ink [&_h3]:text-ink [&_strong]:text-ink" />
+          <RichText
+            data={post.content}
+            className="prose-body mx-auto text-[1.0938rem] text-ink-soft [&_h2]:text-ink [&_h3]:text-ink [&_strong]:text-ink"
+          />
           <div className="mx-auto mt-14 max-w-[68ch]">
-            <Link href={localizePath('/insights', locale)} className="inline-flex items-center gap-2 font-semibold hover:text-accent">
+            <Link
+              href={localizePath('/insights', locale)}
+              className="inline-flex items-center gap-2 font-semibold hover:text-accent"
+            >
               <ArrowLeft size={18} aria-hidden /> {dict.insights.backToInsights}
             </Link>
           </div>
@@ -143,8 +169,11 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
 export async function generateMetadata({ params }: PageProps<'/[locale]/insights/[slug]'>) {
   const { locale: raw, slug } = await params
   const locale = toLocale(raw)
-  const [post, settings] = await Promise.all([getPost(decodeURIComponent(slug), locale), getSiteSettings(locale)])
-  if (!post) return {}
+  const [post, settings] = await Promise.all([
+    getPost(decodeURIComponent(slug), locale),
+    getSiteSettings(locale),
+  ])
+  if (!post) return generateCmsMetadata(`insights-${decodeURIComponent(slug)}`, raw)
   return buildMetadata({
     locale,
     path: postPath(post.slug),

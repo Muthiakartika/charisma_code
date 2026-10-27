@@ -1,6 +1,12 @@
 import type { Block } from 'payload'
 
-import { eyebrowField, headingField, sectionSettingsFields, testimonialCategoryOptions } from '@/fields/shared'
+import { buttonsField } from '@/fields/link'
+import {
+  eyebrowField,
+  headingField,
+  sectionSettingsFields,
+  testimonialCategoryOptions,
+} from '@/fields/shared'
 
 export const TestimonialsBlock: Block = {
   slug: 'testimonials',
@@ -44,6 +50,7 @@ export const TestimonialsBlock: Block = {
       max: 9,
       admin: { condition: (_, siblingData) => siblingData?.source !== 'manual' },
     },
+    buttonsField(),
     ...sectionSettingsFields,
   ],
 }

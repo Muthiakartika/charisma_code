@@ -1,7 +1,13 @@
 import type { Block } from 'payload'
 
-import { linkField } from '@/fields/link'
-import { eyebrowField, headingField, sectionSettingsFields, toneField } from '@/fields/shared'
+import { buttonsField, linkField } from '@/fields/link'
+import {
+  eyebrowField,
+  headingField,
+  priceLineField,
+  sectionSettingsFields,
+  toneField,
+} from '@/fields/shared'
 
 export const TextImageBlock: Block = {
   slug: 'textImage',
@@ -10,21 +16,56 @@ export const TextImageBlock: Block = {
   fields: [
     eyebrowField,
     headingField(),
+    priceLineField,
     {
       name: 'body',
       type: 'textarea',
       localized: true,
-      maxLength: 1200,
+      maxLength: 2000,
       admin: { description: 'Leave an empty line between paragraphs.' },
+    },
+    {
+      name: 'table',
+      label: 'Table (optional)',
+      type: 'textarea',
+      localized: true,
+      maxLength: 3000,
+      admin: {
+        description:
+          'One row per line, cells separated by | . The first line is the header, e.g. "Package | From | Live singing". A cell like /wedding-emcee becomes a link to that page.',
+      },
+    },
+    {
+      name: 'pointsHeading',
+      label: 'Heading above the bullet points (optional)',
+      type: 'text',
+      localized: true,
+      maxLength: 80,
     },
     {
       name: 'points',
       label: 'Bullet points',
       type: 'array',
-      maxRows: 6,
-      fields: [{ name: 'text', type: 'text', localized: true, required: true, maxLength: 120 }],
+      maxRows: 10,
+      fields: [
+        {
+          name: 'text',
+          type: 'text',
+          localized: true,
+          required: true,
+          maxLength: 400,
+          admin: { description: 'To make words a link, write [words](https://…).' },
+        },
+      ],
     },
-    { name: 'image', type: 'upload', relationTo: 'media', required: true },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        description: 'Optional. Without a photo the text and the bullet points sit side by side.',
+      },
+    },
     {
       type: 'row',
       fields: [
@@ -51,6 +92,7 @@ export const TextImageBlock: Block = {
       ],
     },
     linkField({ name: 'button', label: 'Button' }),
+    buttonsField(),
     toneField,
     ...sectionSettingsFields,
   ],

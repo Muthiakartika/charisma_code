@@ -14,20 +14,31 @@ import {
   groupSizeOptions,
 } from '@/lib/forms/options'
 import { localizePath } from '@/lib/paths'
-import type { ApplicationFormBlock as ApplicationFormData, EnquiryFormBlock as EnquiryFormData } from '@/payload-types'
+import type {
+  ApplicationFormBlock as ApplicationFormData,
+  EnquiryFormBlock as EnquiryFormData,
+} from '@/payload-types'
 
 import { headingId, Section, SectionHeading, type BlockContext } from './shared'
 
 type Option = { readonly value: string; readonly label: string }
 const translate = (options: readonly Option[], locale: BlockContext['locale']) =>
-  options.map((option) => ({ value: option.value, label: optionLabels[locale][option.value] ?? option.label }))
+  options.map((option) => ({
+    value: option.value,
+    label: optionLabels[locale][option.value] ?? option.label,
+  }))
 
 const privacyHref = (locale: BlockContext['locale']) => localizePath('/legal', locale)
 
 function DirectContact({ context }: { context: BlockContext }) {
   const links = contactLinks(context.settings.contact)
   const items = [
-    links.whatsapp && { ...links.whatsapp, Icon: WhatsappLogo, label: context.dict.common.whatsapp, external: true },
+    links.whatsapp && {
+      ...links.whatsapp,
+      Icon: WhatsappLogo,
+      label: context.dict.common.whatsapp,
+      external: true,
+    },
     links.phone && { ...links.phone, Icon: Phone, external: false },
     links.email && { ...links.email, Icon: EnvelopeSimple, external: false },
   ].filter(Boolean) as Array<{ href: string; label: string; Icon: typeof Phone; external: boolean }>
@@ -50,7 +61,13 @@ function DirectContact({ context }: { context: BlockContext }) {
   )
 }
 
-export async function EnquiryFormBlock({ block, context }: { block: EnquiryFormData; context: BlockContext }) {
+export async function EnquiryFormBlock({
+  block,
+  context,
+}: {
+  block: EnquiryFormData
+  context: BlockContext
+}) {
   const { locale, dict } = context
   const services = await findPublished('services', {
     locale,
@@ -59,30 +76,39 @@ export async function EnquiryFormBlock({ block, context }: { block: EnquiryFormD
     depth: 0,
   })
   const defaultService =
-    block.defaultService && typeof block.defaultService === 'object' ? block.defaultService.key : undefined
+    block.defaultService && typeof block.defaultService === 'object'
+      ? block.defaultService.key
+      : undefined
   const titleId = headingId(block)
 
   return (
     <Section id={block.anchorId ?? 'enquire'} tone="tinted" labelledBy={titleId}>
       <div className="container-site grid gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
-          <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} intro={block.intro} />
-          {block.nextSteps && block.nextSteps.length > 0 && (
-            <ol className="mt-8 grid gap-4">
-              {block.nextSteps.map((step, index) => (
-                <li key={step.id ?? index} className="flex gap-4">
-                  <span
-                    aria-hidden
-                    className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-action font-display text-sm font-bold text-on-action"
-                  >
-                    {index + 1}
-                  </span>
-                  <span className="pt-1 text-ink-soft">{step.text}</span>
-                </li>
-              ))}
-            </ol>
-          )}
-          <DirectContact context={context} />
+          <div className="lg:sticky lg:top-28">
+            <SectionHeading
+              id={titleId}
+              eyebrow={block.eyebrow}
+              heading={block.heading}
+              intro={block.intro}
+            />
+            {block.nextSteps && block.nextSteps.length > 0 && (
+              <ol className="mt-8 grid gap-4">
+                {block.nextSteps.map((step, index) => (
+                  <li key={step.id ?? index} className="flex gap-4">
+                    <span
+                      aria-hidden
+                      className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-action font-display text-sm font-bold text-on-action"
+                    >
+                      {index + 1}
+                    </span>
+                    <span className="pt-1 text-ink-soft">{step.text}</span>
+                  </li>
+                ))}
+              </ol>
+            )}
+            <DirectContact context={context} />
+          </div>
         </div>
         <div className="rounded-[var(--radius-card)] bg-surface p-6 sm:p-8 lg:col-span-8 lg:p-10">
           <EnquiryForm
@@ -103,14 +129,25 @@ export async function EnquiryFormBlock({ block, context }: { block: EnquiryFormD
   )
 }
 
-export function ApplicationFormBlock({ block, context }: { block: ApplicationFormData; context: BlockContext }) {
+export function ApplicationFormBlock({
+  block,
+  context,
+}: {
+  block: ApplicationFormData
+  context: BlockContext
+}) {
   const { locale, dict } = context
   const titleId = headingId(block)
   return (
     <Section id={block.anchorId ?? 'apply'} tone="tinted" labelledBy={titleId}>
       <div className="container-site grid gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
-          <SectionHeading id={titleId} eyebrow={block.eyebrow} heading={block.heading} intro={block.intro} />
+          <SectionHeading
+            id={titleId}
+            eyebrow={block.eyebrow}
+            heading={block.heading}
+            intro={block.intro}
+          />
         </div>
         <div className="rounded-[var(--radius-card)] bg-surface p-6 sm:p-8 lg:col-span-8 lg:p-10">
           <ApplicationForm

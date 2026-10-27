@@ -1,6 +1,13 @@
 import type { Block } from 'payload'
 
-import { eyebrowField, headingField, introField, sectionSettingsFields, toneField } from '@/fields/shared'
+import { buttonsField } from '@/fields/link'
+import {
+  eyebrowField,
+  headingField,
+  introField,
+  sectionSettingsFields,
+  toneField,
+} from '@/fields/shared'
 
 export const ProcessStepsBlock: Block = {
   slug: 'processSteps',
@@ -15,12 +22,13 @@ export const ProcessStepsBlock: Block = {
       type: 'array',
       required: true,
       minRows: 3,
-      maxRows: 7,
+      maxRows: 8,
       fields: [
         { name: 'title', type: 'text', localized: true, required: true, maxLength: 60 },
         { name: 'text', type: 'textarea', localized: true, maxLength: 280 },
       ],
     },
+    buttonsField(),
     toneField,
     ...sectionSettingsFields,
   ],
