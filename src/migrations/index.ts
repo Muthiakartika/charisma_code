@@ -9,6 +9,7 @@ import * as migration_20261020_032234_client_feedback_content from './20261020_0
 import * as migration_20261021_044318_crew_vendor_database from './20261021_044318_crew_vendor_database';
 import * as migration_20261022_010825_corporate_positioning from './20261022_010825_corporate_positioning';
 import * as migration_20261027_032516_handoff_blocks from './20261027_032516_handoff_blocks';
+import * as migration_20261027_072108_payload_3_91 from './20261027_072108_payload_3_91';
 
 export const migrations = [
   {
@@ -64,6 +65,11 @@ export const migrations = [
   {
     up: migration_20261027_032516_handoff_blocks.up,
     down: migration_20261027_032516_handoff_blocks.down,
-    name: '20261027_032516_handoff_blocks'
+    name: '20261027_032516_handoff_blocks',
+  },
+  {
+    up: migration_20261027_072108_payload_3_91.up,
+    down: migration_20261027_072108_payload_3_91.down,
+    name: '20261027_072108_payload_3_91'
   },
 ];
