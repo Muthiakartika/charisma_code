@@ -41,7 +41,10 @@ export const FeatureGridBlock: Block = {
               type: 'text',
               localized: true,
               maxLength: 24,
-              admin: { width: '30%', description: 'Cards only, e.g. "Most popular"' },
+              admin: {
+                width: '30%',
+                description: 'Cards: e.g. "Most popular". Credentials: the kind, e.g. "Education"',
+              },
             },
           ],
         },
@@ -53,7 +56,16 @@ export const FeatureGridBlock: Block = {
           localized: true,
           maxLength: 200,
         },
-        { name: 'text', type: 'textarea', localized: true, maxLength: 900 },
+        {
+          name: 'text',
+          type: 'textarea',
+          localized: true,
+          maxLength: 900,
+          admin: {
+            description:
+              "Credentials: the organisations' links as [Name](https://…); the name in the title becomes the link.",
+          },
+        },
         {
           name: 'pointsHeading',
           label: 'Heading above the points',
@@ -107,6 +119,11 @@ export const FeatureGridBlock: Block = {
               label:
                 'Notes box: bold lead lines in a soft panel (e.g. "Please read before booking")',
               value: 'notes',
+            },
+            {
+              label:
+                'Credentials: the first one large beside the heading, the others in two columns',
+              value: 'credentials',
             },
           ],
           admin: {

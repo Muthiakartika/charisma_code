@@ -134,6 +134,67 @@ const hostingReel: Block = {
   tone: 'dark',
 }
 
+/**
+ * About, section 03 on the Figma board (30 Oct 2026): De Zhong's credentials, each organisation
+ * linked to its website. Shown as a credentials grid: the first one large beside the heading.
+ * The two finalist years (2015, 2018) are dummy content on the board, so they are left out until
+ * the client confirms them.
+ */
+const credentials: Block = {
+  blockType: 'featureGrid',
+  anchorId: 'credentials',
+  heading: 'Credentials and recognition',
+  style: 'credentials',
+  items: [
+    {
+      badge: 'Hosting',
+      title: 'Hosted at the inaugural Singapore Youth Olympic Games, 2010',
+      text: '[Singapore Youth Olympic Games](https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics)',
+    },
+    {
+      badge: 'Education',
+      title: 'Corporate Communications graduate, Singapore Management University',
+      text: '[Singapore Management University](https://www.smu.edu.sg)',
+    },
+    {
+      badge: 'Training',
+      title: 'Trainer with Zenitant, Edublitz and Aktivate',
+      text: '[Zenitant](https://www.zenitanteducation.com) [Edublitz](https://www.edublitz.com/sg/) [Aktivate](https://www.aktivate.sg)',
+    },
+    {
+      badge: 'Theatre',
+      title: 'Performed at the Esplanade Theatre Studio and the Drama Centre Theatre',
+      text: '[Esplanade Theatre Studio](https://www.esplanade.com/visit/venues-and-spaces/venues/theatre-studio) [Drama Centre Theatre](https://www.nlb.gov.sg/main/visit-us/drama-centre)',
+    },
+    {
+      badge: 'Music',
+      title: 'ABRSM Grade 8 Piano, with Merit',
+      text: '[ABRSM](https://www.abrsm.org)',
+    },
+    {
+      badge: 'Busking',
+      title: 'Busker endorsed by the National Arts Council, to November 2028',
+      text: '[National Arts Council](https://eservices.nac.gov.sg/Busking/busker/profile/175a3ecb-a79f-4962-b04b-e94bcc808eda)',
+    },
+    {
+      badge: 'Competition',
+      title: "Finalist, SAFRA's The Ultimate Talent",
+      text: "[SAFRA's The Ultimate Talent](https://www.safra.sg)",
+    },
+    {
+      badge: 'Competition',
+      title: "Finalist, UFM100.3's The Wedding Singer",
+      text: '[UFM100.3](https://audio.sph.com.sg/ufm1003/)',
+    },
+    {
+      badge: 'Recognition',
+      title:
+        'Invited to the COMPASS Awards Presentation for several consecutive years, including the 28th in 2025',
+      text: '[COMPASS Awards Presentation](https://www.compass.org.sg)',
+    },
+  ],
+}
+
 export const recipes: PageRecipe[] = [
   // ── Phase 1 ────────────────────────────────────────────────────────────────
   {
@@ -520,6 +581,7 @@ export const recipes: PageRecipe[] = [
               { label: 'Acting CV', file: img('chia-de-zhong-acting-cv-2026.pdf') },
             ],
           })),
+        after: [credentials],
       },
       // His roles, billed like the names outside a theatre; the languages close the bill
       'Many stages': {

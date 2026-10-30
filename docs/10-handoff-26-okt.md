@@ -92,6 +92,16 @@ Beberapa halaman menampilkan foto yang sama dua kali (hero = kartu proyek atau h
 - File ada di `src/seed/instagram/ig-<kode reel>-<nama>.jpg`, diambil dari frame video (720px, resolusi rendah) dan ditandai "needs replacement" di Media. Ganti dengan foto asli saat klien mengirimnya.
 - Importer sekarang menjaga aturan ini sendiri: foto band tidak boleh sama dengan foto hero, cover proyek di halaman itu, atau band sebelumnya. Foto khusus per band diatur lewat `photoFor` di `recipes.ts`.
 
+## Credentials and recognition di About (30 Okt 2026)
+
+- Section baru dari Figma (board About, section 03 `#credentials`), tepat setelah profil founder: daftar kredensial De Zhong, masing-masing dengan link ke organisasinya (terbuka di tab baru, ditandai ↗). Isinya ada di `recipes.ts` (konstanta `credentials`).
+- Tampilannya dibuat lebih kaya dari daftar polos di Figma: gaya baru **Credentials** di blok Feature Grid (`src/components/blocks/Credentials.tsx`, migrasi `20261030_023857_credentials_style`). Kredensial pertama (Youth Olympic Games) tampil besar di kartu gelap dengan tahun 2010 sebagai angka besar; delapan lainnya dalam dua kolom bergaris, masing-masing dengan ikon dan label jenisnya (Education, Training, Theatre, Music, Busking, Competition, Recognition).
+- Di CMS: judul item = kalimat kredensialnya; teks item = link organisasi sebagai `[Nama](https://…)`, dan nama yang sama di judul otomatis menjadi link; badge = jenisnya (menentukan ikon).
+- Tahun 2015 (SAFRA's The Ultimate Talent) dan 2018 (UFM100.3's The Wedding Singer) ditandai *dummy highlight* di Figma, jadi belum ditampilkan. Tambahkan setelah klien mengonfirmasi.
+- Empat poin di profil founder tetap seperti di Figma.
+- Figma juga punya dua section baru lain di About yang belum dibuat: 06 `#acting-credits` (Acting credits) dan 14 `#music` (Music).
+- Staging: diterapkan saat deploy sebagai update `2026-10-30` (hanya halaman About, lihat `07-deploy-produksi.md`).
+
 ## Keputusan yang perlu diketahui
 
 - Tampilan tetap desain preview; huruf kapital tombol dari Figma tidak dipakai.

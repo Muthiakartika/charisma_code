@@ -445,7 +445,7 @@ export interface FeatureGridBlock {
   items: {
     title: string;
     /**
-     * Cards only, e.g. "Most popular"
+     * Cards: e.g. "Most popular". Credentials: the kind, e.g. "Education"
      */
     badge?: string | null;
     /**
@@ -453,6 +453,9 @@ export interface FeatureGridBlock {
      */
     priceLine?: string | null;
     idealFor?: string | null;
+    /**
+     * Credentials: the organisations' links as [Name](https://…); the name in the title becomes the link.
+     */
     text?: string | null;
     pointsHeading?: string | null;
     points?:
@@ -483,7 +486,7 @@ export interface FeatureGridBlock {
   /**
    * Comparison strip: keep item titles short (e.g. "Under 20"), 2 to 4 items.
    */
-  style?: ('list' | 'numbered' | 'strip' | 'cards' | 'checklist' | 'match' | 'notes') | null;
+  style?: ('list' | 'numbered' | 'strip' | 'cards' | 'checklist' | 'match' | 'notes' | 'credentials') | null;
   columns?: ('2' | '3' | '4') | null;
   /**
    * A first line ending in "?" is shown in bold. Leave an empty line between paragraphs.

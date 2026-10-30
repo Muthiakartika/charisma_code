@@ -362,6 +362,7 @@ const TONED = new Set([
   'clientLogos',
 ])
 const FIXED_LIGHT = new Set([
+  'richText',
   'testimonials',
   'featuredProjects',
   'founderUpdates',

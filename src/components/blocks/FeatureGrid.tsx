@@ -35,6 +35,7 @@ import {
   whatsappIcon,
   type BlockContext,
 } from './shared'
+import { CredentialsGrid } from './Credentials'
 
 type Item = FeatureGridData['items'][number]
 
@@ -172,6 +173,8 @@ export function FeatureGridBlock({
   block: FeatureGridData
   context: BlockContext
 }) {
+  // Credentials have a layout of their own (Credentials.tsx)
+  if (block.style === 'credentials') return <CredentialsGrid block={block} context={context} />
   const { locale } = context
   const titleId = headingId(block)
   const dark = block.tone === 'dark'

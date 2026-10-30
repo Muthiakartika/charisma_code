@@ -10,6 +10,7 @@ import * as migration_20261021_044318_crew_vendor_database from './20261021_0443
 import * as migration_20261022_010825_corporate_positioning from './20261022_010825_corporate_positioning';
 import * as migration_20261027_032516_handoff_blocks from './20261027_032516_handoff_blocks';
 import * as migration_20261027_072108_payload_3_91 from './20261027_072108_payload_3_91';
+import * as migration_20261030_023857_credentials_style from './20261030_023857_credentials_style';
 
 export const migrations = [
   {
@@ -70,6 +71,11 @@ export const migrations = [
   {
     up: migration_20261027_072108_payload_3_91.up,
     down: migration_20261027_072108_payload_3_91.down,
-    name: '20261027_072108_payload_3_91'
+    name: '20261027_072108_payload_3_91',
+  },
+  {
+    up: migration_20261030_023857_credentials_style.up,
+    down: migration_20261030_023857_credentials_style.down,
+    name: '20261030_023857_credentials_style'
   },
 ];
