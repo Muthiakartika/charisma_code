@@ -20,6 +20,11 @@ import { importHandoff } from './import'
 const UPDATES: { version: string; note: string; slugs?: string[] }[] = [
   { version: '2026-10-27', note: 'the developer handoff of 26 Oct' },
   { version: '2026-10-30', note: 'About: credentials and recognition', slugs: ['about'] },
+  {
+    version: '2026-11-03',
+    note: 'Corporate Team Building: real team building photos',
+    slugs: ['corporate-team-building'],
+  },
 ]
 const MARKER = 'content:dev-handoff'
 

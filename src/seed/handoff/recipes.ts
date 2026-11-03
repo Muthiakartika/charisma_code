@@ -246,23 +246,21 @@ export const recipes: PageRecipe[] = [
   // ── Phase 2: service pages that already existed ───────────────────────────
   {
     slug: 'corporate-team-building',
-    // The ballroom photo, the Banyan and the CWA photos are the project cards' covers on this page
-    heroImages: ['communityEventCrowd', 'ig-Cp9pHxrBonZ-game-booth.jpg'],
-    photoFor: {
-      'Clearer communication': 'ig-Cp9pHxrBonZ-seminar-stage.jpg',
-      Onboarding: 'ig-Cp9pHxrBonZ-game-booth-2.jpg',
-    },
-    bandPhotos: [
-      'communityEventCrowd',
-      'corporateChristmasBallroom',
-      'festiveTeamSelfie',
-      'banyanDnd',
-      'cwaEvent',
-      'eveningPartyCrowd',
-      'largeGroupCarnival',
-      'somaGroup',
-      'compassAwards',
+    // Real photos of a team building day De Zhong hosted (Oct 2026), one per band, matched to its topic.
+    // Chosen by heading, so they replace the earlier stand-in photos that the bands would otherwise keep.
+    heroImages: [
+      'team-bonding-activities-singapore.webp',
+      'de-zhong-hosting-corporate-team-building.webp',
     ],
+    photoFor: {
+      'Fun on the day': 'corporate-team-building-debrief.webp',
+      'Stronger collaboration': 'team-challenge-jigsaw-puzzle.webp',
+      'Clearer communication': 'team-communication-game.webp',
+      Onboarding: 'icebreaker-game-mixed-teams.webp',
+      'Team events that lift': 'team-building-live-scores.webp',
+      'Inclusive team building': 'bilingual-team-building.webp',
+      'Leadership presence': 'team-leaders-presenting-pitch.webp',
+    },
     file: 'corporate-team-building.md',
     title: 'Corporate Team Building',
     phase: 2,

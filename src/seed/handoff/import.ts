@@ -110,6 +110,59 @@ const INSTAGRAM_PHOTOS: { file: string; alt: string }[] = [
   },
 ]
 
+/**
+ * Real photos from a corporate team building day De Zhong hosted (Oct 2026), sent by the client.
+ * WebP in src/seed/photos/, cut from the 6000px camera originals to the shape of the frame each one
+ * fills (hero 5:6 and 4:5, text bands 5:4), so Next.js never has to enlarge them to fill the frame.
+ * `focal` is where the subject is (0–100 %), set when the photo is added; editors can move it in /admin.
+ */
+const EVENT_PHOTOS: { file: string; alt: string; focal?: { x: number; y: number } }[] = [
+  {
+    file: 'team-bonding-activities-singapore.webp',
+    alt: 'Colleagues forming a shape together for a picture challenge at a team bonding day in Singapore',
+    focal: { x: 50, y: 40 },
+  },
+  {
+    file: 'de-zhong-hosting-corporate-team-building.webp',
+    alt: 'De Zhong hosting a corporate team building day with a microphone',
+    focal: { x: 50, y: 30 },
+  },
+  {
+    file: 'corporate-team-building-debrief.webp',
+    alt: 'A facilitator on stage asking a reflection question as a full ballroom of colleagues raise their hands',
+    focal: { x: 42, y: 50 },
+  },
+  {
+    file: 'team-challenge-jigsaw-puzzle.webp',
+    alt: 'Colleagues piecing a jigsaw puzzle together during a team challenge',
+  },
+  {
+    file: 'team-communication-game.webp',
+    alt: 'A colleague explaining her plan to her team at a round table during a team building game',
+    focal: { x: 52, y: 45 },
+  },
+  {
+    file: 'icebreaker-game-mixed-teams.webp',
+    alt: 'Mixed teams of colleagues acting out an icebreaker game in a hotel ballroom',
+    focal: { x: 50, y: 45 },
+  },
+  {
+    file: 'team-building-live-scores.webp',
+    alt: 'De Zhong announcing the live team scores during a corporate team building day',
+    focal: { x: 42, y: 35 },
+  },
+  {
+    file: 'bilingual-team-building.webp',
+    alt: 'Two colleagues from different backgrounds laughing as they work through a team activity',
+    focal: { x: 48, y: 40 },
+  },
+  {
+    file: 'team-leaders-presenting-pitch.webp',
+    alt: 'Team members presenting their pitch on stage at a corporate team building day',
+    focal: { x: 50, y: 45 },
+  },
+]
+
 const AUDIENCE: Record<string, 'corporate' | 'celebrations' | 'youth' | 'creative'> = {
   'wedding-emcee': 'celebrations',
   'kids-youth': 'youth',
@@ -211,6 +264,25 @@ export async function importHandoff(
       context: seedContext(),
       req,
     })
+    mediaByName.set(photo.file, id)
+    log(`added photo ${photo.file}`)
+  }
+  for (const photo of EVENT_PHOTOS) {
+    if (mediaByName.has(photo.file)) continue
+    const id = await importLocalImage(
+      payload,
+      path.resolve(process.cwd(), 'src/seed/photos', photo.file),
+      photo.alt,
+    )
+    if (photo.focal) {
+      await payload.update({
+        collection: 'media',
+        id,
+        data: { focalX: photo.focal.x, focalY: photo.focal.y },
+        context: seedContext(),
+        req,
+      })
+    }
     mediaByName.set(photo.file, id)
     log(`added photo ${photo.file}`)
   }
