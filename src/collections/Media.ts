@@ -37,6 +37,12 @@ export const Media: CollectionConfig = {
       { name: 'openGraph', width: 1200, height: 630, position: 'centre' },
     ],
     adminThumbnail: 'thumbnail',
+    // Browsers and Vercel's image optimiser may keep a file for 31 days (they follow this header,
+    // not images.minimumCacheTTL). Safe because a replaced upload always gets a new file name.
+    modifyResponseHeaders: ({ headers }) => {
+      headers.set('Cache-Control', 'public, max-age=2678400')
+      return headers
+    },
   },
   fields: [
     {
