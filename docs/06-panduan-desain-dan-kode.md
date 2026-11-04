@@ -126,7 +126,7 @@ Di komponen server: `import { Phone } from '@phosphor-icons/react/ssr'`; di komp
 
 | Gerak | Di mana | Angka |
 |---|---|---|
-| `.rise` | Teks hero muncul berurutan | 800 ms, jeda 90 ms per baris |
+| `.rise` | Teks hero naik ke posisi akhir berurutan. **Tidak pernah tersembunyi** (opacity tidak disentuh, sejak 4 Nov 2026: teks yang mulai transparan menunda LCP di HP) | 800 ms, jeda 90 ms per baris |
 | **Follow-spot** | Hero *Stage*: sorot lampu mulai dari focal point foto lalu melebar ke lingkaran penuh | 900 ms, lingkaran kecil +180 ms |
 | **Colour block** | Hero *Colour block*: blok warna masuk dari tepi layar, foto terbuka seperti follow-spot, lampu line art berayun lalu diam, sketsa muncul pelan | blok 900 ms; foto +160 ms (kecil +340 ms); line art 1 s mulai 600 ms |
 | **Cue live** | Process Steps: nomor berubah dari abu-abu ke aksen, garis terisi menuju cue berikutnya | terikat posisi scroll |

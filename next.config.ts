@@ -28,6 +28,9 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
     // 70 is used for the large hero photo (smaller file, same visual quality), 75 for everything else.
     qualities: [70, 75],
+    // Keep optimised images for 31 days (Vercel served them for only 60 seconds otherwise).
+    // CMS uploads get a new file name when replaced, so a changed photo still shows at once.
+    minimumCacheTTL: 2678400,
     // Images that may be optimised: CMS uploads and the brand files in /public/brand
     localPatterns: [{ pathname: '/api/media/file/**' }, { pathname: '/brand/**' }],
     remotePatterns: [{ protocol: 'https', hostname: 'i.ytimg.com' }],
