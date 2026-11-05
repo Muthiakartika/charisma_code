@@ -231,6 +231,6 @@ Not in the first version of this list; the pages already use them.
 
 | Page | English | 中文 |
 |---|---|---|
-| Wedding | Banquet Emcee · Emcee & Live Singer · Full Celebration Host | 婚宴司仪 · 司仪兼现场演唱 · 全程庆典主持 |
+| Wedding | Banquet Emcee · Emcee & Live Singer · Full Celebration Host | 婚宴司仪 · 司仪兼现场歌手 · 全程庆典主持 |
 | Chinese New Year | Dinner Emcee · Festive Games Host · Full Festive Programme | 晚宴司仪 · 新春游戏主持 · 新春全套节目 |
 | School & family | Children's Party Host · School Event Emcee · Family Day Host | 儿童派对主持 · 学校活动司仪 · 家庭日主持 |

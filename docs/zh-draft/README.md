@@ -11,6 +11,7 @@
 | [glossary.md](glossary.md) | Daftar istilah EN → 中文 dan aturan gaya penulisan | Reviewer Mandarin |
 | [pages/](pages/) | 24 halaman website, satu file per halaman, dengan nama file yang sama seperti brief Inggris di `docs/handoff/pages/` | Reviewer, lalu developer |
 | [shared.md](shared.md) | Teks yang tidak ada di brief: header, menu, footer, SEO umum, kredensial di About, halaman Work With Us, 7 studi kasus | Reviewer, lalu developer |
+| [proofreading-2026-11-05.md](proofreading-2026-11-05.md) | Hasil proofreading kedua (5 Nov): 352 perbaikan tata bahasa, arti dan gaya, plus 12 pilihan gaya untuk diputuskan De Zhong | Reviewer, klien |
 
 ## Kenapa "Mandarin Singapura" berbeda
 
@@ -38,7 +39,7 @@ Daftar lengkapnya ada di [glossary.md](glossary.md).
 
 ## Pertanyaan untuk reviewer
 
-Yang paling perlu diputuskan penutur asli (detailnya ada di baris `> **Note (译注):**` di tiap file):
+Daftar lengkap pilihan gaya setelah proofreading 5 Nov ada di [proofreading-2026-11-05.md](proofreading-2026-11-05.md). Yang paling perlu diputuskan penutur asli (detailnya ada di baris `> **Note (译注):**` di tiap file):
 
 1. **H1 Corporate Emcee.** Versi Inggris menjanjikan "guarantees the fun". Draf memakai 包您玩得尽兴 (janji ringan); ada alternatif tanpa janji di catatannya.
 2. **Ucapan 捞鱼生 di halaman Chinese New Year.** Enam ucapan keberuntungan perlu dicocokkan dengan yang benar-benar diucapkan De Zhong.

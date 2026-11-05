@@ -10,13 +10,13 @@ _The Charisma Code  ·  additions to /zh/about  ·  draft 5 Nov 2026  ·  transl
 - **Zenitant**、**Edublitz** 和 **Aktivate** 培训师 → https://www.zenitanteducation.com · https://www.edublitz.com/sg/ · https://www.aktivate.sg
 - 2010 年首届**新加坡青年奥林匹克运动会**司仪 → https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics
 - 曾在**滨海艺术中心剧场工作室**和**戏剧中心剧院**演出 → https://www.esplanade.com/visit/venues-and-spaces/venues/theatre-studio · https://www.nlb.gov.sg/main/visit-us/drama-centre
-- **ABRSM** 钢琴八级（优良） → https://www.abrsm.org
+- **ABRSM** 钢琴八级（良好） → https://www.abrsm.org
 - **国家艺术理事会**认证街头艺人（有效期至 2028 年 11 月） → https://eservices.nac.gov.sg/Busking/busker/profile/175a3ecb-a79f-4962-b04b-e94bcc808eda
 - <mark>2015</mark> 年入围 **SAFRA's The Ultimate Talent** 决赛 → https://www.safra.sg
 - <mark>2018</mark> 年入围 **UFM100.3**《The Wedding Singer》决赛 → https://audio.sph.com.sg/ufm1003/
 - 连续多年受邀出席 **COMPASS Awards Presentation**，包括 2025 年第 28 届 → https://www.compass.org.sg
 
-> **Note (译注):** Wording follows shared.md §5. The linked names SAFRA's The Ultimate Talent and COMPASS Awards Presentation stay in English (no official Chinese titles known). ABRSM's own Chinese term for "Merit" may be 良好 rather than 优良; please check and align with shared.md.
+> **Note (译注):** Wording follows shared.md §5. The linked names SAFRA's The Ultimate Talent and COMPASS Awards Presentation stay in English (no official Chinese titles known).
 
 ## Addition 2 — Music (after the hosting reel)
 

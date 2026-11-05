@@ -47,7 +47,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **Price line:** S$888 起
 
-为年终晚宴和新春晚宴带来充满活力的双语主持，配合游戏、幸运抽奖和紧凑的节目流程，让整晚气氛不冷场。
+为年终晚宴和新春晚宴带来充满活力的双语主持，配合游戏、幸运抽奖和紧凑的节目流程，让整晚不冷场。
 
 **Button:** `查看公司晚宴司仪` → /dinner-and-dance-emcee
 
@@ -79,7 +79,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **Price line:** 按课程报价
 
-互动式的引导工作坊，主题涵盖沟通、协作和团队互动。
+互动式的引导工作坊，主题涵盖沟通、协作和团队动力。
 
 **Button:** `查看企业工作坊` → /corporate-workshops
 
@@ -103,7 +103,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **Price line:** 每个学校团体 S$880 起
 
-为学校、营会和年轻人设计的自信、沟通及创意课程。
+为学校、营会和年轻人设计的课程，培养自信、沟通能力和创意。
 
 **Button:** `查看儿童与青少年课程` → /kids-youth-programs
 
@@ -119,7 +119,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **Price line:** 按项目报价
 
-一个联系窗口，为您对接可靠的供应商：音响、摄影、摄像、场地、表演者和工作人员。
+一个联系窗口，帮您安排可靠的供应商：音响、摄影、摄像、场地、表演者和工作人员。
 
 **Button:** `查看活动支援` → /event-support
 
@@ -133,9 +133,9 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H2 ·** 不确定哪项服务适合您？
 
-在下面找到您正在筹划的活动，或告诉我们活动详情，我们会为您推荐合适的形式。
+请在下方查找您正在筹划的活动，或告诉我们活动详情，我们会为您推荐合适的形式。
 
-- 公司晚宴、D&D 或年终派对 → 公司晚宴司仪；如需整晚策划，请看公司晚宴策划
+- 公司聚餐、D&D 晚宴或年终派对 → 公司晚宴司仪；如需整晚策划，请看公司晚宴策划
 - 颁奖典礼、发布会或公司庆典 → 企业活动司仪
 - 新品或品牌发布会 → 新品发布会
 - 全天大会或研讨会 → 会议及研讨会司仪
@@ -144,7 +144,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 - 婚礼 → 婚礼司仪
 - 学生、学校活动或营会 → 儿童与青少年课程，或学校及家庭活动司仪
 - 需要准备的演讲、提案或面试 → 沟通辅导
-- 为品牌寻找内容创作者和内容 → 创意营销活动
+- 为品牌物色内容创作者、制作内容 → 创意营销活动
 - 音响、摄影、工作人员或场地 → 活动支援
 
 **Button:** `联系我们` → /contact
@@ -153,13 +153,13 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 ## Section 4 — How booking works
 
-**H2 ·** 每项合作的进行方式
+**H2 ·** 我们的合作方式
 
 每一项服务背后，都是同样的五个步骤。
 
 **H3 ·** 1. 您的目标
 
-这场活动之后，什么应该有所改变，或值得庆祝？
+您希望这场活动带来什么改变，或庆祝什么？
 
 **H3 ·** 2. 您的团队
 
@@ -185,7 +185,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H3 ·** 可以同时预订多项服务吗？
 
-可以。策划、主持、团队建设和活动支援本来就是为互相配合而设计的，并由同一个联系窗口负责。
+可以。策划、主持、团队建设和活动支援本就设计成可以互相搭配，并由同一个联系窗口负责。
 
 **H3 ·** 哪些服务有固定价格？
 
@@ -203,7 +203,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H2 ·** 告诉我们您在筹划什么
 
-告诉我们日期、人数，以及您希望大家带走什么收获，我们会为您推荐合适的服务。
+请分享活动日期、人数，以及您希望大家有什么收获，我们会为您推荐合适的服务。
 
 **Button:** `联系我们` → /contact
 

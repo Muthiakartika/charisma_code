@@ -6,7 +6,7 @@ _The Charisma Code  ·  /zh/contact  ·  draft 4 Nov 2026  ·  translated from d
 
 **H1 ·** 我们聊聊吧。
 
-团队建设、司仪主持、工作坊或庆祝活动：告诉我们一些细节，我们会回复您活动构思和方案。
+团队建设、司仪主持、工作坊或庆祝活动：告诉我们一些细节，我们会带着构思和方案回复您。
 
 - ✓ **用 WhatsApp，快速得到答复**
 - ✓ **用表格，提交完整需求**
@@ -64,7 +64,7 @@ hello@thecharismacode.co
 
 **Button:** `发送询问` → submit
 
-提交后显示：“谢谢您。我们会回复档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
+提交后显示：“谢谢您。我们会告知您档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
 
 ## Section 4 — How booking works
 
@@ -78,7 +78,7 @@ hello@thecharismacode.co
 
 并发送量身定制的方案。
 
-**H3 ·** 3. 我们一起完善计划
+**H3 ·** 3. 我们一起完善方案
 
 直到完全符合您的需要。
 
@@ -98,13 +98,13 @@ hello@thecharismacode.co
 
 **H3 ·** 询问前需要准备完整的活动需求吗？
 
-不需要。一个日期，加上一句活动简介，就足以开始。
+不需要。一个日期，加上一句活动简介，就可以开始了。
 
 **H3 ·** 我可以到工作室参观吗？
 
 **H3 ·** 你们可以用华语回复吗？
 
-可以，如果您希望的话。
+可以，只要您希望，我们就用华语回复。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
@@ -116,7 +116,7 @@ hello@thecharismacode.co
 | Field | Value |
 |---|---|
 | Target keywords (zh, volume not checked) | The Charisma Code 联系方式 · 联系新加坡活动公司 |
-| SEO title | 联系我们，询问您的活动 \| The Charisma Code |
+| SEO title | 联系我们：咨询您的活动事宜 \| The Charisma Code |
 | Meta description | 通过 WhatsApp、电话或电邮联系新加坡的 The Charisma Code，或发送询问，了解团队建设、司仪主持、工作坊或其他活动。 |
 | H1 | 我们聊聊吧。 |
 

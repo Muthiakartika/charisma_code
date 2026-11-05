@@ -6,7 +6,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H1 ·** 您的政府及社区活动司仪。
 
-为新加坡各政府部门、法定机构、基层组织和慈善团体，提供英语和华语双语主持。从主宾抵达到最后的致谢，主持准备充足、熟悉礼宾程序，又不失亲切。
+为新加坡各政府部门、法定机构、基层组织和慈善团体提供中英双语主持。从主宾抵达到最后的致谢，司仪准备充足、熟悉礼宾程序，又不失亲切。
 
 > **Note (译注):** Public-sector terms used on this page: statutory board = 法定机构, guest of honour = 主宾, protocol = 礼宾程序, forms of address = 称谓, launch = 推介礼, officer-in-charge = 负责官员, engagement session = 交流会. Please confirm these match what Singapore public-sector clients use.
 
@@ -35,7 +35,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H3 ·** 法定机构活动 ↓
 
-以恰当的礼仪和语调，主持推介礼、论坛和仪式。
+以恰当的礼仪和语气，主持推介礼、论坛和仪式。
 
 **H3 ·** 社区及基层活动 ↓
 
@@ -61,7 +61,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H2 ·** 政府部门活动司仪
 
-以恰当的礼仪和语调主持推介礼、论坛和仪式，主宾流程和致辞顺序都会事先与您的团队确认。
+以恰当的礼仪和语气主持推介礼、论坛和仪式，主宾流程和致辞顺序都会事先与您的团队确认。
 
 准备充足、准时沉稳，让节目完全按照批准的流程进行。
 
@@ -76,7 +76,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 交流会、员工活动和公众外展活动，符合要求，准时进行，可用英语、华语或双语主持。
 
-我们依照您的要求和审批内容进行，并根据对象是员工还是公众调整语调。
+我们依照您的要求和审批结果进行，并根据对象是员工还是公众调整主持语气。
 
 - ✓ 交流会
 - ✓ 员工活动
@@ -89,7 +89,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 节庆活动、家庭日和邻里庆典，欢迎不同年龄和背景的居民一同参与。
 
-游戏、音乐和双语主持，让整个邻里都投入庆祝。
+游戏、音乐和双语主持，让街坊邻里都投入庆祝。
 
 - ✓ 节庆活动和家庭日
 - ✓ 不同年龄和背景
@@ -100,7 +100,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H2 ·** 慈善晚宴及筹款活动
 
-让整晚的注意力始终放在您的公益使命和捐款者身上，就像谢德忠（Chia De Zhong）为 Caregiving Welfare Association 担任司仪时一样。
+整晚的焦点始终放在您的公益使命和捐款者身上，就像谢德忠（Chia De Zhong）为 Caregiving Welfare Association 担任司仪时一样。
 
 > **Note (译注):** Caregiving Welfare Association is kept in English. If the association has an official Chinese name, use it here and in the FAQ.
 
@@ -121,7 +121,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 所有名字都会事先核对，并正确念出。
 
-- ✓ 每一位受奖者的时刻
+- ✓ 每一位受奖者都有专属时刻
 - ✓ 层层铺垫，提示清晰
 - ✓ 事先核对名字
 - ✓ 节奏平稳
@@ -160,16 +160,16 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 ## Section 9 — Pricing
 
-**H2 ·** 您的司仪报价如何决定
+**H2 ·** 您的司仪报价如何计算
 
 **Price line:** 半天或晚间活动 S$888 起
 
-大多数政府及社区活动的费用介于 S$888 至 S$1,888 之间。每一项预订都会收到书面报价。
+大多数政府及社区活动的费用介于 S$888 至 S$1,888 之间。每一项预订，我们都会提供书面报价。
 
 **H4 ·** 影响报价的因素
 
 - 节目时长
-- 致辞、演示和环节的数量
+- 致辞、简报和环节的数量
 - 英语、华语或双语，以及双语主持稿
 - 彩排或场地勘察
 - 户外或多地点活动
@@ -187,7 +187,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 德忠自 2010 年首届青年奥林匹克运动会起担任主持，曾在滨海艺术中心剧场工作室和戏剧中心剧院演出，能在英语和华语之间自如切换。他也毕业于新加坡管理大学企业传播专业。
 
 - ✓ 与您的团队一起审阅节目流程和主持稿
-- ✓ 英语和华语双语主持
+- ✓ 中英双语主持
 - ✓ 沉着应对延误和变动
 - ✓ 可选现场演唱和钢琴演奏
 
@@ -197,7 +197,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H2 ·** 与我们合作过的品牌和机构。
 
-标志墙（沿用现有）：青年奥林匹克运动会、新加坡体育理事会、人民协会、新电信、三星、新传媒、SuperSports Arena、华侨银行。
+Logo strip (existing): 青年奥林匹克运动会、新加坡体育理事会、人民协会、新电信、三星、新传媒、SuperSports Arena、华侨银行。
 
 **H2 ·** 客户怎么说
 
@@ -213,7 +213,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 ## Section 12 — Please read before booking
 
-**H2 ·** 预订前请先阅读
+**H2 ·** 预订须知
 
 以下几点有助于活动顺利进行，适用于每一项预订。
 
@@ -259,7 +259,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H3 ·** 你们可以主持社区及基层活动吗？
 
-可以。社区庆典、家庭日和节庆活动，我们的主持让各年龄层的居民都感到被接纳。
+可以。社区庆典、家庭日和节庆活动，我们的主持让各年龄层的居民都能融入其中。
 
 **H3 ·** 你们主持慈善活动吗？
 
@@ -287,7 +287,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **H2 ·** 获取司仪报价
 
-告诉我们您的活动详情，我们会回复档期和书面报价。
+告诉我们您的活动详情，我们会回复您，告知档期并提供书面报价。
 
 - 姓名* [TEXT]
 - 公司或机构 [TEXT]
@@ -306,7 +306,7 @@ _The Charisma Code  ·  /zh/government-community-emcee  ·  draft 4 Nov 2026  ·
 
 **Button:** `获取报价` → submit
 
-提交后显示：“谢谢您。我们会回复档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
+提交后显示：“谢谢您。我们会回复您，告知档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
 
 ## Section 15 — Final CTA
 

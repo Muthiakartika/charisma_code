@@ -6,7 +6,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **H1 ·** 为您主持新春晚宴的双语司仪。
 
-以英语和华语主持常年晚宴和农历新年庆祝活动，让每一桌宾客都能投入致辞、捞鱼生、游戏和幸运抽奖。
+以英语和华语主持常年晚宴和农历新年庆祝活动，致辞、捞鱼生、游戏和幸运抽奖，每一桌宾客都能投入其中。
 
 > **Note (译注):** "Annual dinner" = 常年晚宴 (Singapore usage). If company readers expect 年终晚宴 or 公司晚宴 here, please change it.
 
@@ -47,7 +47,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **H2 ·** 选择您的新春配套
 
-为公司新春晚宴准备的三种清楚配套。
+专为公司新春晚宴而设的三种配套，内容一目了然。
 
 **H3 ·** 晚宴司仪
 
@@ -55,7 +55,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **Ideal for:** 节目流程已定、需要一位自信双语司仪的公司晚宴。
 
-以英语和华语主持欢迎词、致辞、祝酒和宣布事项，从第一次祝酒到最后一份奖品，全程准时。
+以英语和华语主持欢迎词、致辞、祝酒和宣布事项，从第一杯祝酒到最后一个奖项，全程准时。
 
 **H4 ·** 配套内容
 
@@ -146,7 +146,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 - ✓ 英语和华语
 - ✓ 每一桌都跟得上
 - ✓ 游戏讲解人人明白
-- ✓ 没有人落单
+- ✓ 没有人被冷落
 
 ## Section 6 — Switching
 
@@ -165,7 +165,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **H2 ·** 从第一杯祝酒起，新春喜气满满
 
-以亲切和幽默主持新春贺词、捞鱼生、游戏和幸运抽奖，让这一晚像一场庆祝，而不是公司会议。
+以亲切幽默的风格主持新春贺词、捞鱼生、游戏和幸运抽奖，让这一晚像一场庆祝，而不是公司会议。
 
 还可选择现场演唱一两首新春歌曲。
 
@@ -184,10 +184,10 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 - 年年有余：寓意年年富足有余
 - 大吉大利：寓意好运亨通，财利丰厚
-- 步步高升：寓意一步一步往上攀升
+- 步步高升：寓意事业节节上升
 - 风生水起：寓意好运越来越旺
 - 招财进宝：寓意财富和珍宝滚滚而来
-- 万事如意：寓意凡事称心如意
+- 万事如意：寓意事事顺心
 
 > **Note (译注):** The pinyin is dropped and the English meanings are replaced by short Chinese glosses (寓意…), since Chinese readers know these phrases. Please check the glosses and confirm the phrases De Zhong actually calls out. If the page should show the bilingual style, an alternative is 年年有余（abundance year after year）.
 
@@ -221,7 +221,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **H2 ·** 一位司仪，两种语言，一场庆祝
 
-致辞、祝酒、游戏和幸运抽奖，全都挤在同一个晚上。德忠让节目顺畅、准时地推进，看得出哪几桌需要多一点关注，并在适当的时刻随时切换语言。
+致辞、祝酒、游戏和幸运抽奖，全都挤在同一个晚上。德忠让节目顺畅、准时地推进，看得出哪几桌需要多一点关注，并在需要时随时切换语言。
 
 超过 15 年来，他在新加坡各地主持公司晚宴、颁奖典礼和各种庆典，包括 The Banyan Group 在 Mandai Rainforest Resort 举办的公司晚宴（D&D）。
 
@@ -231,7 +231,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **H2 ·** 与我们合作过的品牌和机构。
 
-标志墙（沿用现有）：青年奥林匹克运动会、新加坡体育理事会、人民协会、新电信、三星、新传媒、SuperSports Arena、华侨银行。
+Logo strip (existing): 青年奥林匹克运动会、新加坡体育理事会、人民协会、新电信、三星、新传媒、SuperSports Arena、华侨银行。
 
 **H2 ·** 客户怎么说
 
@@ -283,7 +283,7 @@ _The Charisma Code  ·  /zh/chinese-new-year-emcee  ·  draft 4 Nov 2026  ·  tr
 
 **音响与麦克风**
 
-司仪需要一支无线麦克风和运作正常的音响系统，通常由场地提供。
+司仪需要一支无线麦克风和一套运作正常的音响系统，通常由场地提供。
 
 **鱼生与时间安排**
 

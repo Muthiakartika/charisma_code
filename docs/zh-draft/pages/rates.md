@@ -6,15 +6,15 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H1 ·** 新加坡司仪收费与活动价格。
 
-这里列出每项服务的起价，包括婚礼、晚宴和企业活动的司仪价格。每场活动都会根据您的日期、时长和节目流程报价，在您预订之前，都会先收到书面报价。
+这里列出每项服务的起价，包括婚礼、晚宴和企业活动的司仪价格。每场活动都会根据您的日期、时长和节目流程报价，您在预订之前一定会先收到书面报价。
 
 - ✓ **每项服务都有标价**
 - ✓ **预订前提供书面报价**
-- ✓ **询价无需任何承诺**
+- ✓ **询价不必承诺预订**
 
 **Price line:** 司仪主持 S$588 起  ·  沟通辅导每节 S$120
 
-**Button:** `按您的日期获取报价` → #quote
+**Button:** `提供日期，获取报价` → #quote
 
 **Button:** `WhatsApp 联系德忠` → https://wa.me/6594378083
 
@@ -22,13 +22,11 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H2 ·** 司仪价格与起价
 
-> **Note (译注):** English price ranges (S$588 to 1,288 written with an en dash) are written "S$588 至 S$1,288" (S$ repeated on the upper figure for clarity; numbers unchanged). Package names on this page are my own renderings and should be checked against the wedding, CNY and school pages once those are translated.
-
 **H3 ·** 婚礼司仪 →
 
 **Price line:** S$588 起
 
-婚宴主持 S$588 至 S$1,288，可加选现场演唱。配套：婚宴司仪 S$588、司仪兼现场演唱 S$888、全程庆典主持 S$1,288。
+婚宴主持 S$588 至 S$1,288，可加选现场演唱。配套：婚宴司仪 S$588、司仪兼现场歌手 S$888、全程庆典主持 S$1,288。
 
 **Button:** `查看婚礼司仪` → /wedding-emcee
 
@@ -76,7 +74,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **Price line:** S$888 起
 
-半天或晚间活动 S$888 至 S$1,888，包括礼仪程序和贵宾环节。
+半天或晚间活动 S$888 至 S$1,888，包括礼宾程序和贵宾环节。
 
 **Button:** `查看政府及社区活动司仪` → /government-community-emcee
 
@@ -120,7 +118,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **Price line:** 每个学校团体 S$880 起
 
-一个学期内约 10 小时，由贵校挑选的主题组成。
+一个学期共约 10 小时，内容由贵校自选的主题组合而成。
 
 **Button:** `查看学校课程` → /kids-youth-programs
 
@@ -158,7 +156,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **Price line:** 按每场发布会报价
 
-策划、揭幕环节、内容创作者和内容制作。只需主持服务则 S$888 起。
+策划、揭幕环节、内容创作者和内容制作。仅司仪主持 S$888 起。
 
 **Button:** `查看新品发布会` → /product-launch-events
 
@@ -202,7 +200,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 ## Section 6 — Add-ons
 
-**H2 ·** 任何主持预订都可加选的附加服务
+**H2 ·** 所有主持服务都可加选的附加服务
 
 每项附加服务都会在报价单上单独列出。
 
@@ -212,7 +210,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 双语主持稿
 
-以英语和华语撰写的司仪串场词。
+以英语和华语撰写的司仪串词。
 
 **H3 ·** 彩排
 
@@ -222,7 +220,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H2 ·** 报价流程
 
-只需三步，在您确认之前，不会有任何预订。
+只需三步，经您确认后才会正式预订。
 
 **H3 ·** 1. 发送您的日期和节目流程
 
@@ -234,7 +232,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 3. 书面确认
 
-我们以书面确认预订后，您的日期就会为您保留。
+我们以书面确认预订后，便会为您保留该日期。
 
 **Button:** `获取报价` → #quote
 
@@ -258,7 +256,7 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 11 月至 3 月的热门日期很快就会订满。请尽早询问，我们会告诉您所选日期适用的收费。
 
-**H3 ·** 为什么有些服务是报价，而不是标价？
+**H3 ·** 为什么有些服务需要报价，而不直接标价？
 
 活动策划、营销活动和活动支援取决于人数、场地、供应商和交付内容，所以每份方案都会根据您的需求逐项列出。
 
@@ -272,9 +270,9 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 
 ## Section 9 — Quote form
 
-**H2 ·** 按您的日期获取报价
+**H2 ·** 提供日期，获取报价
 
-告诉我们您的日期、场地和节目流程，我们会回复您档期情况和准确报价。
+告诉我们您的日期、场地和节目流程，我们会告知您档期和准确报价。
 
 > **Note (译注):** Field types in square brackets ([TEXT], [DROPDOWN, optional] and so on) are developer hints and are left in English, as in the brief.
 
@@ -290,9 +288,9 @@ _The Charisma Code  ·  /zh/rates  ·  draft 4 Nov 2026  ·  translated from doc
 - 其他需要我们知道的事项 [TEXT AREA]
 - 同意我们就此询问与您联系* [CHECKBOX]
 
-**Button:** `获取我的报价` → submit
+**Button:** `获取报价` → submit
 
-提交后显示：“谢谢您。我们会回复您档期情况和下一步安排。需要更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
+提交后显示：“谢谢您。我们会告知您档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
 
 ## Section 10 — Final CTA
 

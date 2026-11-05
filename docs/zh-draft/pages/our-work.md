@@ -30,7 +30,7 @@ _The Charisma Code  ·  /zh/our-work  ·  draft 4 Nov 2026  ·  translated from 
 
 **Button:** `阅读案例` → /our-work/caregiving-welfare-association-community-event
 
-**H3 ·** Sheraton Towers Singapore 婚礼司仪与现场演唱
+**H3 ·** Sheraton Towers Singapore 婚礼司仪与现场献唱
 
 婚礼，2026 年 1 月。
 
@@ -48,7 +48,7 @@ _The Charisma Code  ·  /zh/our-work  ·  draft 4 Nov 2026  ·  translated from 
 
 **Button:** `阅读案例` → /our-work/the-banyan-group-dinner-and-dance
 
-**H3 ·** 两位童话人物到场的公主生日派对
+**H3 ·** 两位童话公主驾到的生日派对
 
 儿童与青少年，2025 年 9 月。
 

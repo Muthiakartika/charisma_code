@@ -8,7 +8,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 发布会只有一次留下印象的机会。我们策划整场活动，以英语和华语主持揭幕环节，邀请合适的内容创作者和艺人，并确保当天产出您的品牌可以持续使用的内容。
 
-- ✓ **从头到尾全程策划**
+- ✓ **从头到尾一手包办**
 - ✓ **双语司仪主持**
 - ✓ **网红与艺人协调**
 - ✓ **内容与活动一并规划**
@@ -39,15 +39,15 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 核心信息
 
-好好介绍每位讲者，把重点讲得简单明了，让宾客事后也能复述。
+得体地介绍每位讲者，把重点讲得简单明了，让宾客事后也能复述。
 
 **H3 ·** 现场嘉宾
 
-合适的媒体、合作伙伴、内容创作者和艺人，事先做好说明，在对的时间出现在对的位置。
+合适的媒体、合作伙伴、内容创作者和艺人，事先沟通到位，在对的时间出现在对的位置。
 
 **H3 ·** 发布会之后
 
-照片、视频和内容创作者的贴文都提前规划好，让发布会在灯光熄灭后继续发挥作用。
+照片、视频和内容创作者的贴文都提前规划好，让发布会落幕后依然持续发挥影响力。
 
 **Button:** `策划我的发布会` → #quote
 
@@ -59,7 +59,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 发布会策划
 
-场地、供应商、流程表和宾客动线，从头到尾全程策划。
+场地、供应商、流程表和宾客动线，从头到尾一手包办。
 
 **Button:** `查看活动策划` → /event-planning
 
@@ -103,13 +103,13 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 商场或路演公开发布会
 
-**Ideal for:** 直接接触购物人潮，配合舞台游戏、产品示范和赠品派送。
+**Ideal for:** 直接接触商场里的购物人群，配合舞台游戏、产品示范和赠品派送。
 
 **Button:** `查看路演及展览会司仪` → /roadshow-emcee
 
 **H3 ·** 线上线下混合发布会
 
-**Ideal for:** 在实体发布会之外加入线上观众，主持时兼顾现场和线上的观众。
+**Ideal for:** 在实体发布会之外加入线上观众，主持时兼顾线上线下。
 
 **Button:** `告诉我们您想要的形式` → #quote
 
@@ -119,7 +119,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 在 SOMA Fragrances 于 2025 年 8 月举办的品牌发布会中，我们邀请到三位付费网红和超过 20 位受邀艺人，并协调他们在媒体发布会、店内探访和礼品包环节中的出场与曝光。
 
-除了协调人员，我们也与 SOMA 团队合作打造品牌形象和策略，让每一次出场都与品牌大胆、现代的形象保持一致。
+除了协调人员，我们也在品牌形象和策略方面与 SOMA 团队合作，让每一次出场都与品牌大胆、现代的形象保持一致。
 
 - ✓ 邀请到 3 位付费网红
 - ✓ 超过 20 位受邀艺人
@@ -134,7 +134,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 1. 分享您的需求
 
-产品、发布日期、目标观众，以及您心目中的成功是什么样子。
+产品、发布日期、目标观众，以及您对成功的定义。
 
 **H3 ·** 2. 方案与报价
 
@@ -146,7 +146,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 4. 营造期待
 
-邀请函、向内容创作者和艺人做说明，以及当天的内容计划。
+邀请函、内容创作者和艺人的说明会，以及当天的内容计划。
 
 **H3 ·** 5. 发布当天
 
@@ -162,7 +162,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 ## Section 7 — Why us
 
-**H2 ·** 品牌为什么选择 The Charisma Code 办发布会
+**H2 ·** 品牌为什么选择 The Charisma Code 举办发布会
 
 **H3 ·** 舞台与策略，一个团队兼顾
 
@@ -178,7 +178,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 从头到尾贴合品牌
 
-艺人和信息都根据您的品牌形象挑选，就像 SOMA 发布会一样。
+艺人和宣传信息都根据您的品牌形象来挑选和拟定，就像 SOMA 发布会一样。
 
 **H3 ·** 传播专业背景
 
@@ -186,7 +186,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 超过 15 年舞台经验
 
-时间有变动时依然沉着冷静，而发布当天往往就是如此。
+发布当天的时间往往会有变动，他依然沉着冷静。
 
 **Button:** `策划我的发布会` → #quote
 
@@ -201,7 +201,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 - 您需要哪些服务：策划、主持、艺人、内容、工作人员和影音设备
 - 宾客人数和场地
 - 内容创作者和艺人的人数及其费用
-- 活动长度和任何额外天数，例如店内探访
+- 活动时长，以及店内探访等额外天数
 - 摄像和内容交付项目
 
 **Price line:** 仅司仪主持：半天或晚间发布会 S$888 起
@@ -224,7 +224,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **核心信息与消息解禁日期**
 
-请尽早提供核心信息、产品资料和任何消息解禁日期，让主持稿和内容创作者的说明准确传达您想说的话。
+请尽早提供核心信息、产品资料和任何消息解禁日期，让主持稿和给内容创作者的说明资料准确传达您想说的话。
 
 > **Note (译注):** "embargo" is rendered as 消息解禁日期 (the date the news may be released). Please check this is the clearest wording for Singapore marketing teams.
 
@@ -242,7 +242,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 一场新品发布会要多少钱？
 
-这取决于所需服务、宾客人数、场地和参与的内容创作者，所以每场发布会都根据您的方案报价。仅司仪主持方面，半天或晚间发布会 S$888 起。
+这取决于所需服务、宾客人数、场地和参与的内容创作者，所以每场发布会都根据您的方案报价。若只需司仪主持，半天或晚间发布会 S$888 起。
 
 **H3 ·** 你们可以策划整场发布会吗？
 
@@ -282,7 +282,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H2 ·** 获取您的发布会报价
 
-告诉我们您的产品和心目中的发布会。我们会回复您建议方案和报价。
+告诉我们您的产品和心目中的发布会。我们会回复您，提供建议方案和报价。
 
 - 姓名* [TEXT]
 - 公司和品牌* [TEXT]
@@ -304,7 +304,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H2 ·** 让您的发布会成为大家热议的话题
 
-把您的需求发给我们，我们会回复您方案和报价。
+把您的需求发给我们，我们会回复您，提供方案和报价。
 
 **Button:** `策划我的发布会` → #quote
 

@@ -32,7 +32,7 @@ _The Charisma Code  ·  /zh/about  ·  draft 4 Nov 2026  ·  translated from doc
 - ✓ 入围 SAFRA《The Ultimate Talent》决赛
 - ✓ 入围 UFM100.3《The Wedding Singer》决赛
 - ✓ 曾亮相新传媒 8 频道
-- ✓ Zenitant、Edublitz 和 Aktivate 培训师
+- ✓ 担任 Zenitant、Edublitz 和 Aktivate 的培训师
 
 > **Note (译注):** The two competition titles are kept in English inside 《》, since no official Chinese titles are known. Please confirm or replace. "MediaCorp Channel 8" is rendered 新传媒 8 频道.
 
@@ -42,7 +42,7 @@ _The Charisma Code  ·  /zh/about  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H2 ·** 一位创办人，多个舞台。
 
-德忠以司仪、歌手、钢琴手和演员的身份站上舞台超过 15 年，也在课堂上用了五年多的时间，帮助人们自信地开口表达。这两段经历让他领悟到 The Charisma Code 的根本：读懂现场气氛，让每个人都感到被接纳，并给他们参与的信心。
+德忠以司仪、歌手、钢琴手和演员的身份站上舞台超过 15 年，也在课堂上执教五年多，帮助人们自信地开口表达。这两段经历让他领悟到 The Charisma Code 的根本：读懂现场气氛，让每个人都感到被接纳，并给他们参与的信心。
 
 - ✓ 司仪
 - ✓ 歌手
@@ -65,7 +65,7 @@ _The Charisma Code  ·  /zh/about  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 魅力可以学会 ↓
 
-魅力并不是天生外向的人才有。它关乎沟通、连结，以及真诚地表达自己。
+魅力并不是天生外向的人才有。它关乎沟通、与人建立联系，以及真诚地表达自己。
 
 **H3 ·** 以人为本 ↓
 
@@ -120,9 +120,9 @@ _The Charisma Code  ·  /zh/about  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H2 ·** 点燃火花的幕后团队
 
-The Charisma Code 不只是一个人。德忠与一支由引导师、主持人和表演者组成的团队合作，并在您的活动有需要时，引进可靠的合作伙伴，提供周边活动、音响系统、场地租借、摄影和摄像服务。
+The Charisma Code 不只是一个人。德忠与一支由引导师、主持人和表演者组成的团队合作，并在您的活动有需要时，请来可靠的合作伙伴，提供周边活动、音响系统、场地租借、摄影和摄像服务。
 
-您只需对接一个联系窗口，其余的都交给团队。
+您只需通过一个联系窗口沟通，其余的都交给团队。
 
 **Button:** `了解活动支援` → /event-support
 
@@ -165,7 +165,7 @@ The Charisma Code 不只是一个人。德忠与一支由引导师、主持人�
 
 **H2 ·** 一起打造一场难忘的活动。
 
-跟我们聊聊您的活动，我们会回复您活动构思。
+跟我们聊聊您的活动，我们会带着构思回复您。
 
 **Button:** `联系我们` → /contact
 

@@ -13,7 +13,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 - ✓ **先玩，再练**
 - ✓ **每个孩子都有机会上场**
 - ✓ **最后有成果展示**
-- ✓ **在海星中学开办过 11 堂课**
+- ✓ **在海星中学进行过 11 堂课**
 
 > **Note (译注):** Maris Stella High School is given its Chinese name 海星中学, with the English name in brackets at the first mention in running text (Section 9). Please confirm.
 
@@ -29,7 +29,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H2 ·** 我们如何建立自信
 
-这是我们一切工作背后的理念：魅力不是天赋，而是一项技能。对年轻人来说，它分三步成长。
+这是我们一切工作背后的理念：魅力不是天赋，而是一项技能。对年轻人来说，这项技能可以分三步培养起来。
 
 **H3 ·** 01 先玩起来 ↓
 
@@ -47,7 +47,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H2 ·** 在游戏中学习
 
-孩子在玩得开心的时候学得最快。每堂课都从游戏开始，让他们动起来、笑起来、聊起来，然后才请任何人站起来发言。
+孩子在玩得开心的时候学得最快。每堂课都从游戏开始，让他们动起来、笑起来、聊起来，之后才请孩子站起来发言。
 
 等到正式练习开始时，课室里已经是安心又热闹的气氛。
 
@@ -108,7 +108,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H3 ·** 面试技巧 ↓
 
-自信地准备学校和奖学金面试。
+做好准备，自信应对学校和奖学金面试。
 
 **H3 ·** 儿童团队建设 ↓
 
@@ -120,9 +120,9 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H2 ·** 为儿童及青少年而设的公众演讲
 
-从简短有趣的说话练习，逐步发展成在大家面前的一场真正演讲。孩子们学会规划要说的内容，并自信地说出来。
+从简短有趣的说话练习开始，逐步发展到在全组面前完成一场真正的演讲。孩子们学会规划要说的内容，并自信地说出来。
 
-适合小学和中学生，从第一次上台的学生到学生领袖都适用。
+适合小学和中学生，从第一次上台的学生到学生领袖都可参加。
 
 - ✓ 规划要说的内容
 - ✓ 说得清楚、有自信
@@ -146,9 +146,9 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H2 ·** 学生摄像与说故事课程
 
-学生策划、拍摄并剪辑讲述故事的短片。在海星中学（Maris Stella High School），这个课程共进行了 11 堂课，每堂 2 小时，最终成为一堂关于创意自信的课。
+学生策划、拍摄并剪辑讲述故事的短片。在海星中学（Maris Stella High School），这个课程共进行了 11 堂课，每堂 2 小时，最终更成为学生培养创意自信的一段经历。
 
-学生最后会完成一部亲手制作的短片，也掌握了制作下一部的技能。
+学生最后会完成一部亲手制作的短片，并掌握制作下一部的技能。
 
 - ✓ 策划、拍摄和剪辑
 - ✓ 引人入胜的说故事技巧
@@ -174,7 +174,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 练习应对学校、奖学金和求职面试：回答清楚、讲述自己的故事，并保持冷静。
 
-每位学生都会进行一次模拟面试并获得反馈，让正式面试时感觉更熟悉。
+每位学生都会进行一次模拟面试并获得反馈，到了正式面试时就不会感到陌生。
 
 - ✓ 学校和奖学金面试
 - ✓ 讲述自己的故事
@@ -185,7 +185,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H2 ·** 合作游戏与挑战
 
-孩子们一起赢、一起输的活动，在过程中学会聆听和轮流。
+在这些活动中，孩子们一起赢、一起输，并在过程中学会聆听和轮流。
 
 适合营会、班级凝聚活动和学校活动，游戏会根据年龄层设计。
 
@@ -226,7 +226,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **Price line:** 每个学校团体 S$880 起
 
-**Ideal for:** 一个班级或课外活动（CCA）在一个学期内进行。每周上课，内容由学校选定的科目组成，总共约 10 小时，让技能稳步提升。
+**Ideal for:** 在一个学期内进行的班级或课外活动（CCA）。每周上课，内容由学校选定的科目组成，总共约 10 小时，让技能稳步提升。
 
 - ✓ 学校选定的科目
 - ✓ 一个学期约 10 小时
@@ -238,7 +238,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **Price line:** 每节 S$120 起
 
-**Ideal for:** 准备演讲、表演或面试的学生，提供即时反馈和针对目标的练习。
+**Ideal for:** 准备演讲、表演或面试的学生，课程提供即时反馈和针对目标的练习。
 
 - ✓ 围绕一个目标设计
 - ✓ 即时反馈
@@ -337,7 +337,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 会。每堂课都从游戏开始，让孩子不会觉得被突然点名，练习也是循序渐进的。
 
-**H3 ·** 你们有举办假期营会吗？
+**H3 ·** 你们有假期营会吗？
 
 有。多日自信营一连进行数个整天，最后以成果展示作结。
 
@@ -376,13 +376,13 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **Button:** `发送我的课程需求` → submit
 
-提交后显示：“谢谢您。我们会回复您档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
+提交后显示：“谢谢您。我们会回复您，告知档期和下一步安排。想更快得到答复？WhatsApp 联系德忠。”并附上 WhatsApp 按钮。
 
 ## Section 19 — Final CTA
 
 **H2 ·** 给每位学生一个闪耀的时刻
 
-告诉我们您学生的情况，我们会为您建议课程并提供报价。
+告诉我们学生的情况，我们会为您建议课程并提供报价。
 
 **模块式学校课程：每组 S$880 起**
 

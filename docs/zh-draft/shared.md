@@ -67,7 +67,7 @@ Footer links use the page names in glossary §7 (Team Building → 团队建设,
 | Education | 学历 | Corporate Communications graduate, Singapore Management University | 新加坡管理大学企业传播系毕业生 | Singapore Management University | 新加坡管理大学 |
 | Training | 培训 | Trainer with Zenitant, Edublitz and Aktivate | Zenitant、Edublitz 和 Aktivate 培训师 | Zenitant · Edublitz · Aktivate | Zenitant · Edublitz · Aktivate |
 | Theatre | 剧场 | Performed at the Esplanade Theatre Studio and the Drama Centre Theatre | 曾在滨海艺术中心剧场工作室和戏剧中心剧院演出 | Esplanade Theatre Studio · Drama Centre Theatre | 滨海艺术中心剧场工作室 · 戏剧中心剧院 |
-| Music | 音乐 | ABRSM Grade 8 Piano, with Merit | ABRSM 钢琴八级（优良） | ABRSM | ABRSM |
+| Music | 音乐 | ABRSM Grade 8 Piano, with Merit | ABRSM 钢琴八级（良好） | ABRSM | ABRSM |
 | Busking | 街头表演 | Busker endorsed by the National Arts Council, to November 2028 | 国家艺术理事会认证街头艺人（有效期至 2028 年 11 月） | National Arts Council | 国家艺术理事会 |
 | Competition | 比赛 | Finalist, SAFRA's The Ultimate Talent | SAFRA《The Ultimate Talent》决赛入围者 | SAFRA's The Ultimate Talent | SAFRA's The Ultimate Talent |
 | Competition | 比赛 | Finalist, UFM100.3's The Wedding Singer | UFM100.3《The Wedding Singer》决赛入围者 | UFM100.3 | UFM100.3 |
@@ -100,7 +100,7 @@ Other About texts (the PDF files stay in English):
 | Card (English) | 中文 | Text (English) | Text (中文) |
 |---|---|---|---|
 | Facilitators and coaches | 引导师和教练 | People who can hold a room, include everyone and help a group learn something real. | 能掌控全场、照顾到每一个人，并帮助团体真正学到东西的人。 |
-| Emcees, hosts and performers | 司仪、主持人和表演者 | Voices, live acts and character performers who love an audience. | 热爱观众的声音人才、现场表演者和角色扮演表演者。 |
+| Emcees, hosts and performers | 司仪、主持人和表演者 | Voices, live acts and character performers who love an audience. | 热爱观众的配音员、现场演出者和角色表演者。 |
 | Event crew and freelancers | 活动工作人员和自由职业者 | Experienced hands for logistics, setup, sound and on-the-day support. | 在后勤、布置、音响和活动当天支援方面经验丰富的人手。 |
 | Partner vendors | 合作供应商 | Suppliers we can rely on for venues, AV, props, printing and more. | 在场地、影音设备、道具、印刷等方面值得信赖的供应商。 |
 | Fringe activity providers | 周边活动提供者 | Booths, stations and add-on activities that keep guests engaged around the main programme. | 摊位、体验站和附加活动，让宾客在主节目之外也乐在其中。 |
@@ -115,42 +115,42 @@ Client names stay in English; venues with a well-known Chinese name use it (新�
 - **Title:** Lectrix Engineering 全家同乐圣诞庆典
 - **Summary:** 为一支多元文化团队及其家人和朋友提供活动策划、主持，以及自弹自唱的现场演出。
 - **Objective:** Lectrix Engineering 希望举办一场年终圣诞庆典，把员工、家人和朋友聚在一起。团队里有来自南亚和东南亚的同事，也有不同年龄层的本地新加坡家庭，所以必须让每个人都感到被接纳。
-- **Our approach:** 德忠一人身兼三职：活动策划、企业活动司仪和自弹自唱的现场表演者。台上使用的语言和节目节奏都经过规划，确保没有人被冷落；圣诞知识问答也特别设计，让现场每一种文化背景的宾客都能轻松参与、乐在其中。
+- **Our approach:** 德忠一人身兼三职：活动策划人、企业活动司仪和自弹自唱的现场表演者。台上使用的语言和节目节奏都经过规划，确保没有人被冷落；圣诞知识问答也特别设计，让现场每一种文化背景的宾客都能轻松参与、乐在其中。
 - **On the day:** 在武吉士的新加坡洲际酒店，晚会从欢迎环节进入互动圣诞知识问答，引发各桌热烈讨论和友好竞争。圣诞歌曲以钢琴现场演奏，自然地融入节目流程，最后以热闹的幸运抽奖为整晚画上句号。
-- **Outcomes:** 策划、观众互动和台上执行都由同一个人掌握，让客户的沟通更简单，也为宾客带来一场温馨又专业的庆典。
+- **Outcomes:** 策划、观众互动和台上执行都由同一个人掌握，让客户沟通起来更简单，也为宾客带来一场温馨又专业的庆典。
 
 ### The Banyan Group
 
 - **Title:** The Banyan Group 于 Mandai Rainforest Resort 举办的公司晚宴
 - **Summary:** 主持一整晚的公司晚宴流程：晚餐、致辞、游戏、表演和幸运抽奖。
-- **Objective:** 为一个充满活力、团结紧密的机构主持一场漫长的晚间节目，把晚餐、致辞、游戏、表演和幸运抽奖串连起来。
+- **Objective:** 为一个充满活力、团结紧密的机构主持一场长达整晚的节目，把晚餐、致辞、游戏、表演和幸运抽奖串联起来。
 - **Our approach:** 节目开始前，德忠先观察现场气氛，再以大胆、俏皮、贴合观众的风格开场。气氛不是一开始就冲到最高点，而是一个环节接一个环节逐步推高。
-- **On the day:** 每一桌都参与了游戏和活动。整晚，德忠感谢团队、肯定他们的里程碑，也为同事们喝彩，让现场既热闹又温馨。
+- **On the day:** 每一桌都参与了游戏和活动。整晚，德忠感谢团队、表扬他们达成的里程碑，也为同事们喝彩，让现场既热闹又温馨。
 - **Outcomes:** 到了晚会中段，全场都毫不犹豫地欢呼回应，整晚的结尾比开场更加精彩。
 
 ### SOMA Fragrances
 
 - **Title:** SOMA Fragrances 品牌发布会的艺人与网红协调
 - **Summary:** 协调三位付费网红和 20 多位受邀艺人，参与媒体发布会、门店探访和礼盒派送。
-- **Objective:** SOMA 需要在品牌发布会上找到合适的声音：能体现品牌大胆、现代精神的内容创作者和艺人，并在对的时刻出现。
+- **Objective:** SOMA 需要在品牌发布会上找到合适的声音：能体现品牌大胆、现代精神的内容创作者和艺人，并在适当的时刻亮相。
 - **Our approach:** 我们签下三位付费网红，邀请了 20 多位艺人，并担任 SOMA 与其社群之间的桥梁。我们也与团队一起制定品牌形象和策略，确保整个营销活动与 SOMA 的品牌定位保持一致。
 - **On the day:** 我们协调艺人参与媒体发布会、门店探访和 SOMA 特别礼盒的派送，确保每个人都在该出现的地方出现。
-- **Outcomes:** 一场由精心挑选的一群人，共同演绎品牌故事的发布会。
+- **Outcomes:** 精心挑选的一群人齐聚发布会，共同演绎品牌故事。
 
 ### Wedding at Sheraton Towers
 
 - **Title:** Sheraton Towers Singapore 婚礼司仪与现场献唱
 - **Summary:** 为一场午间婚礼提供双语主持和现场献唱。
 - **On the day:** 德忠主持了这场午间婚宴并现场献唱，与酒店的影音团队和婚礼服务团队紧密合作，确保环节衔接顺畅、流程准时。
-- **Outcomes:** 一个充满欢笑、感动时刻和开心宾客的午后。
+- **Outcomes:** 一个充满欢笑与感动、宾客尽欢的午后。
 
 ### Maris Stella High School
 
 - **Title:** 海星中学摄像课程
-- **Summary:** 11 堂两小时的课程，最后由学生亲手制作一支教师节感恩视频。
+- **Summary:** 11 堂两小时的课程，最后由学生亲手制作一段教师节感恩视频。
 - **Objective:** 教导学生摄像的基本功，帮助他们发现用影像表达自己的乐趣。
-- **On the day:** 在 11 堂课里，学生们学习镜头景别与角度、绿幕技巧和叙事结构，然后自己策划、拍摄并剪辑期末作品。
-- **Outcomes:** 全班制作了一支真挚的教师节感恩视频，献给每天引导他们的老师。
+- **On the day:** 在 11 堂课里，学生们学习镜头景别与角度、绿幕技巧和叙事结构，然后自己策划、拍摄并剪辑结业作品。
+- **Outcomes:** 全班制作了一段真挚的教师节感恩视频，献给每天引导他们的老师。
 
 ### Caregiving Welfare Association
 
@@ -163,7 +163,7 @@ Client names stay in English; venues with a well-known Chinese name use it (新�
 ### Princess birthday party
 
 - **Title:** 两位童话公主驾到的生日派对
-- **Summary:** 为一场生日午后派对物色并协调公主表演者，带来游戏、歌曲和加冕仪式。
+- **Summary:** 为一场午后生日派对物色并协调公主表演者，带来游戏、歌曲和加冕仪式。
 - **On the day:** 我们安排了两位公主表演者，带领孩子们玩游戏、唱歌、跳舞，并举行加冕仪式，让每位小客人都感觉自己是王室成员。
 
 ## 8. Enquiry forms (src/seed/pages.ts)
