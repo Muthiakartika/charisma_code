@@ -76,11 +76,12 @@ export const bodyFont = Manrope({
   subsets: ['latin'],
   variable: '--font-body-family',
   display: 'swap',
-  preload: false,
 })
 ```
 
 Nama `variable` jangan diubah — `globals.css` memakainya.
+
+Biarkan kedua font tetap di-preload (jangan tambahkan `preload: false`). Font cadangan yang disesuaikan Next.js memakai Arial, yang tidak ada di Linux dan Android. Kalau font teks datang terlambat, teks hero berubah tinggi dan foto di sebelahnya bergeser: PageSpeed desktop pernah mencatat CLS 0,227 karena ini (5 Nov 2026).
 
 ## 4. Mengubah ukuran judul, jarak, dan sudut
 

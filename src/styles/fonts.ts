@@ -22,7 +22,8 @@ export const bodyFont = Geist({
   subsets: ['latin'],
   variable: '--font-body-family',
   display: 'swap',
-  // Not preloaded, so the hero photo downloads first. Next.js adjusts the fallback
-  // font metrics, so the switch to Geist does not shift the layout.
-  preload: false,
+  // Preloaded, so it arrives together with the CSS, before the first paint.
+  // Without the preload it was found only after the CSS loaded and swapped in late. The
+  // adjusted fallback (Arial) is missing on Linux and Android, so the hero text changed
+  // height and pushed the photos: PageSpeed desktop measured a layout shift (CLS) of 0.227.
 })

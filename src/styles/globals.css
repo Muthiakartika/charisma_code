@@ -12,6 +12,30 @@
  */
 @import 'tailwindcss';
 
+/*
+ * Stand-in fonts for Linux and ChromeOS, shown until the web fonts arrive.
+ * Next.js sizes its stand-in from Arial, which Linux does not have, so the text there
+ * changed size when the fonts arrived and the page jumped. Liberation Sans and Arimo have
+ * the same letter widths as Arial, so the same size corrections (copied from the CSS
+ * Next.js generates for "Geist Fallback" and "Plus Jakarta Sans Fallback") fit them exactly.
+ */
+@font-face {
+  font-family: 'Geist Fallback Linux';
+  src: local('Liberation Sans'), local('LiberationSans'), local('Arimo'), local('Arimo-Regular');
+  ascent-override: 95.94%;
+  descent-override: 28.16%;
+  line-gap-override: 0%;
+  size-adjust: 104.76%;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans Fallback Linux';
+  src: local('Liberation Sans'), local('LiberationSans'), local('Arimo'), local('Arimo-Regular');
+  ascent-override: 98.88%;
+  descent-override: 21.15%;
+  line-gap-override: 0%;
+  size-adjust: 104.98%;
+}
+
 /* ── 1. Brand tokens ───────────────────────────────────────────────────── */
 @theme {
   /* Ivory taken from the background of the original logo, so the logo sits seamlessly on it */
@@ -77,9 +101,12 @@
   --color-surface-alt: var(--color-paper-deep);
 
   /* Fonts (loaded in src/styles/fonts.ts) */
-  --font-display: var(--font-display-family), 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
-  --font-sans: var(--font-body-family), 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
-    'Noto Sans SC', system-ui, sans-serif;
+  --font-display:
+    var(--font-display-family), 'Plus Jakarta Sans Fallback Linux', 'PingFang SC', 'Microsoft YaHei',
+    system-ui, sans-serif;
+  --font-sans:
+    var(--font-body-family), 'Geist Fallback Linux', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
 
   /* Corner radius system: buttons are pills, cards/images 10px, inputs 8px */
   --radius-card: 10px;
