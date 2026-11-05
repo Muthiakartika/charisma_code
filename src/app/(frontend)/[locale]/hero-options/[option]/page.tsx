@@ -5,6 +5,7 @@
  * The Colour block option also takes a line art choice: /hero-options/colour-block?art=skyline
  */
 import type { Metadata } from 'next'
+import { redirect } from 'next/navigation'
 
 import { findHeroPreview } from '@/components/hero-options/hero-options'
 import { HomeWithHeroOption } from '@/components/hero-options/HomeWithHeroOption'
@@ -16,6 +17,8 @@ type Props = {
 
 export default async function HeroOptionPage({ params, searchParams }: Props) {
   const [{ locale, option }, { art }] = await Promise.all([params, searchParams])
+  // English-only preview: /zh/hero-options/… has no Chinese version
+  if (locale === 'zh') redirect(`/hero-options/${option}`)
   return <HomeWithHeroOption option={option} locale={locale} art={art} />
 }
 

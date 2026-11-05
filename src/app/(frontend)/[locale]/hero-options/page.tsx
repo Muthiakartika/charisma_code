@@ -5,6 +5,7 @@
 import { ArrowRight } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
 import { heroOptions, previousHero, type HeroPreviewSlug } from '@/components/hero-options/hero-options'
 import { toLocale } from '@/components/layout/CmsPage'
@@ -72,6 +73,8 @@ function Sketch({ option, photo }: { option: HeroPreviewSlug; photo: Media | nul
 
 export default async function HeroOptionsPage({ params }: { params: Promise<{ locale: string }> }) {
   const locale = toLocale((await params).locale)
+  // English-only preview: /zh/hero-options has no Chinese version
+  if (locale === 'zh') redirect('/hero-options')
   const home = await getPage('home', locale)
   const hero = home?.layout?.find((block): block is HeroBlock => block.blockType === 'hero')
   const photo = hero?.images?.find((image): image is Media => typeof image === 'object' && image !== null) ?? null
