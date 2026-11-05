@@ -94,7 +94,7 @@ export async function ClientLogosBlock({ block, context }: { block: ClientLogosD
       block.testimonial && typeof block.testimonial === 'object' && block.testimonial.permission !== 'pending'
         ? (block.testimonial as Testimonial)
         : null
-    const source = quote ? testimonialSourceLabel(quote.source) : null
+    const source = quote ? testimonialSourceLabel(quote.source, context.dict) : null
     const details = quote ? [quote.authorRole, source].filter(Boolean).join(' · ') : ''
 
     return (

@@ -21,3 +21,12 @@ export const localeLabels: Record<Locale, string> = {
   en: 'English',
   zh: '中文',
 }
+
+/**
+ * Whether the Chinese version of a page, project or article can be opened. On the live site only
+ * once its translation is "Approved". On a computer running `npm run dev`, drafts waiting for
+ * native-speaker review open too, so the team can click through them (the sitemap still lists
+ * approved pages only).
+ */
+export const showsChinese = (status?: string | null) =>
+  status === 'approved' || (process.env.NODE_ENV === 'development' && status === 'needs-review')

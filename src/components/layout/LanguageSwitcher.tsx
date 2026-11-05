@@ -1,5 +1,6 @@
 'use client'
 
+import { Translate } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useSyncExternalStore } from 'react'
 
@@ -30,14 +31,17 @@ export function LanguageSwitcher({ locale, labels }: { locale: Locale; labels: D
   )
   const href = alternateHref ? new URL(alternateHref, 'https://example.com').pathname : null
   const label = target === 'zh' ? '中文' : 'EN'
+  // A language icon rather than a flag: a language is not a country (Chinese is not only China's)
+  const icon = <Translate aria-hidden="true" weight="bold" className="size-[1.1em] shrink-0" />
 
   if (!href) {
     return (
       <span
-        className="cursor-not-allowed rounded-full px-3 py-2 text-[0.95rem] font-medium text-muted/70"
+        className="inline-flex cursor-not-allowed items-center gap-2 rounded-full px-3 py-2 text-[0.95rem] font-medium text-muted/70"
         title={target === 'zh' ? labels.chineseComingSoon : undefined}
         aria-disabled="true"
       >
+        {icon}
         {label}
       </span>
     )
@@ -48,9 +52,10 @@ export function LanguageSwitcher({ locale, labels }: { locale: Locale; labels: D
       href={href}
       hrefLang={languageTags[target]}
       lang={languageTags[target]}
-      className="rounded-full px-3 py-2 text-[0.95rem] font-medium text-ink-soft hover:text-ink"
+      className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-[0.95rem] font-medium text-ink-soft hover:text-ink [&>svg]:text-accent"
       aria-label={`${labels.languageLabel}: ${target === 'zh' ? '中文' : 'English'}`}
     >
+      {icon}
       {label}
     </Link>
   )

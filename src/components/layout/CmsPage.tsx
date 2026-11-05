@@ -8,7 +8,7 @@ import { notFound, redirect } from 'next/navigation'
 
 import { RenderBlocks } from '@/components/blocks/RenderBlocks'
 import { JsonLd } from '@/components/seo/JsonLd'
-import { defaultLocale, isLocale, type Locale } from '@/i18n/config'
+import { defaultLocale, isLocale, type Locale, showsChinese } from '@/i18n/config'
 import { getDictionary, type Dictionary } from '@/i18n/dictionaries'
 import { findPublished, getPage, getSiteSettings, type SiteSettings } from '@/lib/cms'
 import { contactLinks } from '@/lib/contact'
@@ -73,7 +73,7 @@ export async function CmsPage({ slug, locale: rawLocale }: { slug: string; local
 
   const { isEnabled: isDraft } = await draftMode()
   // Chinese pages are only public once the translation is approved.
-  if (locale === 'zh' && page.chineseTranslation !== 'approved' && !isDraft)
+  if (locale === 'zh' && !showsChinese(page.chineseTranslation) && !isDraft)
     redirect(pagePath(slug))
 
   const [settings, linkedServices] = await Promise.all([
@@ -148,6 +148,6 @@ export async function generateCmsMetadata(slug: string, rawLocale: string): Prom
     title: page.title,
     meta: page.meta,
     seo: settings.seo,
-    hasChinese: page.chineseTranslation === 'approved',
+    hasChinese: showsChinese(page.chineseTranslation),
   })
 }

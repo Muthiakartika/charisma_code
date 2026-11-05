@@ -17,6 +17,7 @@
     "import:posts": "cross-env NODE_OPTIONS=--no-deprecation payload run src/seed/import-missing-posts.ts",
     "import:handoff": "cross-env NODE_OPTIONS=--no-deprecation payload run src/seed/handoff/run.ts",
     "import:handoff:deploy": "cross-env NODE_OPTIONS=--no-deprecation payload run src/seed/handoff/deploy.ts",
+    "import:zh": "cross-env NODE_OPTIONS=--no-deprecation payload run src/seed/handoff/import-zh.ts",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",

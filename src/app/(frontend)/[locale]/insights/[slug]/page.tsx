@@ -14,6 +14,7 @@ import { ContactBand } from '@/components/layout/ContactBand'
 import { LivePreviewListener } from '@/components/layout/LivePreviewListener'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { CmsImage } from '@/components/ui/CmsImage'
+import { showsChinese } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
 import { CmsPage, generateCmsMetadata } from '@/components/layout/CmsPage'
 import { findPublished, getPage, getPayloadClient, getPost, getSiteSettings } from '@/lib/cms'
@@ -46,7 +47,7 @@ export default async function PostPage({ params }: PageProps<'/[locale]/insights
   }
 
   const { isEnabled: isDraft } = await draftMode()
-  if (locale === 'zh' && post.chineseTranslation !== 'approved' && !isDraft)
+  if (locale === 'zh' && !showsChinese(post.chineseTranslation) && !isDraft)
     redirect(postPath(post.slug))
 
   const dict = getDictionary(locale)
@@ -182,7 +183,7 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/insights
     fallbackDescription: post.excerpt,
     fallbackImage: post.coverImage,
     seo: settings.seo,
-    hasChinese: post.chineseTranslation === 'approved',
+    hasChinese: showsChinese(post.chineseTranslation),
     type: 'article',
     publishedTime: post.publishedAt,
   })

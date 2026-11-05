@@ -14,6 +14,7 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { CmsImage } from '@/components/ui/CmsImage'
 import { Paragraphs } from '@/components/ui/HighlightText'
 import { YouTubePlayer } from '@/components/ui/YouTubePlayer'
+import { showsChinese } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
 import { findPublished, getPayloadClient, getProject, getSiteSettings } from '@/lib/cms'
 import { projectPath } from '@/lib/paths'
@@ -41,7 +42,7 @@ export default async function ProjectPage({ params }: PageProps<'/[locale]/our-w
   if (!project || project.hasDetailPage === false) notFound()
 
   const { isEnabled: isDraft } = await draftMode()
-  if (locale === 'zh' && project.chineseTranslation !== 'approved' && !isDraft) redirect(projectPath(project.slug))
+  if (locale === 'zh' && !showsChinese(project.chineseTranslation) && !isDraft) redirect(projectPath(project.slug))
 
   const dict = getDictionary(locale)
   const settings = await getSiteSettings(locale)
@@ -182,6 +183,6 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/our-work
     fallbackDescription: project.summary,
     fallbackImage: project.coverImage,
     seo: settings.seo,
-    hasChinese: project.chineseTranslation === 'approved',
+    hasChinese: showsChinese(project.chineseTranslation),
   })
 }

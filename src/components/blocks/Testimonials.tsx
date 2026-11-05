@@ -2,6 +2,7 @@ import { Quotes } from '@phosphor-icons/react/ssr'
 
 import type { Where } from 'payload'
 
+import type { Dictionary } from '@/i18n/dictionaries'
 import { findPublished } from '@/lib/cms'
 import type { Testimonial, TestimonialsBlock as TestimonialsData } from '@/payload-types'
 
@@ -15,18 +16,15 @@ import {
   type BlockContext,
 } from './shared'
 
-const sourceLabels: Record<string, string> = {
-  'google-review': 'Google review',
-  linkedin: 'LinkedIn',
+/** "Google review", "LinkedIn"… or null for other sources. */
+export const testimonialSourceLabel = (source: Testimonial['source'], dict: Dictionary) => {
+  const labels: Record<string, string> = { 'google-review': dict.common.googleReview, linkedin: 'LinkedIn' }
+  return labels[source ?? ''] ?? null
 }
 
-/** "Google review", "LinkedIn"… or null for other sources. */
-export const testimonialSourceLabel = (source: Testimonial['source']) =>
-  sourceLabels[source] ?? null
-
-function Attribution({ testimonial }: { testimonial: Testimonial }) {
+function Attribution({ testimonial, dict }: { testimonial: Testimonial; dict: Dictionary }) {
   const details = [testimonial.authorRole, testimonial.organisation].filter(Boolean).join(', ')
-  const source = testimonialSourceLabel(testimonial.source)
+  const source = testimonialSourceLabel(testimonial.source, dict)
   return (
     <footer className="mt-6 text-[0.95rem]">
       <cite className="not-italic font-semibold text-ink in-[.tone-dark]:text-paper">
@@ -85,7 +83,7 @@ export async function TestimonialsBlock({
               <p className="mt-5 font-display text-[clamp(1.45rem,1.2vw+1.1rem,2.1rem)] font-medium leading-[1.3] tracking-tight">
                 {featured.quote}
               </p>
-              <Attribution testimonial={featured} />
+              <Attribution testimonial={featured} dict={context.dict} />
             </blockquote>
             <div
               className={`mt-14 grid gap-4 md:grid-cols-2 ${others.length % 3 !== 0 && others.length % 2 === 0 ? '' : 'lg:grid-cols-3'}`}
@@ -100,7 +98,7 @@ export async function TestimonialsBlock({
                     {testimonial.quote}
                   </p>
                   <div className="mt-auto">
-                    <Attribution testimonial={testimonial} />
+                    <Attribution testimonial={testimonial} dict={context.dict} />
                   </div>
                 </blockquote>
               ))}
@@ -115,7 +113,7 @@ export async function TestimonialsBlock({
               <p className="mt-5 font-display text-[clamp(1.45rem,1.2vw+1.1rem,2.1rem)] font-medium leading-[1.3] tracking-tight">
                 {featured.quote}
               </p>
-              <Attribution testimonial={featured} />
+              <Attribution testimonial={featured} dict={context.dict} />
             </blockquote>
 
             {others.length > 0 && (
@@ -123,7 +121,7 @@ export async function TestimonialsBlock({
                 {others.map((testimonial) => (
                   <blockquote key={testimonial.id} className="reveal">
                     <p className="text-[1.0625rem] leading-relaxed text-ink">{testimonial.quote}</p>
-                    <Attribution testimonial={testimonial} />
+                    <Attribution testimonial={testimonial} dict={context.dict} />
                   </blockquote>
                 ))}
               </div>
