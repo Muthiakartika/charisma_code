@@ -1,9 +1,9 @@
 /**
  * Loads the Chinese draft (docs/zh-draft, 4 Nov 2026) into the CMS as the 中文 version of the
  * pages, the header, menu and footer, the services and the case studies, and marks each page and
- * case study "Draft — needs native-speaker review". Nothing becomes public: /zh/… only shows a page
- * once an editor sets its Chinese translation to "Approved". To see a page before that, open it in
- * the CMS, pick Locale: 中文 at the top and press Preview.
+ * case study "Draft — needs native-speaker review". On the real website /zh/… only shows a page once
+ * an editor sets its Chinese translation to "Approved"; on staging and locally, drafts show too, so
+ * the client can review them in place (showsChinese in src/i18n/config.ts).
  *
  * How texts are matched: each English brief and its Chinese file have the same items in the same
  * order (scripts/check-zh-draft.ts checks this), so every English text in a brief has a Chinese
@@ -12,13 +12,13 @@
  * the Chinese one. The layout, photos and links stay as they are. Texts without a match keep their
  * English wording and are listed at the end.
  *
- * Run it with:  npm run import:zh            (every page with a Chinese file)
+ * Run it with:  npm run import:zh            (every page with a Chinese file, see run-zh.ts)
  *               npm run import:zh -- home about
+ * Staging gets it during a deploy, once per version (see deploy-zh.ts).
  */
-import config from '@payload-config'
 import fs from 'fs'
 import path from 'path'
-import { getPayload, type Block, type Field, type GlobalSlug, type Payload } from 'payload'
+import type { Block, Field, GlobalSlug, Payload } from 'payload'
 
 import { projects } from '../data'
 import { seedContext } from '../helpers'
@@ -378,119 +378,131 @@ function translator(memories: Memory[], misses: Set<string>): Translate {
   }
 }
 
-// ── Run ──────────────────────────────────────────────────────────────────────
+// ── Import ───────────────────────────────────────────────────────────────────
 
-const payload = await getPayload({ config })
-const log = (message: string) => payload.logger.info(`[zh] ${message}`)
-const context = seedContext()
-const wanted = process.argv.slice(2).filter((arg) => !arg.startsWith('-'))
+type Report = { name: string; misses: Set<string> }[]
 
-const zhFiles = new Set(fs.readdirSync(path.join(ZH_DIR, 'pages')))
-const chosen = recipes.filter(
-  (recipe) => zhFiles.has(recipe.file) && (!wanted.length || wanted.includes(recipe.slug)),
-)
+/**
+ * Writes the Chinese draft into the CMS. Every page with a Chinese file (or only `slugs`), the
+ * services, the case studies and the header, menu, footer and SEO defaults. Pages and case studies
+ * become "needs review", except those an editor already approved, which stay approved.
+ */
+export async function importChinese(payload: Payload, options: { slugs?: string[] } = {}) {
+  const log = (message: string) => payload.logger.info(`[zh] ${message}`)
+  const context = seedContext()
+  const reviewStatus = (current: unknown) => (current === 'approved' ? 'approved' : 'needs-review')
 
-// Shared texts: the menus, footer, page names and case studies, plus every brief, so a text
-// quoted on another page (a service card, a review) is found too.
-const shared = new Memory()
-addTables(shared, path.join(ZH_DIR, 'shared.md'))
-addTables(shared, path.join(ZH_DIR, 'glossary.md'))
-addCaseStudies(shared)
-const pageMemories = new Map<string, Memory>()
-for (const recipe of recipes.filter((entry) => zhFiles.has(entry.file))) {
-  const memory = new Memory()
-  // The page's own brief, plus the "future" briefs whose sections were merged into it
-  const files = [recipe.file, ...(recipe.additions ?? []).map((addition) => addition.file)]
-  for (const file of files.filter((name) => zhFiles.has(name)))
-    addBrief(memory, parseBrief(file), parseBrief(path.join(ZH_FROM_HANDOFF, file)), shared)
-  pageMemories.set(recipe.slug, memory)
-}
-const everyPage = [...pageMemories.values()]
+  const zhFiles = new Set(fs.readdirSync(path.join(ZH_DIR, 'pages')))
+  const chosen = recipes.filter(
+    (recipe) => zhFiles.has(recipe.file) && (!options.slugs?.length || options.slugs.includes(recipe.slug)),
+  )
 
-const report: { name: string; misses: Set<string> }[] = []
-
-// 1. Pages
-const pages = await payload.find({
-  collection: 'pages',
-  where: { slug: { in: chosen.map((recipe) => recipe.slug) } },
-  locale: 'en',
-  depth: 0,
-  limit: 200,
-  pagination: false,
-})
-const pageFields = payload.collections.pages.config.fields
-for (const page of pages.docs) {
-  const misses = new Set<string>()
-  const doc = structuredClone(page) as unknown as Data
-  const memories = [pageMemories.get(page.slug)!, shared, ...everyPage]
-  translateFields(payload, pageFields, doc, translator(memories, misses))
-  try {
-    await payload.update({
-      collection: 'pages',
-      id: page.id,
-      locale: 'zh',
-      data: {
-        title: doc.title as string,
-        layout: doc.layout as never,
-        meta: doc.meta as never,
-        chineseTranslation: 'needs-review',
-        _status: 'published',
-      },
-      draft: false,
-      context,
-    })
-  } catch (error) {
-    // One page the CMS refuses (e.g. a text too long for its field) does not stop the others
-    payload.logger.error(`[zh] /${page.slug} NOT saved: ${(error as Error).message}`)
-    continue
+  // Shared texts: the menus, footer, page names and case studies, plus every brief, so a text
+  // quoted on another page (a service card, a review) is found too.
+  const shared = new Memory()
+  addTables(shared, path.join(ZH_DIR, 'shared.md'))
+  addTables(shared, path.join(ZH_DIR, 'glossary.md'))
+  addCaseStudies(shared)
+  const pageMemories = new Map<string, Memory>()
+  for (const recipe of recipes.filter((entry) => zhFiles.has(entry.file))) {
+    const memory = new Memory()
+    // The page's own brief, plus the "future" briefs whose sections were merged into it
+    const files = [recipe.file, ...(recipe.additions ?? []).map((addition) => addition.file)]
+    for (const file of files.filter((name) => zhFiles.has(name)))
+      addBrief(memory, parseBrief(file), parseBrief(path.join(ZH_FROM_HANDOFF, file)), shared)
+    pageMemories.set(recipe.slug, memory)
   }
-  report.push({ name: `/zh/${page.slug === 'home' ? '' : page.slug}`, misses })
-  log(`/${page.slug}: Chinese saved (${misses.size} texts still in English)`)
-}
+  const everyPage = [...pageMemories.values()]
 
-// 2. Services and case studies
-for (const collection of ['services', 'projects'] as const) {
-  const fields = payload.collections[collection].config.fields
-  const { docs } = await payload.find({ collection, locale: 'en', depth: 0, limit: 200, pagination: false })
-  const misses = new Set<string>()
-  for (const entry of docs) {
-    const doc = structuredClone(entry) as unknown as Data
-    translateFields(payload, fields, doc, translator([shared, ...everyPage], misses))
-    await payload.update({
-      collection,
-      id: entry.id,
-      locale: 'zh',
-      data: {
-        ...withoutSystemFields(doc),
-        ...(collection === 'projects' ? { chineseTranslation: 'needs-review' } : {}),
-        _status: 'published',
-      } as never,
-      draft: false,
-      context,
-    })
+  const report: Report = []
+
+  // 1. Pages
+  const pages = await payload.find({
+    collection: 'pages',
+    where: { slug: { in: chosen.map((recipe) => recipe.slug) } },
+    locale: 'en',
+    depth: 0,
+    limit: 200,
+    pagination: false,
+  })
+  const pageFields = payload.collections.pages.config.fields
+  for (const page of pages.docs) {
+    const misses = new Set<string>()
+    const doc = structuredClone(page) as unknown as Data
+    const memories = [pageMemories.get(page.slug)!, shared, ...everyPage]
+    translateFields(payload, pageFields, doc, translator(memories, misses))
+    try {
+      await payload.update({
+        collection: 'pages',
+        id: page.id,
+        locale: 'zh',
+        data: {
+          title: doc.title as string,
+          layout: doc.layout as never,
+          meta: doc.meta as never,
+          chineseTranslation: reviewStatus(page.chineseTranslation),
+          _status: 'published',
+        },
+        draft: false,
+        context,
+      })
+    } catch (error) {
+      // One page the CMS refuses (e.g. a text too long for its field) does not stop the others
+      payload.logger.error(`[zh] /${page.slug} NOT saved: ${(error as Error).message}`)
+      continue
+    }
+    report.push({ name: `/zh/${page.slug === 'home' ? '' : page.slug}`, misses })
+    log(`/${page.slug}: Chinese saved (${misses.size} texts still in English)`)
   }
-  report.push({ name: collection, misses })
-  log(`${collection}: Chinese saved for ${docs.length} entries`)
+
+  // 2. Services and case studies
+  for (const collection of ['services', 'projects'] as const) {
+    const fields = payload.collections[collection].config.fields
+    const { docs } = await payload.find({ collection, locale: 'en', depth: 0, limit: 200, pagination: false })
+    const misses = new Set<string>()
+    for (const entry of docs) {
+      const doc = structuredClone(entry) as unknown as Data
+      translateFields(payload, fields, doc, translator([shared, ...everyPage], misses))
+      await payload.update({
+        collection,
+        id: entry.id,
+        locale: 'zh',
+        data: {
+          ...withoutSystemFields(doc),
+          ...(collection === 'projects' ? { chineseTranslation: reviewStatus(doc.chineseTranslation) } : {}),
+          _status: 'published',
+        } as never,
+        draft: false,
+        context,
+      })
+    }
+    report.push({ name: collection, misses })
+    log(`${collection}: Chinese saved for ${docs.length} entries`)
+  }
+
+  // 3. Header, menu, footer and site-wide SEO
+  for (const slug of ['header', 'navigation', 'footer', 'seo-defaults'] as GlobalSlug[]) {
+    const global = payload.config.globals.find((entry) => entry.slug === slug)!
+    const doc = structuredClone(
+      await payload.findGlobal({ slug, locale: 'en', depth: 0 }),
+    ) as unknown as Data
+    const misses = new Set<string>()
+    translateFields(payload, global.fields, doc, translator([shared, ...everyPage], misses))
+    await payload.updateGlobal({ slug, locale: 'zh', data: withoutSystemFields(doc) as never, context })
+    report.push({ name: slug, misses })
+    log(`${slug}: Chinese saved`)
+  }
+
+  return report
 }
 
-// 3. Header, menu, footer and site-wide SEO
-for (const slug of ['header', 'navigation', 'footer', 'seo-defaults'] as GlobalSlug[]) {
-  const global = payload.config.globals.find((entry) => entry.slug === slug)!
-  const doc = structuredClone(
-    await payload.findGlobal({ slug, locale: 'en', depth: 0 }),
-  ) as unknown as Data
-  const misses = new Set<string>()
-  translateFields(payload, global.fields, doc, translator([shared, ...everyPage], misses))
-  await payload.updateGlobal({ slug, locale: 'zh', data: withoutSystemFields(doc) as never, context })
-  report.push({ name: slug, misses })
-  log(`${slug}: Chinese saved`)
+/** What is still in English (on the Chinese pages, these show in English). */
+export function printMisses(report: Report) {
+  for (const { name, misses } of report) {
+    if (!misses.size) continue
+    console.log(`
+${name}: ${misses.size} texts kept in English`)
+    for (const text of [...misses].slice(0, 15)) console.log(`  - ${text}`)
+    if (misses.size > 15) console.log(`  … and ${misses.size - 15} more`)
+  }
 }
-
-// What is still in English (on the Chinese pages, these show in English)
-for (const { name, misses } of report) {
-  if (!misses.size) continue
-  console.log(`\n${name}: ${misses.size} texts kept in English`)
-  for (const text of [...misses].slice(0, 15)) console.log(`  - ${text}`)
-  if (misses.size > 15) console.log(`  … and ${misses.size - 15} more`)
-}
-process.exit(0)

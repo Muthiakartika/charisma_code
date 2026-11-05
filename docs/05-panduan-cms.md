@@ -175,7 +175,7 @@ Section "Founder's Updates" di homepage sekarang menampilkan **postingan Instagr
 3. Minta penutur asli Mandarin memeriksa.
 4. Ubah **Chinese translation** menjadi **Approved** → halaman `/zh/…` aktif, masuk sitemap & tag hreflang.
 
-Selama belum *Approved*, pengunjung `/zh/…` diarahkan ke halaman Inggris. Terjemahan setengah jadi tidak pernah terbit.
+Di **situs resmi**, selama belum *Approved*, pengunjung `/zh/…` diarahkan ke halaman Inggris, jadi terjemahan setengah jadi tidak pernah terbit. Di **staging** (dan saat `npm run dev`), halaman berstatus *Draft, needs native-speaker review* sudah bisa dibuka lewat tombol 文A 中文, supaya klien bisa mereview langsung di halamannya. Draf Mandarin seluruh situs ada di `docs/zh-draft/` (lihat README di sana).
 
 ---
 

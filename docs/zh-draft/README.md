@@ -72,7 +72,7 @@ Skrip ini memastikan tiap file Mandarin punya bagian, urutan teks dan tujuan tom
 
 Teks tetap website (tombol, label form, pesan error) tidak ada di folder ini, tetapi di `src/i18n/dictionaries.ts` (bagian `zh`). Itu juga draf yang perlu dicek reviewer yang sama. Pada 4 Nov 2026 ditambahkan label Mandarin untuk 3 pilihan peran di form Work With Us yang sebelumnya belum ada: Coach (教练), Partner vendor (合作供应商), Fringe activity provider (周边活动提供者).
 
-## Memasukkan ke CMS (lokal)
+## Memasukkan ke CMS
 
 Sejak 5 Nov 2026 ada perintah:
 
@@ -82,12 +82,19 @@ npm run import:zh
 
 Perintah ini mengisi versi 中文 di CMS dari folder ini: 24 halaman beserta bagian tambahan dari brief *future*, header, menu, footer, SEO umum, layanan, dan 7 studi kasus. Status halaman dan studi kasus diset *Draft, needs native-speaker review*. Susunan halaman, foto dan link tidak berubah; yang diisi hanya teks versi 中文. Caranya: tiap teks Inggris di CMS dicocokkan dengan pasangan Mandarinnya dari brief, `shared.md` dan `glossary.md`. Teks yang tidak ketemu pasangannya tetap bahasa Inggris dan dicetak di akhir. Pada 5 Nov tinggal nama venue Sheraton Towers Singapore dan Mandai Rainforest Resort (memang sengaja). Perintah ini aman dijalankan ulang setelah reviewer mengedit file. Perintah ini **tidak** ikut jalan saat deploy ke Vercel.
 
-**Cara melihat versi Mandarin sebelum Approved:**
-- **Di komputer sendiri (`npm run dev`):** cukup klik tombol **文A 中文** di header, atau buka `localhost:3000/zh`. Saat dev, draf yang berstatus *needs review* ikut bisa dibuka (fungsi `showsChinese` di `src/i18n/config.ts`).
-- **Di staging/produksi:** login ke `/admin`, buka halamannya, pilih **Locale: 中文** di kanan atas, lalu klik **Preview**. Tanpa login, `/zh/…` tetap dialihkan ke versi Inggris sampai statusnya *Approved*.
+**Staging mendapatkannya otomatis saat deploy.** `npm run ci` di Vercel menjalankan `npm run import:zh:deploy` (`src/seed/handoff/deploy-zh.ts`) sekali per versi. Penandanya `content:zh-draft` di database, jadi edit Mandarin yang dibuat di CMS staging sesudahnya tidak tertimpa. Kalau draf diperbarui setelah review, tambahkan versi baru di daftar `UPDATES` di file itu. Halaman yang sudah di-*Approve* tetap *Approved*.
+
+**Kapan versi Mandarin tampil** (fungsi `showsChinese` di `src/i18n/config.ts`):
+
+| Situs | Halaman *needs review* | Halaman *Approved* |
+|---|---|---|
+| Lokal (`npm run dev`) dan staging (`NEXT_PUBLIC_SITE_ENV` bukan `production`) | Tampil, tombol 文A 中文 aktif | Tampil |
+| Situs resmi (`NEXT_PUBLIC_SITE_ENV=production`) | Dialihkan ke versi Inggris | Tampil, masuk sitemap dan hreflang |
+
+Jadi De Zhong bisa mereview langsung di situs staging, sedangkan di situs resmi nanti hanya halaman yang sudah disetujui yang terbit. Sitemap di mana pun hanya memuat halaman *Approved*.
 
 ## Langkah berikutnya
 
 1. **Review penutur asli.** Reviewer bisa langsung mengedit file `.md` di sini (lalu jalankan `npm run import:zh` lagi), atau mengecek lewat Preview di CMS. Kalau lebih nyaman, bisa dibuatkan versi Word/Google Docs.
 2. **Setujui per halaman.** Setelah dicek di admin (Locale: 中文), ubah status *Chinese translation* jadi *Approved*. Halaman itu lalu tampil di `/zh/…`, masuk sitemap, dan dapat tag hreflang.
-3. **Staging/produksi.** Database staging belum berisi teks Mandarin. Itu langkah terpisah yang perlu persetujuan.
+3. **Sebelum situs resmi diluncurkan**, ubah setiap halaman yang sudah dicek jadi *Approved*. Halaman yang masih *needs review* tidak akan tampil di situs resmi.
