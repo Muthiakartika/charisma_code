@@ -83,3 +83,17 @@ Item di bawah ini **belum bisa diverifikasi** dari website lama. Selama belum di
 | 50 | **Bahasa dengan naskah.** Klien bilang bisa host dalam Bahasa dengan naskah, tapi website **tetap hanya menyebut English & 中文** (keputusan 22 Okt). Versi *"English, 中文 & more"* dan kalimat *"He can also host in Bahasa with a prepared script"* sempat dicoba lalu dihapus. Opsi Bahasa cukup dibahas De Zhong langsung saat enquiry | Selesai, tidak ditulis di website |
 | 51 | Masih ada sentuhan penampil di **layanan**: *"Optional live singing and piano"* (Corporate Emcee), *"Live singing and piano"* (D&D), *"live singing"* (Wedding). Ini tawaran tambahan, bukan profil, jadi dibiarkan | Klien boleh minta dihapus bila ingin lebih korporat lagi |
 | 52 | **Draf Mandarin (中文) website** di `docs/zh-draft/` (4 Nov 2026): 24 halaman, menu, footer, kredensial About, Work With Us dan 7 studi kasus, dalam Mandarin versi Singapura (华语, 配套, 谢德忠). Belum masuk CMS. Pertanyaan untuk reviewer ada di `docs/zh-draft/README.md` | Menunggu reviewer native (lihat juga item 15 dan 16) |
+
+## G. Dari jawaban De Zhong di tiga workbook (diisi 5 Nov, diterapkan 9 Nov 2026)
+
+Detail lengkap, termasuk 37 pertanyaan lanjutan dalam bahasa Inggris: [docs/11-update-data-klien-9-nov.md](11-update-data-klien-9-nov.md).
+
+| # | Item | Status |
+|---|---|---|
+| 53 | **Harga emcee dikonfirmasi** dan dipasang di semua halaman (lokal, 9 Nov): wedding S$988 (4 jam, +S$150/jam), D&D dan CNY mulai S$2,800 (emcee saja, 4 jam), conference S$350/jam (min S$1,000), roadshow S$250/jam (min S$600), government S$300/jam (min S$600). Wedding kini **satu paket** + kartu "Add to your day". | Diterapkan. Masih ditanyakan: harga "Emcee from S$600" di homepage, kalimat harga Corporate Emcee, paket CNY lain, harga launch |
+| 54 | **Syarat booking**: deposit 50/50 (wedding S$300), harga tanggal ramai sesuai permintaan, tidak terdaftar GST, overtime dikenakan, transport Sentosa dan luar negeri, quotation berlaku 2 minggu, PayNow, GeBIZ bisa. | Diterapkan di /rates dan halaman layanan. /legal juga sudah (10 Nov). Belum: aturan pembatalan, tarif overtime selain wedding |
+| 55 | **Alamat tidak dipublikasikan** (rumah klien). Kartu "Studio address" dan peta dihapus dari /contact. Usul klien "hidden text untuk SEO" tidak dipakai (melanggar aturan spam Google). | Diterapkan |
+| 56 | **SOMA dikurangi** (klien: hubungan kerja kurang baik, klien tertutup): dihapus dari milestone About, kartu homepage diganti studi kasus Caregiving Welfare Association, tombol dan sebutan sambil lalu di product launch dan campaigns dihapus. Studi kasus SOMA sendiri masih ada. | Diterapkan. Menunggu: tetap tampilkan halaman studi kasus SOMA atau tidak |
+| 57 | **About**: YOG 2010 = host canoeing & rowing **dan** tampil di athletes' welcome; member COMPASS (bukan "diundang ke awards"); tahun final kompetisi dihapus (klien belum tahu); 好人的秘密 ditandai teaser (belum rilis); Crimewatch dan Titan Academy di urutan pertama acting credits. | Diterapkan |
+| 58 | **Kids & Youth Programs belum pernah dijalankan** dan **coaching belum final**. Harga S$388 (program 3 hari) salah, dibuat web producer lama: dihapus dan diganti "Quoted". | Sebagian. Menunggu keputusan: sembunyikan halaman kids atau ubah jadi "enquire" saja |
+| 59 | **Logo Youth Olympic Games disembunyikan** dari strip logo klien (10 Nov): merek Olimpiade dilindungi, dan klien tidak mengirim izin tertulis saat ditanya di workbook. Nama YOG tetap ada di teks About (fakta, bukan logo). | Diterapkan. Bisa dinyalakan lagi di /admin → Clients bila ada izin |
