@@ -63,7 +63,7 @@ Footer links use the page names in glossary §7 (Team Building → 团队建设,
 
 | Badge | 中文 | Title (English) | Title (中文) | Link text (English) | Link text (中文) |
 |---|---|---|---|---|---|
-| Hosting | 主持 | Hosted at the inaugural Singapore Youth Olympic Games, 2010 | 2010 年首届新加坡青年奥林匹克运动会司仪 | Singapore Youth Olympic Games | 新加坡青年奥林匹克运动会 |
+| Hosting | 主持 | Hosted canoeing and rowing, and performed at the athletes' welcome, at the inaugural Singapore Youth Olympic Games, 2010 | 2010 年在首届新加坡青年奥林匹克运动会担任皮划艇和赛艇项目司仪，并在运动员欢迎仪式上演出 | Singapore Youth Olympic Games | 新加坡青年奥林匹克运动会 |
 | Education | 学历 | Corporate Communications graduate, Singapore Management University | 新加坡管理大学企业传播系毕业生 | Singapore Management University | 新加坡管理大学 |
 | Training | 培训 | Trainer with Zenitant, Edublitz and Aktivate | Zenitant、Edublitz 和 Aktivate 培训师 | Zenitant · Edublitz · Aktivate | Zenitant · Edublitz · Aktivate |
 | Theatre | 剧场 | Performed at the Esplanade Theatre Studio and the Drama Centre Theatre | 曾在滨海艺术中心剧场工作室和戏剧中心剧院演出 | Esplanade Theatre Studio · Drama Centre Theatre | 滨海艺术中心剧场工作室 · 戏剧中心剧院 |
@@ -71,9 +71,9 @@ Footer links use the page names in glossary §7 (Team Building → 团队建设,
 | Busking | 街头表演 | Busker endorsed by the National Arts Council, to November 2028 | 国家艺术理事会认证街头艺人（有效期至 2028 年 11 月） | National Arts Council | 国家艺术理事会 |
 | Competition | 比赛 | Finalist, SAFRA's The Ultimate Talent | SAFRA《The Ultimate Talent》决赛入围者 | SAFRA's The Ultimate Talent | SAFRA's The Ultimate Talent |
 | Competition | 比赛 | Finalist, UFM100.3's The Wedding Singer | UFM100.3《The Wedding Singer》决赛入围者 | UFM100.3 | UFM100.3 |
-| Recognition | 荣誉 | Invited to the COMPASS Awards Presentation for several consecutive years, including the 28th in 2025 | 连续多年受邀出席 COMPASS 颁奖典礼，包括 2025 年第 28 届 | COMPASS Awards Presentation | COMPASS Awards Presentation |
+| Music | 音乐 | Member of COMPASS, the Composers and Authors Society of Singapore | COMPASS（新加坡词曲版权协会）会员 | COMPASS | COMPASS |
 
-> **Note (译注):** UFM100.3's "The Wedding Singer" and SAFRA's "The Ultimate Talent" may have official Chinese titles; please use those if they exist.
+> **Note (译注):** UFM100.3's "The Wedding Singer" and SAFRA's "The Ultimate Talent" may have official Chinese titles; please use those if they exist. COMPASS is glossed as 新加坡词曲版权协会, the name used in Chinese media; please confirm. Updated 9 Nov 2026: the Youth Olympic Games role (hosted canoeing and rowing, performed at the athletes' welcome) and COMPASS membership instead of the awards invitation.
 
 Other About texts (the PDF files stay in English):
 

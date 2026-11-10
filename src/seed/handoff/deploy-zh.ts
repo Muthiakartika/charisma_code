@@ -16,6 +16,7 @@ import { importChinese } from './import-zh'
 /** In order. Every version re-imports the whole draft. */
 const UPDATES: { version: string; note: string }[] = [
   { version: '2026-11-05', note: 'Chinese draft, proofread on 5 Nov' },
+  { version: '2026-11-09', note: 'Chinese draft updated with the client data of 5 Nov' },
 ]
 const MARKER = 'content:zh-draft'
 

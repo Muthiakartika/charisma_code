@@ -15,7 +15,7 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 - ✓ **线上线下混合及线上会议**
 - ✓ **与您一起审阅节目流程**
 
-**Price line:** 全天 S$1,588 起  ·  半天研讨会 S$888 起
+**Price line:** S$1,000 起  ·  主持每小时 S$350
 
 **Button:** `查询档期` → #quote
 
@@ -149,7 +149,7 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 **H3 ·** 3. 书面确认
 
-我们以书面形式确认预订后，才会为您保留日期。
+我们以书面形式确认预订并收到 50% 订金后，才会为您保留日期。余款于活动当天付清。
 
 **H3 ·** 4. 审阅流程表和主持稿
 
@@ -171,9 +171,9 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 **H2 ·** 影响报价的因素
 
-**Price line:** 全天 S$1,588 起
+**Price line:** S$1,000 起  ·  主持每小时 S$350
 
-全天会议的费用一般在 S$1,588 至 S$2,888 之间；半天研讨会和全员大会 S$888 起。每一项预订，我们都会提供书面报价。
+会议主持每小时 S$350，按您的议程计算，最低收费 S$1,000。每一项预订，我们都会提供书面报价。
 
 **H4 ·** 影响报价的因素
 
@@ -242,7 +242,9 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 线上线下混合或线上会议的直播由您的影音团队或平台供应商负责；我们会商定提示点，以及远程提问如何传到台上。
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 向我们提问` → https://wa.me/6594378083
 
@@ -252,7 +254,7 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 **H3 ·** 在新加坡请会议司仪要多少钱？
 
-全天会议 S$1,588 起，半天研讨会 S$888 起。您会收到针对您议程的书面报价。各项服务的价格请参阅我们的收费页面。
+会议主持每小时 S$350，最低收费 S$1,000。您会收到针对您议程的书面报价。各项服务的价格请参阅我们的收费页面。
 
 **H3 ·** 你们可以用英语和华语主持吗？
 
@@ -292,6 +294,8 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 **H3 ·** 需要支付订金吗？
 
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
+
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
 ## Section 15 — Quote form
@@ -326,9 +330,9 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 
 发送您的议程和日期，我们会确认档期并发送书面报价。
 
-**全天会议：S$1,588 起**
+**会议主持：每小时 S$350**
 
-**半天研讨会：S$888 起**
+**最低收费：S$1,000**
 
 **Button:** `查询档期` → #quote
 
@@ -343,7 +347,7 @@ _The Charisma Code  ·  /zh/conference-emcee  ·  draft 4 Nov 2026  ·  translat
 |---|---|
 | Target keywords (zh, volume not checked) | 新加坡会议司仪 · 研讨会司仪 · 线上活动主持人 |
 | SEO title | 新加坡会议司仪：研讨会及线上活动司仪 \| The Charisma Code |
-| Meta description | 新加坡双语会议司仪，全天 S$1,588 起。以英语和华语主持讲者介绍、小组讨论、问答及线上线下混合会议，让议程准时进行。 |
+| Meta description | 新加坡双语会议司仪，每小时 S$350 起。以英语和华语主持讲者介绍、小组讨论、问答及线上线下混合会议，让议程准时进行。 |
 | H1 | 会议司仪，让每个环节都准时进行。 |
 
 ## Form back-end

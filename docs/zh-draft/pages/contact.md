@@ -24,6 +24,8 @@ _The Charisma Code  ·  /zh/contact  ·  draft 4 Nov 2026  ·  translated from d
 
 **H2 ·** 选择联系方式
 
+我们会在 3 天内以英语或华语回复。
+
 **H3 ·** WhatsApp
 
 简单提问或查询档期，最快捷。
@@ -41,8 +43,6 @@ _The Charisma Code  ·  /zh/contact  ·  draft 4 Nov 2026  ·  translated from d
 hello@thecharismacode.co
 
 **Button:** `电邮联系我们` → mailto:hello@thecharismacode.co
-
-**H3 ·** 工作室地址
 
 ## Section 3 — Quote form
 
@@ -82,12 +82,6 @@ hello@thecharismacode.co
 
 直到完全符合您的需要。
 
-## Section 5 — Map
-
-**H2 ·** 我们的位置
-
-嵌入工作室地址的 Google 地图。
-
 ## Section 6 — FAQ
 
 **H2 ·** 联系我们之前
@@ -99,8 +93,6 @@ hello@thecharismacode.co
 **H3 ·** 询问前需要准备完整的活动需求吗？
 
 不需要。一个日期，加上一句活动简介，就可以开始了。
-
-**H3 ·** 我可以到工作室参观吗？
 
 **H3 ·** 你们可以用华语回复吗？
 
@@ -130,4 +122,4 @@ hello@thecharismacode.co
 
 | Field | Value |
 |---|---|
-| the-charisma-code-studio.jpg | ALT: The Charisma Code 位于新加坡的工作室 |
+| the-charisma-code-contact.jpg | ALT: The Charisma Code 的德忠 |

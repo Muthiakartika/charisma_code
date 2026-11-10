@@ -17,7 +17,7 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 - ✓ **时间有变也从容应对**
 - ✓ **可加选现场演唱和钢琴演奏**
 
-**Price line:** 半天或晚间活动 S$888 起  ·  按您的节目流程提供书面报价
+**Price line:** 晚宴和颁奖典礼 S$2,800 起  ·  路演每小时 S$250 起
 
 **Button:** `获取报价` → #quote (form at the foot of the page)
 
@@ -111,7 +111,7 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 **H3 ·** 3. 书面确认
 
-我们以书面形式确认预订后，才会为您保留日期。
+我们以书面形式确认预订并收到 50% 订金后，才会为您保留日期。余款于活动当天付清。
 
 **H3 ·** 4. 审阅流程和主持稿
 
@@ -163,9 +163,9 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 **H2 ·** 影响企业活动司仪报价的因素
 
-**Price line:** 半天或晚间活动 S$888 起
+**Price line:** 晚宴和颁奖典礼 S$2,800 起
 
-大部分公司活动的费用在 S$888 至 S$1,888 之间。全天会议的价格请参阅会议页面。由于每个节目流程都不一样，我们会为每一项预订提供书面报价。
+晚宴、颁奖典礼和其他晚间活动，最长 4 小时的主持 S$2,800 起。日间活动按小时计费：路演每小时 S$250 起（最低收费 S$600），会议每小时 S$350 起（最低收费 S$1,000）。由于每个节目流程都不一样，我们会为每一项预订提供书面报价。
 
 **H4 ·** 影响报价的因素
 
@@ -279,7 +279,9 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 增加环节、延长节目或额外彩排都可能改变报价，任何变动我们都会事先告诉您。
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 向我们提问` → https://wa.me/6594378083
 
@@ -289,7 +291,7 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 **H3 ·** 在新加坡请企业活动司仪要多少钱？
 
-我们的企业活动主持服务，半天或晚间活动 S$888 起，大部分公司活动的费用在 S$888 至 S$1,888 之间。您会收到针对您节目流程的书面报价。各项服务的价格请参阅我们的收费页面。
+晚宴和颁奖典礼的主持，最长 4 小时 S$2,800 起。日间活动按小时计费，路演每小时 S$250 起，会议每小时 S$350 起。您会收到针对您节目流程的书面报价。各项服务的价格请参阅我们的收费页面。
 
 **H3 ·** 你们可以用英语和华语主持吗？
 
@@ -337,6 +339,8 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 **H3 ·** 需要支付订金吗？
 
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
+
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
 ## Section 14 — Quote form
@@ -376,7 +380,7 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 
 发送您的日期、场地和节目流程，我们会确认档期并发送书面报价。
 
-**企业活动主持：S$888 起**
+**企业活动主持：晚宴和颁奖典礼 S$2,800 起**
 
 **Button:** `获取报价` → #quote
 
@@ -391,7 +395,7 @@ _The Charisma Code  ·  /zh/corporate-emcee  ·  draft 4 Nov 2026  ·  translate
 |---|---|
 | Target keywords (zh, volume not checked) | 新加坡企业活动司仪 · 企业活动主持人 · 颁奖典礼司仪 |
 | SEO title | 新加坡企业活动司仪：中英双语活动主持 \| The Charisma Code |
-| Meta description | 新加坡双语企业活动司仪，S$888 起。以英语和华语准时主持颁奖典礼、常年晚宴、发布会和公司活动。欢迎获取报价。 |
+| Meta description | 新加坡双语企业活动司仪。以英语和华语准时主持颁奖典礼、常年晚宴、发布会和公司活动。欢迎获取报价。 |
 | H1 | 新加坡企业活动司仪，包您玩得尽兴。 |
 
 ## Form back-end

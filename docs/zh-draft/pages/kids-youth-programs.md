@@ -17,7 +17,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 > **Note (译注):** Maris Stella High School is given its Chinese name 海星中学, with the English name in brackets at the first mention in running text (Section 9). Please confirm.
 
-**Price line:** 学校课程每组 S$880 起  ·  营会每位参与者 S$388
+**Price line:** 学校课程每组 S$880 起
 
 **Button:** `策划学校课程` → #enquiry
 
@@ -212,7 +212,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H3 ·** 多日自信营
 
-**Price line:** 每位参与者 S$388
+**Price line:** 另行报价
 
 **Ideal for:** 学校假期和学校营会。整整三天的游戏、戏剧和演讲，最后为家长或老师举行成果展示，让孩子一天天累积动力。
 
@@ -275,7 +275,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H3 ·** 4. 书面确认
 
-我们以书面确认预订后，便会为您保留课程时段。
+我们以书面确认预订并收到 50% 订金后，便会为您保留课程时段。余款于活动当天付清。
 
 **H3 ·** 5. 每周上课
 
@@ -309,7 +309,9 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **每组人数**
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `WhatsApp 询问任何问题` → https://wa.me/6594378083
 
@@ -319,7 +321,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **H3 ·** 学校课程的费用是多少？
 
-模块式学校课程每个学校团体 S$880 起，多日营会每位参与者 S$388，一对一大师班每节 S$120 起。
+模块式学校课程每个学校团体 S$880 起，多日营会另行报价，一对一大师班每节 S$120 起。
 
 **H3 ·** 你们教哪些年龄层？
 
@@ -352,6 +354,8 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 有，可应要求提供 Microbit、学习技巧和歌唱课程，作为以上六个主题之外的选择。
 
 **H3 ·** 需要付订金吗？
+
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
@@ -386,7 +390,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 
 **模块式学校课程：每组 S$880 起**
 
-**多日营会：每位参与者 S$388**
+**多日营会：另行报价**
 
 **一对一大师班：每节 S$120 起**
 
@@ -403,7 +407,7 @@ _The Charisma Code  ·  /zh/kids-youth-programs  ·  draft 4 Nov 2026  ·  trans
 |---|---|
 | Target keywords (zh, volume not checked) | 新加坡假期营会 · 新加坡儿童公众演讲 · 新加坡儿童演讲与戏剧 |
 | SEO title | 新加坡儿童与青少年课程：自信与舞台技能 \| The Charisma Code |
-| Meta description | 为新加坡学校和青少年设计的自信、公众演讲、戏剧和摄像课程。学校课程 S$880 起，营会每位孩子 S$388。 |
+| Meta description | 为新加坡学校和青少年设计的自信、公众演讲、戏剧和摄像课程。学校课程每组 S$880 起。 |
 | H1 | 让年轻人学会勇敢发声、自信闪耀的地方。 |
 
 ## Form back-end

@@ -8,15 +8,15 @@ _The Charisma Code  ·  additions to /zh/about  ·  draft 5 Nov 2026  ·  transl
 
 - **新加坡管理大学**企业传播系毕业生 → https://www.smu.edu.sg
 - **Zenitant**、**Edublitz** 和 **Aktivate** 培训师 → https://www.zenitanteducation.com · https://www.edublitz.com/sg/ · https://www.aktivate.sg
-- 2010 年首届**新加坡青年奥林匹克运动会**司仪 → https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics
+- 2010 年在首届**新加坡青年奥林匹克运动会**担任皮划艇和赛艇项目司仪，并在运动员欢迎仪式上演出 → https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics
 - 曾在**滨海艺术中心剧场工作室**和**戏剧中心剧院**演出 → https://www.esplanade.com/visit/venues-and-spaces/venues/theatre-studio · https://www.nlb.gov.sg/main/visit-us/drama-centre
 - **ABRSM** 钢琴八级（良好） → https://www.abrsm.org
 - **国家艺术理事会**认证街头艺人（有效期至 2028 年 11 月） → https://eservices.nac.gov.sg/Busking/busker/profile/175a3ecb-a79f-4962-b04b-e94bcc808eda
-- <mark>2015</mark> 年入围 **SAFRA's The Ultimate Talent** 决赛 → https://www.safra.sg
-- <mark>2018</mark> 年入围 **UFM100.3**《The Wedding Singer》决赛 → https://audio.sph.com.sg/ufm1003/
-- 连续多年受邀出席 **COMPASS Awards Presentation**，包括 2025 年第 28 届 → https://www.compass.org.sg
+- 入围 **SAFRA's The Ultimate Talent** 决赛 → https://www.safra.sg
+- 入围 **UFM100.3**《The Wedding Singer》决赛 → https://audio.sph.com.sg/ufm1003/
+- **COMPASS**（新加坡词曲版权协会）会员 → https://www.compass.org.sg
 
-> **Note (译注):** Wording follows shared.md §5. The linked names SAFRA's The Ultimate Talent and COMPASS Awards Presentation stay in English (no official Chinese titles known).
+> **Note (译注):** Wording follows shared.md §5. SAFRA's The Ultimate Talent stays in English (no official Chinese title known). COMPASS is glossed as 新加坡词曲版权协会, the name used in Chinese media; please confirm. Canoeing = 皮划艇, rowing = 赛艇, athletes' welcome = 运动员欢迎仪式.
 
 ## Addition 2 — Music (after the hosting reel)
 
@@ -24,7 +24,7 @@ _The Charisma Code  ·  additions to /zh/about  ·  draft 5 Nov 2026  ·  transl
 
 德忠除了在婚礼和活动上现场演唱，也创作并演唱自己的歌曲。
 
-- **好人的秘密** · 德忠原创歌曲 · 2023 年 → https://www.youtube.com/watch?v=IMGeQI-Z5jY (teaser, 26 Sep 2023)
+- **好人的秘密** · 德忠原创歌曲 · 2023 年预告片段 → https://www.youtube.com/watch?v=IMGeQI-Z5jY (teaser, 26 Sep 2023)
 - **今天你要嫁给我** · 翻唱 → https://www.youtube.com/watch?v=ZjcxSHayLEQ
 - **当你** · 翻唱 → https://www.youtube.com/watch?v=BnT8kIuAjWM
 - **爱情** · 翻唱莫文蔚的歌曲 → https://www.youtube.com/watch?v=XLeuxEvMrMo
@@ -39,13 +39,13 @@ _The Charisma Code  ·  additions to /zh/about  ·  draft 5 Nov 2026  ·  transl
 
 以下为部分影视作品，完整列表请见 IMDb。
 
+- **Crimewatch** · 电视剧 · 演出多季 → https://www.imdb.com/title/tt5782022/
+- **Titan Academy** · 网络剧 · 饰演 N4-T1 班的 Timmy → https://www.youtube.com/@jianhao2
 - **Provocative** · 电视剧 · 2025 年 · 饰演 Joey → https://www.imdb.com/title/tt35292564/
 - **Moments 时光倾城** · 新传媒 8 频道 · 2024 年 · 饰演香蕉（Banana） → https://www.youtube.com/watch?v=DT9j7nrsjqA
 - **Sunny Side Up** · 电视剧 · 2022 至 2024 年 · 饰演 Ong Wei Long → https://www.imdb.com/title/tt22393540/
-- **Titan Academy** · 网络剧 · 饰演 N4-T1 班的 Timmy → https://www.youtube.com/@jianhao2
 - **Fried Rice Paradise** · 电视剧 · 2019 年 · 饰演年轻时的 Rickson → https://www.imdb.com/title/tt11580660/
 - **Kin** · 电视剧 · 2018 年 · 饰演 Willy Lee → https://www.imdb.com/title/tt12422990/
-- **Crimewatch** · 电视剧 · 饰演 Alex → https://www.imdb.com/title/tt5782022/
 - **Tanglin** · 电视剧 · 2015 年 · 饰演 Vincent → https://www.imdb.com/title/tt4721442/
 - **Code of Law** · 电视剧 · 2015 年 · 饰演 Yee Fong → https://www.imdb.com/title/tt2399334/
 

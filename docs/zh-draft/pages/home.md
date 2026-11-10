@@ -15,7 +15,7 @@ _The Charisma Code  ·  /zh  ·  draft 4 Nov 2026  ·  translated from docs/hand
 - ✓ **立足新加坡**
 - ✓ **Google 上有客户评价**
 
-**Price line:** 司仪主持 S$588 起  ·  团队建设每位参与者 S$88 起  ·  查看所有收费
+**Price line:** 司仪主持 S$600 起  ·  团队建设每位参与者 S$88 起  ·  查看所有收费
 
 **Button:** `联系我们` → /contact
 
@@ -78,7 +78,7 @@ The Charisma Code 是一家新加坡体验式活动工作室，专注于团队�
 
 **H3 ·** 企业活动司仪
 
-**Price line:** S$888 起
+**Price line:** 晚宴和颁奖典礼 S$2,800 起
 
 拥有超过 15 年舞台经验的英语和华语双语司仪，适合颁奖典礼、发布会和公司庆典。
 
@@ -86,7 +86,7 @@ The Charisma Code 是一家新加坡体验式活动工作室，专注于团队�
 
 **H3 ·** 公司晚宴司仪
 
-**Price line:** S$888 起
+**Price line:** S$2,800 起
 
 为年终晚宴和新春晚宴带来充满活力的双语主持，配合游戏、幸运抽奖和紧凑的节目流程，让整晚气氛不冷场。
 
@@ -134,7 +134,7 @@ The Charisma Code 是一家新加坡体验式活动工作室，专注于团队�
 
 **H3 ·** 婚礼司仪
 
-**Price line:** S$588 起
+**Price line:** S$988 起
 
 温馨的双语婚礼主持，结合现场演唱和宾客互动，围绕新人的故事来规划。
 
@@ -234,11 +234,11 @@ The Charisma Code 是一家新加坡体验式活动工作室，专注于团队�
 
 **Button:** `阅读案例` → /our-work/the-banyan-group-dinner-and-dance
 
-**H3 ·** SOMA Fragrances 品牌发布会的艺人与网红协调
+**H3 ·** Caregiving Welfare Association 社区活动
 
-品牌活动，2025 年 8 月。
+企业活动，2026 年 9 月。
 
-**Button:** `阅读案例` → /our-work/soma-fragrances-brand-launch
+**Button:** `阅读案例` → /our-work/caregiving-welfare-association-community-event
 
 **Button:** `查看所有作品` → /our-work
 
@@ -303,7 +303,7 @@ The Charisma Code 由谢德忠（Chia De Zhong）创办。他是英语和华语�
 
 **H3 ·** 费用是多少？
 
-司仪主持 S$588 起，团队建设每位参与者 S$88 起，活动策划则按项目报价。各项服务的价格请参阅我们的收费页面。
+司仪主持 S$600 起，团队建设每位参与者 S$88 起，活动策划则按项目报价。各项服务的价格请参阅我们的收费页面。
 
 **H3 ·** 应该提前多久联系你们？
 

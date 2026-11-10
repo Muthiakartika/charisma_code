@@ -15,13 +15,11 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 - ✓ **工作人员、影音设备和摄像**
 - ✓ **一个团队，一个方案**
 
-**Price line:** 按每场发布会报价  ·  仅司仪主持 S$888 起
+**Price line:** 按每场发布会报价
 
 **Button:** `策划我的发布会` → #quote (form at the foot of the page)
 
 **Button:** `WhatsApp 联系德忠` → https://wa.me/6594378083 (pre-filled message)
-
-**Button:** `查看 SOMA 发布会` → #case-study
 
 ## Section 2 — What a launch needs
 
@@ -178,7 +176,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 从头到尾贴合品牌
 
-艺人和宣传信息都根据您的品牌形象来挑选和拟定，就像 SOMA 发布会一样。
+艺人和宣传信息都根据您的品牌形象来挑选和拟定。
 
 **H3 ·** 传播专业背景
 
@@ -204,7 +202,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 - 活动时长，以及店内探访等额外天数
 - 摄像和内容交付项目
 
-**Price line:** 仅司仪主持：半天或晚间发布会 S$888 起
+**Price line:** 按每场发布会报价
 
 **Button:** `获取发布会报价` → #quote
 
@@ -232,7 +230,9 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 在商场和公共场所举办的发布会，须遵守场地规定并取得批准，我们会把这些都纳入时间表。
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `WhatsApp 询问我们` → https://wa.me/6594378083
 
@@ -242,7 +242,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 一场新品发布会要多少钱？
 
-这取决于所需服务、宾客人数、场地和参与的内容创作者，所以每场发布会都根据您的方案报价。若只需司仪主持，半天或晚间发布会 S$888 起。
+这取决于所需服务、宾客人数、场地和参与的内容创作者，所以每场发布会都根据您的方案报价。
 
 **H3 ·** 你们可以策划整场发布会吗？
 
@@ -254,7 +254,7 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 
 **H3 ·** 你们和网红及 KOL 合作吗？
 
-是的。我们负责筛选内容创作者和受邀艺人、向他们做说明并协调安排，就像我们为 SOMA Fragrances 发布会所做的一样。
+是的。我们负责筛选内容创作者和受邀艺人、向他们做说明并协调安排，从嘉宾出席到付费网红贴文都可以。
 
 **H3 ·** 你们可以用英语和华语主持发布会吗？
 
@@ -275,6 +275,8 @@ _The Charisma Code  ·  /zh/product-launch-events  ·  draft 4 Nov 2026  ·  tra
 会的。您会收到一份书面方案，列明建议的形式，每项服务单独报价。
 
 **H3 ·** 需要支付订金吗？
+
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 

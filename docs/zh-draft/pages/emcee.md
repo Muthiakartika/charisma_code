@@ -15,7 +15,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 - ✓ **新加坡管理大学企业传播专业**
 - ✓ **Google 上有客户评价**
 
-**Price line:** S$588 起  ·  本页列出各类场合的价格
+**Price line:** S$600 起  ·  本页列出各类场合的价格
 
 **Button:** `查询档期` → #enquiry
 
@@ -31,7 +31,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 企业活动
 
-**Price line:** S$888 起
+**Price line:** 晚宴和颁奖典礼 S$2,800 起
 
 颁奖典礼、发布会和公司庆典，以英语和华语准时主持。
 
@@ -39,7 +39,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 公司晚宴
 
-**Price line:** S$888 起
+**Price line:** S$2,800 起
 
 年终 D&D 晚宴和常年晚宴，配合游戏和幸运抽奖，整晚节奏紧凑不冷场。
 
@@ -47,7 +47,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 会议及研讨会
 
-**Price line:** S$1,588 起
+**Price line:** 每小时 S$350 起
 
 讲者介绍、小组讨论和问答环节准时进行，也包括线上线下混合式的会议。
 
@@ -55,7 +55,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 新春晚宴
 
-**Price line:** S$888 起
+**Price line:** S$2,800 起
 
 以双语主持新春常年晚宴，让每一桌宾客都融入庆祝气氛。
 
@@ -63,7 +63,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 婚礼及喜宴
 
-**Price line:** S$588 起
+**Price line:** S$988 起
 
 温馨的双语主持，可加选现场演唱，围绕新人的故事来规划。
 
@@ -71,7 +71,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 路演及展览会
 
-**Price line:** 每小时 S$128 起
+**Price line:** 每小时 S$250 起
 
 活力十足的主持，让路人驻足，聚成人潮。
 
@@ -79,7 +79,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 政府及社区活动
 
-**Price line:** S$888 起
+**Price line:** 每小时 S$300 起
 
 政府部门、法定机构、基层组织和慈善活动，遵循合适的礼宾程序主持。
 
@@ -210,16 +210,16 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 | 场合 | 起价 | 一般计价单位 | 详情 |
 |---|---|---|---|
-| 婚礼 | S$588 | 每场婚宴 | /wedding-emcee |
+| 路演 | S$250 | 每小时，最低收费 S$600 | /roadshow-emcee |
+| 政府及社区活动 | S$300 | 每小时，最低收费 S$600 | /government-community-emcee |
+| 会议 | S$350 | 每小时，最低收费 S$1,000 | /conference-emcee |
 | 学校及家庭活动 | S$588 | 每场活动 | /school-family-emcee |
-| 企业活动 | S$888 | 半天或晚间 | /corporate-emcee |
-| 公司晚宴 | S$888 | 整晚 | /dinner-and-dance-emcee |
-| 新春晚宴 | S$888 | 整晚 | /chinese-new-year-emcee |
-| 政府及社区活动 | S$888 | 半天或晚间 | /government-community-emcee |
-| 会议 | S$1,588 | 全天 | /conference-emcee |
-| 路演 | S$128 | 每小时，最少 3 小时 | /roadshow-emcee |
+| 婚礼 | S$988 | 最长 4 小时 | /wedding-emcee |
+| 企业晚宴和颁奖典礼 | S$2,800 | 最长 4 小时 | /corporate-emcee |
+| 公司晚宴 | S$2,800 | 最长 4 小时 | /dinner-and-dance-emcee |
+| 新春晚宴 | S$2,800 | 最长 4 小时 | /chinese-new-year-emcee |
 
-**所有预订均可加购：**现场演唱和钢琴演奏、双语主持稿及彩排。
+**所有预订均可加购：**更长的音乐表演、双语主持稿、彩排，以及 DJ 或音响系统。
 
 **Button:** `查看所有收费` → /rates
 
@@ -267,7 +267,9 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 请在活动前提供最终版流程表，以及讲者的姓名、职衔和发音。
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 ## Section 11 — FAQ
 
@@ -275,7 +277,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 
 **H3 ·** 在新加坡请一位司仪要多少钱？
 
-婚宴 S$588 起；企业活动、公司晚宴和新春晚宴 S$888 起；全天会议 S$1,588 起。各项服务的价格请参阅我们的收费页面，或发送您的日期以获取准确报价。
+路演每小时 S$250 起，政府活动每小时 S$300 起（最低收费 S$600）；会议每小时 S$350 起；婚礼 S$988 起；公司晚宴、新春晚宴和颁奖典礼 S$2,800 起。各项服务的价格请参阅我们的收费页面，或发送您的日期以获取准确报价。
 
 **H3 ·** 你们可以用英语和华语主持吗？
 
@@ -310,6 +312,8 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 会。了解您的目标和需求后，我们会准备一份量身定制的方案，包括建议的节目流程和报价。
 
 **H3 ·** 你们会到新加坡以外的地方主持吗？
+
+会。新加坡以外活动的交通和住宿费用，以及前往圣淘沙的交通费，都会列入您的报价。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
@@ -352,7 +356,7 @@ _The Charisma Code  ·  /zh/emcee  ·  draft 4 Nov 2026  ·  translated from doc
 |---|---|
 | Target keywords (zh, volume not checked) | 新加坡司仪 · 新加坡双语司仪 · 新加坡活动主持人 |
 | SEO title | 新加坡司仪：专业中英双语司仪德忠 \| The Charisma Code |
-| Meta description | 在新加坡预订专业双语司仪。德忠以英语和华语主持企业活动、公司晚宴、婚礼等各类活动，S$588 起。 |
+| Meta description | 在新加坡预订专业双语司仪。德忠以英语和华语主持企业活动、公司晚宴、婚礼等各类活动，S$600 起。 |
 | H1 | 新加坡司仪，由德忠为您主持。 |
 
 ## Form back-end

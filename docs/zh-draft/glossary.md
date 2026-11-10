@@ -123,6 +123,25 @@
 | cancellation | 取消 |
 | case study | 案例 |
 | availability (check your date) | 查询档期 |
+| deposit and payment | 订金与付款 |
+| balance | 余款 |
+| PayNow is preferred | 付款首选 PayNow |
+| minimum booking | 最低收费 |
+| up to 4 hours | 最长 4 小时 |
+| a block of up to 4 hours | 最长 4 小时的时段 |
+| each extra hour | 每加一小时 |
+| overtime | 超时费 |
+| quoted separately | 另行报价 |
+| quoted for your programme | 按您的节目流程报价 |
+| rehearsal and sound check | 彩排和试音 |
+| not GST-registered | 没有注册消费税（GST） |
+| transport and accommodation | 交通和住宿 |
+| Sentosa | 圣淘沙 |
+| procurement documents | 采购文件 |
+| live band | 现场乐队 |
+| DJ and sound system | DJ 和音响系统 |
+
+Added 9 Nov 2026 with the confirmed prices and booking terms. PayNow and GeBIZ stay in English. A price shown only as "Quoted" is 另行报价.
 
 ## 6. Buttons and navigation
 
@@ -231,6 +250,6 @@ Not in the first version of this list; the pages already use them.
 
 | Page | English | 中文 |
 |---|---|---|
-| Wedding | Banquet Emcee · Emcee & Live Singer · Full Celebration Host | 婚宴司仪 · 司仪兼现场歌手 · 全程庆典主持 |
+| Wedding | Wedding Emcee Package · Add to your day | 婚礼司仪配套 · 为婚礼加选 |
 | Chinese New Year | Dinner Emcee · Festive Games Host · Full Festive Programme | 晚宴司仪 · 新春游戏主持 · 新春全套节目 |
 | School & family | Children's Party Host · School Event Emcee · Family Day Host | 儿童派对主持 · 学校活动司仪 · 家庭日主持 |

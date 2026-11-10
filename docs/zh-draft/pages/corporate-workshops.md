@@ -17,7 +17,7 @@ _The Charisma Code  ·  /zh/corporate-workshops  ·  draft 4 Nov 2026  ·  trans
 
 > **Note (译注):** "A working emcee" (an emcee who hosts for a living) is rendered 活跃于舞台的司仪 throughout. Reviewer may prefer a shorter term.
 
-**Price line:** 按课程报价  ·  一对一辅导每节 S$120 起
+**Price line:** 按课程报价，可配合您的预算调整
 
 **Button:** `策划工作坊` → #enquiry (form at the foot of the page)
 
@@ -223,7 +223,7 @@ _The Charisma Code  ·  /zh/corporate-workshops  ·  draft 4 Nov 2026  ·  trans
 - 所需引导师人数
 - 场地：您的办公室，或由我们安排的场地
 
-**Price line:** 一对一辅导：每节 S$120 起
+**Price line:** 按课程报价，可配合您的预算调整
 
 **Button:** `获取工作坊报价` → #enquiry
 
@@ -247,7 +247,9 @@ _The Charisma Code  ·  /zh/corporate-workshops  ·  draft 4 Nov 2026  ·  trans
 
 **人数**
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `WhatsApp 询问我们` → https://wa.me/6594378083
 
@@ -257,7 +259,7 @@ _The Charisma Code  ·  /zh/corporate-workshops  ·  draft 4 Nov 2026  ·  trans
 
 **H3 ·** 企业工作坊的费用是多少？
 
-工作坊按课程报价，取决于人数、时长和内容调整的程度。一对一辅导每节 S$120 起。请把您的需求发给我们，以获取书面报价。
+工作坊按课程报价。告诉我们您的预算，我们会据此调整课程，同时考虑人数、时长和内容的定制程度。请把您的需求发给我们，以获取书面报价。
 
 **H3 ·** 工作坊可以在我们的办公室进行吗？
 
@@ -288,6 +290,8 @@ _The Charisma Code  ·  /zh/corporate-workshops  ·  draft 4 Nov 2026  ·  trans
 在汇报技巧工作坊中，每个人都会在互相支持的氛围下至少发言一次。其他主题则以两人一组或小组形式进行。
 
 **H3 ·** 你们有以华语进行的工作坊吗？
+
+我们的工作坊以英语进行，并根据贵公司和团队的情况量身调整。
 
 **H3 ·** 我们会收到方案吗？
 

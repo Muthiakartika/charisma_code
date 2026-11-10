@@ -157,7 +157,7 @@ _The Charisma Code  ·  /zh/event-support  ·  draft 4 Nov 2026  ·  translated 
 
 **H3 ·** 3. 书面确认
 
-我们以书面确认预订后，才会为您保留所选服务。
+我们以书面确认预订并收到 50% 订金后，才会为您保留所选服务。余款于活动当天付清。
 
 **H3 ·** 4. 向供应商做好说明
 
@@ -225,7 +225,11 @@ _The Charisma Code  ·  /zh/event-support  ·  draft 4 Nov 2026  ·  translated 
 
 **照片和视频交付**
 
-**订金与取消**
+剪辑好的照片和视频一般在 1 至 2 周内交付。如需更早拿到，请告诉我们。
+
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `WhatsApp 问我们任何问题` → https://wa.me/6594378083
 
@@ -247,6 +251,12 @@ _The Charisma Code  ·  /zh/event-support  ·  draft 4 Nov 2026  ·  translated 
 
 **H3 ·** 多久可以拿到照片和视频？
 
+一般在 1 至 2 周内；如有截止日期，也可以更早交付。
+
+**H3 ·** 你们可以安排现场乐队吗？
+
+可以。我们通过合作伙伴为您安排现场乐队。
+
 **H3 ·** 你们可以帮我们找场地吗？
 
 可以。我们会根据您的人数、日期和预算拟定候选名单，并协助实地考察。
@@ -264,6 +274,8 @@ _The Charisma Code  ·  /zh/event-support  ·  draft 4 Nov 2026  ·  translated 
 会的。每项服务都单独列明。
 
 **H3 ·** 需要支付订金吗？
+
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 

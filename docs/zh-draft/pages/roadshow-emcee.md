@@ -15,7 +15,7 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 - ✓ **按人流安排演出时段**
 - ✓ **内容创作者的眼光**
 
-**Price line:** 每小时 S$128 起  ·  最少 3 小时
+**Price line:** 每小时 S$250 起  ·  最低收费 S$600
 
 **Button:** `查询档期` → #quote
 
@@ -153,7 +153,7 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 **H3 ·** 3. 书面确认
 
-我们以书面形式确认预订后，才会为您保留日期。
+我们以书面形式确认预订并收到 50% 订金后，才会为您保留日期。余款于活动当天付清。
 
 **H3 ·** 4. 规划游戏和信息
 
@@ -171,9 +171,9 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 **H2 ·** 路演主持如何收费
 
-**Price line:** 每小时 S$128 起  ·  最少 3 小时
+**Price line:** 每小时 S$250 起  ·  最低收费 S$600
 
-路演和展览会主持按小时计费，一般每小时 S$128 至 S$228，最少 3 小时。连续多天的活动会一起报价。
+路演和展览会主持按小时计费，每小时 S$250 起，最低收费 S$600。连续多天的活动会一起报价。
 
 **H4 ·** 影响报价的因素
 
@@ -274,7 +274,9 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 全天活动会在演出时段之间安排短暂休息，让整天都保持高昂的活力。
 
-**订金与取消**
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 向我们提问` → https://wa.me/6594378083
 
@@ -284,7 +286,7 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 **H3 ·** 请路演司仪要多少钱？
 
-每小时 S$128 起，最少 3 小时；连续多天的活动会一起报价。各项服务的价格请参阅我们的收费页面。
+每小时 S$250 起，最低收费 S$600；连续多天的活动会一起报价。各项服务的价格请参阅我们的收费页面。
 
 **H3 ·** 你们可以主持全天或连续多天的活动吗？
 
@@ -312,11 +314,15 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 **H3 ·** 周末或公共假期会加收费用吗？
 
+周末、公共假期和旺季日期按需求报价。请告诉我们您的日期，我们会为每一天确认收费。
+
 **H3 ·** 我们会收到方案和报价吗？
 
 会。了解您的目标和需求后，我们会准备一份量身定制的方案，包括建议的节目流程和报价。
 
 **H3 ·** 需要支付订金吗？
+
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
@@ -351,7 +357,7 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 
 发送您的日期和地点，我们会建议演出时段并发送报价。
 
-**路演主持：每小时 S$128 起，最少 3 小时**
+**路演主持：每小时 S$250 起，最低收费 S$600**
 
 **Button:** `查询档期` → #quote
 
@@ -366,7 +372,7 @@ _The Charisma Code  ·  /zh/roadshow-emcee  ·  draft 4 Nov 2026  ·  translated
 |---|---|
 | Target keywords (zh, volume not checked) | 新加坡路演司仪 · 展览会司仪 · 商展主持人 |
 | SEO title | 新加坡路演司仪：展览会及商展司仪 \| The Charisma Code |
-| Meta description | 新加坡双语路演及展览会司仪，每小时 S$128 起。以英语和华语主持吸引人潮的游戏、赠品环节和舞台表演。 |
+| Meta description | 新加坡双语路演及展览会司仪，每小时 S$250 起。以英语和华语主持吸引人潮的游戏、赠品环节和舞台表演。 |
 | H1 | 路演司仪，让路人驻足，聚成人潮。 |
 
 ## Form back-end

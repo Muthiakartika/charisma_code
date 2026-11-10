@@ -37,7 +37,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H3 ·** 企业活动司仪
 
-**Price line:** S$888 起
+**Price line:** 晚宴和颁奖典礼 S$2,800 起
 
 拥有超过 15 年舞台经验的英语和华语双语司仪，适合颁奖典礼、发布会和公司庆典。
 
@@ -45,7 +45,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H3 ·** 公司晚宴司仪
 
-**Price line:** S$888 起
+**Price line:** S$2,800 起
 
 为年终晚宴和新春晚宴带来充满活力的双语主持，配合游戏、幸运抽奖和紧凑的节目流程，让整晚不冷场。
 
@@ -93,7 +93,7 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 
 **H3 ·** 婚礼司仪
 
-**Price line:** S$588 起
+**Price line:** S$988 起
 
 温馨的双语婚礼主持，结合现场演唱和宾客互动，围绕新人的故事来规划。
 
@@ -192,6 +192,8 @@ _The Charisma Code  ·  /zh/services  ·  draft 4 Nov 2026  ·  translated from 
 沟通辅导每节 S$120，学校课程每个团体 S$880 起。司仪主持设有起价，活动策划、营销活动和活动支援则按项目报价。
 
 **H3 ·** 你们提供新加坡以外的服务吗？
+
+提供。新加坡以外活动的交通和住宿费用会列入您的报价。
 
 **H3 ·** 我们会收到活动方案和报价吗？
 

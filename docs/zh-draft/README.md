@@ -46,7 +46,7 @@ Daftar lengkap pilihan gaya setelah proofreading 5 Nov ada di [proofreading-2026
 3. **Istilah sekolah:** "speech day" = 颁奖日, "prize-giving" = 颁奖礼. Mungkin sekolah Singapura memakai 常年颁奖典礼.
 4. **常年晚宴** (annual dinner) dipisahkan dari **年终晚宴** (year-end dinner). Perlu dikonfirmasi.
 5. **Nama Mandarin resmi** untuk kompetisi SAFRA *The Ultimate Talent*, UFM100.3 *The Wedding Singer* dan Caregiving Welfare Association, kalau ada.
-6. **Nama paket harga** (婚宴司仪, 新春游戏主持, 儿童派对主持, dan lainnya) adalah usulan, daftar lengkapnya di glossary §9.
+6. **Nama paket harga** (婚礼司仪配套, 新春游戏主持, 儿童派对主持, dan lainnya) adalah usulan, daftar lengkapnya di glossary §9.
 7. **Ulasan klien tetap bahasa Inggris.** Kalau klien lebih suka diterjemahkan, itu keputusan klien.
 
 ## Cara membaca file halaman

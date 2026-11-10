@@ -21,8 +21,6 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **Button:** `WhatsApp 联系德忠` → https://wa.me/6594378083 (pre-filled message)
 
-**Button:** `查看 SOMA 发布会` → #case-study
-
 ## Section 2 — What we do
 
 **H2 ·** 网红营销与 KOL 营销活动
@@ -100,14 +98,14 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **H2 ·** 内容创作者与 KOL 合作
 
-挑选能体现您品牌的内容创作者和艺人，做好详细说明，并全程协调，就像 SOMA Fragrances 发布会一样。
+挑选能体现您品牌的内容创作者和艺人，做好详细说明，并全程协调。
 
 说明资料、时间安排和活动当天都由我们负责，让您的团队可以专注于品牌。
 
 - ✓ 内容创作者与品牌匹配
 - ✓ 清楚的说明资料
 - ✓ 全程协调
-- ✓ 如 SOMA Fragrances 案例
+- ✓ 从受邀嘉宾到付费网红
 
 ## Section 7 — Concepts
 
@@ -220,7 +218,7 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **H3 ·** 贴合品牌的人选
 
-根据您的品牌形象挑选内容创作者，就像我们为 SOMA Fragrances 所做的一样。
+根据您的品牌形象挑选内容创作者。
 
 **H3 ·** 审慎运用热门话题
 
@@ -256,7 +254,11 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **内容使用权**
 
-**订金与取消**
+您的品牌可以在哪些平台使用内容创作者的内容、使用多长时间，会按每个营销活动商定，一般为 1 个月至 1 年。
+
+**订金与付款**
+
+支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `WhatsApp 问我们任何问题` → https://wa.me/6594378083
 
@@ -270,7 +272,7 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **H3 ·** 你们和 KOL 及微型网红合作吗？
 
-是的。我们为您的品牌配对合适的内容创作者和艺人，从受邀嘉宾到付费网红都有，就像 SOMA Fragrances 发布会一样。
+是的。我们为您的品牌配对合适的内容创作者和艺人，从受邀嘉宾到付费网红都有。
 
 **H3 ·** 你们可以自己制作内容吗？
 
@@ -290,11 +292,15 @@ _The Charisma Code  ·  /zh/creative-campaigns  ·  draft 4 Nov 2026  ·  transl
 
 **H3 ·** 内容归谁所有？
 
+使用权按每个营销活动商定，并列在您的报价中。品牌一般获授权使用内容创作者的内容 1 个月至 1 年。
+
 **H3 ·** 我们会收到方案吗？
 
 会的。您会收到一份方案，内容创作者、内容和活动逐项列明报价。
 
 **H3 ·** 需要支付订金吗？
+
+需要。支付 50% 订金即可确认预订，余款于活动当天付清。付款首选 PayNow。
 
 **Button:** `在 WhatsApp 提问` → https://wa.me/6594378083
 
