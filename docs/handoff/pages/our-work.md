@@ -171,4 +171,4 @@ Real events for real clients, each linked to the service behind it.
 
 - Moving the Sheraton post into Our Work
 - Reviews from corporate and school clients
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

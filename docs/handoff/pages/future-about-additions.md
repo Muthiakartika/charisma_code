@@ -16,15 +16,15 @@ Source: `copy/future/about-additions.json` (same content as `copy/future/about-a
 
 - Corporate Communications graduate, **Singapore Management University** → https://www.smu.edu.sg
 - Trainer with **Zenitant**, **Edublitz** and **Aktivate** → https://www.zenitanteducation.com · https://www.edublitz.com/sg/ · https://www.aktivate.sg
-- Hosted at the inaugural **Singapore Youth Olympic Games**, 2010 → https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics
+- Hosted canoeing and rowing, and performed at the athletes' welcome, at the inaugural **Singapore Youth Olympic Games**, 2010 → https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics
 - Performed at the **Esplanade Theatre Studio** and the **Drama Centre Theatre** → https://www.esplanade.com/visit/venues-and-spaces/venues/theatre-studio · https://www.nlb.gov.sg/main/visit-us/drama-centre
 - **ABRSM** Grade 8 Piano, with Merit → https://www.abrsm.org
 - Busker endorsed by the **National Arts Council**, to November 2028 → https://eservices.nac.gov.sg/Busking/busker/profile/175a3ecb-a79f-4962-b04b-e94bcc808eda
-- Finalist, **SAFRA's The Ultimate Talent**, <mark>2015</mark> → https://www.safra.sg
-- Finalist, **UFM100.3**'s The Wedding Singer, <mark>2018</mark> → https://audio.sph.com.sg/ufm1003/
-- Invited to the **COMPASS Awards Presentation** for several consecutive years, including the 28th in 2025 → https://www.compass.org.sg
+- Finalist, **SAFRA's The Ultimate Talent** → https://www.safra.sg
+- Finalist, **UFM100.3**'s The Wedding Singer → https://audio.sph.com.sg/ufm1003/
+- Member of **COMPASS**, the Composers and Authors Society of Singapore → https://www.compass.org.sg
 
-> **Note:** The years of both finalist mentions (no public source found; his portfolio also lists 987TVStar 2014: add it?). The year of the ABRSM certificate. Whether De Zhong is a COMPASS member (only then is memberOf used). Whether the Youth Olympic Games role is "hosted" (portfolio: canoeing and rowing) or "performed at the athletes' welcome" (old About page).
+> **Note:** Client 5 Nov 2026: Youth Olympic Games = both (hosted and performed). He is a COMPASS member, but attended the COMPASS Awards only as a guest ("nothing to shout about"), so the awards invitation was replaced by the membership. The finalist years are unknown ("need to check"), so they were removed; add them back once he confirms. Still open: the year of the ABRSM certificate, and 987TVStar 2014.
 
 ## Addition 2 — Music (after the hosting reel)
 
@@ -32,7 +32,7 @@ Source: `copy/future/about-additions.json` (same content as `copy/future/about-a
 
 De Zhong writes and performs songs as well as singing live at weddings and events.
 
-- **好人的秘密** · original song by De Zhong · 2023 → https://www.youtube.com/watch?v=IMGeQI-Z5jY (teaser, 26 Sep 2023)
+- **好人的秘密** · original song by De Zhong · teaser, 2023 → https://www.youtube.com/watch?v=IMGeQI-Z5jY (teaser, 26 Sep 2023)
 - **今天你要嫁给我** · cover → https://www.youtube.com/watch?v=ZjcxSHayLEQ
 - **当你** · cover → https://www.youtube.com/watch?v=BnT8kIuAjWM
 - **爱情** · cover of Karen Mok → https://www.youtube.com/watch?v=XLeuxEvMrMo
@@ -41,7 +41,7 @@ De Zhong writes and performs songs as well as singing live at weddings and event
 
 **Button:** `LISTEN ON SOUNDCLOUD` → https://soundcloud.com/chia-de-zhong
 
-> **Note:** Is 好人的秘密 released in full (Spotify, Apple Music)? If so, link the release instead of the teaser. Any other original songs, especially those registered with COMPASS.
+> **Note:** Client 5 Nov 2026: 好人的秘密 is not released (only the teaser exists). A new song should be released around January 2027: add it once it is out.
 
 ## Addition 3 — Acting credits (after the acting reel)
 
@@ -49,19 +49,19 @@ De Zhong writes and performs songs as well as singing live at weddings and event
 
 Selected screen credits. The full list is on IMDb.
 
+- **Crimewatch** · TV series · several seasons → https://www.imdb.com/title/tt5782022/
+- **Titan Academy** · web series · Timmy, Class N4-T1 → https://www.youtube.com/@jianhao2
 - **Provocative** · TV series · 2025 · Joey → https://www.imdb.com/title/tt35292564/
 - **Moments 时光倾城** · Mediacorp Channel 8 · 2024 · 香蕉 (Banana) → https://www.youtube.com/watch?v=DT9j7nrsjqA
 - **Sunny Side Up** · TV series · 2022–2024 · Ong Wei Long → https://www.imdb.com/title/tt22393540/
-- **Titan Academy** · web series · Timmy, Class N4-T1 → https://www.youtube.com/@jianhao2
 - **Fried Rice Paradise** · TV series · 2019 · Young Rickson → https://www.imdb.com/title/tt11580660/
 - **Kin** · TV series · 2018 · Willy Lee → https://www.imdb.com/title/tt12422990/
-- **Crimewatch** · TV series · Alex → https://www.imdb.com/title/tt5782022/
 - **Tanglin** · TV series · 2015 · Vincent → https://www.imdb.com/title/tt4721442/
 - **Code of Law** · TV series · 2015 · Yee Fong → https://www.imdb.com/title/tt2399334/
 
 **Button:** `SEE ALL CREDITS ON IMDB` → https://www.imdb.com/name/nm8069283/
 
-> **Note:** Which credits to feature, and in what order. IMDb also lists Mata Mata, Zero Calling, Lion Moms, Verdict, A Selfie's Tale, Senior Management, After Love and Love by Numbers. The Titan Academy role is Timmy (Titan Academy wiki), not Jimmy as first guessed. Moments has no IMDb page, so it links to his own clip.
+> **Note:** Client 5 Nov 2026: lead with Crimewatch (acted in it for many years, a big Singapore show) and Titan Academy; the rest in any order. IMDb also lists Mata Mata, Zero Calling, Lion Moms, Verdict, A Selfie's Tale, Senior Management, After Love and Love by Numbers. The Titan Academy role is Timmy (Titan Academy wiki), not Jimmy as first guessed. Moments has no IMDb page, so it links to his own clip.
 
 
 · · ·

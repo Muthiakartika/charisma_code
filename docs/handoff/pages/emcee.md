@@ -21,7 +21,7 @@ Bilingual hosting in English and Mandarin from Chia De Zhong, a professional emc
 - ✓ **SMU Corporate Communications**
 - ✓ **Google-reviewed by clients**
 
-**Price line:** From S$588  ·  prices for every occasion on this page
+**Price line:** From S$600  ·  prices for every occasion on this page
 
 **Button:** `CHECK AVAILABILITY` → #enquiry
 
@@ -37,7 +37,7 @@ Each occasion has its own page with what is included, prices and the questions c
 
 **H3 ·** Corporate events
 
-**Price line:** From S$888
+**Price line:** Dinners and award nights from S$2,800
 
 Award nights, launches and company celebrations, hosted on time in English and Mandarin.
 
@@ -45,7 +45,7 @@ Award nights, launches and company celebrations, hosted on time in English and M
 
 **H3 ·** Dinner and dance
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
 Year-end D&Ds and annual dinners with games, lucky draws and a night that keeps moving.
 
@@ -53,7 +53,7 @@ Year-end D&Ds and annual dinners with games, lucky draws and a night that keeps 
 
 **H3 ·** Conferences and seminars
 
-**Price line:** From S$1,588
+**Price line:** From S$350/h
 
 Speaker introductions, panels and Q&A that stay on time, including hybrid sessions.
 
@@ -61,7 +61,7 @@ Speaker introductions, panels and Q&A that stay on time, including hybrid sessio
 
 **H3 ·** Chinese New Year dinners
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
 Bilingual annual dinner hosting, so every table feels part of the celebration.
 
@@ -69,7 +69,7 @@ Bilingual annual dinner hosting, so every table feels part of the celebration.
 
 **H3 ·** Weddings and banquets
 
-**Price line:** From S$588
+**Price line:** From S$988
 
 Warm, bilingual hosting with optional live singing, planned around your story.
 
@@ -77,7 +77,7 @@ Warm, bilingual hosting with optional live singing, planned around your story.
 
 **H3 ·** Roadshows and exhibitions
 
-**Price line:** From S$128/h
+**Price line:** From S$250/h
 
 High-energy hosting that turns passers-by into a crowd.
 
@@ -85,7 +85,7 @@ High-energy hosting that turns passers-by into a crowd.
 
 **H3 ·** Government and community events
 
-**Price line:** From S$888
+**Price line:** From S$300/h
 
 Ministries, statutory boards, grassroots and charity events, hosted with the right protocol.
 
@@ -101,7 +101,7 @@ Assemblies, speech days and family days, pitched to the age of the audience.
 
 Every booking receives a written quotation for your date and programme.
 
-> **Note:** All prices are the PLACEHOLDER ranges on /rates. Client to confirm.
+> **Note:** Emcee prices confirmed by the client on 5 Nov 2026, except school, kids and family (still the proposal placeholders).
 
 ## Section 3 — Quick match
 
@@ -218,18 +218,18 @@ It depends on the occasion, the length of the programme and what is included. Th
 
 | Occasion | From | Typical unit | Details |
 |---|---|---|---|
-| Weddings | S$588 | per banquet | /wedding-emcee |
+| Roadshows | S$250 | per hour, minimum S$600 | /roadshow-emcee |
+| Government & community | S$300 | per hour, minimum S$600 | /government-community-emcee |
+| Conferences | S$350 | per hour, minimum S$1,000 | /conference-emcee |
 | School & family events | S$588 | per event | /school-family-emcee |
-| Corporate events | S$888 | half day or evening | /corporate-emcee |
-| Dinner and dance | S$888 | full evening | /dinner-and-dance-emcee |
-| Chinese New Year dinners | S$888 | full evening | /chinese-new-year-emcee |
-| Government & community | S$888 | half day or evening | /government-community-emcee |
-| Conferences | S$1,588 | full day | /conference-emcee |
-| Roadshows | S$128 | per hour, 3-hour minimum | /roadshow-emcee |
+| Weddings | S$988 | up to 4 hours | /wedding-emcee |
+| Corporate dinners and award nights | S$2,800 | up to 4 hours | /corporate-emcee |
+| Dinner and dance | S$2,800 | up to 4 hours | /dinner-and-dance-emcee |
+| Chinese New Year dinners | S$2,800 | up to 4 hours | /chinese-new-year-emcee |
 
-**Add-ons on any booking:** live singing and piano, bilingual scripts and rehearsals.
+**Add-ons on any booking:** a longer music set, bilingual scripts, rehearsals, and a DJ or sound system.
 
-> **Note:** PLACEHOLDER prices from the approved /rates proposal. Client to confirm.
+> **Note:** Confirmed by the client on 5 Nov 2026, except school and family events (placeholder).
 
 **Button:** `SEE ALL RATES` → /rates
 
@@ -277,9 +277,11 @@ The emcee needs a wireless microphone and a working sound system, usually suppli
 
 Please share the final run-sheet and the names, titles and pronunciation of speakers before the day.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 ## Section 11 — FAQ
 
@@ -287,7 +289,7 @@ Please share the final run-sheet and the names, titles and pronunciation of spea
 
 **H3 ·** How much does an emcee cost in Singapore?
 
-From S$588 for a wedding banquet and S$888 for corporate events, dinner and dances and CNY dinners, with full-day conferences from S$1,588. See our rates page for every service, or send your date for an exact quotation.
+Roadshows start from S$250 an hour and government events from S$300 an hour (minimum S$600), conferences from S$350 an hour, weddings from S$988, and dinner and dances, CNY dinners and award nights from S$2,800. See our rates page for every service, or send your date for an exact quotation.
 
 **H3 ·** Do you host in English and Mandarin?
 
@@ -323,7 +325,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you host events outside Singapore?
 
-> **Note:** Client to confirm.
+Yes. Transport and accommodation for events outside Singapore, and transport to Sentosa, are added to your quotation.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -369,7 +371,7 @@ Tell us the occasion and your date. We will confirm availability and send a writ
 | Owned by other pages | emcee rates singapore (100, KD 0) → /rates · each occasion term → its service page. This hub links down to all of them; the service pages link back through the breadcrumb (Home › Emcee › …). |
 | Never target | "celebrity emcee singapore" (60): the client decided De Zhong is not to be called a celebrity emcee. |
 | SEO title | Emcee Singapore \| Professional Bilingual Emcee \| De Zhong  (57 characters) |
-| Meta description | Book a professional bilingual emcee in Singapore. De Zhong hosts corporate events, dinner and dances, weddings and more in English and Mandarin. From S$588. |
+| Meta description | Book a professional bilingual emcee in Singapore. De Zhong hosts corporate events, dinner and dances, weddings and more in English and Mandarin. From S$600. |
 | URL | /emcee |
 | H1 | Emcee in Singapore, hosted by De Zhong.  One H1 only. |
 | H2 structure | Choose an emcee for your occasion · Not sure where your event fits? · What a professional emcee does for your event · Why De Zhong is the best emcee in Singapore for your event · Hosting reel · Brands and organisations we have worked with · What clients say · How much does an emcee cost in Singapore? · How booking works · Please read before booking · Questions clients ask before booking · Check De Zhong's availability · Find the right host for your date |
@@ -407,7 +409,6 @@ One bilingual host for every kind of event in Singapore. Pick your occasion, see
 
 ## Client to confirm before launch
 
-- All from-prices on the occasion cards and price table
+- The headline "from S$600" and the school and family prices (other emcee prices confirmed 5 Nov 2026)
 - De Zhong's own Instagram follower count
-- Events outside Singapore: offered?
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

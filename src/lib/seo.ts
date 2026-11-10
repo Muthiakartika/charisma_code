@@ -98,14 +98,7 @@ const organizationId = () => `${siteUrl()}/#organization`
 const founderId = () => `${siteUrl()}/#founder`
 
 export function organizationSchema(settings: SiteSettings) {
-  const { contact, social, seo } = settings
-  const sameAs = [
-    social.instagram,
-    social.facebook,
-    social.linkedin,
-    social.youtube,
-    social.tiktok,
-  ].filter(Boolean)
+  const { contact, seo } = settings
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -119,7 +112,8 @@ export function organizationSchema(settings: SiteSettings) {
     telephone: contact.phone,
     areaServed: { '@type': 'Country', name: 'Singapore' },
     founder: seo.founderName ? { '@id': founderId() } : undefined,
-    sameAs: sameAs.length ? sameAs : undefined,
+    // No sameAs: the company has no social profiles of its own yet, only the website (client,
+    // 5 Nov 2026). The profiles in Social Links are De Zhong's own, so they belong to the founder.
   }
 }
 
@@ -137,7 +131,14 @@ export function personSchema(settings: SiteSettings) {
       : undefined,
     knowsLanguage: ['English', 'Mandarin Chinese'],
     worksFor: { '@id': organizationId() },
-    sameAs: [social.instagram, social.linkedin].filter(Boolean),
+    // @deprinceofzhong on every platform (client, 5 Nov 2026)
+    sameAs: [
+      social.instagram,
+      social.facebook,
+      social.linkedin,
+      social.youtube,
+      social.tiktok,
+    ].filter(Boolean),
   }
 }
 

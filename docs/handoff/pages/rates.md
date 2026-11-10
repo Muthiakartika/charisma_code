@@ -6,7 +6,7 @@ Source: `copy/rates.json` (same content as `copy/rates.docx`).
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> **Note:** Every range below is a PLACEHOLDER from the approved 24 Oct 2026 proposal, except the three prices the old site publishes: S$388 per participant (3-day youth camp), S$880 per school group (modular school programme) and S$120 per coaching session. The package lines repeat the proposed tiers on the wedding, CNY and school pages. The client confirms all of it before launch; the reasoning is on the workbook's Rates tab.
+> **Note:** Emcee prices and booking terms confirmed by the client on 5 Nov 2026 (Pricing Details to Supply). Still placeholders: school and family packages, team building S$88, coaching S$120, school programme S$880. The client said the S$388 three-day programme was an error by the old web producer, so the camp now shows "Quoted".
 
 > _URL: /rates (proposed page, board built 23 Oct 2026)  ·  page type: price list: every starting price in one place, with the reasoning behind quotes_
 
@@ -20,7 +20,7 @@ Starting prices for every service, including emcee prices for weddings, dinners 
 - ✓ **Written quotation before you book**
 - ✓ **No obligation to enquire**
 
-**Price line:** Emcee hosting from S$588  ·  coaching S$120 per session
+**Price line:** Emcee hosting from S$600  ·  coaching S$120 per session
 
 **Button:** `GET A QUOTE FOR YOUR DATE` → #quote
 
@@ -32,57 +32,57 @@ Starting prices for every service, including emcee prices for weddings, dinners 
 
 **H3 ·** Wedding emcee →
 
-**Price line:** From S$588
+**Price line:** From S$988
 
-S$588–1,288 for the banquet, with optional live singing. Packages: Banquet Emcee S$588, Emcee & Live Singer S$888, Full Celebration Host S$1,288.
+S$988 for up to 4 hours of hosting, including rehearsal and sound check, with one or two songs. S$150 for each extra hour.
 
 **Button:** `VIEW WEDDING EMCEE` → /wedding-emcee
 
 **H3 ·** Corporate emcee →
 
-**Price line:** From S$888
+**Price line:** Dinners and award nights from S$2,800
 
-S$888–1,888 for a half-day or evening programme, hosted in English and Mandarin.
+S$2,800 for an evening programme of up to 4 hours, hosted in English and Mandarin. Daytime events are priced by the hour.
 
 **Button:** `VIEW CORPORATE EMCEE` → /corporate-emcee
 
 **H3 ·** Dinner & Dance emcee →
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
-S$888–2,888 for a full evening, with games and lucky draw hosting.
+For up to 4 hours of hosting, with games and lucky draws. A DJ or sound system is quoted separately.
 
 **Button:** `VIEW D&D EMCEE` → /dinner-and-dance-emcee
 
 **H3 ·** Chinese New Year emcee →
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
-S$888–2,888 for a full evening, with lo hei and lucky draws in English and Mandarin. Packages: Dinner Emcee S$888, Festive Games Host S$1,588, Full Festive Programme S$2,888.
+For up to 4 hours of hosting, with lo hei and lucky draws in English and Mandarin. Festive games and full festive programmes are quoted.
 
 **Button:** `VIEW CNY EMCEE` → /chinese-new-year-emcee
 
 **H3 ·** Conference emcee →
 
-**Price line:** From S$1,588
+**Price line:** From S$350 per hour
 
-S$1,588–2,888 for a full-day conference, with session links and panel moderation. Half-day seminars from S$888.
+Worked out from your agenda, with a minimum booking of S$1,000. Session links and panel moderation are part of it.
 
 **Button:** `VIEW CONFERENCE EMCEE` → /conference-emcee
 
 **H3 ·** Roadshow emcee →
 
-**Price line:** From S$128 per hour
+**Price line:** From S$250 per hour
 
-S$128–228 per hour, 3-hour minimum, for roadshows and exhibitions.
+Minimum booking S$600, for roadshows and exhibitions.
 
 **Button:** `VIEW ROADSHOW EMCEE` → /roadshow-emcee
 
 **H3 ·** Government & community emcee →
 
-**Price line:** From S$888
+**Price line:** From S$300 per hour
 
-S$888–1,888 for a half-day or evening event, with protocol and VIP segments.
+Minimum booking S$600, even for a one-hour event, with protocol and VIP segments.
 
 **Button:** `VIEW GOVERNMENT EMCEE` → /government-community-emcee
 
@@ -132,7 +132,7 @@ Around 10 hours over a term, built from the subjects your school chooses.
 
 **H3 ·** Multi-day youth camp →
 
-**Price line:** S$388 per participant
+**Price line:** Quoted
 
 Three full days of games, drama and speaking, ending in a showcase.
 
@@ -164,7 +164,7 @@ Venue, theme, vendors and a bilingual emcee for your D&D.
 
 **Price line:** Quoted per launch
 
-Planning, the reveal, creators and content. Hosting only from S$888.
+Planning, the reveal, creators and content.
 
 **Button:** `VIEW PRODUCT LAUNCHES` → /product-launch-events
 
@@ -198,7 +198,7 @@ Bilingual scripts, rehearsals and programme review add preparation time.
 
 **H3 ·** Live music
 
-Optional live singing and piano, woven into the night.
+One or two songs are included at weddings and dinners. A longer set adds to the quotation.
 
 **H3 ·** Date and season
 
@@ -212,9 +212,9 @@ November to March and weekend nights book out first.
 
 Each add-on appears as its own line on your quotation.
 
-**H3 ·** Live singing and piano
+**H3 ·** A longer music set
 
-An opening number, a dinner set or a finale.
+One or two songs are included at weddings and dinners. A longer set, or a keyboard brought in, is quoted.
 
 **H3 ·** Bilingual scripts
 
@@ -222,7 +222,11 @@ Emcee links written in English and Mandarin.
 
 **H3 ·** Rehearsals
 
-Time with your speakers and AV team before the event.
+Time with your speakers and AV team before the event. For weddings, rehearsal is part of the 4 hours.
+
+**H3 ·** DJ and sound system
+
+For dinners and parties, when your venue does not supply them.
 
 > **Note:** Client to confirm whether add-on prices should be published.
 
@@ -242,9 +246,7 @@ With every part on its own line.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive the deposit.
 
 **Button:** `GET A QUOTE` → #quote
 
@@ -254,19 +256,19 @@ Your date is held once we confirm the booking in writing.
 
 **H3 ·** How much does an emcee cost in Singapore?
 
-Our hosting starts from S$588 for a wedding banquet or a school or family event, and from S$888 for corporate events, dinner and dances, CNY dinners and government events. Full-day conferences start from S$1,588 and roadshows from S$128 an hour.
+Roadshows start from S$250 an hour and government events from S$300 an hour, each with a S$600 minimum. Conferences start from S$350 an hour, school and family events from S$588, weddings from S$988, and dinner and dances, CNY dinners and award nights from S$2,800.
 
 **H3 ·** How much does a wedding emcee cost?
 
-Wedding hosting starts from S$588 for the banquet, with three packages up to S$1,288 that add live singing, more planning and a written script.
+S$988 for up to 4 hours of hosting, including rehearsal and sound check, with one or two songs and games if you want them. Each extra hour is S$150.
 
 **H3 ·** Is the rate per event or per hour?
 
-Most hosting is quoted per event, covering preparation, rehearsal and hosting on the day. Roadshows are per hour, with a 3-hour minimum. Event and D&D planning are quoted per project.
+Weddings, dinner and dances and CNY dinners are booked as a block of up to 4 hours. Roadshows, government events and conferences are booked by the hour, with a minimum. Event and D&D planning are quoted per project.
 
 **H3 ·** Do weekend or peak-season dates cost more?
 
-Popular dates from November to March fill quickly. Ask early and we will confirm what applies to yours.
+Popular dates from November to March fill quickly, and peak dates are quoted based on demand. Ask early and we will confirm the rate for yours.
 
 **H3 ·** Why are some services quoted rather than priced?
 
@@ -274,7 +276,27 @@ Planning, campaigns and event support depend on headcount, venue, vendors and de
 
 **H3 ·** Do you take a deposit to confirm a date?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your date and the balance is paid on the event day. Weddings are confirmed with a S$300 deposit, with the balance paid at the end of the day.
+
+**H3 ·** Is GST added to your prices?
+
+No. We are not GST-registered, so no GST is added.
+
+**H3 ·** What if the event runs over time?
+
+Time beyond the booked hours is charged as overtime. For weddings, each extra hour is S$150.
+
+**H3 ·** Do you charge for travel?
+
+Events on Sentosa include a transport fee. For events outside Singapore, transport and accommodation are added to your quotation.
+
+**H3 ·** How long is a quotation valid?
+
+Two weeks from the date we send it.
+
+**H3 ·** How do we pay?
+
+PayNow is preferred. Government agencies can ask for a quotation through GeBIZ.
 
 **H3 ·** Will we receive a proposal and quotation?
 
@@ -325,7 +347,7 @@ Every starting price is on this page. Send your date for an exact quotation.
 | Secondary keywords | wedding emcee rates (150) · singapore emcee rates (150) · emcee singapore rate (100) · emcee rates singapore (100, KD 0). Ahrefs Singapore, workbook. |
 | Owned by other pages | Each service's own name → its service page. This page owns the rate and price terms; service pages link here from their price sections. |
 | SEO title | Emcee Rates Singapore \| Event & Wedding Emcee Prices  (52 characters) |
-| Meta description | Emcee rates in Singapore: wedding from S$588, corporate and D&D from S$888, conferences from S$1,588. Team building, coaching and planning prices too.  (150 characters) |
+| Meta description | Emcee rates in Singapore: roadshows from S$250 an hour, weddings from S$988, D&D and CNY dinners from S$2,800. Team building and coaching prices too.  (150 characters) |
 | URL | /rates |
 | H1 | Emcee rates and event pricing in Singapore.  One H1 only. |
 | H2 structure | Emcee prices and starting rates · Team building, training and youth programmes · Planning, campaigns and event support · What affects the price · Add-ons on any hosting booking · How quotes work · Emcee pricing questions · Get a quote for your date · Know the price before you ask |
@@ -335,7 +357,7 @@ Every starting price is on this page. Send your date for an exact quotation.
 
 ## Page layout instructions
 
-Keep the hero, price-card grid, what-affects band and FAQ. Regroup the cards into three sections (emcee; team, training and youth; quoted per project) and add: the package lines on the wedding, CNY and school cards; a youth-camp card at S$388; Product Launch Events, Event Planning, D&D Planning, Creative Campaigns and Event Support as "Quoted" cards; the add-ons row; three quote steps; final band. Every price layer stays tagged in plugin data ("rateprice") so a change can be found on the service pages too.
+Keep the hero, price-card grid, what-affects band and FAQ. Regroup the cards into three sections (emcee; team, training and youth; quoted per project) and add: the package lines on the CNY and school cards; a youth-camp card; Product Launch Events, Event Planning, D&D Planning, Creative Campaigns and Event Support as "Quoted" cards; the add-ons row; three quote steps; final band. Every price layer stays tagged in plugin data ("rateprice") so a change can be found on the service pages too.
 
 ## Mobile conversion requirements
 
@@ -369,8 +391,8 @@ Every starting price in one place, so you know roughly what you will spend befor
 
 ## Client to confirm before launch
 
-- Every placeholder range and package price
-- The three published prices (S$388, S$880, S$120)
-- Whether add-on prices are published
-- Peak-season or weekend pricing
-- Deposit and cancellation terms
+- School and family packages, team building S$88, coaching S$120, school programme S$880
+- Whether add-on prices are published, and the overtime rate outside weddings
+- Cancellation terms
+
+Confirmed 5 Nov 2026: all other emcee prices; 50% deposit (weddings S$300); peak dates quoted on demand; not GST-registered; Sentosa transport fee; overseas transport and accommodation; quotations valid 2 weeks; PayNow preferred; GeBIZ possible.

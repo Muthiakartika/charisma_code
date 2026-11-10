@@ -23,7 +23,7 @@ Confidence, public speaking and creative programmes for schools, camps and youth
 - ✓ **A showcase at the end**
 - ✓ **11 sessions run at Maris Stella High School**
 
-**Price line:** School programmes from S$880 per group  ·  camps S$388 per participant
+**Price line:** School programmes from S$880 per group
 
 **Button:** `PLAN A SCHOOL PROGRAMME` → #enquiry
 
@@ -218,7 +218,7 @@ Three formats, each with a published price.
 
 **H3 ·** Multi-day confidence camp
 
-**Price line:** S$388 per participant
+**Price line:** Quoted
 
 **Ideal for:** school holidays and school camps. Three full days of games, drama and speaking, ending in a showcase for parents or teachers, so children build momentum day by day.
 
@@ -283,9 +283,7 @@ A written outline with sessions, dates and the price.
 
 **H3 ·** 4. Confirm in writing
 
-Sessions are held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step for schools before it is shown here.
+Sessions are held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 5. Weekly sessions
 
@@ -325,9 +323,11 @@ Sessions need a room where children can move, and a screen for videography; the 
 
 > **Note:** Client to confirm the largest group per instructor for each format.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -337,7 +337,7 @@ Sessions need a room where children can move, and a screen for videography; the 
 
 **H3 ·** How much does a school programme cost?
 
-Modular school programmes start from S$880 per school group, multi-day camps are S$388 per participant, and one-to-one masterclasses start from S$120 per session.
+Modular school programmes start from S$880 per school group, multi-day camps are quoted, and one-to-one masterclasses start from S$120 per session.
 
 **H3 ·** Which ages do you teach?
 
@@ -369,7 +369,7 @@ Yes, on request: Microbit, study skills and singing, alongside the six topics ab
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -404,7 +404,7 @@ Tell us about your students and we will suggest a programme and a quotation.
 
 **Modular school programme — From S$880 per group**
 
-**Multi-day camp — S$388 per participant**
+**Multi-day camp — Quoted**
 
 **One-to-one masterclass — From S$120 per session**
 
@@ -423,7 +423,7 @@ Tell us about your students and we will suggest a programme and a quotation.
 | Secondary keywords | speech and drama singapore (50, KD 2) · public speaking class singapore (60, shared with coaching). Ahrefs Singapore, 24 Oct 2026. Volumes are small; this page earns most of its value from schools that find it through referrals and the School & Family page. |
 | Owned by other pages | public speaking course singapore → /communication-coaching (decided 24 Oct 2026): keep "Public Speaking" out of this page's title. Kids and school emcee terms → /school-family-emcee. |
 | SEO title | Kids & Youth Programmes Singapore \| Confidence & Stage Skills  (61 characters) |
-| Meta description | Confidence, public speaking, drama and videography programmes for schools and youth in Singapore. School programmes from S$880, camps S$388 per child.  (150 characters) |
+| Meta description | Confidence, public speaking, drama and videography programmes for schools and youth in Singapore. School programmes from S$880 per group.  (140 characters) |
 | URL | Keep /kids-youth-programs |
 | H1 | Where young people learn to speak up and shine.  One H1 only. |
 | H2 structure | How we build confidence · Learning through play · A safe space to practise speaking · A moment for every child to shine · What we teach · Public speaking for kids and teens · Acting and drama for children · Videography and storytelling for students · Writing stories, scripts and speeches · Interview practice that builds calm · Cooperative games and challenges · Capturing stories at Maris Stella High School · Programme formats · How a school programme comes together · Please read before booking · Questions from schools and parents · Help your students find their voice · Give every student a moment to shine |
@@ -474,4 +474,4 @@ Confidence is a skill: play first, practise safely, and finish with a moment to 
 - Camp length and group sizes per instructor
 - Teacher-present and safeguarding policies
 - Photo consent for any children shown
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

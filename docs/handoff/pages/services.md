@@ -43,7 +43,7 @@ Team building that is genuinely fun and built around your objectives, your peopl
 
 **H3 ·** Corporate Emcee
 
-**Price line:** From S$888
+**Price line:** Dinners and award nights from S$2,800
 
 A bilingual English and Mandarin host with over 15 years on stage, for award nights, launches and company celebrations.
 
@@ -51,7 +51,7 @@ A bilingual English and Mandarin host with over 15 years on stage, for award nig
 
 **H3 ·** Dinner & Dance Emcee
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
 High-energy, bilingual hosting for year-end and Chinese New Year dinners, with games, lucky draws and a programme that keeps the night moving.
 
@@ -99,7 +99,7 @@ Public speaking, presentation and stage presence coaching for individuals and co
 
 **H3 ·** Wedding Emcee
 
-**Price line:** From S$588
+**Price line:** From S$988
 
 Warm, bilingual wedding hosting with live singing and guest interaction, planned around your story.
 
@@ -135,7 +135,7 @@ Emcee by occasion: conferences, roadshows and exhibitions, government and commun
 
 **Button:** `SEE ALL STARTING RATES` → /rates
 
-> **Note:** All from-prices except S$120, S$388 and S$880 are the approved /rates placeholders. Client to confirm.
+> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). S$88, S$120 and S$880 are still to re-confirm.
 
 ## Section 3 — Quick match
 
@@ -201,7 +201,7 @@ Communication coaching is S$120 per session and school programmes start from S$8
 
 **H3 ·** Do you work outside Singapore?
 
-> **Note:** Client to confirm.
+Yes. Transport and accommodation for events outside Singapore are added to your quotation.
 
 **H3 ·** Will we receive a proposal and quotation?
 
@@ -274,5 +274,4 @@ Every service, its starting price and the right next step, on one page.
 ## Client to confirm before launch
 
 - Every placeholder from-price
-- Work outside Singapore: offered?
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

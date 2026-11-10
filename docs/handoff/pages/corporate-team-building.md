@@ -338,9 +338,11 @@ Please confirm the final headcount a few days before, so groups and materials ar
 
 > **Note:** Client to confirm any minimum number of participants.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -386,7 +388,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -486,4 +488,4 @@ Team building built around your objectives, facilitated in English and Mandarin 
 - The real per-participant price and any minimum group size
 - A team-building case study and photo
 - A team-building review
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

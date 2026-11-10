@@ -121,9 +121,7 @@ Venues that fit, and an itemised proposal covering venue, vendors and hosting.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Theme, programme and vendors
 
@@ -211,11 +209,13 @@ The final run-sheet, speaker names and the lucky draw prize list are agreed befo
 
 **Lucky draw prizes**
 
-> **Note:** Client to confirm whether prizes are sourced by the client company or can be arranged.
+Your company supplies the lucky draw prizes. We can source them for you for an additional fee.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -257,7 +257,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -354,6 +354,5 @@ Your D&D planned and hosted by one team, with an itemised proposal, so your comm
 
 - Whether to show a D&D planning from-price
 - A D&D the team planned end to end, for the highlights section
-- Who sources lucky draw prizes
 - Review labels
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

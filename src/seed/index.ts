@@ -97,7 +97,8 @@ for (const [index, name] of clients.entries()) {
     name,
     logo,
     confirmation: 'needs-confirmation',
-    showOnWebsite: true,
+    // Olympic marks are restricted: no logo without written permission (docs/11, 9 Nov 2026)
+    showOnWebsite: name !== 'Youth Olympic Games',
     order: index + 1,
   })
 }
@@ -383,6 +384,8 @@ await payload.updateGlobal({
     facebook: 'https://www.facebook.com/deprinceofzhong',
     linkedin: 'https://www.linkedin.com/in/deprinceofzhong/',
     youtube: 'https://www.youtube.com/channel/UCO1HATBRkqep-BbWmwh0hHQ',
+    // @deprinceofzhong on every platform (client, 5 Nov 2026)
+    tiktok: 'https://www.tiktok.com/@deprinceofzhong',
   },
 })
 

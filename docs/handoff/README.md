@@ -154,6 +154,8 @@ Summary from the **Pages** tab of `TheCharismaCode-schema-vocabulary.xlsx`. Each
 
 ## 6. Before launch: open items (33)
 
+> **Update 9 Nov 2026:** the client answered many of these in the three "Details to Supply" workbooks (5 Nov). What was applied and what is still open: `docs/11-update-data-klien-9-nov.md`.
+
 These are waiting on the client. Build the page with the placeholder or dummy text in place, then swap in the real content once it's confirmed. The live list is the **To Confirm** tab of the Gap Analysis workbook.
 
 | Page | Question | Where it stands |

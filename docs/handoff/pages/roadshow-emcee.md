@@ -21,7 +21,7 @@ High-energy, bilingual hosting in English and Mandarin for roadshows, trade show
 - ✓ **Show times around footfall**
 - ✓ **A content creator's eye**
 
-**Price line:** From S$128 per hour  ·  3-hour minimum
+**Price line:** From S$250 per hour  ·  minimum booking S$600
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -161,9 +161,7 @@ We suggest show times around your footfall and send a written quotation.
 
 **H3 ·** 3. Confirm in writing
 
-Your dates are held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your dates are held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Plan games and messages
 
@@ -181,9 +179,9 @@ De Zhong hosts each show time, works the floor in between and keeps your space b
 
 **H2 ·** How roadshow hosting is priced
 
-**Price line:** From S$128 per hour  ·  3-hour minimum
+**Price line:** From S$250 per hour  ·  minimum booking S$600
 
-Roadshow and exhibition hosting is booked by the hour, usually between S$128 and S$228 an hour, with a three-hour minimum. Several days are quoted together.
+Roadshow and exhibition hosting is booked by the hour, from S$250 an hour, with a minimum booking of S$600. Several days are quoted together.
 
 **H4 ·** What affects the quotation
 
@@ -193,7 +191,7 @@ Roadshow and exhibition hosting is booked by the hour, usually between S$128 and
 - Games and contests to design
 - Weekends and public holidays
 
-> **Note:** PLACEHOLDER range (S$128–228 per hour, 3-hour minimum) from the approved /rates proposal. Client to confirm, including any weekend or public-holiday rate.
+> **Note:** Confirmed by the client on 5 Nov 2026 (Pricing Details to Supply): at least S$250 per hour, minimum S$600. Still to confirm: how many hours the minimum covers, and any multi-day rate. Peak dates are quoted on demand.
 
 **Button:** `GET MY ROADSHOW QUOTE` → #quote
 
@@ -288,9 +286,11 @@ Please share product facts, offers and must-say messages before the first show d
 
 Full days are planned with short breaks between show times, so energy stays high all day.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -300,7 +300,7 @@ Full days are planned with short breaks between show times, so energy stays high
 
 **H3 ·** How much does a roadshow emcee cost?
 
-From S$128 an hour, with a three-hour minimum; several days are quoted together. See our rates page for every service.
+From S$250 an hour, with a minimum booking of S$600; several days are quoted together. See our rates page for every service.
 
 **H3 ·** Can you host a full day or several days?
 
@@ -328,7 +328,7 @@ Yes. Public launches with demos fit this page; for a full launch with planning, 
 
 **H3 ·** Do you charge more on weekends or public holidays?
 
-> **Note:** Client to confirm.
+Weekends, public holidays and peak dates are quoted based on demand. Send your dates and we will confirm the rate for each day.
 
 **H3 ·** Will we receive a proposal and quotation?
 
@@ -336,7 +336,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -371,7 +371,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your dates and location. We will suggest show times and send a quotation.
 
-**Roadshow hosting — From S$128 per hour, 3-hour minimum**
+**Roadshow hosting — From S$250 per hour, minimum S$600**
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -388,12 +388,12 @@ Send your dates and location. We will suggest show times and send a quotation.
 | Secondary keywords | emcee roadshow (100) · emcee for roadshow (100) · exhibition emcee (100) · emcee exhibition (100, KD 7) · emcee for exhibition (100, KD 2) · trade show emcee (100) · tradeshow emcee (100) · school roadshow emcee (60). Ahrefs Singapore, 23 Oct 2026 (Emcee Subpages tab). |
 | Owned by other pages | product launch event terms → /product-launch-events · school emcee terms → /school-family-emcee. This page links to both. |
 | SEO title | Roadshow Emcee Singapore \| Exhibition & Trade Show Emcee  (56 characters) |
-| Meta description | Bilingual roadshow and exhibition emcee in Singapore from S$128 an hour. Crowd-drawing games, giveaways and stage shows in English and Mandarin.  (144 characters) |
+| Meta description | Bilingual roadshow and exhibition emcee in Singapore from S$250 an hour. Crowd-drawing games, giveaways and stage shows in English and Mandarin.  (144 characters) |
 | URL | /roadshow-emcee |
 | H1 | A roadshow emcee who turns passers-by into a crowd.  One H1 only. |
 | H2 structure | Roadshows and exhibitions we host · Mall roadshows that draw a crowd · Trade shows and exhibitions · Brand activation hosting · School assemblies and outreach · Product launches and live demos · Bilingual English and Mandarin crowd work · How booking works · How roadshow hosting is priced · Add more to your roadshow · Why brands book De Zhong · Brands and organisations we have worked with · What clients say · Please read before booking · Roadshow emcee questions · Get your roadshow quote · Turn your space into the busiest spot on the floor |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Roadshow and exhibition emcee", areaServed Singapore) with an Offer priceSpecification UnitPriceSpecification 128 SGD per hour while the price shows. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Roadshow and exhibition emcee", areaServed Singapore) with an Offer priceSpecification UnitPriceSpecification 250 SGD per hour while the price shows. FAQPage only if it still meets Google's rules. |
 | Internal links | /product-launch-events, /school-family-emcee, /creative-campaigns, /event-support, /rates, /emcee (breadcrumb). |
 
 ## Page layout instructions
@@ -434,12 +434,11 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-From S$128 an hour, a bilingual host who turns passers-by into a crowd and keeps your space busy all day.
+From S$250 an hour, a bilingual host who turns passers-by into a crowd and keeps your space busy all day.
 
 ## Client to confirm before launch
 
-- The S$128–228 hourly range and 3-hour minimum
-- Weekend and public-holiday rates
+- How many hours the S$600 minimum covers, and any multi-day rate (S$250 per hour and S$600 minimum confirmed 5 Nov 2026; peak dates quoted on demand)
 - A mall roadshow or exhibition photo for the hero
 - Review labels, and a roadshow review if one exists
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

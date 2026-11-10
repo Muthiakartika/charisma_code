@@ -21,7 +21,7 @@ An annual dinner emcee for dinner and dance nights and year-end parties, hosted 
 - ✓ **Live singing and piano**
 - ✓ **Hosted The Banyan Group's D&D**
 
-**Price line:** From S$888 for a full evening  ·  most D&Ds S$888–2,888
+**Price line:** From S$2,800 for up to 4 hours of hosting  ·  DJ and sound system quoted separately
 
 **Button:** `CHECK YOUR D&D DATE` → #quote (form at the foot of the page)
 
@@ -99,7 +99,7 @@ English and Mandarin, so every table feels included.
 
 **H3 ·** Live singing and piano
 
-An optional musical segment woven into the programme.
+One or two songs at no extra charge, woven into the programme.
 
 **H3 ·** Lucky draw hosting
 
@@ -133,9 +133,7 @@ We suggest how hosting, games and draws fit your programme, with a written quota
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Plan the programme together
 
@@ -153,20 +151,20 @@ De Zhong coordinates cues with the venue and AV team, hosts the programme and ke
 
 **H2 ·** What shapes your quote
 
-**Price line:** From S$888 for a full evening
+**Price line:** From S$2,800 for up to 4 hours of hosting
 
-Most dinner and dance nights fall between S$888 and S$2,888. Every booking receives a written quotation, because every programme is different.
+Dinner and dance hosting starts from S$2,800 for the emcee, booked as a block of up to 4 hours. A DJ or sound system is added to the quotation when you need one. Every booking receives a written quotation, because every programme is different.
 
 **H4 ·** What affects the quotation
 
-- Length of the programme
+- Length of the programme beyond the 4-hour block
 - Number of games and stage segments to plan and host
 - Size of the lucky draw
 - English, Mandarin or both, and whether bilingual scripts are needed
-- Live singing or piano as part of the night
+- A DJ or sound system for the night
 - Rehearsals before the event
 
-> **Note:** PLACEHOLDER range (S$888–2,888) from the approved /rates proposal. Client to confirm.
+> **Note:** Client confirmed 5 Nov 2026 (Pricing Details to Supply): from S$2,800, emcee only, booked as a block of up to 4 hours; DJ and sound system extra.
 
 **Button:** `GET MY D&D QUOTE` → #quote
 
@@ -178,13 +176,13 @@ Most dinner and dance nights fall between S$888 and S$2,888. Every booking recei
 
 Each add-on appears as its own line on your quotation.
 
-**H3 ·** Live singing and piano
+**H3 ·** A longer music set
 
-An opening number, a song during dinner or a finale, performed by your host.
+One or two songs are included in every booking. A longer set is added to your quotation.
 
-**H3 ·** A song written for your event
+**H3 ·** Game props sourced for you
 
-A custom song and backing track for your company's night.
+Your committee supplies the game props, or we source them for you for a fee.
 
 **H3 ·** Bilingual scripts
 
@@ -202,7 +200,7 @@ Sound, crew and photographers from our event support team.
 
 **Button:** `VIEW EVENT SUPPORT` → /event-support
 
-> **Note:** Client to confirm: the custom song and backing track. A Google review thanks De Zhong for "the song, the track making, the script, the yum seng", which suggests he offers it; confirm it is sold and how it is priced.
+> **Note:** Client 5 Nov 2026: no custom song; 1–2 songs are complimentary. Game props are supplied by the client; he can procure them for a fee.
 
 ## Section 10 — Why De Zhong
 
@@ -274,15 +272,19 @@ The emcee needs a wireless microphone and a working sound system. Our event supp
 
 **Game props and prizes**
 
-> **Note:** Client to confirm who supplies game props and small prizes for games.
+Your committee supplies the game props and prizes. We can source game props for you for an added fee.
 
 **Programme overruns**
 
-> **Note:** Client to confirm how time beyond the agreed programme is charged.
+Time beyond the booked 4-hour block is charged as overtime.
 
-**Deposit and cancellation**
+> **Note:** Client confirmed overtime is charged (5 Nov 2026); the rate is still to confirm.
 
-> **Note:** Client to confirm deposit and cancellation terms.
+**Deposit and payment**
+
+A 50% deposit confirms your date and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -292,7 +294,7 @@ The emcee needs a wireless microphone and a working sound system. Our event supp
 
 **H3 ·** How much does a D&D emcee cost in Singapore?
 
-Our dinner and dance hosting starts from S$888 for a full evening, and most nights fall between S$888 and S$2,888, depending on the programme. You receive a written quotation. See our rates page for every service.
+Our dinner and dance hosting starts from S$2,800 for the emcee, for a block of up to 4 hours. A DJ or sound system is quoted separately. You receive a written quotation. See our rates page for every service.
 
 **H3 ·** Do you host in English and Mandarin?
 
@@ -316,7 +318,7 @@ Yes. Our CNY emcee page has the detail for Chinese New Year dinners.
 
 **H3 ·** Can you sing as part of the programme?
 
-Yes. Live singing and piano can be added as an opening, a dinner set or a finale.
+Yes. One or two songs are included at no extra charge, as an opening, a dinner set or a finale.
 
 **H3 ·** Can you plan the whole D&D?
 
@@ -332,7 +334,7 @@ Yes. Once we understand your programme, we prepare a tailored proposal with a wr
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your date, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -368,7 +370,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your date, venue and headcount. We will confirm availability and send a written quotation.
 
-**D&D hosting — From S$888 for a full evening**
+**D&D hosting — From S$2,800 for up to 4 hours**
 
 **Button:** `CHECK YOUR D&D DATE` → #quote
 
@@ -385,12 +387,12 @@ Send your date, venue and headcount. We will confirm availability and send a wri
 | Secondary keywords | emcee for dinner and dance singapore (400) · dinner and dance emcee (250) · d&d emcee singapore (250) · dinner and dance emcee singapore (150). Ahrefs Singapore. |
 | Owned by other pages | dinner and dance event planner and D&D event management → /dinner-and-dance-planning · Chinese New Year dinner terms → /chinese-new-year-emcee. This page links to both. |
 | SEO title | D&D Emcee Singapore \| Annual Dinner & Dinner and Dance Emcee  (60 characters) |
-| Meta description | Bilingual D&D and annual dinner emcee in Singapore from S$888. Games, trivia and lucky draws hosted in English and Mandarin, paced for a long night.  (148 characters) |
+| Meta description | Bilingual D&D and annual dinner emcee in Singapore from S$2,800. Games, trivia and lucky draws hosted in English and Mandarin, paced for a long night.  (150 characters) |
 | URL | Keep /dinner-and-dance-emcee |
 | H1 | A D&D emcee in Singapore your team talks about.  One H1 only. |
 | H2 structure | D&D season fills up early · A long night needs good pacing. · How a great night flows · What your annual dinner emcee brings · Highlights from The Banyan Group D&D · How booking works · What shapes your quote · Add more to your night · Why organising committees book De Zhong · Brands and organisations we have worked with · What clients say · Please read before booking · D&D emcee questions · Get your D&D quote · Make this year's D&D the one people remember |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Dinner and dance emcee", areaServed Singapore) with an Offer minPrice 888 SGD while the price shows. VideoObject for the Banyan highlights. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Dinner and dance emcee", areaServed Singapore) with an Offer minPrice 2800 SGD while the price shows. VideoObject for the Banyan highlights. FAQPage only if it still meets Google's rules. |
 | Internal links | /dinner-and-dance-planning, /chinese-new-year-emcee, /event-support, /rates, /our-work/the-banyan-group-dinner-and-dance, /emcee (breadcrumb). |
 
 ## Page layout instructions
@@ -427,13 +429,12 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-From S$888, a bilingual D&D emcee who paces the whole night, runs games and draws your team enjoys, and keeps it on time.
+From S$2,800, a bilingual D&D emcee who paces the whole night, runs games and draws your team enjoys, and keeps it on time.
 
 ## Client to confirm before launch
 
-- The S$888–2,888 range
-- Custom song and backing track as a paid add-on
-- Who supplies game props and prizes
-- How programme overruns are charged
+- The overtime rate
 - Review labels, and a D&D-specific review
-- Deposit and cancellation terms
+- Cancellation terms
+
+Confirmed 5 Nov 2026: from S$2,800 (emcee only, up to 4 hours, DJ and sound extra); 1–2 complimentary songs, no custom song; game props from the client or sourced for a fee; 50% deposit, balance on the day.

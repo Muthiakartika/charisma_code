@@ -4,7 +4,7 @@ _The Charisma Code  ·  /wedding-emcee  ·  draft 24 Oct 2026, structured on the
 
 Source: `copy/wedding-emcee.json` (same content as `copy/wedding-emcee.docx`).
 
-> _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Everything in the copy is drawn from the current Figma board, the client's old site and his Google reviews, except the three package tiers, which are a proposal built inside the approved S$588–1,288 range._
+> _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Everything in the copy is drawn from the current Figma board, the client's old site and his Google reviews, except the package, which is the client's own (confirmed 5 Nov 2026)._
 
 > _URL: https://charisma-code.vercel.app/wedding-emcee  (keep the existing URL)_
 
@@ -25,7 +25,7 @@ Before the day, he meets you to go through the flow, brainstorm ideas and get to
 - ✓ **Seen on MediaCorp Channel 8**
 - ✓ **Google-reviewed by couples**
 
-**Price line:** From S$588 per banquet  ·  three packages, prices on this page
+**Price line:** S$988 for up to 4 hours  ·  including rehearsal and sound check
 
 **Button:** `CHECK MY WEDDING DATE` → #enquiry (form at the foot of the page)
 
@@ -35,103 +35,51 @@ Before the day, he meets you to go through the flow, brainstorm ideas and get to
 
 ## Section 2 — Packages
 
-**H2 ·** Choose your wedding emcee package
+**H2 ·** Your wedding emcee package
 
-Three clear packages, so you can see what you are getting before you ask. Every package includes bilingual hosting and a planning session with De Zhong.
+One clear package, so you know what you are getting before you ask. Hosting is in English, Mandarin or both.
 
-> **Note:** PROPOSED tiers and inclusions, inside the approved S$588–1,288 range on /rates. Client to confirm names, prices, inclusions and timings.
+> **Note:** The client's own package, confirmed 5 Nov 2026 (Other Details to Supply): S$988 for up to 4 hours including rehearsal and sound check; S$150 per extra hour; 1–2 optional songs (instrumental track, or piano on site; own keyboard or longer sets on enquiry); games and activities as needed; S$300 deposit, balance at the end of the day. He said the three proposed tiers were "the same thing", so they were replaced by this package on 9 Nov 2026.
 
-**H3 ·** Banquet Emcee
+**H3 ·** Wedding Emcee Package
 
-**Price line:** From S$588
+**Price line:** S$988 for up to 4 hours
 
-**Ideal for:** couples who want a warm, professional host to run the banquet smoothly in English and Mandarin.
+**Ideal for:** couples who want a warm, bilingual host and a live song or two, from the first march-in to the last toast.
 
-A bilingual host who keeps your programme on time and your guests with you, from the first march-in to the last toast.
+Up to 4 hours of hosting, including rehearsal and sound check. Each extra hour is S$150.
 
 **H4 ·** What's included
 
-- ✓ One planning session to go through your flow
-- ✓ Run-sheet agreed with your venue's banquet team
+- ✓ Up to 4 hours, including rehearsal and sound check
 - ✓ Bilingual hosting in English and Mandarin
-- ✓ Couple's march-ins introduced
-- ✓ Speeches and family introductions
-- ✓ Cake cutting and champagne pouring
+- ✓ One or two songs, with piano where the venue has one
+- ✓ Games and activities planned with you
+- ✓ Planning before the day to go through your flow
+- ✓ Run-sheet agreed with your venue's banquet team
+- ✓ March-ins, speeches and family introductions
 - ✓ Yam seng toast led from the stage
-- ✓ Smooth links between every segment
 
-**Hosting time: one banquet, about 3–4 hours**
+**Hosting time: up to 4 hours, including rehearsal**
 
-**Button:** `BOOK BANQUET EMCEE` → #enquiry, package pre-selected
+**Button:** `BOOK YOUR WEDDING EMCEE` → #enquiry
 
-**H3 ·** Emcee & Live Singer
+**H3 ·** Add to your day
 
-**Badge:** `MOST POPULAR`
+**Price line:** S$150 per extra hour
 
-**Price line:** From S$888
+**Ideal for:** longer celebrations, more music, or a wedding outside Singapore.
 
-**Ideal for:** couples who want the hosting plus a live performance that guests remember.
+Anything beyond the package appears as its own line on your quotation.
 
-Everything in the Banquet Emcee, with De Zhong singing live at the moments that matter most, and games that get both sides of the family laughing together.
+**H4 ·** Options
 
-**H4 ·** What's included
+- ✓ Extra hosting time: S$150 per hour
+- ✓ A longer music set, or De Zhong's own keyboard
+- ✓ A tea ceremony or an event on another day
+- ✓ Weddings outside Singapore: transport and accommodation added
 
-- ✓ Everything in the Banquet Emcee
-- ✓ Live song for your march-in
-- ✓ A short live set during dinner
-- ✓ Piano where the venue has one
-- ✓ Two guest games, planned with you
-- ✓ Song choices agreed in advance
-
-**Hosting time: one banquet, about 3–4 hours**
-
-**Button:** `BOOK EMCEE & LIVE SINGER` → #enquiry, package pre-selected
-
-**H3 ·** Full Celebration Host
-
-**Price line:** From S$1,288
-
-**Ideal for:** larger banquets, multicultural families and couples who want the whole evening shaped with them.
-
-Our most complete package: more planning time, a personal script and a programme built around your story, so the night feels like yours from start to finish.
-
-**H4 ·** What's included
-
-- ✓ Everything in Emcee & Live Singer
-- ✓ Multiple planning sessions
-- ✓ Personal script written for you
-- ✓ Your story woven into the hosting
-- ✓ Games designed around your guests
-- ✓ Run-through with your venue team
-- ✓ Support for your speech-givers
-
-**Hosting time: one banquet, about 3–4 hours, plus planning**
-
-**Button:** `BOOK FULL CELEBRATION HOST` → #enquiry, package pre-selected
-
-## Section 3 — Which package
-
-**H2 ·** Which package suits your wedding?
-
-**H4 ·** Banquet Emcee — From S$588
-
-Choose this if your programme is mostly set and you want a confident bilingual host to run it.
-
-**H4 ·** Emcee & Live Singer — From S$888
-
-Choose this if you want live music in the room without booking a separate singer, plus games that mix both families.
-
-**H4 ·** Full Celebration Host — From S$1,288
-
-Choose this if you want the evening shaped around your story, with a written script and more time together before the day.
-
-**Not sure which one fits?**
-
-Send your date, venue and guest count on WhatsApp and De Zhong will suggest the right package.
-
-**Button:** `WHATSAPP US` → https://wa.me/6594378083
-
-**Button:** `CHECK MY DATE` → #enquiry
+**Button:** `ASK ABOUT ADD-ONS` → https://wa.me/6594378083
 
 ## Section 4 — How booking works
 
@@ -149,9 +97,7 @@ You receive a written quotation for your package, date and venue, including any 
 
 **H3 ·** 3. Secure your date
 
-Your date is held for you once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step (the legal page says 50% on confirmation, 50% on the day) before it is shown here.
+Your date is held for you once we confirm the booking in writing and receive a S$300 deposit. The balance is paid at the end of your wedding day.
 
 **H3 ·** 4. Plan it with De Zhong
 
@@ -203,7 +149,7 @@ Fifteen years of corporate galas, dinner and dances and roadshows mean he adjust
 
 **H2 ·** Lunch, dinner or solemnisation, at your venue
 
-Whatever shape your day takes, from an intimate celebration to a hotel ballroom, De Zhong hosts and performs at it: solemnisation ceremonies, lunch receptions and dinner banquets across Singapore.
+Whatever shape your day takes, from an intimate celebration to a hotel ballroom, De Zhong hosts and performs at it: solemnisation ceremonies, lunch receptions and dinner banquets across Singapore, and overseas too. Whichever format you choose, the package covers up to 4 hours.
 
 **H3 ·** Working with your venue's team
 
@@ -221,19 +167,19 @@ Popular dates from November to March fill quickly. Ask early and we will tell yo
 
 **H2 ·** What your emcee fee covers
 
-Our packages cover **hosting, live performance and the planning that goes with them**. A few things are booked separately, and we can arrange most of them for you.
+The package covers **hosting, one or two live songs and the planning that goes with them**. A few things are booked separately, and we can arrange most of them for you.
 
 **H4 ·** Please note
 
-The emcee packages **do not include:**
+The emcee package **does not include:**
 
 - Sound system, microphones and AV (usually supplied by your venue)
 - Photography and videography → available from our event support team
 - Full wedding planning and vendor management → available as event planning
 - Additional events on another day, such as a tea ceremony or after-party
-- Transport outside Singapore
+- Transport and accommodation for weddings outside Singapore, and transport to Sentosa
 
-> **Note:** Client to confirm: his old site says he performs at solemnisation ceremonies. Is solemnisation (and tea-ceremony) hosting an add-on to these packages, and at what price?
+> **Note:** Client 5 Nov 2026: solemnisation and lunch fit in the same 4-hour block ("I am paid up to 4 hour block, inclusive of rehearsal"). The price of a tea ceremony on another day is still to confirm.
 
 **Button:** `ADD VIDEOGRAPHY` → /event-support
 
@@ -265,7 +211,7 @@ Games and interaction designed for your crowd, so the room feels lively without 
 
 **H3 ·** Clear, upfront prices
 
-Three packages with prices on the page, and a written quotation before you book.
+One package with its price on the page, and a written quotation before you book.
 
 **Button:** `BOOK YOUR WEDDING EMCEE` → #enquiry
 
@@ -287,9 +233,9 @@ Three packages with prices on the page, and a written quotation before you book.
 
 **H2 ·** Hear De Zhong sing live
 
-Singing reel (2023): live songs from weddings and events. Live singing comes with the Emcee & Live Singer package.
+Singing reel (2023): live songs from weddings and events. One or two live songs come with every wedding booking.
 
-**Button:** `SEE THE LIVE SINGER PACKAGE` → #packages
+**Button:** `SEE THE PACKAGE` → #packages
 
 > **Note:** Developer: embed https://youtu.be/b-b5ePeUW4o (lite YouTube embed). Use the frame of De Zhong singing with a microphone at an event as the poster (YouTube maxres1), not the default thumbnail, which shows a comedy costume.
 
@@ -297,15 +243,15 @@ Singing reel (2023): live songs from weddings and events. Live singing comes wit
 
 **H2 ·** Wedding emcee prices at a glance
 
-| Package | From | Live singing | Planning |
-|---|---|---|---|
-| Banquet Emcee | S$588 | — | 1 session |
-| Emcee & Live Singer | S$888 | Yes | 1 session |
-| Full Celebration Host | S$1,288 | Yes | Multiple sessions + script |
+| What | Price | Notes |
+|---|---|---|
+| Wedding emcee package | S$988 | Up to 4 hours, including rehearsal and sound check |
+| Each extra hour | S$150 | Agreed in advance or on the day |
+| A longer music set or own keyboard | Quoted | Ask when you enquire |
 
-**Prices are starting prices for one banquet in Singapore.**
+**Prices are for weddings in Singapore. Sentosa adds a transport fee, and weddings overseas add transport and accommodation.**
 
-Larger banquets, extra events on the day and peak dates can change the final figure. You will always receive a written quotation before you book.
+Extra hours, extra events and peak dates can change the final figure. You will always receive a written quotation before you book.
 
 **Button:** `GET MY QUOTATION` → #enquiry
 
@@ -323,7 +269,7 @@ A date is only held once we confirm your booking in writing. Until then, it can 
 
 **Quotations are for the programme you describe**
 
-Prices are starting prices for one banquet in Singapore. Extra events, a longer programme or a change of venue can change the quotation, and we will always tell you before anything changes.
+The package covers up to 4 hours in Singapore. Extra hours, extra events or a change of venue can change the quotation, and we will always tell you before anything changes.
 
 **Your venue supplies sound and microphones**
 
@@ -337,9 +283,11 @@ Please send your final run-sheet, the names of family members and speakers, and 
 
 Food service and venue timings can shift. De Zhong adjusts the programme around them and keeps the key moments in order.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms before this point is published.
+A S$300 deposit secures your date, and the balance is paid at the end of your wedding day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -349,27 +297,27 @@ Food service and venue timings can shift. De Zhong adjusts the programme around 
 
 **H3 ·** How much does a wedding emcee cost in Singapore?
 
-Our wedding packages start from S$588 for the Banquet Emcee, S$888 for Emcee & Live Singer and S$1,288 for the Full Celebration Host. You receive a written quotation for your date and venue before you book. See our rates page for every service.
+Our wedding emcee package is S$988 for up to 4 hours of hosting, including rehearsal and sound check, with one or two songs and games if you want them. Each extra hour is S$150. You receive a written quotation for your date and venue before you book. See our rates page for every service.
 
 **H3 ·** Can you host in both English and Mandarin?
 
-Yes. Every package is bilingual, so friends and older relatives can all follow the programme.
+Yes. Every booking is bilingual, so friends and older relatives can all follow the programme.
 
 **H3 ·** Do you sing at weddings?
 
-Yes. The Emcee & Live Singer and Full Celebration Host packages include live songs, with piano where the venue has one. You choose the songs with De Zhong beforehand.
+Yes. One or two songs are part of the package, sung to an instrumental track, or with piano where the venue has one. You choose the songs with De Zhong beforehand. For a longer set, or if you want him to bring his own keyboard, ask when you enquire.
 
 **H3 ·** Will we meet before the wedding?
 
-Yes. Every package includes a planning session to go through your flow; the Full Celebration Host includes several.
+Yes. De Zhong meets you before the day to go through your flow, song choices and games.
 
 **H3 ·** Will you write our wedding emcee script?
 
-Yes. The Full Celebration Host includes a personal script written around your story. With the other packages, De Zhong works from your run-sheet and the details you share at the planning session.
+De Zhong works from your run-sheet and the details you share when you meet before the day, and shapes the hosting around your story.
 
 **H3 ·** Can you host our solemnisation or wedding lunch?
 
-Yes, as well as dinner banquets. Tell us your format when you enquire and the quotation will cover it.
+Yes, as well as dinner banquets. Whichever format you choose, the package covers up to 4 hours, including rehearsal.
 
 **H3 ·** Do you work with our hotel or venue?
 
@@ -377,11 +325,11 @@ Yes. De Zhong agrees the run-sheet and music cues with your venue's banquet team
 
 **H3 ·** Can you lead the yam seng?
 
-Yes. The yam seng toast is part of every package, led from the stage so the whole room joins in.
+Yes. The yam seng toast is part of every booking, led from the stage so the whole room joins in.
 
 **H3 ·** Do you plan wedding games?
 
-Yes. Games are planned with you so they suit your guests; two are included in Emcee & Live Singer, and the Full Celebration Host designs them around your crowd.
+Yes. Games and activities are part of the package, planned with you so they suit your guests.
 
 **H3 ·** Is the sound system included?
 
@@ -397,11 +345,11 @@ As early as you can. Dates from November to March fill quickly. Send your date a
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms (the site's legal page currently says 50% on confirmation and 50% on the day).
+Yes. A S$300 deposit secures your date, and the balance is paid at the end of your wedding day. PayNow is preferred.
 
 **H3 ·** Do you host weddings outside Singapore?
 
-> **Note:** Client to confirm whether overseas weddings are offered.
+Yes, gladly. Transport and accommodation for weddings outside Singapore are added to your quotation.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -411,11 +359,9 @@ As early as you can. Dates from November to March fill quickly. Send your date a
 
 Tell us your date, venue and the kind of celebration you are dreaming of. We will confirm availability and send a tailored quotation.
 
-**Banquet Emcee — From S$588**
+**Wedding emcee package — S$988 for up to 4 hours**
 
-**Emcee & Live Singer — From S$888**
-
-**Full Celebration Host — From S$1,288**
+**Each extra hour — S$150**
 
 **Button:** `CHECK MY WEDDING DATE` → #enquiry
 
@@ -434,12 +380,12 @@ Then the existing enquiry form ("Tell us about your day"), with the fields below
 | Secondary keywords | wedding emcee (300, KD 15) · wedding mc singapore (200, KD 17) · emcee for wedding (150, KD 6) · wedding mc (80) · mc for wedding singapore (60) · emcee for wedding singapore (20), from the gap-analysis workbook. Added 24 Oct 2026: wedding singer singapore (80, KD 0) for the live-singer copy, wedding emcee script (40, KD 0) for the FAQ. All Ahrefs Singapore. "bilingual emcee singapore" (200) stays with /emcee; this page supports it. |
 | Keep on /rates | wedding emcee rates (150/mo) is owned by /rates; this page links to it from the price table and the first FAQ. |
 | SEO title | Wedding Emcee Singapore \| Bilingual Wedding MC & Live Singer  (60 characters) |
-| Meta description | Bilingual wedding emcee in Singapore from S$588. English and Mandarin hosting, live singing and guest games, planned around your story. Check your date.  (152 characters) |
+| Meta description | Bilingual wedding emcee in Singapore from S$988. English and Mandarin hosting, live singing and guest games, planned around your story. Check your date.  (152 characters) |
 | URL | Keep /wedding-emcee |
 | H1 | A wedding emcee in Singapore who makes guests feel at home.  Only one H1 on the page. |
-| H2 structure | Bilingual wedding MC and live singer, planned around your story · Choose your wedding emcee package · Which package suits your wedding? · How booking works · See De Zhong host and sing at a real wedding · Every guest included, in English or Mandarin · Lunch, dinner or solemnisation, at your venue · What your emcee fee covers · Why couples book De Zhong · From our couples · Wedding emcee prices at a glance · Please read before booking · Questions couples ask · Let's make your banquet the one your guests talk about |
+| H2 structure | Bilingual wedding MC and live singer, planned around your story · Your wedding emcee package · How booking works · See De Zhong host and sing at a real wedding · Every guest included, in English or Mandarin · Lunch, dinner or solemnisation, at your venue · What your emcee fee covers · Why couples book De Zhong · From our couples · Wedding emcee prices at a glance · Please read before booking · Questions couples ask · Let's make your banquet the one your guests talk about |
 | Heading rule | The exact phrase "wedding emcee" appears in two H2s only; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Wedding emcee", areaServed Singapore, provider The Charisma Code) with an Offer per package (price, priceCurrency SGD). VideoObject for the wedding video. FAQPage markup only if it still meets Google's current rules; reviews shown on the page are not marked up as the business's own AggregateRating. |
+| Schema | Service (serviceType "Wedding emcee", areaServed Singapore, provider The Charisma Code) with an Offer for the package (988 SGD). VideoObject for the wedding video. FAQPage markup only if it still meets Google's current rules; reviews shown on the page are not marked up as the business's own AggregateRating. |
 | Internal links | /rates (prices), /event-support (videography, AV), /event-planning (full planning), /our-work/wedding-at-sheraton-towers (case study), /emcee (breadcrumb). |
 
 ## Page layout instructions
@@ -450,11 +396,11 @@ Desktop: text left, photo collage right (existing). Mobile: H1 → intro → tru
 
 **H4 ·** Section 2 — Packages
 
-Desktop: three cards side by side. Mobile: stacked. Make Emcee & Live Singer visually prominent with a MOST POPULAR badge. Every card has its own button that opens the enquiry form with that package selected. Do not hide inclusions in accordions on mobile.
+Desktop: the package card and the add-ons card side by side. Mobile: stacked. Do not hide inclusions in accordions on mobile.
 
 **H4 ·** Section 3 — Which package
 
-Three short rows with the price on each, then the WhatsApp and date buttons side by side.
+Removed on 9 Nov 2026: there is one package.
 
 **H4 ·** Section 4 — How booking works
 
@@ -510,21 +456,20 @@ Use real photos from the client's weddings only. WebP or AVIF, compressed. No ke
 
 ## Booking form
 
-Pre-select the package from the button the visitor clicked. Fields:
+Fields:
 
 - Wedding date (approximate is fine)
 - Venue
 - Number of guests
-- Package: Banquet Emcee / Emcee & Live Singer / Full Celebration Host / Not sure yet
+- Hosting time: up to 4 hours / longer / not sure yet
 - Languages your guests speak: English / Mandarin / Both / Other
 - Anything else we should know
 
-If "Not sure yet" is chosen, the thank-you message offers the WhatsApp link so De Zhong can recommend a package.
 
 ## Client to confirm before launch
 
-- Package names, prices, inclusions and hosting times
-- Solemnisation and wedding-lunch hosting: the old site says he performs at both. Add-on or included, and at what price? Tea ceremonies too?
-- Overseas weddings: offered?
-- Deposit and cancellation terms (shown in How booking works, step 3, and in Please read before booking)
+- The price of a tea ceremony on another day
+- Cancellation terms
+
+Confirmed 5 Nov 2026: one package at S$988 for up to 4 hours (rehearsal and sound check included), S$150 per extra hour, 1–2 songs, games; solemnisation and lunch within the 4 hours; overseas weddings welcome (transport and hotel claimed); S$300 deposit, balance at the end of the day.
 - Google Business Profile link for the reviews button

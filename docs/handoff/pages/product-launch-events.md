@@ -23,13 +23,11 @@ A launch has one chance to make an impression. We plan the event, host the revea
 - ✓ **Crew, AV and videography**
 - ✓ **One team, one plan**
 
-**Price line:** Quoted per launch  ·  hosting only from S$888
+**Price line:** Quoted per launch
 
 **Button:** `PLAN MY LAUNCH` → #quote (form at the foot of the page)
 
 **Button:** `WHATSAPP DE ZHONG` → https://wa.me/6594378083 (pre-filled message)
-
-**Button:** `SEE THE SOMA LAUNCH` → #case-study
 
 ## Section 2 — What a launch needs
 
@@ -190,7 +188,7 @@ As a content creator himself, De Zhong plans moments that are worth filming and 
 
 **H3 ·** On-brand from start to finish
 
-Talent and messaging chosen to fit your identity, as on the SOMA launch.
+Talent and messaging chosen to fit your identity.
 
 **H3 ·** A communications background
 
@@ -216,9 +214,9 @@ Every launch is different, so each is quoted for your plan, with every service o
 - Length of the event and any extra days, such as in-store visits
 - Videography and content deliverables
 
-**Price line:** Hosting only: from S$888 for a half-day or evening launch
+**Price line:** Quoted per launch
 
-> **Note:** PLACEHOLDER: the hosting figure is the corporate range on /rates. Client to confirm whether launch planning should show a from-price.
+> **Note:** Client 5 Nov 2026: S$888 for hosting is "way too low"; launch hosting "matches the D&D price, but can go to 1+k, tailored for corporate budget". Hosting figure removed until the client confirms it.
 
 **Button:** `GET A LAUNCH QUOTE` → #quote
 
@@ -244,9 +242,11 @@ Share your key messages, product facts and any embargo date early, so scripts an
 
 Launches in malls and public spaces follow the venue's rules and approvals, which we plan for in the timeline.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ON WHATSAPP` → https://wa.me/6594378083
 
@@ -256,7 +256,7 @@ Launches in malls and public spaces follow the venue's rules and approvals, whic
 
 **H3 ·** How much does a product launch event cost?
 
-It depends on the services, guest numbers, venue and creators involved, so every launch is quoted for your plan. Hosting only starts from S$888 for a half-day or evening launch.
+It depends on the services, guest numbers, venue and creators involved, so every launch is quoted for your plan.
 
 **H3 ·** Can you plan the whole launch?
 
@@ -268,7 +268,7 @@ Yes. Hosting can be booked on its own; our corporate emcee page has the detail.
 
 **H3 ·** Do you work with influencers and KOLs?
 
-Yes. We shortlist, brief and coordinate creators and invited talent, as we did for the SOMA Fragrances launch.
+Yes. We shortlist, brief and coordinate creators and invited talent, from guest appearances to paid influencer posts.
 
 **H3 ·** Can you host the launch in English and Mandarin?
 
@@ -292,7 +292,7 @@ Yes. You receive a written proposal with the recommended format and each service
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -382,4 +382,4 @@ One team plans your launch, hosts the reveal and brings the right creators, so t
 - Whether launch planning should show a from-price
 - Hybrid or livestream launches: offered?
 - Typical lead time for a full launch
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

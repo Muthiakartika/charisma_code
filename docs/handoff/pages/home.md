@@ -21,7 +21,7 @@ An event management company and event organiser in Singapore for corporate event
 - ✓ **Based in Singapore**
 - ✓ **Google-reviewed by clients**
 
-**Price line:** Emcee hosting from S$588  ·  team building from S$88 per participant  ·  see all rates
+**Price line:** Emcee hosting from S$600  ·  team building from S$88 per participant  ·  see all rates
 
 **Button:** `LET'S TALK` → /contact
 
@@ -29,7 +29,7 @@ An event management company and event organiser in Singapore for corporate event
 
 **Button:** `SEE TEAM BUILDING` → /corporate-team-building
 
-> **Note:** The H1 was chosen with the user on 23 Oct 2026. The from-prices in the price line are /rates placeholders except S$120, S$388 and S$880.
+> **Note:** The H1 was chosen with the user on 23 Oct 2026. Emcee from S$600 = the lowest confirmed minimum (roadshow and government, client 5 Nov 2026); the client still confirms this headline. S$88 is still a placeholder.
 
 ## Section 2 — Logo strip
 
@@ -86,7 +86,7 @@ Team building that is genuinely fun and built around your objectives, your peopl
 
 **H3 ·** Corporate Emcee
 
-**Price line:** From S$888
+**Price line:** Dinners and award nights from S$2,800
 
 A bilingual English and Mandarin host with over 15 years on stage, for award nights, launches and company celebrations.
 
@@ -94,7 +94,7 @@ A bilingual English and Mandarin host with over 15 years on stage, for award nig
 
 **H3 ·** Dinner & Dance Emcee
 
-**Price line:** From S$888
+**Price line:** From S$2,800
 
 High-energy, bilingual hosting for year-end and Chinese New Year dinners, with games, lucky draws and a programme that keeps the night moving.
 
@@ -142,7 +142,7 @@ Public speaking, presentation and stage presence coaching for individuals and co
 
 **H3 ·** Wedding Emcee
 
-**Price line:** From S$588
+**Price line:** From S$988
 
 Warm, bilingual wedding hosting with live singing and guest interaction, planned around your story.
 
@@ -178,7 +178,7 @@ Emcee by occasion: conferences, roadshows and exhibitions, government and commun
 
 **Button:** `SEE ALL STARTING RATES` → /rates
 
-> **Note:** All from-prices except S$120, S$388 and S$880 are the approved /rates placeholders. Client to confirm.
+> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). S$88, S$120 and S$880 are still to re-confirm.
 
 ## Section 6 — Quick match
 
@@ -244,11 +244,11 @@ Dinner & Dance, November 2025.
 
 **Button:** `READ THE CASE STUDY` → /our-work/the-banyan-group-dinner-and-dance
 
-**H3 ·** Talent and influencer coordination for the SOMA Fragrances launch
+**H3 ·** Community event for Caregiving Welfare Association
 
-Campaigns, August 2025.
+Corporate Events, September 2026.
 
-**Button:** `READ THE CASE STUDY` → /our-work/soma-fragrances-brand-launch
+**Button:** `READ THE CASE STUDY` → /our-work/caregiving-welfare-association-community-event
 
 **Button:** `SEE ALL OUR WORK` → /our-work
 
@@ -311,7 +311,7 @@ Yes. Hosting and facilitation are available in English, Mandarin or both.
 
 **H3 ·** How much does it cost?
 
-Emcee hosting starts from S$588, team building from S$88 per participant, and planning is quoted per project. See our rates page for every service.
+Emcee hosting starts from S$600, team building from S$88 per participant, and planning is quoted per project. See our rates page for every service.
 
 **H3 ·** How early should we get in touch?
 
@@ -397,4 +397,4 @@ One Singapore team that plans, hosts and facilitates events where the whole room
 - Every placeholder from-price on the service cards
 - Social profiles for sameAs
 - The street address for LocalBusiness schema
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

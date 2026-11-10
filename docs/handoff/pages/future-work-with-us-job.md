@@ -13,7 +13,7 @@ Source: `copy/future/work-with-us-job.json` (same content as `copy/future/work-w
 **H1 ·** <mark>Event Facilitator</mark>, <mark>freelance</mark>
 
 - ✓ **<mark>Singapore, on site at events</mark>**
-- ✓ **<mark>S$35 per hour</mark>**
+- ✓ **<mark>From S$15 per hour</mark>**
 - ✓ **<mark>November 2026 to March 2027 (D&D and CNY season)</mark>**
 - ✓ **Apply by <mark>30 November 2026</mark>**
 

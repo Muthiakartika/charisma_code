@@ -161,9 +161,7 @@ We match vendors from our network and send a quotation with each service on its 
 
 **H3 ·** 3. Confirm in writing
 
-Your services are held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your services are held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Vendors briefed
 
@@ -233,11 +231,13 @@ Each vendor's terms are listed in your quotation.
 
 **Photo and video delivery**
 
-> **Note:** Client to confirm standard delivery times for edited photos and videos.
+Edited photos and videos usually arrive within 1 to 2 weeks. Tell us if you need them sooner.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -259,7 +259,11 @@ Yes. A technician checks everything before guests arrive and stays for the progr
 
 **H3 ·** How soon do we get photos and videos?
 
-> **Note:** Client to confirm.
+Usually within 1 to 2 weeks, or sooner if you need them for a deadline.
+
+**H3 ·** Can you book a live band?
+
+Yes. We book live bands through the partners we work with.
 
 **H3 ·** Can you find a venue for us?
 
@@ -279,7 +283,7 @@ Yes. Each service is listed on its own line.
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -375,6 +379,5 @@ Sound, photography, video, venues, performers and crew from one point of contact
 ## Client to confirm before launch
 
 - Whether any service shows a from-price
-- Photo and video delivery times
-- Whether the network books live bands (a 1,400-a-month search term)
-- Deposit and cancellation terms
+- Confirmed 5 Nov 2026: delivery usually 1 to 2 weeks; live bands booked through partners (a dedicated performers page is a possible follow-up for "live band singapore")
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

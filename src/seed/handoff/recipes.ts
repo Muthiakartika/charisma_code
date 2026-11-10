@@ -148,7 +148,9 @@ const credentials: Block = {
   items: [
     {
       badge: 'Hosting',
-      title: 'Hosted at the inaugural Singapore Youth Olympic Games, 2010',
+      // Client, 5 Nov 2026: he both hosted (canoeing and rowing) and performed at the athletes' welcome
+      title:
+        "Hosted canoeing and rowing, and performed at the athletes' welcome, at the inaugural Singapore Youth Olympic Games, 2010",
       text: '[Singapore Youth Olympic Games](https://en.wikipedia.org/wiki/2010_Summer_Youth_Olympics)',
     },
     {
@@ -187,10 +189,10 @@ const credentials: Block = {
       text: '[UFM100.3](https://audio.sph.com.sg/ufm1003/)',
     },
     {
-      badge: 'Recognition',
-      title:
-        'Invited to the COMPASS Awards Presentation for several consecutive years, including the 28th in 2025',
-      text: '[COMPASS Awards Presentation](https://www.compass.org.sg)',
+      // Client, 5 Nov 2026: a COMPASS member; at the awards he was only a guest ("nothing to shout about")
+      badge: 'Music',
+      title: 'Member of COMPASS, the Composers and Authors Society of Singapore',
+      text: '[COMPASS](https://www.compass.org.sg)',
     },
   ],
 }

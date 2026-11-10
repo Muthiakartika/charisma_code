@@ -83,13 +83,11 @@ A warm, playful host who runs the party at a child's pace, so the birthday child
 - ✓ Birthday song and cake moment
 - ✓ Hosting in English, Mandarin or both
 
-**Hosting time: about 2 hours**
+**Hosting time: agreed for your event**
 
 **Button:** `BOOK A PARTY HOST` → #quote, package pre-selected
 
 **H3 ·** School Event Emcee
-
-**Badge:** `MOST POPULAR`
 
 **Price line:** From S$888
 
@@ -105,7 +103,7 @@ A host who is formal where it needs to be and fun where it can be, with the runn
 - ✓ Interactive moments for students
 - ✓ English, Mandarin or both
 
-**Hosting time: a half-day programme**
+**Hosting time: agreed for your event**
 
 **Button:** `BOOK A SCHOOL EMCEE` → #quote, package pre-selected
 
@@ -125,7 +123,7 @@ A full day of games that children, parents and grandparents all join in, hosted 
 - ✓ Bilingual hosting all day
 - ✓ Works with your event planner or ours
 
-**Hosting time: a full day**
+**Hosting time: agreed for your event**
 
 **Button:** `BOOK A FAMILY DAY HOST` → #quote, package pre-selected
 
@@ -265,9 +263,7 @@ We confirm the right package and send a written quotation.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Plan the programme
 
@@ -320,9 +316,9 @@ Logo strip (existing): Youth Olympic Games, Singapore Sports Council, People's A
 
 | Package | From | Best for | Hosting time |
 |---|---|---|---|
-| Children's Party Host | S$588 | Birthday parties | About 2 hours |
-| School Event Emcee | S$888 | Assemblies and speech days | Half day |
-| Family Day Host | S$1,288 | Company and community family days | Full day |
+| Children's Party Host | S$588 | Birthday parties | Agreed for your event |
+| School Event Emcee | S$888 | Assemblies and speech days | Agreed for your event |
+| Family Day Host | S$1,288 | Company and community family days | Agreed for your event |
 
 **Prices are starting prices for one event in Singapore.**
 
@@ -358,9 +354,11 @@ Storybook and character guests are booked through our event support team and quo
 
 Outdoor events have a wet-weather plan agreed in advance.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -402,7 +400,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -508,4 +506,4 @@ Three clear packages from S$588: a bilingual host who keeps every age involved, 
 - Which package is really the most booked (the badge)
 - A school, party or family-day review
 - Photo consent for any children shown
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

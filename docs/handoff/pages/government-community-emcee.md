@@ -21,7 +21,7 @@ Bilingual hosting in English and Mandarin for ministries, statutory boards, gras
 - ✓ **Community events of every size**
 - ✓ **Over 15 years on stage**
 
-**Price line:** From S$888 for a half-day or evening event
+**Price line:** From S$300 per hour  ·  minimum booking S$600
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -144,15 +144,11 @@ Date, venue, audience, guest of honour and languages. A draft programme helps.
 
 **H3 ·** 2. Proposal and quotation
 
-A written proposal and quotation, in the format your procurement team needs where we can.
-
-> **Note:** Client to confirm: can quotations be submitted through GeBIZ, and what documents can be provided for procurement?
+A written proposal and quotation in the format your procurement team needs. We can quote through GeBIZ and provide procurement documents.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Protocol and programme review
 
@@ -170,9 +166,9 @@ De Zhong arrives prepared, works to the approved programme and agrees any change
 
 **H2 ·** What shapes your emcee quote
 
-**Price line:** From S$888 for a half-day or evening event
+**Price line:** From S$300 per hour  ·  minimum booking S$600
 
-Most government and community events fall between S$888 and S$1,888. Every booking receives a written quotation.
+Government and community hosting is booked by the hour, from S$300 an hour, with a minimum booking of S$600, even for a one-hour event. Every booking receives a written quotation.
 
 **H4 ·** What affects the quotation
 
@@ -182,7 +178,7 @@ Most government and community events fall between S$888 and S$1,888. Every booki
 - Rehearsals or site recces
 - Outdoor or multi-location events
 
-> **Note:** PLACEHOLDER range (S$888–1,888) from the approved /rates proposal. Client to confirm.
+> **Note:** Confirmed by the client on 5 Nov 2026 (Pricing Details to Supply): S$300 for one hour, minimum S$600 even if the event is one hour.
 
 **Button:** `GET MY QUOTE` → #quote
 
@@ -203,7 +199,7 @@ De Zhong has hosted since the inaugural Youth Olympic Games in 2010, performed a
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
-> **Note:** Client to confirm which public-sector clients can be named. The logo strip already shows People's Association and Singapore Sports Council; confirm these may be presented as public-sector work on this page.
+> **Note:** Client 5 Nov 2026: all public-sector clients may be named. Follow-up: a logo strip with only public-sector clients on this page (People's Association, Singapore Sports Council, Book Council SG, Sentosa).
 
 ## Section 11 — Clients and reviews
 
@@ -251,9 +247,11 @@ The emcee needs a wireless microphone and a working sound system. Our event supp
 
 For outdoor community events, wet-weather plans and sound coverage are agreed in advance.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -263,7 +261,7 @@ For outdoor community events, wet-weather plans and sound coverage are agreed in
 
 **H3 ·** How much does an emcee cost for a government event?
 
-From S$888 for a half-day or evening event, and most events fall between S$888 and S$1,888. You receive a written quotation. See our rates page for every service.
+From S$300 an hour, with a minimum booking of S$600. You receive a written quotation. See our rates page for every service.
 
 **H3 ·** Do you follow guest-of-honour protocol?
 
@@ -287,7 +285,7 @@ Yes. We work to your approved programme and agree any changes with your officer-
 
 **H3 ·** Can you quote through GeBIZ?
 
-> **Note:** Client to confirm.
+Yes. We can quote through GeBIZ and provide the documents your procurement team needs.
 
 **H3 ·** Do you host school and education events?
 
@@ -299,7 +297,7 @@ Yes. Once we understand your objectives and requirements, we prepare a tailored 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -334,7 +332,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your date and brief. We will confirm availability and send a written quotation.
 
-**Government and community hosting — From S$888**
+**Government and community hosting — From S$300 per hour, minimum S$600**
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -351,7 +349,7 @@ Send your date and brief. We will confirm availability and send a written quotat
 | Secondary keywords | statutory board emcee (100) and its variants: statutory board emcee singapore, stat board emcee, statboard emcee singapore · government agency emcee (100) · community emcee (100) · community emcee singapore (100) · education emcee (80). Ahrefs Singapore, 23 Oct 2026 (Emcee Subpages tab). |
 | Owned by other pages | school and kids emcee terms → /school-family-emcee · corporate award-ceremony terms → /corporate-emcee. |
 | SEO title | Government & Community Event Emcee Singapore \| Bilingual  (56 characters) |
-| Meta description | Bilingual emcee for government, statutory board, grassroots and charity events in Singapore. Protocol-aware hosting in English and Mandarin, from S$888.  (152 characters) |
+| Meta description | Bilingual emcee for government, grassroots and charity events in Singapore. Protocol-aware hosting in English and Mandarin, from S$300 an hour.  (142 characters) |
 | URL | /government-community-emcee |
 | H1 | An emcee for government and community events.  One H1 only. |
 | H2 structure | Public-sector and community events we host · Emcee for government and ministry events · Statutory board engagement and outreach · Community and grassroots celebrations · Charity galas and fundraisers · Award and recognition ceremonies · How booking works for public-sector events · What shapes your emcee quote · Why public-sector clients book De Zhong · Brands and organisations we have worked with · What clients say · Please read before booking · Government and community event questions · Get your emcee quote · A programme that runs exactly as approved |
@@ -394,13 +392,11 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-A bilingual, protocol-aware emcee who works to your approved programme, from S$888.
+A bilingual, protocol-aware emcee who works to your approved programme, from S$300 an hour.
 
 ## Client to confirm before launch
 
-- The S$888–1,888 range
-- GeBIZ quotations and procurement documents
-- Which public-sector clients can be named
+- Public-sector logos for the logo strip (the client said on 5 Nov 2026 that all public-sector clients may be named)
 - What event the hero photo is from
 - Review labels
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

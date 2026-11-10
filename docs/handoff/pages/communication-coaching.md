@@ -279,9 +279,11 @@ Your talk, slides or interview questions make the sessions most useful.
 
 > **Note:** Client to confirm whether sessions can be held online, and where in-person sessions take place.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -323,7 +325,7 @@ Yes. Our corporate workshops are designed for teams and quoted per programme.
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -423,4 +425,4 @@ Coaching from a working emcee on the talk you actually have to give, from S$120 
 - Online sessions and where in-person sessions happen
 - Rescheduling notice
 - A coaching testimonial
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

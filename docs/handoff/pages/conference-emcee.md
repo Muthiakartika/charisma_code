@@ -21,7 +21,7 @@ Bilingual conference and seminar hosting in English and Mandarin from Chia De Zh
 - ✓ **Hybrid and virtual sessions**
 - ✓ **Run of show reviewed with you**
 
-**Price line:** From S$1,588 for a full day  ·  half-day seminars from S$888
+**Price line:** From S$1,000  ·  S$350 per hour of hosting
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -155,9 +155,7 @@ We recommend how the emcee fits your agenda and send a written quotation.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Run-of-show and script review
 
@@ -179,9 +177,9 @@ Opening, introductions, panels and close, adjusted on the spot when sessions run
 
 **H2 ·** What shapes your quote
 
-**Price line:** From S$1,588 for a full day
+**Price line:** From S$1,000  ·  S$350 per hour of hosting
 
-Full-day conferences usually fall between S$1,588 and S$2,888; half-day seminars and town halls start from S$888. Every booking receives a written quotation.
+Conference hosting is S$350 per hour, worked out from your agenda, with a minimum booking of S$1,000. Every booking receives a written quotation.
 
 **H4 ·** What affects the quotation
 
@@ -191,7 +189,7 @@ Full-day conferences usually fall between S$1,588 and S$2,888; half-day seminars
 - Hybrid or virtual elements
 - Rehearsals or a tech run before the day
 
-> **Note:** PLACEHOLDER ranges (full day S$1,588–2,888; half day from S$888) from the approved /rates proposal. Client to confirm.
+> **Note:** Confirmed by the client on 5 Nov 2026 (Pricing Details to Supply): S$350 per hour, minimum engagement "1K+". Still to confirm: whether the minimum is exactly S$1,000, and whether to show a full-day figure.
 
 **Button:** `GET MY QUOTE` → #quote
 
@@ -256,9 +254,11 @@ The emcee needs a wireless microphone; panels need one microphone per panellist.
 
 For hybrid or virtual sessions, your AV team or platform provider runs the stream; we agree cues and how remote questions reach the stage.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -268,7 +268,7 @@ For hybrid or virtual sessions, your AV team or platform provider runs the strea
 
 **H3 ·** How much does a conference emcee cost in Singapore?
 
-Full-day conferences start from S$1,588, and half-day seminars from S$888. You receive a written quotation for your agenda. See our rates page for every service.
+Conference hosting is S$350 per hour, with a minimum booking of S$1,000. You receive a written quotation for your agenda. See our rates page for every service.
 
 **H3 ·** Can you host in English and Mandarin?
 
@@ -308,7 +308,7 @@ Yes. Award nights, launches and company celebrations are on our corporate emcee 
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -344,9 +344,9 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your agenda and date. We will confirm availability and send a written quotation.
 
-**Full-day conferences — From S$1,588**
+**Conference hosting — S$350 per hour**
 
-**Half-day seminars — From S$888**
+**Minimum booking — S$1,000**
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -363,7 +363,7 @@ Send your agenda and date. We will confirm availability and send a written quota
 | Secondary keywords | emcee for conference (150) · emcee conference (150) · virtual event emcee (150) · emcee seminar (100) · virtual emcee (100) · virtual emcee singapore (100) · online emcee (100) · emcee for seminar (50). Ahrefs Singapore, 23 Oct 2026 (Emcee Subpages tab). |
 | Owned by other pages | corporate emcee and award-ceremony terms → /corporate-emcee, which links down to this page. |
 | SEO title | Conference Emcee Singapore \| Seminar & Virtual Event Emcee  (58 characters) |
-| Meta description | Bilingual conference emcee in Singapore from S$1,588 a day. Speaker introductions, panels, Q&A and hybrid sessions kept on time in English and Mandarin.  (152 characters) |
+| Meta description | Bilingual conference emcee in Singapore from S$350 an hour. Speaker introductions, panels, Q&A and hybrid sessions kept on time in English and Mandarin.  (152 characters) |
 | URL | /conference-emcee |
 | H1 | A conference emcee who keeps every session on time.  One H1 only. |
 | H2 structure | What your conference emcee handles · A strong opening and welcome · Speaker introductions done right · Panel moderation and audience Q&A · Seminars, forums and town halls · Hybrid and virtual sessions · Awards and a strong close · How booking works · What shapes your quote · Why organisers book De Zhong · Brands and organisations we have worked with · What clients say · Please read before booking · Conference emcee questions · Get your conference quote · An agenda that runs the way you planned it |
@@ -405,11 +405,11 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-A bilingual conference emcee who checks every name, moderates panels fairly and keeps your agenda on time, from S$1,588 a day.
+A bilingual conference emcee who checks every name, moderates panels fairly and keeps your agenda on time, from S$350 an hour.
 
 ## Client to confirm before launch
 
-- The full-day S$1,588–2,888 range and the half-day from-price
+- Whether the S$1,000 minimum is exact, and whether to show a full-day figure (S$350 per hour confirmed 5 Nov 2026)
 - A conference photo, case study or speaker testimonial
 - Review labels, and a conference review if one exists
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

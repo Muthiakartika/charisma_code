@@ -12,18 +12,60 @@
  * repeated safely). On an empty database it skips: the seed fills it instead.
  */
 import config from '@payload-config'
-import { getPayload } from 'payload'
+import { getPayload, type Payload } from 'payload'
 
+import { applyClientData20261109 } from './client-data-2026-11-09'
 import { importHandoff } from './import'
 
-/** In order. Every import also refreshes the header, footer and services from the briefs. */
-const UPDATES: { version: string; note: string; slugs?: string[] }[] = [
+/**
+ * In order. Every import also refreshes the header, footer and services from the briefs. `run`
+ * handles content that is not in a brief (it runs after the import, once).
+ */
+const UPDATES: {
+  version: string
+  note: string
+  slugs?: string[]
+  run?: (payload: Payload) => Promise<void>
+}[] = [
   { version: '2026-10-27', note: 'the developer handoff of 26 Oct' },
   { version: '2026-10-30', note: 'About: credentials and recognition', slugs: ['about'] },
   {
     version: '2026-11-03',
     note: 'Corporate Team Building: real team building photos',
     slugs: ['corporate-team-building'],
+  },
+  {
+    // docs/11-update-data-klien-9-nov.md: the client's answers of 5 Nov 2026
+    version: '2026-11-09',
+    note: 'client data of 5 Nov: confirmed prices, booking terms, one wedding package, no address',
+    slugs: [
+      'home',
+      'emcee',
+      'rates',
+      'services',
+      'wedding-emcee',
+      'dinner-and-dance-emcee',
+      'chinese-new-year-emcee',
+      'corporate-emcee',
+      'conference-emcee',
+      'roadshow-emcee',
+      'government-community-emcee',
+      'school-family-emcee',
+      'product-launch-events',
+      'corporate-workshops',
+      'kids-youth-programs',
+      'communication-coaching',
+      'corporate-team-building',
+      'event-planning',
+      'dinner-and-dance-planning',
+      'creative-campaigns',
+      'event-support',
+      'contact',
+      'about',
+      'jobs-event-facilitator',
+    ],
+    // The legal page's payment terms and hosting location, and TikTok in Social Links
+    run: applyClientData20261109,
   },
 ]
 const MARKER = 'content:dev-handoff'
@@ -52,6 +94,7 @@ try {
       : [...new Set(pending.flatMap((update) => update.slugs ?? []))]
     payload.logger.info(`[handoff] applying: ${pending.map((update) => update.note).join('; ')}`)
     await importHandoff(payload, { slugs })
+    for (const update of pending) await update.run?.(payload)
     await payload.kv.set(MARKER, { version: latest, appliedAt: new Date().toISOString() })
     payload.logger.info(`[handoff] applied (version ${latest})`)
   }

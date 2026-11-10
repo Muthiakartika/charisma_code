@@ -23,7 +23,7 @@ Facilitated workshops on communication, collaboration and team dynamics, designe
 - ✓ **Trusted facilitators**
 - ✓ **1-to-1 coaching for team leads**
 
-**Price line:** Quoted per programme  ·  1-to-1 coaching from S$120 per session
+**Price line:** Quoted per programme, adapted to your budget
 
 **Button:** `PLAN A WORKSHOP` → #enquiry (form at the foot of the page)
 
@@ -233,9 +233,9 @@ Every workshop is quoted for your team, because group size, length and how much 
 - Number of facilitators needed
 - Venue: your office, or a venue we arrange
 
-**Price line:** 1-to-1 coaching: from S$120 per session
+**Price line:** Quoted per programme, adapted to your budget
 
-> **Note:** Client to confirm: a from-price for corporate workshops (per participant or per session), so this section and the /rates card can show one. Until then, the hero and /rates should say "Quoted per programme", not S$388.
+> **Note:** Client 5 Nov 2026: "i will ask for budget first and adapt based on it, but usually looking for at least a few thousand for a corporate client." The S$388 programme was an error by the old web producer. A from-figure is still to confirm.
 
 **Button:** `GET A WORKSHOP QUOTE` → #enquiry
 
@@ -261,9 +261,11 @@ Practice builds on practice, so participants get the most from staying for the w
 
 > **Note:** Client to confirm the largest group one facilitator takes, and when a second facilitator is added.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ON WHATSAPP` → https://wa.me/6594378083
 
@@ -273,7 +275,7 @@ Practice builds on practice, so participants get the most from staying for the w
 
 **H3 ·** How much does a corporate workshop cost?
 
-Workshops are quoted per programme, based on group size, length and how much we adapt the content. 1-to-1 coaching starts from S$120 per session. Send us your brief for a written quotation.
+Workshops are quoted per programme. Tell us your budget and we adapt the programme to it, based on group size, length and how much we tailor the content. Send us your brief for a written quotation.
 
 **H3 ·** Can you run the workshop at our office?
 
@@ -305,7 +307,7 @@ In the presenting workshop, everyone speaks at least once, in a supportive setti
 
 **H3 ·** Do you run workshops in Mandarin?
 
-> **Note:** Client to confirm.
+Our workshops run in English, tailored to your company and team.
 
 **H3 ·** Will we receive a proposal?
 
@@ -400,8 +402,6 @@ Practical workshops your team takes part in, adapted to your company and quoted 
 ## Client to confirm before launch
 
 - A corporate workshop from-price, or keep "Quoted per programme"
-- Who the S$388 three-day immersive programme is for (it is not on any page yet)
 - Session lengths, group sizes and whether the modular series is sold to companies
-- Workshops in Mandarin: offered?
 - A corporate workshop client, photo or testimonial
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

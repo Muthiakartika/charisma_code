@@ -136,9 +136,8 @@ You deal with one point of contact; the crew takes care of the rest.
 
 **H2 ·** Milestones
 
-- 2010 — hosts at the inaugural Singapore Youth Olympic Games
+- 2010 — hosts canoeing and rowing, and performs at the athletes' welcome, at the inaugural Singapore Youth Olympic Games
 - July–August 2025 — teaches an 11-session videography programme at Maris Stella High School
-- August 2025 — talent and influencer coordination for the SOMA Fragrances launch
 - September 2025 — interviewed on MediaCorp Channel 8 about freelance life
 - November 2025 — hosts The Banyan Group's dinner and dance at Mandai Rainforest Resort
 - December 2025 — plans, hosts and performs at Lectrix Engineering's Christmas celebration
@@ -234,7 +233,6 @@ A founder you deal with from the first call, and a crew he trusts on the day.
 ## Client to confirm before launch
 
 - The milestones timeline
-- Which Instagram profiles are his, for sameAs
 - De Zhong's own follower count, if it is to be shown
 - A crew photo
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

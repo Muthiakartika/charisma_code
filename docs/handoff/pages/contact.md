@@ -6,7 +6,7 @@ Source: `copy/contact.json` (same content as `copy/contact.docx`).
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> _URL: /contact (keep the existing URL)  ·  page type: contact: fast routes in, plus the address and map that local search needs_
+> _URL: /contact (keep the existing URL)  ·  page type: contact: fast routes in. No street address is published (the client's home, 5 Nov 2026)._
 
 ## Section 1 — Hero
 
@@ -30,6 +30,8 @@ Team building, emceeing, workshops or a celebration: share a few details and we 
 
 **H2 ·** Choose how to reach us
 
+We reply within 3 days, in English or Mandarin.
+
 **H3 ·** WhatsApp
 
 Fastest for a quick question or a date check.
@@ -48,11 +50,7 @@ hello@thecharismacode.co
 
 **Button:** `EMAIL US` → mailto:hello@thecharismacode.co
 
-**H3 ·** Studio address
-
-> **Note:** Client to supply the street address and postcode; the board shows "10 Placeholder Road, #01-01, Singapore 000000" until then.
-
-> **Note:** Client to confirm a reply time to promise here (for example "within one working day").
+> **Note:** Client 5 Nov 2026: the address is his home, "do not publish". He also suggested putting it in as hidden text for SEO; we advised against it (Google treats hidden text as spam, and it stays readable in the page code). The studio address card and the map section were removed on 9 Nov 2026. Reply time: "Reply within 3 days."
 
 ## Section 3 — Quote form
 
@@ -92,16 +90,6 @@ And send a tailored proposal.
 
 Until it fits.
 
-## Section 5 — Map
-
-**H2 ·** Find us
-
-Google Maps embed of the studio address.
-
-> **Note:** Needs the real address. Match the name, address and phone exactly to the Google Business Profile.
-
-> **Note:** On the board (24 Oct 2026) the map placeholder and the three next steps sit in the enquiry section's left column, beside the form, rather than as separate sections.
-
 ## Section 6 — FAQ
 
 **H2 ·** Before you get in touch
@@ -113,10 +101,6 @@ Your date, venue if you have one, group size, the languages your guests speak an
 **H3 ·** Do I need a full brief before I enquire?
 
 No. A date and a line about the event is enough to start.
-
-**H3 ·** Can I visit the studio?
-
-> **Note:** Client to confirm.
 
 **H3 ·** Do you reply in Mandarin?
 
@@ -132,19 +116,19 @@ Yes, if you prefer.
 | Field | Value |
 |---|---|
 | Primary keyword | the charisma code contact (brand) and local intent |
-| Secondary keywords | The workbook calls this the local-ranking surface: both head searches open with a map pack, so the address, map and Google Business Profile must match. |
+| Secondary keywords | Local ranking comes from the Google Business Profile set up as a service-area business (address hidden), with the same name and phone as this page. |
 | SEO title | Contact The Charisma Code \| Enquire About Your Event  (52 characters) |
 | Meta description | Contact The Charisma Code in Singapore by WhatsApp, phone or email, or send an enquiry about team building, emceeing, workshops or an event.  (140 characters) |
 | URL | Keep /contact |
 | H1 | Let's talk.  One H1 only. |
-| H2 structure | Choose how to reach us · Send an enquiry · What happens next · Find us · Before you get in touch |
+| H2 structure | Choose how to reach us · Send an enquiry · What happens next · Before you get in touch |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | LocalBusiness (name, address, geo, telephone, email, openingHours if published, sameAs) once the real address is supplied; ContactPoint for phone and WhatsApp. |
+| Schema | LocalBusiness without a street address (areaServed Singapore, telephone, email, sameAs); ContactPoint for phone and WhatsApp. |
 | Internal links | /rates, /services, /emcee. |
 
 ## Page layout instructions
 
-Keep the hero, form and the three next steps. Add: four contact cards (WhatsApp, phone, email, address) above the form, the map block with the real address, and a short FAQ. Remove the placeholder address and map before launch if the client has not supplied a real address.
+Keep the hero, form and the three next steps. Add: three contact cards (WhatsApp, phone, email) above the form, and a short FAQ. No address card and no map.
 
 ## Mobile conversion requirements
 
@@ -163,13 +147,13 @@ Sticky bar: **WHATSAPP | CALL**. Large tap targets; WhatsApp opens the app with 
 
 | Field | Value |
 |---|---|
-| the-charisma-code-studio.jpg | ALT: The Charisma Code studio in Singapore |
+| the-charisma-code-contact.jpg | ALT: De Zhong of The Charisma Code |
 
 Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT text.
 
 ## Remove or rewrite on the current page
 
-- The placeholder address and map, if no real address is supplied by launch.
+- The placeholder address and map (removed 9 Nov 2026).
 
 ## Wording to avoid
 
@@ -178,12 +162,9 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-WhatsApp for speed, the form for a full brief, and a real address for Google.
+WhatsApp for speed and the form for a full brief, with a reply within 3 days.
 
 ## Client to confirm before launch
 
-- The street address and postcode
-- A reply-time promise
-- Whether visitors can come to the studio
-- Opening hours, if any
-- Deposit and cancellation terms
+- Where clients can meet De Zhong in person, if anywhere (no studio visits: the address is his home)
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

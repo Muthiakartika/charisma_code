@@ -21,7 +21,7 @@ Confident, charismatic hosting in English and Mandarin for company dinners, awar
 - ✓ **Calm when timings change**
 - ✓ **Optional live singing and piano**
 
-**Price line:** From S$888 for a half-day or evening event  ·  written quotation for your programme
+**Price line:** Dinners and award nights from S$2,800  ·  roadshows from S$250 per hour
 
 **Button:** `GET A QUOTE` → #quote (form at the foot of the page)
 
@@ -117,9 +117,7 @@ We recommend how the emcee fits your programme and send a written quotation.
 
 **H3 ·** 3. Confirm in writing
 
-Your date is held once we confirm the booking in writing.
-
-> **Note:** Client to confirm the deposit step before it is shown here.
+Your date is held once we confirm the booking in writing and receive a 50% deposit. The balance is paid on the event day.
 
 **H3 ·** 4. Review the programme and script
 
@@ -171,9 +169,9 @@ Emcee links can be prepared in both languages and added to any booking.
 
 **H2 ·** What shapes your corporate emcee quote
 
-**Price line:** From S$888 for a half-day or evening event
+**Price line:** Dinners and award nights from S$2,800
 
-Most company events fall between S$888 and S$1,888. Full-day conferences are priced on the conference page. Every booking receives a written quotation, because no two programmes are the same.
+Dinners, award nights and other evening events start from S$2,800 for a block of up to 4 hours. Daytime events are booked by the hour: roadshows from S$250 an hour (minimum S$600) and conferences from S$350 an hour (minimum S$1,000). Every booking receives a written quotation, because no two programmes are the same.
 
 **H4 ·** What affects the quotation
 
@@ -183,7 +181,7 @@ Most company events fall between S$888 and S$1,888. Full-day conferences are pri
 - Rehearsals or a tech run before the day
 - Live singing or piano as part of the programme
 
-> **Note:** PLACEHOLDER range (S$888–1,888) from the approved /rates proposal. Client to confirm.
+> **Note:** Confirmed by the client on 5 Nov 2026 (Pricing Details to Supply): "DND is $2800 onwards, roadshows min engagement $250/hour, min $600 onwards". The wording of this page's price line is still to confirm.
 
 **Button:** `GET MY QUOTE` → #quote
 
@@ -291,9 +289,11 @@ The emcee needs a wireless microphone and a working sound system. Our event supp
 
 Extra segments, a longer programme or additional rehearsals can change the quotation, and we will always tell you before anything changes.
 
-**Deposit and cancellation**
+**Deposit and payment**
 
-> **Note:** Client to confirm deposit and cancellation terms.
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -303,7 +303,7 @@ Extra segments, a longer programme or additional rehearsals can change the quota
 
 **H3 ·** How much does a corporate emcee cost in Singapore?
 
-Our corporate hosting starts from S$888 for a half-day or evening event, and most company events fall between S$888 and S$1,888. You receive a written quotation for your programme. See our rates page for every service.
+Dinners and award nights start from S$2,800 for up to 4 hours. Daytime events are booked by the hour, from S$250 an hour for roadshows and S$350 an hour for conferences. You receive a written quotation for your programme. See our rates page for every service.
 
 **H3 ·** Do you host in English and Mandarin?
 
@@ -351,7 +351,7 @@ Yes. Once we understand your objectives and programme, we send a tailored propos
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -392,7 +392,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your date, venue and programme. We will confirm availability and send a written quotation.
 
-**Corporate hosting — From S$888**
+**Corporate hosting — Dinners and award nights from S$2,800**
 
 **Button:** `GET A QUOTE` → #quote
 
@@ -409,7 +409,7 @@ Send your date, venue and programme. We will confirm availability and send a wri
 | Secondary keywords | emcee for corporate events (250, KD 11, CPC S$4.00) · corporate event emcee singapore (250) · corporate emcee (100) · awards ceremony emcee (70). Ahrefs Singapore, 24 Oct 2026. |
 | Owned by other pages | conference emcee (250) → /conference-emcee · annual dinner emcee (500/mo, the biggest term found) → /dinner-and-dance-emcee · roadshow emcee → /roadshow-emcee · product launch event terms → /product-launch-events · bilingual emcee singapore → /emcee. This page links to each and does not compete for them. |
 | SEO title | Corporate Emcee Singapore \| Bilingual Event Emcee & Host  (56 characters) |
-| Meta description | Bilingual corporate emcee in Singapore from S$888. Award nights, annual dinners, launches and company events hosted on time in English and Mandarin. Get a quote. |
+| Meta description | Bilingual corporate emcee in Singapore. Award nights, annual dinners, launches and company events hosted on time in English and Mandarin. Get a quote. |
 | URL | Keep /corporate-emcee |
 | H1 | A corporate emcee in Singapore who guarantees the fun.  One H1 only. |
 | H2 structure | More than reading a script · Corporate events we host · Award ceremony emcee in Singapore · How a corporate booking works · Recent company events, hosted by De Zhong · Two languages, one programme · What shapes your corporate emcee quote · Add more to your event · Why companies book De Zhong · Brands and organisations we have worked with · What clients say · Please read before booking · Corporate emcee questions · Get your quote · Your programme, held together from welcome to thank-you |
@@ -484,12 +484,12 @@ Real event photos only. WebP or AVIF, compressed.
 
 ## Most important message
 
-From S$888, a bilingual corporate emcee who reviews your programme with you and keeps it on time. Send your brief for a written quote.
+A bilingual corporate emcee who reviews your programme with you and keeps it on time. Send your brief for a written quote.
 
 ## Client to confirm before launch
 
-- The S$888–1,888 range
-- Deposit and cancellation terms
+- The wording of the corporate price line (dinners and award nights from S$2,800, roadshows from S$250 an hour, confirmed 5 Nov 2026)
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)
 - Rehearsal and bilingual-script pricing (shown as add-ons)
 - Review labels, and a corporate-event review if one exists
 - Photos for the two case-study cards

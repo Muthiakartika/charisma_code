@@ -27,8 +27,6 @@ An influencer marketing agency in Singapore for campaign and content strategy, K
 
 **Button:** `WHATSAPP DE ZHONG` → https://wa.me/6594378083 (pre-filled message)
 
-**Button:** `SEE THE SOMA LAUNCH` → #case-study
-
 ## Section 2 — What we do
 
 **H2 ·** Influencer marketing and KOL campaigns
@@ -104,14 +102,14 @@ Made by a creator who also hosts on stage, so the content feels natural on camer
 
 **H2 ·** Creator and KOL engagement
 
-Creators and talents chosen to reflect your brand, briefed properly and coordinated end to end, as for the SOMA Fragrances launch.
+Creators and talents chosen to reflect your brand, briefed properly and coordinated end to end.
 
 We handle the briefs, the schedule and the day itself, so your team can focus on the brand.
 
 - ✓ Creators matched to your brand
 - ✓ Clear briefs
 - ✓ Coordinated end to end
-- ✓ As for SOMA Fragrances
+- ✓ From invited guests to paid influencers
 
 ## Section 7 — Concepts
 
@@ -228,7 +226,7 @@ A clear plan before anyone films anything.
 
 **H3 ·** On-brand talent
 
-Creators chosen to fit your identity, as for SOMA Fragrances.
+Creators chosen to fit your identity.
 
 **H3 ·** Trends with judgement
 
@@ -266,11 +264,15 @@ Sponsored posts are labelled as paid partnerships, in line with Singapore's adve
 
 **Content usage**
 
-> **Note:** Client to confirm how long and where brands may use creator content, and who owns the edits.
+How long and where your brand may use creator content is agreed for each campaign, usually for 1 month to 1 year.
 
-**Deposit and cancellation**
+> **Note:** Client 5 Nov 2026: "tailor fit. depends on discussion, but loading [licensing] period ranges from 1 month to 1 year usually." Who owns the edits is still open.
 
-> **Note:** Client to confirm deposit and cancellation terms.
+**Deposit and payment**
+
+A 50% deposit confirms your booking and the balance is paid on the event day. PayNow is preferred.
+
+> **Note:** Cancellation terms still to confirm with the client.
 
 **Button:** `ASK US ANYTHING ON WHATSAPP` → https://wa.me/6594378083
 
@@ -284,7 +286,7 @@ It depends on the number of creators, content pieces and events. Every campaign 
 
 **H3 ·** Do you work with KOLs and micro-influencers?
 
-Yes. We match creators and talents to your brand, from invited guests to paid influencers, as for the SOMA Fragrances launch.
+Yes. We match creators and talents to your brand, from invited guests to paid influencers.
 
 **H3 ·** Can you create the content yourselves?
 
@@ -304,7 +306,7 @@ Yes. Paid partnerships are labelled, in line with Singapore's advertising guidel
 
 **H3 ·** Who owns the content?
 
-> **Note:** Client to confirm.
+Usage rights are agreed for each campaign, in your quotation. Brands usually license creator content for 1 month to 1 year.
 
 **H3 ·** Will we receive a proposal?
 
@@ -312,7 +314,7 @@ Yes. You receive a plan with creators, content and events quoted line by line.
 
 **H3 ·** Do you take a deposit?
 
-> **Note:** Client to confirm deposit and cancellation terms.
+Yes. A 50% deposit confirms your booking, and the balance is paid on the event day. PayNow is preferred.
 
 **Button:** `ASK A QUESTION ON WHATSAPP` → https://wa.me/6594378083
 
@@ -409,6 +411,6 @@ Strategy, creators, content and launch day from one team, so your campaign says 
 
 - Whether to show a campaign from-price
 - What the client receives after a campaign
-- Content usage rights and ownership
+- Who owns the edited content, and what the client receives at the end (usage period confirmed: usually 1 month to 1 year)
 - A campaign testimonial
-- Deposit and cancellation terms
+- Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)
