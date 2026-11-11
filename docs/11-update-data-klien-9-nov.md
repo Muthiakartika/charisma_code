@@ -112,7 +112,7 @@ Studi kasus belum bisa ditulis: checklist (brief, apa yang dikerjakan, hasil, 5â
 
 ## B. Ambigu: perlu ditanyakan ke klien
 
-> **Versi terbaru untuk klien (10 Nov 2026):** 51 pertanyaan bernomor, sudah disesuaikan dengan yang diterapkan, di halaman https://claude.ai/artifact/4zZxqT54kjW5Rq6zTRUgmT (privat sampai dibagikan lewat menu Share). Daftar di bawah ini versi 9 Nov.
+> **Versi terbaru untuk klien (10 Nov 2026):** Google Sheet "Open Questions - 10 Nov" di folder Drive yang sama dengan workbook sebelumnya: https://docs.google.com/spreadsheets/d/1YQNuv3tQmxk7CKNJ1afQg61oRmlfHDsycURIqYVrOF8/edit (tab "Open questions": 50 pertanyaan bernomor dengan kolom jawaban, semuanya "When you can"; tab "What changed": 27 perubahan). Atas permintaan user, item versi Mandarin tidak dimasukkan dan label "Before launch" diganti "When you can" (diubah langsung di sheet oleh user, 10 Nov). Halaman web https://claude.ai/artifact/4zZxqT54kjW5Rq6zTRUgmT adalah versi lama (51 item), jangan dipakai. Daftar di bawah ini versi 9 Nov.
 
 Daftar di bawah dalam bahasa Inggris supaya bisa langsung dikirim ke De Zhong. Urutannya dari yang paling menghambat update harga.
 
