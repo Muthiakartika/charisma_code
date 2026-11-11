@@ -13,6 +13,8 @@ import fs from 'fs'
 import path from 'path'
 import type { Payload } from 'payload'
 
+import { retiredPostSlugs } from '../lib/legacy-redirects'
+
 import { decodeEntities, downloadToCache, htmlToLexical, importImage, seedContext, upsert } from './helpers'
 import { seedFileName } from './media'
 
@@ -164,7 +166,8 @@ export async function importWordPressPosts(payload: Payload, { onlyMissing = fal
         image: coverImage,
       },
       reviewStatus: 'needs-client-review',
-      _status: 'published',
+      // Posts the blog plan retired (11 Nov 2026) are kept as unpublished drafts
+      _status: retiredPostSlugs.has(slug) ? 'draft' : 'published',
     })
     imported += 1
     log(`✓ ${slug}`)

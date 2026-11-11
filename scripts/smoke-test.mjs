@@ -15,7 +15,9 @@ const check = (name, pass, detail = '') => results.push({ check: name, pass, det
 
 // ── 1. Legacy redirects (parsed from src/lib/legacy-redirects.ts) ──────────
 const source = fs.readFileSync(new URL('../src/lib/legacy-redirects.ts', import.meta.url), 'utf8')
-const pairs = [...source.matchAll(/^\s+"([^"]+)": "([^"]+)",$/gm)].map((match) => [match[1], match[2]])
+// Entries look like '/old': '/new', (Prettier may put the target on the next line)
+const pairs = [...source.matchAll(/^\s+'(\/[^']*)':\s+'([^']+)',$/gm)].map((match) => [match[1], match[2]])
+check('redirect list read', pairs.length > 100, `${pairs.length} redirects`)
 
 const encodePath = (path) => path.split('/').map((part) => encodeURIComponent(part)).join('/')
 
@@ -76,6 +78,8 @@ for (const [from, to] of [
   const html = await (await fetch(`${BASE}/corporate-team-building`)).text()
   check('canonical tag', /<link rel="canonical" href="[^"]+\/corporate-team-building"/.test(html))
   check('hreflang en-SG', /hreflang="en-SG"/i.test(html))
+  // Hidden for the launch (go-live changes, 11 Nov 2026); flip this check when Chinese goes live
+  check('no hreflang zh-SG', !/hreflang="zh-SG"/i.test(html))
   check('one <h1>', (html.match(/<h1[\s>]/g) ?? []).length === 1, `${(html.match(/<h1[\s>]/g) ?? []).length} found`)
   check('meta description', /<meta name="description" content="[^"]{50,}"/.test(html))
   check('BreadcrumbList JSON-LD', html.includes('"BreadcrumbList"'))

@@ -2,7 +2,7 @@
  * Articles in one category, e.g. /insights/category/team-building
  * Categories are managed in CMS → Insights (Blog) → Categories.
  */
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 
 import { PostCard } from '@/components/insights/PostCard'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
@@ -10,7 +10,7 @@ import { toLocale } from '@/components/layout/CmsPage'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { getDictionary } from '@/i18n/dictionaries'
 import { findPublished, getSiteSettings } from '@/lib/cms'
-import { categoryPath } from '@/lib/paths'
+import { categoryPath, localizePath } from '@/lib/paths'
 import { breadcrumbSchema, buildMetadata, type Crumb } from '@/lib/seo'
 
 const getCategory = async (slug: string, locale: ReturnType<typeof toLocale>) =>
@@ -29,6 +29,8 @@ export default async function CategoryPage({ params }: PageProps<'/[locale]/insi
     sort: '-publishedAt',
     limit: 60,
   })
+  // A category without articles (most of them since the blog plan of 11 Nov 2026) goes to /insights
+  if (!posts.length) permanentRedirect(localizePath('/insights', locale))
   const crumbs: Crumb[] = [
     { name: dict.common.home, path: '/' },
     { name: dict.insights.title, path: '/insights' },

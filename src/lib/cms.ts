@@ -154,3 +154,16 @@ export const findPublished = async <T extends keyof Config['collections']>(
   })
   return result.docs
 }
+
+/**
+ * Ids of the categories that hold at least one published article. Empty categories are hidden
+ * from the category links and the sitemap, and their page redirects to /insights (blog plan, 11 Nov 2026).
+ */
+export const categoriesWithPosts = async (locale: Locale) => {
+  const posts = await findPublished('posts', { locale, limit: 1000, depth: 0 })
+  return new Set(
+    posts.flatMap((post) =>
+      (post.categories ?? []).map((category) => (typeof category === 'object' ? category.id : category)),
+    ),
+  )
+}

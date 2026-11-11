@@ -3,7 +3,7 @@ import Link from 'next/link'
 import type { Where } from 'payload'
 
 import { PostCard } from '@/components/insights/PostCard'
-import { findPublished } from '@/lib/cms'
+import { categoriesWithPosts, findPublished } from '@/lib/cms'
 import { categoryPath, localizePath } from '@/lib/paths'
 import type { PostArchiveBlock as PostArchiveData } from '@/payload-types'
 
@@ -14,10 +14,13 @@ export async function PostArchiveBlock({ block, context }: { block: PostArchiveD
   const categoryId = block.category && typeof block.category === 'object' ? block.category.id : block.category
   const where: Where | undefined = categoryId ? { categories: { in: [categoryId] } } : undefined
 
-  const [posts, categories] = await Promise.all([
+  const [posts, allCategories, inUse] = await Promise.all([
     findPublished('posts', { locale, where, sort: '-publishedAt', limit: block.limit ?? 12 }),
     block.showCategoryLinks ? findPublished('categories', { locale, sort: 'order', depth: 0 }) : Promise.resolve([]),
+    block.showCategoryLinks ? categoriesWithPosts(locale) : Promise.resolve(new Set<number>()),
   ])
+  // Only categories that still hold an article
+  const categories = allCategories.filter((category) => inUse.has(category.id))
   const titleId = headingId(block)
 
   return (
