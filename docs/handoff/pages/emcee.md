@@ -93,7 +93,7 @@ Ministries, statutory boards, grassroots and charity events, hosted with the rig
 
 **H3 ·** School, kids and family events
 
-**Price line:** From S$588
+**Price line:** Quoted
 
 Assemblies, speech days and family days, pitched to the age of the audience.
 
@@ -221,15 +221,15 @@ It depends on the occasion, the length of the programme and what is included. Th
 | Roadshows | S$250 | per hour, minimum S$600 | /roadshow-emcee |
 | Government & community | S$300 | per hour, minimum S$600 | /government-community-emcee |
 | Conferences | S$350 | per hour, minimum S$1,000 | /conference-emcee |
-| School & family events | S$588 | per event | /school-family-emcee |
 | Weddings | S$988 | up to 4 hours | /wedding-emcee |
 | Corporate dinners and award nights | S$2,800 | up to 4 hours | /corporate-emcee |
 | Dinner and dance | S$2,800 | up to 4 hours | /dinner-and-dance-emcee |
 | Chinese New Year dinners | S$2,800 | up to 4 hours | /chinese-new-year-emcee |
+| School & family events | Quoted | per event | /school-family-emcee |
 
 **Add-ons on any booking:** a longer music set, bilingual scripts, rehearsals, and a DJ or sound system.
 
-> **Note:** Confirmed by the client on 5 Nov 2026, except school and family events (placeholder).
+> **Note:** Confirmed by the client on 5 Nov 2026. School and family events show "Quoted" (go-live changes, 11 Nov 2026).
 
 **Button:** `SEE ALL RATES` → /rates
 

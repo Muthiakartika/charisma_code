@@ -1,6 +1,6 @@
 # Corporate Workshops — page copy and build brief
 
-_The Charisma Code  ·  /corporate-workshops  ·  wave 1 draft 24 Oct 2026  ·  page type: QUOTE-LED with one fixed price (1-to-1 coaching), following copy/page-brief-patterns.md_
+_The Charisma Code  ·  /corporate-workshops  ·  wave 1 draft 24 Oct 2026  ·  page type: QUOTE-LED (1-to-1 coaching quoted too since the go-live changes, 11 Nov 2026), following copy/page-brief-patterns.md_
 
 Source: `copy/corporate-workshops.json` (same content as `copy/corporate-workshops.docx`).
 
@@ -131,7 +131,7 @@ Run it as a standalone workshop or as one module in a modular programme.
 
 **H3 ·** 1-to-1 coaching
 
-**Price line:** From S$120 per session
+**Price line:** 1-to-1 coaching for team leads, quoted
 
 **Ideal for:** team leads and presenters who want personal feedback before a big talk, pitch or new role.
 
@@ -299,7 +299,7 @@ Yes. Pairing a workshop with a team activity means ideas are practised together 
 
 **H3 ·** Do you offer public speaking training for individuals?
 
-Yes, through 1-to-1 communication coaching from S$120 per session.
+Yes, through 1-to-1 communication coaching for team leads and presenters, quoted for your goal.
 
 **H3 ·** Will everyone have to present?
 
@@ -361,7 +361,7 @@ Send your brief and we will suggest a topic and format, with a written quotation
 | URL | Keep /corporate-workshops |
 | H1 | Corporate workshops people actually take part in.  One H1 only. |
 | H2 structure | Corporate workshop topics · Communication skills that stick · Collaboration and team dynamics · Presenting with confidence at work · Employee engagement, with every voice heard · Choose a format that fits your team · How we design your workshop · Professional, practical facilitation · Teams we work with · Workshops in practice · How workshop pricing works · Please read before booking · Questions about our workshops · Plan a workshop · Give your team a session they will actually use |
-| Schema | Service (serviceType "Corporate workshop", areaServed Singapore). Offer only for 1-to-1 coaching (S$120) until a corporate price is published. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Corporate workshop", areaServed Singapore). No Offer until a price is published. FAQPage only if it still meets Google's rules. |
 | Internal links | /communication-coaching, /corporate-team-building, /rates, /our-work, /kids-youth-programs (for school programmes). |
 
 ## Page layout instructions
@@ -397,7 +397,7 @@ Real workshop photos only; the board still has four "Photo needed" placeholders.
 
 ## Most important message
 
-Practical workshops your team takes part in, adapted to your company and quoted for your group, with 1-to-1 coaching from S$120.
+Practical workshops your team takes part in, adapted to your company and quoted for your group, with 1-to-1 coaching for team leads.
 
 ## Client to confirm before launch
 

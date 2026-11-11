@@ -1,7 +1,7 @@
 import { Bullet } from '@/components/ui/Bullet'
 import { ButtonLink } from '@/components/ui/ButtonLink'
 import { CmsImage } from '@/components/ui/CmsImage'
-import { HighlightText, Paragraphs } from '@/components/ui/HighlightText'
+import { HighlightText } from '@/components/ui/HighlightText'
 import { resolveLink } from '@/lib/links'
 import type { Media, TextImageBlock as TextImageData } from '@/payload-types'
 
@@ -14,6 +14,23 @@ import {
   SectionButtons,
   type BlockContext,
 } from './shared'
+
+/** The body text, one <p> per blank-line paragraph; words written as [label](/path) become links. */
+function BodyText({ text, locale }: { text: string; locale: BlockContext['locale'] }) {
+  return (
+    <>
+      {text
+        .split(/\n\s*\n/)
+        .map((paragraph) => paragraph.trim())
+        .filter(Boolean)
+        .map((paragraph, index) => (
+          <p key={index}>
+            <InlineLinks text={paragraph} locale={locale} />
+          </p>
+        ))}
+    </>
+  )
+}
 
 /** A simple price or comparison table written in the CMS as "cell | cell" lines (first line = header). */
 function SimpleTable({ text, locale }: { text: string; locale: BlockContext['locale'] }) {
@@ -89,7 +106,7 @@ export function TextImageBlock({
       <PriceLine text={block.priceLine} locale={locale} className="mt-5 text-xl text-accent" />
       {block.body && (
         <div className={`mt-6 space-y-4 ${muted}`}>
-          <Paragraphs text={block.body} />
+          <BodyText text={block.body} locale={locale} />
         </div>
       )}
     </>
@@ -123,7 +140,7 @@ export function TextImageBlock({
           <SimpleTable text={block.table} locale={locale} />
           {block.body && (
             <div className={`mt-6 max-w-3xl space-y-3 text-[0.95rem] ${muted}`}>
-              <Paragraphs text={block.body} />
+              <BodyText text={block.body} locale={locale} />
             </div>
           )}
           {actions}
@@ -151,7 +168,7 @@ export function TextImageBlock({
               </h2>
               {block.body && (
                 <div className={`mt-5 space-y-4 ${muted}`}>
-                  <Paragraphs text={block.body} />
+                  <BodyText text={block.body} locale={locale} />
                 </div>
               )}
             </div>
@@ -208,7 +225,7 @@ export function TextImageBlock({
             />
             {block.body && (
               <div className={`mt-6 space-y-4 ${muted}`}>
-                <Paragraphs text={block.body} />
+                <BodyText text={block.body} locale={locale} />
               </div>
             )}
             {actions}
@@ -270,7 +287,7 @@ export function TextImageBlock({
               />
               {block.body && (
                 <div className={`lead space-y-4 ${muted}`}>
-                  <Paragraphs text={block.body} />
+                  <BodyText text={block.body} locale={locale} />
                 </div>
               )}
               {actions}

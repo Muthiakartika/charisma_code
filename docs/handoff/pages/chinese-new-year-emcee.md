@@ -8,7 +8,7 @@ Source: `copy/chinese-new-year-emcee.json` (same content as `copy/chinese-new-ye
 
 > _Search note (Ahrefs Singapore, 24 Oct 2026): "cny emcee", "chinese new year emcee" and "lunar new year emcee" are about 10 searches a month each. The real demand is lo hei: "lohei" 2,400, "lohei phrases" 450, "lohei singapore" 400, "lohei sayings" and "lohei words" 100 each, all KD 0–1. This brief adds a short lo hei section; a fuller lo hei phrases article on /insights should link here._
 
-> _URL: /chinese-new-year-emcee (keep the existing URL)  ·  page type: packages (three proposed tiers inside the approved S$888–2,888 range)_
+> _URL: /chinese-new-year-emcee (keep the existing URL)  ·  page type: one package (Dinner Emcee from S$2,800) with quoted extras, go-live changes 11 Nov 2026_
 
 ## Section 1 — Hero
 
@@ -51,11 +51,11 @@ Games, banter and lucky draws that build the excitement toward the grand prize.
 
 ## Section 3 — Packages
 
-**H2 ·** Choose your CNY package
+**H2 ·** Your Chinese New Year emcee package
 
-Three clear packages for a company Chinese New Year dinner.
+One clear package for a company Chinese New Year dinner, with festive extras quoted for your programme.
 
-> **Note:** Client 5 Nov 2026: Dinner Emcee is the same rate as a D&D, from S$2,800 direct to client, emcee only, booked as a block of up to 4 hours, DJ and sound system extra. The other two packages show "Quoted" until the client confirms whether to keep three packages and their prices.
+> **Note:** Client 5 Nov 2026: Dinner Emcee is the same rate as a D&D, from S$2,800 direct to client, emcee only, booked as a block of up to 4 hours, DJ and sound system extra. Go-live changes (11 Nov 2026): one package only; festive games and a full festive programme are quoted extras, not packages, and the "MOST POPULAR" badge is removed.
 
 **H3 ·** Dinner Emcee
 
@@ -77,71 +77,21 @@ Welcome, speeches, toasts and announcements hosted in English and Mandarin, kept
 
 **Button:** `BOOK DINNER EMCEE` → #quote, package pre-selected
 
-**H3 ·** Festive Games Host
-
-**Badge:** `MOST POPULAR`
+**H3 ·** Add to your dinner
 
 **Price line:** Quoted for your programme
 
-**Ideal for:** dinners that should feel like a party, with games every table joins.
+**Ideal for:** dinners that want more games, written scripts or live festive songs.
 
-Everything in the Dinner Emcee, plus games and stage segments planned with your committee, and lucky draws built for suspense.
+Each extra appears as its own line on your quotation.
 
-**H4 ·** What's included
+**H4 ·** Options
 
-- ✓ Everything in the Dinner Emcee
-- ✓ Table games planned with you
-- ✓ Stage games and banter
-- ✓ Lucky draws paced for suspense
-- ✓ Games explained in both languages
+- ✓ Festive games: table and stage games planned with your committee, with lucky draws paced for suspense
+- ✓ A full festive programme: bilingual scripts written for you, a rehearsal with speakers and AV, and live festive songs
+- ✓ A DJ or sound system
 
-**Hosting time: up to 4 hours**
-
-**Button:** `BOOK FESTIVE GAMES HOST` → #quote, package pre-selected
-
-**H3 ·** Full Festive Programme
-
-**Price line:** Quoted for your programme
-
-**Ideal for:** large dinners that want scripts, songs and rehearsal handled for them.
-
-Our most complete package: bilingual scripts written for your programme, a rehearsal with your team and festive songs performed live.
-
-**H4 ·** What's included
-
-- ✓ Everything in the Festive Games Host
-- ✓ Bilingual emcee scripts written
-- ✓ Rehearsal with speakers and AV
-- ✓ Live festive songs
-- ✓ Programme timed to the minute
-
-**Hosting time: up to 4 hours, plus rehearsal**
-
-**Button:** `BOOK FULL FESTIVE PROGRAMME` → #quote, package pre-selected
-
-## Section 4 — Which package
-
-**H2 ·** Which package suits your dinner?
-
-**H4 ·** Dinner Emcee — From S$2,800
-
-Choose this if your programme is set and you need a confident bilingual host to run it.
-
-**H4 ·** Festive Games Host — Quoted
-
-Choose this if you want games and draws that get every table involved.
-
-**H4 ·** Full Festive Programme — Quoted
-
-Choose this for a large dinner where scripts, rehearsal and live songs are handled for you.
-
-**Not sure which one fits?**
-
-Send your date, venue and guest count on WhatsApp and De Zhong will suggest the right package.
-
-**Button:** `WHATSAPP US` → https://wa.me/6594378083
-
-**Button:** `CHECK MY DATE` → #quote
+**Button:** `ASK ABOUT EXTRAS` → https://wa.me/6594378083
 
 ## Section 5 — Every table
 
@@ -261,13 +211,14 @@ Logo strip (existing): Youth Olympic Games, Singapore Sports Council, People's A
 
 **H2 ·** Chinese New Year emcee prices
 
-| Package | From | Games | Scripts and rehearsal |
-|---|---|---|---|
-| Dinner Emcee | S$2,800 | Lucky draw | Script review |
-| Festive Games Host | Quoted | Table and stage games | Script review |
-| Full Festive Programme | Quoted | Games and live songs | Written + rehearsal |
+| What | Price | Notes |
+|---|---|---|
+| Dinner Emcee | From S$2,800 | Up to 4 hours, with lo hei, lucky draw and script review |
+| Festive games | Quoted | Table and stage games planned with your committee |
+| Full festive programme | Quoted | Written bilingual scripts, rehearsal and live songs |
+| DJ or sound system | Quoted | Ask when you enquire |
 
-**Prices are starting prices for a block of up to 4 hours in Singapore. A DJ or sound system is quoted separately.**
+**The Dinner Emcee is a starting price for a block of up to 4 hours in Singapore. Extras are quoted for your programme.**
 
 Longer programmes, extra events and peak dates can change the final figure. You will always receive a written quotation before you book.
 
@@ -315,7 +266,7 @@ A 50% deposit confirms your date and the balance is paid on the event day. PayNo
 
 **H3 ·** How much does a Chinese New Year emcee cost?
 
-From S$2,800 for the Dinner Emcee, for a block of up to 4 hours. The Festive Games Host and the Full Festive Programme are quoted for your programme, and a DJ or sound system is quoted separately. You receive a written quotation for your date and venue.
+From S$2,800 for the Dinner Emcee, for a block of up to 4 hours. Festive games, a full festive programme and a DJ or sound system are quoted extras. You receive a written quotation for your date and venue.
 
 **H3 ·** Can you lead the lo hei?
 
@@ -323,7 +274,7 @@ Yes. De Zhong leads it from the stage, with each auspicious phrase in Mandarin a
 
 **H3 ·** Do you host in English and Mandarin?
 
-Yes. Every package is bilingual, and De Zhong switches naturally without repeating everything twice.
+Yes. Every dinner is hosted in both languages, and De Zhong switches naturally without repeating everything twice.
 
 **H3 ·** Can you plan the games and lucky draws?
 
@@ -331,7 +282,7 @@ Yes. Games and draw moments are planned with your committee to suit your crowd, 
 
 **H3 ·** Can you sing at our dinner?
 
-Yes. Festive songs are part of the Full Festive Programme and can be added to other packages.
+Yes. Festive songs can be added to your dinner as a quoted extra.
 
 **H3 ·** When should we book?
 
@@ -362,7 +313,7 @@ Share your date, venue, headcount and the languages your guests speak, and we wi
 - Email* [EMAIL]
 - Phone / WhatsApp* [TEL]
 - Event date* [DATE / TEXT]
-- Package [RADIO]: Dinner Emcee / Festive Games Host / Full Festive Programme / not sure
+- Extras [CHECKBOXES]: festive games / full festive programme / DJ or sound system / not sure
 - Venue [TEXT]
 - Number of guests [DROPDOWN]: under 100 / 100–300 / 300–600 / over 600
 - Lo hei at the dinner? [RADIO]: yes / no / not sure
@@ -383,9 +334,7 @@ Send your date and headcount. We will confirm availability and send a quotation.
 
 **Dinner Emcee — From S$2,800**
 
-**Festive Games Host — Quoted**
-
-**Full Festive Programme — Quoted**
+**Festive extras — Quoted for your programme**
 
 **Button:** `CHECK YOUR DATE` → #quote
 
@@ -405,9 +354,9 @@ Send your date and headcount. We will confirm availability and send a quotation.
 | Meta description | Bilingual emcee for company Chinese New Year dinners in Singapore. Lo hei, games and lucky draws hosted in English and Mandarin, from S$2,800.  (142 characters) |
 | URL | Keep /chinese-new-year-emcee |
 | H1 | A bilingual emcee for your Chinese New Year dinner.  One H1 only. |
-| H2 structure | Why a bilingual host matters at Chinese New Year · Choose your CNY package · Which package suits your dinner? · Every table included, whatever the language · Natural switching between English and Mandarin · Festive energy from the first toast · Leading the lo hei · Planning your Chinese New Year dinner · One host, two languages, one celebration · Brands and organisations we have worked with · What clients say · Chinese New Year emcee prices · Please read before booking · Chinese New Year emcee questions · Check your Chinese New Year date · Start the new year together, every table included |
+| H2 structure | Why a bilingual host matters at Chinese New Year · Your Chinese New Year emcee package · Every table included, whatever the language · Natural switching between English and Mandarin · Festive energy from the first toast · Leading the lo hei · Planning your Chinese New Year dinner · One host, two languages, one celebration · Brands and organisations we have worked with · What clients say · Chinese New Year emcee prices · Please read before booking · Chinese New Year emcee questions · Check your Chinese New Year date · Start the new year together, every table included |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Chinese New Year emcee", areaServed Singapore) with an Offer per package while the prices show. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Chinese New Year emcee", areaServed Singapore) with one Offer (Dinner Emcee from 2,800 SGD). FAQPage only if it still meets Google's rules. |
 | Internal links | /dinner-and-dance-emcee, /dinner-and-dance-planning, /event-support, /rates, a future /insights lo hei phrases article, /emcee (breadcrumb). |
 
 ## Page layout instructions
@@ -448,9 +397,8 @@ One bilingual host for your CNY dinner: lo hei, games and draws every table join
 
 ## Client to confirm before launch
 
-- Whether to keep three packages, and the prices of the Festive Games Host and the Full Festive Programme (Dinner Emcee confirmed from S$2,800, 5 Nov 2026)
+- Prices for the festive extras, if he wants them published (Dinner Emcee confirmed from S$2,800, 5 Nov 2026; one package since 11 Nov 2026)
 - The lo hei phrases and that De Zhong leads the lo hei
-- Which package is most booked (the badge)
 - A CNY-dinner review
 - Whether to use a red-and-gold festive accent
 - Cancellation terms (deposit confirmed: 50% on confirmation, 50% on the day)

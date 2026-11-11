@@ -6,13 +6,13 @@ Source: `copy/communication-coaching.json` (same content as `copy/communication-
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> _URL: /communication-coaching (keep the existing URL)  ·  page type: fixed price (S$120 per one-to-one session, the client's published price)_
+> _URL: /communication-coaching (keep the existing URL)  ·  page type: quoted (the S$120 per session figure was removed in the go-live changes, 11 Nov 2026; the public speaking course is not offered yet)_
 
 ## Section 1 — Hero
 
 **H1 ·** Public speaking coaching for confident leaders.
 
-Public speaking, presentation skills and stage presence coaching from a professional emcee and educator. Take it one-to-one, as a public speaking course, or as a public speaking workshop for your team.
+Public speaking, presentation skills and stage presence coaching from a professional emcee and educator. Take it one-to-one, or as a public speaking workshop for your team.
 
 - ✓ **Coached by a working emcee**
 - ✓ **Rehearse your real talk**
@@ -21,7 +21,7 @@ Public speaking, presentation skills and stage presence coaching from a professi
 - ✓ **For keynotes, pitches and interviews**
 - ✓ **Over 15 years on stage**
 
-**Price line:** S$120 per one-to-one session
+**Price line:** One-to-one coaching, quoted for your goal
 
 **Button:** `BOOK A CONSULTATION` → #enquiry
 
@@ -29,7 +29,7 @@ Public speaking, presentation skills and stage presence coaching from a professi
 
 **Button:** `SEE WHAT WE COACH` → #topics
 
-> **Note:** S$120 per session is the price published on the client's previous site; client to re-confirm it, and the length of a session.
+> **Note:** No price shown (go-live changes, 11 Nov 2026). Client to confirm the price per session and the length of a session.
 
 ## Section 2 — Ways to learn
 
@@ -37,19 +37,11 @@ Public speaking, presentation skills and stage presence coaching from a professi
 
 **H3 ·** One-to-one coaching
 
-**Price line:** S$120 per session
+**Price line:** Quoted
 
 **Ideal for:** a keynote, pitch, interview or first time hosting, with sessions built around your own material.
 
 **Button:** `BOOK A SESSION` → #enquiry (format: one-to-one)
-
-**H3 ·** Public speaking course
-
-**Ideal for:** people who want to build the skill over several sessions, with practice between them.
-
-> **Note:** Client to confirm: is the course run for groups of individuals, how many sessions, and its price.
-
-**Button:** `ASK ABOUT THE COURSE` → #enquiry (format: course)
 
 **H3 ·** Workshop for your team
 
@@ -59,7 +51,7 @@ Public speaking, presentation skills and stage presence coaching from a professi
 
 ## Section 3 — Topics
 
-**H2 ·** What our public speaking course covers
+**H2 ·** What coaching covers
 
 **H3 ·** Public speaking ↓
 
@@ -89,14 +81,14 @@ Practical techniques from a professional emcee.
 
 **H2 ·** Public speaking coaching in Singapore
 
-How to structure a talk, open strongly and land your message. You rehearse with De Zhong and get immediate, specific feedback, one-to-one or as part of a course.
+How to structure a talk, open strongly and land your message. You rehearse with De Zhong and get immediate, specific feedback, one-to-one or with your team.
 
 Bring a real talk you have coming up, and leave with it ready.
 
 - ✓ Openings that grab attention
 - ✓ A clear structure
 - ✓ Rehearsal with live feedback
-- ✓ One-to-one or in a course
+- ✓ One-to-one or with your team
 
 ## Section 5 — Confidence
 
@@ -241,14 +233,13 @@ The idea the business is built on: anyone can learn it.
 
 **H2 ·** Coaching prices
 
-**Price line:** S$120 per one-to-one session
+**Price line:** Quoted for your goal
 
-One-to-one coaching is a fixed price per session. Courses and team workshops are quoted.
+One-to-one coaching and team workshops are quoted for what you need.
 
 **H4 ·** What affects the quotation
 
 - One-to-one: the number of sessions you book
-- Course: the number of sessions and participants
 - Team workshop: group size, length and topics
 
 > **Note:** Client to confirm: session length, whether session bundles are offered, and whether sessions can be online.
@@ -293,7 +284,7 @@ A 50% deposit confirms your booking and the balance is paid on the event day. Pa
 
 **H3 ·** How much does public speaking coaching cost?
 
-One-to-one coaching is S$120 per session. Courses and team workshops are quoted.
+One-to-one coaching and team workshops are quoted for what you need: the number of sessions, and for a team the group size, length and topics.
 
 **H3 ·** How many sessions will I need?
 
@@ -341,7 +332,7 @@ Tell us what you are preparing for and how you would like to grow as a speaker.
 - Phone / WhatsApp* [TEL]
 - What are you preparing for? [RADIO]: a keynote or talk / a pitch / an interview / hosting an event / general confidence / other
 - When is it? [DATE / TEXT]
-- Format [RADIO]: one-to-one / course / team workshop
+- Format [RADIO]: one-to-one / team workshop
 - Language [RADIO]: English / Mandarin
 - Anything else we should know [TEXT AREA]
 - Consent to be contacted about this enquiry* [CHECKBOX]
@@ -356,7 +347,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Tell us your goal and your date. We will suggest a plan.
 
-**One-to-one coaching — S$120 per session**
+**One-to-one coaching — Quoted**
 
 **Button:** `BOOK A CONSULTATION` → #enquiry
 
@@ -371,14 +362,14 @@ Tell us your goal and your date. We will suggest a plan.
 |---|---|
 | Primary keyword | public speaking course singapore (300/mo, KD 23) |
 | Secondary keywords | communication skills course singapore (150, KD 3) · public speaking coach singapore (100) · presentation skills course singapore (70, KD 0) · presentation skills training singapore (60, KD 0) · public speaking class singapore (60) · public speaking workshop singapore (30). Ahrefs Singapore, 24 Oct 2026. |
-| Owned by other pages | corporate workshop terms → /corporate-workshops · public speaking for kids → /kids-youth-programs. This page owns the course and coaching terms (decided 24 Oct 2026). |
-| SEO title | Public Speaking Course Singapore \| 1-to-1 Coaching from S$120  (61 characters) |
-| Meta description | Public speaking and presentation coaching in Singapore from a working emcee. One-to-one sessions from S$120, courses and team workshops.  (136 characters) |
+| Owned by other pages | corporate workshop terms → /corporate-workshops · public speaking for kids → /kids-youth-programs. This page owns the course and coaching terms (decided 24 Oct 2026); no course is offered yet (go-live changes, 11 Nov 2026). |
+| SEO title | Public Speaking Coaching Singapore \| One-to-One and Teams  (57 characters) |
+| Meta description | Public speaking and presentation coaching in Singapore from a working emcee. One-to-one sessions and team workshops, quoted for what you need.  (142 characters) |
 | URL | Keep /communication-coaching |
 | H1 | Public speaking coaching for confident leaders.  One H1 only. |
-| H2 structure | Choose how you want to learn · What our public speaking course covers · Public speaking coaching in Singapore · Confidence for nervous speakers · Presentations that flow · Owning the stage · Clearer everyday communication · Hosting your first company event · Individual and corporate coaching · How coaching works · Why learn from De Zhong · Coaching prices · Please read before booking · Coaching questions · Start with a conversation · Walk into your next talk ready |
+| H2 structure | Choose how you want to learn · What coaching covers · Public speaking coaching in Singapore · Confidence for nervous speakers · Presentations that flow · Owning the stage · Clearer everyday communication · Hosting your first company event · Individual and corporate coaching · How coaching works · Why learn from De Zhong · Coaching prices · Please read before booking · Coaching questions · Start with a conversation · Walk into your next talk ready |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Public speaking coaching", areaServed Singapore) with an Offer 120 SGD per session (published price). Course schema only if a course with dates and price is published. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Public speaking coaching", areaServed Singapore) with no Offer while coaching is quoted. Course schema only if a course with dates and price is published. FAQPage only if it still meets Google's rules. |
 | Internal links | /corporate-workshops, /kids-youth-programs, /rates, /about. |
 
 ## Page layout instructions
@@ -415,11 +406,11 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-Coaching from a working emcee on the talk you actually have to give, from S$120 a session.
+Coaching from a working emcee on the talk you actually have to give.
 
 ## Client to confirm before launch
 
-- S$120 per session, and the session length
+- The price per session, and the session length
 - The public speaking course: format, sessions and price
 - Coaching in Mandarin
 - Online sessions and where in-person sessions happen

@@ -132,25 +132,16 @@ We coordinate people, places and timelines on the ground, so online content and 
 
 From the launch event to the last post, one team keeps it running.
 
+Example: [talent and influencer coordination for a fragrance launch, 2025](/our-work/soma-fragrances-brand-launch)
+
+> **Note:** Go-live changes (11 Nov 2026): the SOMA case study section (stats and photo) is replaced by the example line above, because the client wants less emphasis on SOMA. The case study page itself stays.
+
 - ✓ People, places and timelines
 - ✓ Online and live in sync
 - ✓ One team end to end
 - ✓ Launch day handled
 
 **Button:** `VIEW PRODUCT LAUNCH EVENTS` → /product-launch-events
-
-## Section 9 — Case study
-
-**H2 ·** Case study: SOMA Fragrances launch
-
-For SOMA's brand launch in August 2025, we secured three paid influencers and more than 20 invited talents, and coordinated their appearances across the media launch, in-store visits and gift packages, while keeping the campaign consistent with SOMA's bold, modern identity.
-
-- ✓ 3 paid influencers secured
-- ✓ More than 20 invited talents
-- ✓ Media launch, in-store visits and gift packages
-- ✓ Brand image and strategy support
-
-**Button:** `VIEW THE PROJECT` → /our-work/soma-fragrances-brand-launch
 
 ## Section 10 — How booking works
 
@@ -365,7 +356,7 @@ Send your brief and we will reply with routes and a quotation.
 | Meta description | Influencer and KOL campaigns in Singapore: strategy, creators, short-form content and launch events, planned and run by one team. Get a campaign quote.  (151 characters) |
 | URL | Keep /creative-campaigns |
 | H1 | Influencer campaigns people actually remember.  One H1 only. |
-| H2 structure | Influencer marketing and KOL campaigns · Strategy before production · Content strategy for brands · Short-form content creation · Creator and KOL engagement · Ideas people want to take part in · Execution on the ground · Case study: SOMA Fragrances launch · How a campaign comes together · How campaign pricing works · Why brands work with The Charisma Code · Please read before booking · Campaign questions · Talk to us about your campaign · Give people a reason to talk about your brand |
+| H2 structure | Influencer marketing and KOL campaigns · Strategy before production · Content strategy for brands · Short-form content creation · Creator and KOL engagement · Ideas people want to take part in · Execution on the ground · How a campaign comes together · How campaign pricing works · Why brands work with The Charisma Code · Please read before booking · Campaign questions · Talk to us about your campaign · Give people a reason to talk about your brand |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
 | Schema | Service (serviceType "Influencer marketing", areaServed Singapore). No Offer until a price is published. FAQPage only if it still meets Google's rules. |
 | Internal links | /product-launch-events, /our-work/soma-fragrances-brand-launch, /insights/trendjacking-in-content-strategy, /event-support, /rates. |

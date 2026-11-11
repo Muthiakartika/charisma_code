@@ -182,7 +182,7 @@ Campaigns, August 2025.
 
 **H2 ·** How pricing works
 
-Every event is quoted for your brief. Your proposal itemises venue, vendors and hosting, so you can see where the budget goes, and we recommend a plan that fits the budget range you share with us.
+Every event is quoted for your brief. Fully planned events usually start from around S$10,000. Your proposal itemises venue, vendors and hosting, so you can see where the budget goes, and we recommend a plan that fits the budget range you share with us.
 
 **H4 ·** What affects the quotation
 
@@ -192,7 +192,7 @@ Every event is quoted for your brief. Your proposal itemises venue, vendors and 
 - Vendors such as AV, photography, decor and crew
 - Hosting on the day
 
-> **Note:** Client to confirm: whether to show a planning from-price, or how the planning fee is charged (a fixed fee or a share of the event budget).
+> **Note:** "Fully planned events usually start from around S$10,000" is the client's own figure (go-live changes, 11 Nov 2026). Client to confirm how the planning fee is charged (a fixed fee or a share of the event budget).
 
 **Button:** `GET MY EVENT QUOTE` → #quote
 
@@ -284,7 +284,7 @@ A 50% deposit confirms your booking and the balance is paid on the event day. Pa
 
 **H3 ·** How much does a corporate event cost in Singapore?
 
-It depends on headcount, venue, programme and vendors. Share your budget range in the enquiry form and we will recommend a plan that fits it; every proposal itemises venue, vendors and hosting.
+It depends on headcount, venue, programme and vendors; fully planned events usually start from around S$10,000. Share your budget range in the enquiry form and we will recommend a plan that fits it; every proposal itemises venue, vendors and hosting.
 
 **H3 ·** What size of events do you plan?
 

@@ -6,9 +6,9 @@ Source: `copy/corporate-team-building.json` (same content as `copy/corporate-tea
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> **Note:** PRICE: "From S$88 per participant (S$88–128 for a 2–3 hour session)" is a placeholder. It was first worked out from S$388 on the wrong reading that S$388 bought a 10-hour module; S$388 is the 3-day youth camp. Client to give the real per-participant price.
+> **Note:** PRICE: shown as "Quoted for your group size and objectives" (go-live changes, 11 Nov 2026). The earlier "From S$88 per participant (S$88–128 for a 2–3 hour session)" was a placeholder from our proposal, not the client. It was first worked out from S$388 on the wrong reading that S$388 bought a 10-hour module; S$388 is the 3-day youth camp. Client to give the real per-participant price.
 
-> _URL: /corporate-team-building (keep the existing URL)  ·  page type: fixed price per participant (placeholder)_
+> _URL: /corporate-team-building (keep the existing URL)  ·  page type: quoted per group_
 
 ## Section 1 — Hero
 
@@ -23,7 +23,7 @@ Not games for the sake of games. Every activity ties back to what your organisat
 - ✓ **Your office, a hotel or a venue**
 - ✓ **Hosted by De Zhong**
 
-**Price line:** From S$88 per participant  ·  S$88–128 for a 2–3 hour session
+**Price line:** Quoted for your group size and objectives
 
 **Button:** `REQUEST A PROPOSAL` → #enquiry
 
@@ -270,9 +270,9 @@ Corporate Events, September 2026.
 
 **H2 ·** How team building activities are priced
 
-**Price line:** From S$88 per participant
+**Price line:** Quoted for your group size and objectives
 
-A 2–3 hour facilitated session usually falls between S$88 and S$128 per participant. Every proposal is quoted for your group, objectives and venue.
+Every proposal is quoted for your group, objectives and venue, so you only pay for the session your team needs.
 
 **H4 ·** What affects the quotation
 
@@ -282,7 +282,7 @@ A 2–3 hour facilitated session usually falls between S$88 and S$128 per partic
 - Props, materials and any venue costs
 - Hosting a company event around it
 
-> **Note:** PLACEHOLDER (S$88–128 per participant) with no published source. Client to give the real price, and any minimum group size.
+> **Note:** No price shown until the client gives the real per-participant price and any minimum group size.
 
 **Button:** `REQUEST A PROPOSAL` → #enquiry
 
@@ -352,7 +352,7 @@ A 50% deposit confirms your booking and the balance is paid on the event day. Pa
 
 **H3 ·** How much does corporate team building cost in Singapore?
 
-From S$88 per participant for a 2–3 hour facilitated session, usually up to S$128. Every proposal is quoted for your group, objectives and venue.
+Every session is quoted for your group size and objectives. The number of participants, the length of the session, the facilitators needed and any props or venue costs all shape the quotation.
 
 **H3 ·** How is your team building different from a standard activity package?
 
@@ -422,7 +422,7 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Tell us your objective and headcount. We will design the session and send a proposal.
 
-**Facilitated team building — From S$88 per participant**
+**Facilitated team building — Quoted for your group size and objectives**
 
 **Button:** `REQUEST A PROPOSAL` → #enquiry
 
@@ -439,7 +439,7 @@ Tell us your objective and headcount. We will design the session and send a prop
 | Secondary keywords | team building activities singapore (900, KD 21) · team building singapore (350, KD 30) · corporate team building singapore (250, KD 23). Ahrefs Singapore, 24 Oct 2026. This is the largest search cluster on any service page. |
 | Owned by other pages | corporate workshop terms → /corporate-workshops. |
 | SEO title | Team Bonding Activities Singapore \| Corporate Team Building  (59 characters) |
-| Meta description | Facilitated team bonding and team building activities in Singapore, in English and Mandarin. Built around your objectives, from S$88 per participant.  (149 characters) |
+| Meta description | Facilitated team bonding and team building activities in Singapore, in English and Mandarin. Built around your objectives and quoted for your group.  (148 characters) |
 | URL | Keep /corporate-team-building |
 | H1 | Corporate team building that's genuinely fun, and actually works.  One H1 only. |
 | H2 structure | Brands and organisations we have worked with · Fun on the day. Still useful on Monday. · Objectives we design around · Stronger collaboration across teams · Clearer communication, learned through play · Onboarding new hires and merged teams · Team events that lift recognition and morale · Inclusive team building in English and Mandarin · Leadership presence for managers · Programme formats · Planned for your group size · How we customise your programme · Recent corporate work · How team building activities are priced · What clients say · Please read before booking · Questions teams ask · Request a proposal for your team · Give your team a day they keep talking about |
@@ -481,7 +481,7 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-Team building built around your objectives, facilitated in English and Mandarin and debriefed back to work, from S$88 per participant.
+Team building built around your objectives, facilitated in English and Mandarin and debriefed back to work, quoted for your group.
 
 ## Client to confirm before launch
 

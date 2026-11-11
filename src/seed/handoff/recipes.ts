@@ -36,7 +36,10 @@ export type PageRecipe = {
    * alternating sides, as on the Figma boards. Bands left over stay text-only.
    */
   bandPhotos?: string[]
-  /** A chosen photo for a text band, by the start of its heading: { 'Onboarding': 'photo key' } */
+  /**
+   * A chosen photo for a text band, by the start of its heading: { 'Onboarding': 'photo key' }.
+   * NO_PHOTO leaves that band without a photo (and keeps the recipe's band photos off it).
+   */
   photoFor?: Record<string, string>
   /** Words to highlight in a heading: { 'Full heading text': 'words' } */
   highlight?: Record<string, string>
@@ -54,6 +57,9 @@ export type PageRecipe = {
    */
   draft?: boolean
 }
+
+/** For photoFor: this text band has no photo. */
+export const NO_PHOTO = 'none'
 
 const ticksOf = (items: BriefItem[]) =>
   items
@@ -270,13 +276,11 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'corporate-emcee',
-    heroImages: ['founderHeadshot', 'ig-Cp9pHxrBonZ-podium.jpg'],
-    bandPhotos: [
-      'compassAwards',
-      'ig-Cp9pHxrBonZ.jpg',
-      'corporateChristmasBallroom',
-      'eveningPartyCrowd',
-    ],
+    // Go-live changes (11 Nov 2026): the podium photo moves from the hero to the award band,
+    // replacing COMPASS (a photo shows once per page)
+    heroImages: ['founderHeadshot', 'ig-DejQffWzh7R-gala-stage.jpg'],
+    photoFor: { 'Award ceremony emcee': 'ig-Cp9pHxrBonZ-podium.jpg' },
+    bandPhotos: ['ig-Cp9pHxrBonZ.jpg', 'corporateChristmasBallroom', 'eveningPartyCrowd'],
     file: 'corporate-emcee.md',
     title: 'Corporate Emcee',
     phase: 2,
@@ -294,13 +298,11 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'chinese-new-year-emcee',
-    bandPhotos: [
-      'tvStudio',
-      'eveningPartyCrowd',
-      'corporateChristmasBallroom',
-      'communityEventCrowd',
-      'ig-Cp9pHxrBonZ.jpg',
-    ],
+    // Go-live changes (11 Nov 2026): the banquet photo replaces COMPASS in the hero (he attended
+    // COMPASS as a guest), so the lo hei band gets the gala stage photo instead
+    heroImages: ['ig-Cp9pHxrBonZ.jpg', 'corporateChristmasBallroom'],
+    photoFor: { 'Leading the lo hei': 'ig-DejQffWzh7R-gala-stage.jpg' },
+    bandPhotos: ['tvStudio', 'eveningPartyCrowd', 'communityEventCrowd'],
     file: 'chinese-new-year-emcee.md',
     title: 'Chinese New Year Emcee',
     phase: 2,
@@ -329,7 +331,10 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'corporate-workshops',
-    bandPhotos: ['largeGroupCarnival', 'cwaEvent', 'communityEventCrowd', 'compassAwards'],
+    // Go-live changes (11 Nov 2026): team building photos replace the family celebration and COMPASS
+    heroImages: ['team-communication-game.webp', 'founderHeadshot'],
+    photoFor: { 'Presenting with confidence': 'team-leaders-presenting-pitch.webp' },
+    bandPhotos: ['largeGroupCarnival', 'cwaEvent'],
     file: 'corporate-workshops.md',
     title: 'Corporate Workshops',
     phase: 2,
@@ -338,15 +343,14 @@ export const recipes: PageRecipe[] = [
   {
     slug: 'communication-coaching',
     heroImages: ['founderHeadshot', 'mediacorpInterview'],
-    photoFor: { 'Confidence for nervous speakers': 'ig-Cp9pHxrBonZ-large-audience.jpg' },
-    bandPhotos: [
-      'founderWhiteShirt',
-      'tvStudio',
-      'mediacorpInterview',
-      'ig-Cp9pHxrBonZ.jpg',
-      'founderBowTie',
-      'compassAwards',
-    ],
+    // Go-live changes (11 Nov 2026): the white-shirt portrait replaces COMPASS, so the band that
+    // had it gets a team photo (a photo shows once per page)
+    photoFor: {
+      'Confidence for nervous speakers': 'ig-Cp9pHxrBonZ-large-audience.jpg',
+      'Clearer everyday communication': 'founderWhiteShirt',
+      'Individual and corporate coaching': 'team-communication-game.webp',
+    },
+    bandPhotos: ['tvStudio', 'mediacorpInterview', 'ig-Cp9pHxrBonZ.jpg', 'founderBowTie'],
     file: 'communication-coaching.md',
     title: 'Communication Coaching',
     phase: 2,
@@ -358,15 +362,15 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'kids-youth-programs',
-    // The Maris Stella photo belongs to the case study further down
-    heroImages: ['kidsPartyHosting', 'ig-Cp9pHxrBonZ-family-day.jpg'],
-    bandPhotos: [
-      'kidsPartyHosting',
-      'marisStellaClass',
-      'princessParty',
-      'costumeGroup',
-      'costumePerformers',
-    ],
+    // The Maris Stella photo belongs to the case study further down. Go-live changes (11 Nov 2026):
+    // no child may be recognisable (faces blurred in the party photo) and no costumed performers;
+    // the two bands that had them stay without a photo, as every other kids photo is already on the page
+    heroImages: ['kids-party-games-faces-blurred.webp', 'ig-Cp9pHxrBonZ-family-day.jpg'],
+    photoFor: {
+      'A safe space to practise speaking': NO_PHOTO,
+      'A moment for every child to shine': NO_PHOTO,
+    },
+    bandPhotos: ['princessParty', 'marisStellaClass'],
     file: 'kids-youth-programs.md',
     title: 'Kids & Youth Programs',
     theme: 'kids',
@@ -391,12 +395,14 @@ export const recipes: PageRecipe[] = [
   {
     slug: 'event-support',
     heroImages: ['costumeGroup', 'weddingStage'],
+    // Go-live changes (11 Nov 2026): the gala stage replaces the costumed performers under Sound and AV,
+    // so the closing band gets the seminar stage (a photo shows once per page)
     photoFor: {
+      'Sound and AV': 'ig-DejQffWzh7R-gala-stage.jpg',
       'Highlight videos': 'ig-Cp9pHxrBonZ-wedding-banquet.jpg',
-      'Why one point of contact': 'ig-DejQffWzh7R-gala-stage.jpg',
+      'Why one point of contact': 'ig-Cp9pHxrBonZ-seminar-stage.jpg',
     },
     bandPhotos: [
-      'costumePerformers',
       'corporateChristmasBallroom',
       'weddingStage',
       'banyanDnd',
@@ -423,46 +429,43 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'conference-emcee',
-    bandPhotos: [
-      'compassAwards',
-      'tvStudio',
-      'corporateChristmasBallroom',
-      'eveningPartyCrowd',
-      'mediacorpInterview',
-    ],
+    // Go-live changes (11 Nov 2026): no COMPASS photo; speaker and panel bands get matching photos
+    photoFor: {
+      'Speaker introductions': 'corporate-team-building-debrief.webp',
+      'Panel moderation': 'ig-Cp9pHxrBonZ-large-audience.jpg',
+    },
+    bandPhotos: ['tvStudio', 'mediacorpInterview'],
     file: 'conference-emcee.md',
     title: 'Conference & Seminar Emcee',
     phase: 3,
     serviceKey: 'corporate-emcee',
     ownService: { key: 'conference-emcee', title: 'Conference Emcee' },
-    heroImages: ['ig-Cp9pHxrBonZ.jpg', 'compassAwards'],
+    heroImages: ['ig-Cp9pHxrBonZ.jpg', 'ig-Cp9pHxrBonZ-podium.jpg'],
   },
   {
     slug: 'roadshow-emcee',
-    bandPhotos: [
-      'somaProducts',
-      'somaGroup',
-      'communityEventCrowd',
-      'marisStellaClass',
-      'festiveTeamSelfie',
-    ],
+    // Go-live changes (11 Nov 2026): no SOMA photos and no Christmas-hat selfie. The mall stage
+    // photo is the hero's, so the mall band gets the atrium family event (a photo shows once per page)
+    photoFor: {
+      'Mall roadshows': 'ig-Cp9pHxrBonZ-family-day.jpg',
+      'Trade shows and exhibitions': 'ig-Cp9pHxrBonZ-game-booth.jpg',
+      'Product launches and live demos': 'ig-Cp9pHxrBonZ-store-event.jpg',
+    },
+    bandPhotos: ['communityEventCrowd', 'marisStellaClass'],
     file: 'roadshow-emcee.md',
     title: 'Roadshow & Exhibition Emcee',
     phase: 3,
     serviceKey: 'corporate-emcee',
     ownService: { key: 'roadshow-emcee', title: 'Roadshow & Exhibition Emcee' },
     // A mall atrium stage from his Instagram, until the client sends a roadshow photo (README §6)
-    heroImages: ['ig-Ddq-VlETFpi-mall-stage.jpg', 'somaGuests'],
+    heroImages: ['ig-Ddq-VlETFpi-mall-stage.jpg', 'ig-Ddq-VlETFpi-community-crowd.jpg'],
   },
   {
     slug: 'government-community-emcee',
-    bandPhotos: [
-      'communityEventCrowd',
-      'compassAwards',
-      'largeGroupCarnival',
-      'eveningPartyCrowd',
-      'cwaEvent',
-    ],
+    // Go-live changes (11 Nov 2026): his Caregiving Week photo for the Caregiving Welfare Association
+    // replaces COMPASS (the other CWA photo is the hero's)
+    photoFor: { 'Emcee for government and ministry': 'ig-Ddq-VlETFpi.jpg' },
+    bandPhotos: ['communityEventCrowd', 'largeGroupCarnival', 'eveningPartyCrowd'],
     file: 'government-community-emcee.md',
     title: 'Government & Community Emcee',
     phase: 3,
@@ -472,21 +475,16 @@ export const recipes: PageRecipe[] = [
   },
   {
     slug: 'school-family-emcee',
-    bandPhotos: [
-      'marisStellaClass',
-      'costumeGroup',
-      'kidsPartyHosting',
-      'princessParty',
-      'communityEventCrowd',
-      'largeGroupCarnival',
-    ],
+    // Go-live changes (11 Nov 2026): no recognisable children (faces blurred in the party photo; the
+    // crowd with children's faces in the hero is swapped for the atrium family event)
+    bandPhotos: ['marisStellaClass', 'costumeGroup', 'largeGroupCarnival'],
     file: 'school-family-emcee.md',
     title: 'School, Kids & Family Emcee',
     theme: 'kids',
     phase: 3,
     serviceKey: 'kids-youth',
     ownService: { key: 'school-family-emcee', title: 'School, Kids & Family Emcee' },
-    heroImages: ['kidsPartyHosting', 'princessParty', 'communityEventCrowd'],
+    heroImages: ['kids-party-games-faces-blurred.webp', 'princessParty', 'ig-Cp9pHxrBonZ-family-day.jpg'],
   },
   {
     slug: 'dinner-and-dance-planning',
@@ -562,6 +560,8 @@ export const recipes: PageRecipe[] = [
   {
     slug: 'about',
     bandPhotos: ['founderWhiteShirt', 'founderBowTie', 'eveningPartyCrowd'],
+    // Go-live changes (11 Nov 2026): not the SOMA talents; the cheering-crowd photo is already on this page
+    photoFor: { 'The crew behind the spark': NO_PHOTO },
     file: 'about.md',
     title: 'About',
     phase: 4,

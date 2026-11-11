@@ -6,7 +6,7 @@ Source: `copy/rates.json` (same content as `copy/rates.docx`).
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> **Note:** Emcee prices and booking terms confirmed by the client on 5 Nov 2026 (Pricing Details to Supply). Still placeholders: school and family packages, team building S$88, coaching S$120, school programme S$880. The client said the S$388 three-day programme was an error by the old web producer, so the camp now shows "Quoted".
+> **Note:** Emcee prices and booking terms confirmed by the client on 5 Nov 2026 (Pricing Details to Supply). Go-live changes (11 Nov 2026): school and family packages, team building, coaching and school programmes show "Quoted" (their figures came from our proposal, not the client); the youth camp row is removed (no camp has run yet). The client said the S$388 three-day programme was an error by the old web producer, so the camp now shows "Quoted".
 
 > _URL: /rates (proposed page, board built 23 Oct 2026)  ·  page type: price list: every starting price in one place, with the reasoning behind quotes_
 
@@ -14,13 +14,13 @@ Source: `copy/rates.json` (same content as `copy/rates.docx`).
 
 **H1 ·** Emcee rates and event pricing in Singapore.
 
-Starting prices for every service, including emcee prices for weddings, dinners and corporate events. Every event is quoted on your date, duration and programme, and you always receive a written quotation before you book.
+Starting prices for our emcee services, including weddings, dinners and corporate events, and how everything else is quoted. Every event is quoted on your date, duration and programme, and you always receive a written quotation before you book.
 
-- ✓ **Every service priced**
+- ✓ **Every service listed**
 - ✓ **Written quotation before you book**
 - ✓ **No obligation to enquire**
 
-**Price line:** Emcee hosting from S$600  ·  coaching S$120 per session
+**Price line:** Emcee hosting from S$600
 
 **Button:** `GET A QUOTE FOR YOUR DATE` → #quote
 
@@ -88,9 +88,9 @@ Minimum booking S$600, even for a one-hour event, with protocol and VIP segments
 
 **H3 ·** School & family emcee →
 
-**Price line:** From S$588
+**Price line:** Quoted
 
-S$588–1,288 per event. Packages: Children's Party Host S$588, School Event Emcee S$888, Family Day Host S$1,288.
+Three packages: Children's Party Host, School Event Emcee and Family Day Host, each quoted for your event.
 
 **Button:** `VIEW SCHOOL & FAMILY EMCEE` → /school-family-emcee
 
@@ -100,17 +100,17 @@ S$588–1,288 per event. Packages: Children's Party Host S$588, School Event Emc
 
 **H3 ·** Corporate team building →
 
-**Price line:** From S$88 per participant
+**Price line:** Quoted
 
-S$88–128 per participant for a 2–3 hour session, facilitated and debriefed.
+Facilitated and debriefed, quoted for your group size and objectives.
 
 **Button:** `VIEW TEAM BUILDING` → /corporate-team-building
 
 **H3 ·** Communication coaching →
 
-**Price line:** S$120 per session
+**Price line:** Quoted
 
-Per one-to-one session. Courses and team workshops are quoted.
+One-to-one sessions, quoted for your goal. Team workshops are quoted per programme.
 
 **Button:** `VIEW COACHING` → /communication-coaching
 
@@ -122,21 +122,13 @@ Priced for your team's size, length and topics.
 
 **Button:** `VIEW WORKSHOPS` → /corporate-workshops
 
-**H3 ·** Modular school programme →
-
-**Price line:** From S$880 per school group
-
-Around 10 hours over a term, built from the subjects your school chooses.
-
-**Button:** `VIEW SCHOOL PROGRAMMES` → /kids-youth-programs
-
-**H3 ·** Multi-day youth camp →
+**H3 ·** School programmes →
 
 **Price line:** Quoted
 
-Three full days of games, drama and speaking, ending in a showcase.
+Designed with your school, from the subjects your school chooses, and quoted per school.
 
-**Button:** `VIEW YOUTH CAMPS` → /kids-youth-programs
+**Button:** `VIEW SCHOOL PROGRAMMES` → /kids-youth-programs
 
 ## Section 4 — Quoted per project
 
@@ -256,7 +248,7 @@ Your date is held once we confirm the booking in writing and receive the deposit
 
 **H3 ·** How much does an emcee cost in Singapore?
 
-Roadshows start from S$250 an hour and government events from S$300 an hour, each with a S$600 minimum. Conferences start from S$350 an hour, school and family events from S$588, weddings from S$988, and dinner and dances, CNY dinners and award nights from S$2,800.
+Roadshows start from S$250 an hour and government events from S$300 an hour, each with a S$600 minimum. Conferences start from S$350 an hour, weddings from S$988, and dinner and dances, CNY dinners and award nights from S$2,800. School and family events are quoted for your event.
 
 **H3 ·** How much does a wedding emcee cost?
 
@@ -277,6 +269,10 @@ Planning, campaigns and event support depend on headcount, venue, vendors and de
 **H3 ·** Do you take a deposit to confirm a date?
 
 Yes. A 50% deposit confirms your date and the balance is paid on the event day. Weddings are confirmed with a S$300 deposit, with the balance paid at the end of the day.
+
+**H3 ·** What if we need to cancel?
+
+Cancellation terms are set out in your quotation.
 
 **H3 ·** Is GST added to your prices?
 
@@ -347,7 +343,7 @@ Every starting price is on this page. Send your date for an exact quotation.
 | Secondary keywords | wedding emcee rates (150) · singapore emcee rates (150) · emcee singapore rate (100) · emcee rates singapore (100, KD 0). Ahrefs Singapore, workbook. |
 | Owned by other pages | Each service's own name → its service page. This page owns the rate and price terms; service pages link here from their price sections. |
 | SEO title | Emcee Rates Singapore \| Event & Wedding Emcee Prices  (52 characters) |
-| Meta description | Emcee rates in Singapore: roadshows from S$250 an hour, weddings from S$988, D&D and CNY dinners from S$2,800. Team building and coaching prices too.  (150 characters) |
+| Meta description | Emcee rates in Singapore: roadshows from S$250 an hour, weddings from S$988, D&D and CNY dinners from S$2,800. Other services are quoted for you.  (145 characters) |
 | URL | /rates |
 | H1 | Emcee rates and event pricing in Singapore.  One H1 only. |
 | H2 structure | Emcee prices and starting rates · Team building, training and youth programmes · Planning, campaigns and event support · What affects the price · Add-ons on any hosting booking · How quotes work · Emcee pricing questions · Get a quote for your date · Know the price before you ask |
@@ -391,7 +387,7 @@ Every starting price in one place, so you know roughly what you will spend befor
 
 ## Client to confirm before launch
 
-- School and family packages, team building S$88, coaching S$120, school programme S$880
+- Prices for school and family packages, team building, coaching and school programmes (shown as "Quoted" until then)
 - Whether add-on prices are published, and the overtime rate outside weddings
 - Cancellation terms
 

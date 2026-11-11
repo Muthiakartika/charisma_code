@@ -113,30 +113,11 @@ Registration, stage support, sound and a recap video of the day.
 
 **Button:** `VIEW ROADSHOW EMCEE` → /roadshow-emcee
 
-**H3 ·** Hybrid launch
+Example: [talent and influencer coordination for a fragrance launch, 2025](/our-work/soma-fragrances-brand-launch)
 
-**Ideal for:** adding online viewers to an in-person launch, with hosting that includes both audiences.
-
-> **Note:** Client to confirm: whether hybrid launches with a livestream are offered (hybrid and virtual hosting is listed as a service, but not for launches specifically).
+> **Note:** Go-live changes (11 Nov 2026): the "Hybrid launch" card is removed (not offered for launches yet), and the SOMA case study section (stats and photo) is replaced by this one line, because the client wants less emphasis on SOMA.
 
 **Button:** `TELL US YOUR FORMAT` → #quote
-
-## Section 5 — Case study
-
-**H2 ·** Case study: the SOMA Fragrances launch
-
-For SOMA Fragrances' brand launch in August 2025, we secured three paid influencers and more than 20 invited talents, and coordinated their appearances across the media launch, in-store visits and gift packages.
-
-Beyond coordinating people, we worked with SOMA's team on brand image and strategy, so every appearance felt consistent with the brand's bold, modern identity.
-
-- ✓ 3 paid influencers secured
-- ✓ More than 20 invited talents
-- ✓ Media launch and in-store visits
-- ✓ Brand image and strategy support
-
-**Button:** `READ THE CASE STUDY` → /our-work/soma-fragrances-brand-launch
-
-> **Note:** Accuracy: on SOMA, De Zhong's role was talent and influencer coordination plus brand strategy. Do not describe him as the launch emcee for SOMA. If the client has a launch he hosted, add it here as a second case study.
 
 ## Section 6 — How we plan a launch
 
@@ -307,7 +288,7 @@ Tell us about the product and the launch you have in mind. We will reply with a 
 - Email* [EMAIL]
 - Phone / WhatsApp* [TEL]
 - What are you launching? [TEXT]
-- Launch format [RADIO]: media launch / partner or trade / in-store or pop-up / mall or roadshow / hybrid / not sure
+- Launch format [RADIO]: media launch / partner or trade / in-store or pop-up / mall or roadshow / not sure
 - Launch date or month [TEXT]
 - Expected guests [DROPDOWN]: under 50 / 50–150 / 150–300 / over 300
 - Services needed* [CHECKBOXES]: planning / emcee / influencers and talent / content / crew and AV / videography
@@ -342,7 +323,7 @@ Send your brief and we will come back with a plan and a quotation.
 | Meta description | Product and brand launch events in Singapore, planned and hosted end to end: venue, reveal, bilingual emcee, influencers and content. Get a launch quote. |
 | URL | /product-launch-events (new page) |
 | H1 | Product launch events in Singapore, from plan to reveal.  One H1 only. |
-| H2 structure | What every launch has to get right · Everything your launch needs, from one team · Launch formats we plan · Case study: the SOMA Fragrances launch · How we plan your launch · Why brands launch with The Charisma Code · How launch pricing works · Please read before booking · Product launch questions · Get your launch quote · Make your launch the one people talk about |
+| H2 structure | What every launch has to get right · Everything your launch needs, from one team · Launch formats we plan · How we plan your launch · Why brands launch with The Charisma Code · How launch pricing works · Please read before booking · Product launch questions · Get your launch quote · Make your launch the one people talk about |
 | Schema | Service (serviceType "Product launch event planning", areaServed Singapore). No Offer until a launch from-price is published. FAQPage only if it still meets Google's rules. |
 | Internal links | /event-planning, /corporate-emcee, /creative-campaigns, /event-support, /roadshow-emcee, /our-work/soma-fragrances-brand-launch, /rates. Inbound: the "Product and brand launches" card on /corporate-emcee and the "Launches and activations" card on /event-planning now link here (they used to go to /roadshow-emcee). |
 

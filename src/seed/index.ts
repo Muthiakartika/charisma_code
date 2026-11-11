@@ -309,7 +309,7 @@ await payload.updateGlobal({
         children: [
           { link: pageLink('Corporate Workshops', 'corporate-workshops'), description: 'Facilitated sessions for teams' },
           { link: pageLink('Communication Coaching', 'communication-coaching'), description: 'Public speaking and stage presence' },
-          { link: pageLink('Kids & Youth', 'kids-youth-programs'), description: 'School programmes and camps' },
+          { link: pageLink('Kids & Youth', 'kids-youth-programs'), description: 'School programmes' },
         ],
       },
       { link: pageLink('Our Work', 'our-work'), children: [] },

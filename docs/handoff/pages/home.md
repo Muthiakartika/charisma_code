@@ -21,7 +21,7 @@ An event management company and event organiser in Singapore for corporate event
 - ✓ **Based in Singapore**
 - ✓ **Google-reviewed by clients**
 
-**Price line:** Emcee hosting from S$600  ·  team building from S$88 per participant  ·  see all rates
+**Price line:** Emcee hosting from S$600  ·  see all rates
 
 **Button:** `LET'S TALK` → /contact
 
@@ -29,7 +29,7 @@ An event management company and event organiser in Singapore for corporate event
 
 **Button:** `SEE TEAM BUILDING` → /corporate-team-building
 
-> **Note:** The H1 was chosen with the user on 23 Oct 2026. Emcee from S$600 = the lowest confirmed minimum (roadshow and government, client 5 Nov 2026); the client still confirms this headline. S$88 is still a placeholder.
+> **Note:** The H1 was chosen with the user on 23 Oct 2026. Emcee from S$600 = the lowest confirmed minimum (roadshow and government, client 5 Nov 2026); the client still confirms this headline. The team building S$88 was removed in the go-live changes (11 Nov 2026).
 
 ## Section 2 — Logo strip
 
@@ -78,7 +78,7 @@ Every engagement is shaped around the occasion, the audience and what you want p
 
 **H3 ·** Corporate Team Building
 
-**Price line:** From S$88 per participant
+**Price line:** Quoted
 
 Team building that is genuinely fun and built around your objectives, your people and your group size. Never games for the sake of games.
 
@@ -134,7 +134,7 @@ Interactive, facilitated workshops on communication, collaboration and team dyna
 
 **H3 ·** Communication Coaching
 
-**Price line:** S$120 per session
+**Price line:** Quoted
 
 Public speaking, presentation and stage presence coaching for individuals and corporate teams.
 
@@ -150,7 +150,7 @@ Warm, bilingual wedding hosting with live singing and guest interaction, planned
 
 **H3 ·** Kids & Youth Programs
 
-**Price line:** From S$880 per school group
+**Price line:** Quoted
 
 Confidence, communication and creative programmes for schools, camps and young people.
 
@@ -178,7 +178,7 @@ Emcee by occasion: conferences, roadshows and exhibitions, government and commun
 
 **Button:** `SEE ALL STARTING RATES` → /rates
 
-> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). S$88, S$120 and S$880 are still to re-confirm.
+> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). Team building, coaching and kids programmes show "Quoted" (go-live changes, 11 Nov 2026).
 
 ## Section 6 — Quick match
 
@@ -311,7 +311,7 @@ Yes. Hosting and facilitation are available in English, Mandarin or both.
 
 **H3 ·** How much does it cost?
 
-Emcee hosting starts from S$600, team building from S$88 per participant, and planning is quoted per project. See our rates page for every service.
+Emcee hosting starts from S$600, and everything else is quoted for your event.
 
 **H3 ·** How early should we get in touch?
 

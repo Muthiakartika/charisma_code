@@ -19,7 +19,7 @@ Corporate experiences first, with celebrations, youth programmes and creative wo
 - ✓ **English and Mandarin**
 - ✓ **Founder-led, crew-delivered**
 
-**Price line:** Starting prices from S$120  ·  full rate card on our rates page
+**Price line:** Starting prices on our rates page
 
 **Button:** `LET'S TALK` → /contact
 
@@ -35,7 +35,7 @@ Corporate services first, then celebrations, youth programmes and creative work.
 
 **H3 ·** Corporate Team Building
 
-**Price line:** From S$88 per participant
+**Price line:** Quoted
 
 Team building that is genuinely fun and built around your objectives, your people and your group size. Never games for the sake of games.
 
@@ -91,7 +91,7 @@ Interactive, facilitated workshops on communication, collaboration and team dyna
 
 **H3 ·** Communication Coaching
 
-**Price line:** S$120 per session
+**Price line:** Quoted
 
 Public speaking, presentation and stage presence coaching for individuals and corporate teams.
 
@@ -107,7 +107,7 @@ Warm, bilingual wedding hosting with live singing and guest interaction, planned
 
 **H3 ·** Kids & Youth Programs
 
-**Price line:** From S$880 per school group
+**Price line:** Quoted
 
 Confidence, communication and creative programmes for schools, camps and young people.
 
@@ -135,7 +135,7 @@ Emcee by occasion: conferences, roadshows and exhibitions, government and commun
 
 **Button:** `SEE ALL STARTING RATES` → /rates
 
-> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). S$88, S$120 and S$880 are still to re-confirm.
+> **Note:** Emcee prices confirmed by the client on 5 Nov 2026 (corporate, D&D, wedding). Team building, coaching and kids programmes show "Quoted" (go-live changes, 11 Nov 2026).
 
 ## Section 3 — Quick match
 
@@ -197,7 +197,7 @@ Yes. Planning, hosting, team building and event support are designed to work tog
 
 **H3 ·** Which services have fixed prices?
 
-Communication coaching is S$120 per session and school programmes start from S$880 per group. Hosting has from-prices, and planning, campaigns and event support are quoted per project.
+Emcee hosting has starting prices, listed on our rates page. Team building, coaching, school programmes, planning, campaigns and event support are quoted for your event.
 
 **H3 ·** Do you work outside Singapore?
 

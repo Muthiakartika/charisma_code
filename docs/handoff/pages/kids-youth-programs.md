@@ -6,9 +6,9 @@ Source: `copy/kids-youth-programs.json` (same content as `copy/kids-youth-progra
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> **Note:** PRICES (read in order from the old site's price cards, 24 Oct 2026): the 3-day immersive programme is S$388 per participant; the ~10-hour modular programme is S$880 per school group; one-to-one masterclasses are S$120 per session. All three are published on the old site; the client re-confirms them before launch. All three are on the board (24 Oct 2026).
+> **Note:** GO-LIVE CHANGES (11 Nov 2026): the page stays live as an "enquire for your school" page. The three format cards (camp, modular programme, masterclass), every price, "around 10 hours", "three full days" and the holiday camp FAQ are removed until the programmes exist. Earlier note: PRICES (read in order from the old site's price cards, 24 Oct 2026): the 3-day immersive programme is S$388 per participant; the ~10-hour modular programme is S$880 per school group; one-to-one masterclasses are S$120 per session. All three are published on the old site; the client re-confirms them before launch. All three are on the board (24 Oct 2026).
 
-> _URL: /kids-youth-programs (keep the existing URL)  ·  page type: fixed prices (the client's three published programme prices)_
+> _URL: /kids-youth-programs (keep the existing URL)  ·  page type: enquire for your school (quoted per school)_
 
 ## Section 1 — Hero
 
@@ -23,13 +23,13 @@ Confidence, public speaking and creative programmes for schools, camps and youth
 - ✓ **A showcase at the end**
 - ✓ **11 sessions run at Maris Stella High School**
 
-**Price line:** School programmes from S$880 per group
+**Price line:** Programmes designed with your school, quoted per school
 
 **Button:** `PLAN A SCHOOL PROGRAMME` → #enquiry
 
 **Button:** `WHATSAPP DE ZHONG` → https://wa.me/6594378083 (pre-filled message)
 
-**Button:** `SEE THE FORMATS` → #formats
+**Button:** `SEE WHAT WE TEACH` → #topics
 
 ## Section 2 — Approach
 
@@ -90,7 +90,7 @@ Parents and teachers see the progress for themselves, and children leave proud o
 
 **Button:** `PLAN A SCHOOL PROGRAMME` → #enquiry
 
-## Section 6 — What we teach
+## Section 6 — Topics
 
 **H2 ·** What we teach
 
@@ -210,59 +210,6 @@ Over 11 two-hour sessions in July and August 2025, students learned camera shots
 
 **Button:** `READ THE FULL STORY` → /our-work/videography-programme-maris-stella-high-school
 
-## Section 14 — Formats and prices
-
-**H2 ·** Programme formats
-
-Three formats, each with a published price.
-
-**H3 ·** Multi-day confidence camp
-
-**Price line:** Quoted
-
-**Ideal for:** school holidays and school camps. Three full days of games, drama and speaking, ending in a showcase for parents or teachers, so children build momentum day by day.
-
-- ✓ Three full days
-- ✓ Games, drama and speaking
-- ✓ A showcase at the end
-
-**Button:** `ASK ABOUT CAMPS` → #enquiry (format: camp)
-
-**H3 ·** Modular school programme
-
-**Price line:** From S$880 per school group
-
-**Ideal for:** a class or CCA across a term. Weekly sessions built from the subjects your school chooses, around 10 hours in total, so skills build steadily.
-
-- ✓ Subjects your school chooses
-- ✓ Around 10 hours over a term
-- ✓ Steady, visible progress
-
-**Button:** `PLAN A SCHOOL PROGRAMME` → #enquiry (format: modular)
-
-**H3 ·** One-to-one masterclass
-
-**Price line:** From S$120 per session
-
-**Ideal for:** a student preparing for a speech, performance or interview, with immediate feedback and practice tailored to the goal.
-
-- ✓ Built around one goal
-- ✓ Immediate feedback
-- ✓ Speeches, performances, interviews
-
-**Button:** `BOOK A MASTERCLASS` → #enquiry (format: one-to-one)
-
-> **Note:** Client to confirm: the three prices; camp length (the old site says 3 days); group sizes.
-
-**Which format suits you?**
-
-- A school class or CCA over a term → modular school programme
-- School holidays or a school camp → multi-day camp
-- One student, one goal → one-to-one masterclass
-- A host for a school event or party → School & Family Emcee
-
-**Button:** `VIEW SCHOOL & FAMILY EMCEE` → /school-family-emcee
-
 ## Section 15 — How booking works
 
 **H2 ·** How a school programme comes together
@@ -337,7 +284,7 @@ A 50% deposit confirms your booking and the balance is paid on the event day. Pa
 
 **H3 ·** How much does a school programme cost?
 
-Modular school programmes start from S$880 per school group, multi-day camps are quoted, and one-to-one masterclasses start from S$120 per session.
+Every programme is designed with your school and quoted per school, based on the subjects, the number of sessions and the number of students.
 
 **H3 ·** Which ages do you teach?
 
@@ -354,10 +301,6 @@ Every programme ends with a showcase, a performance or a short talk, and parents
 **H3 ·** My child is very shy. Will this help?
 
 Yes. Sessions start with games so nobody feels put on the spot, and practice builds in small steps.
-
-**H3 ·** Do you run holiday camps?
-
-Yes. Multi-day confidence camps run over several full days, ending in a showcase.
 
 **H3 ·** Can you host our school event too?
 
@@ -386,7 +329,6 @@ Tell us about your school or group, the age range and what you would like partic
 - School or organisation* [TEXT]
 - Year levels [CHECKBOXES]: lower primary / upper primary / lower secondary / upper secondary / JC or poly
 - Number of students [NUMBER]
-- Format [RADIO]: modular school programme / multi-day camp / one-to-one masterclass / not sure
 - Subjects of interest [CHECKBOXES]: public speaking / drama / videography / creative writing / interview skills / team building / other
 - Term or dates [TEXT]
 - Anything else we should know [TEXT AREA]
@@ -401,12 +343,6 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 **H2 ·** Give every student a moment to shine
 
 Tell us about your students and we will suggest a programme and a quotation.
-
-**Modular school programme — From S$880 per group**
-
-**Multi-day camp — Quoted**
-
-**One-to-one masterclass — From S$120 per session**
 
 **Button:** `PLAN A SCHOOL PROGRAMME` → #enquiry
 
@@ -423,12 +359,12 @@ Tell us about your students and we will suggest a programme and a quotation.
 | Secondary keywords | speech and drama singapore (50, KD 2) · public speaking class singapore (60, shared with coaching). Ahrefs Singapore, 24 Oct 2026. Volumes are small; this page earns most of its value from schools that find it through referrals and the School & Family page. |
 | Owned by other pages | public speaking course singapore → /communication-coaching (decided 24 Oct 2026): keep "Public Speaking" out of this page's title. Kids and school emcee terms → /school-family-emcee. |
 | SEO title | Kids & Youth Programmes Singapore \| Confidence & Stage Skills  (61 characters) |
-| Meta description | Confidence, public speaking, drama and videography programmes for schools and youth in Singapore. School programmes from S$880 per group.  (140 characters) |
+| Meta description | Confidence, public speaking, drama and videography programmes for schools and youth in Singapore, designed with your school and quoted per school.  (146 characters) |
 | URL | Keep /kids-youth-programs |
 | H1 | Where young people learn to speak up and shine.  One H1 only. |
 | H2 structure | How we build confidence · Learning through play · A safe space to practise speaking · A moment for every child to shine · What we teach · Public speaking for kids and teens · Acting and drama for children · Videography and storytelling for students · Writing stories, scripts and speeches · Interview practice that builds calm · Cooperative games and challenges · Capturing stories at Maris Stella High School · Programme formats · How a school programme comes together · Please read before booking · Questions from schools and parents · Help your students find their voice · Give every student a moment to shine |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "Youth confidence and public speaking programmes", areaServed Singapore) with an Offer per format (388 SGD per participant, 880 SGD per school group, 120 SGD per session) while the prices show. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "Youth confidence and public speaking programmes", areaServed Singapore) with no Offer while programmes are quoted per school. FAQPage only if it still meets Google's rules. |
 | Internal links | /school-family-emcee, /communication-coaching, /our-work/videography-programme-maris-stella-high-school, /rates. |
 
 ## Page layout instructions
@@ -466,12 +402,12 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-Confidence is a skill: play first, practise safely, and finish with a moment to shine. School programmes from S$880 per group.
+Confidence is a skill: play first, practise safely, and finish with a moment to shine. Programmes designed with your school.
 
 ## Client to confirm before launch
 
-- All three published prices
-- Camp length and group sizes per instructor
+- Prices and formats, once a programme has run
+- Group sizes per instructor
 - Teacher-present and safeguarding policies
 - Photo consent for any children shown
 - Cancellation terms (deposit confirmed 5 Nov 2026: 50% on confirmation, 50% on the event day)

@@ -6,7 +6,7 @@ Source: `copy/school-family-emcee.json` (same content as `copy/school-family-emc
 
 > _How to read this: headings are tagged H1 / H2 / H3. [BUTTON TEXT] → where it goes. Yellow notes are for the client to confirm before launch. Section copy already approved on the Figma board is kept word for word; new sections follow copy/page-brief-patterns.md. Prices are the approved /rates placeholders unless marked published._
 
-> _URL: /school-family-emcee (proposed page, board built 23 Oct 2026)  ·  page type: packages (three proposed tiers inside the approved S$588–1,288 range)_
+> _URL: /school-family-emcee (proposed page, board built 23 Oct 2026)  ·  page type: packages (three proposed tiers, each quoted for your event; go-live changes 11 Nov 2026)_
 
 ## Section 1 — Hero
 
@@ -21,7 +21,7 @@ Bilingual hosting in English and Mandarin for school events, children's parties,
 - ✓ **Over 15 years on stage**
 - ✓ **Parents can relax**
 
-**Price line:** From S$588  ·  three packages, prices on this page
+**Price line:** Three packages, quoted for your event
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -65,11 +65,11 @@ English and Mandarin, so children, parents and grandparents all feel included.
 
 Three clear packages, so you can see what you are getting before you ask.
 
-> **Note:** PROPOSED tiers and inclusions, inside the approved S$588–1,288 range on /rates. Client to confirm names, prices, inclusions and hosting times.
+> **Note:** PROPOSED tiers and inclusions. The S$588 / S$888 / S$1,288 figures came from our original proposal, not the client, so each package shows "Quoted for your event" (go-live changes, 11 Nov 2026). Client to confirm names, prices, inclusions and hosting times.
 
 **H3 ·** Children's Party Host
 
-**Price line:** From S$588
+**Price line:** Quoted for your event
 
 **Ideal for:** birthday parties and small celebrations for children.
 
@@ -89,7 +89,7 @@ A warm, playful host who runs the party at a child's pace, so the birthday child
 
 **H3 ·** School Event Emcee
 
-**Price line:** From S$888
+**Price line:** Quoted for your event
 
 **Ideal for:** assemblies, speech days, prize-givings and school celebrations.
 
@@ -109,7 +109,7 @@ A host who is formal where it needs to be and fun where it can be, with the runn
 
 **H3 ·** Family Day Host
 
-**Price line:** From S$1,288
+**Price line:** Quoted for your event
 
 **Ideal for:** company and community family days.
 
@@ -131,15 +131,15 @@ A full day of games that children, parents and grandparents all join in, hosted 
 
 **H2 ·** Which package suits your event?
 
-**H4 ·** Children's Party Host — From S$588
+**H4 ·** Children's Party Host — Quoted for your event
 
 Choose this for a birthday party or a small celebration where the children are the audience.
 
-**H4 ·** School Event Emcee — From S$888
+**H4 ·** School Event Emcee — Quoted for your event
 
 Choose this for an assembly, speech day or school celebration with students, staff and guests.
 
-**H4 ·** Family Day Host — From S$1,288
+**H4 ·** Family Day Host — Quoted for your event
 
 Choose this for a full day out where every age needs something to do.
 
@@ -314,15 +314,15 @@ Logo strip (existing): Youth Olympic Games, Singapore Sports Council, People's A
 
 **H2 ·** School and family emcee prices
 
-| Package | From | Best for | Hosting time |
+| Package | Price | Best for | Hosting time |
 |---|---|---|---|
-| Children's Party Host | S$588 | Birthday parties | Agreed for your event |
-| School Event Emcee | S$888 | Assemblies and speech days | Agreed for your event |
-| Family Day Host | S$1,288 | Company and community family days | Agreed for your event |
+| Children's Party Host | Quoted for your event | Birthday parties | Agreed for your event |
+| School Event Emcee | Quoted for your event | Assemblies and speech days | Agreed for your event |
+| Family Day Host | Quoted for your event | Company and community family days | Agreed for your event |
 
-**Prices are starting prices for one event in Singapore.**
+**Every package is quoted for your event in Singapore.**
 
-Longer programmes, extra events and peak dates can change the final figure. You will always receive a written quotation before you book.
+The quotation depends on the programme, the hosting time and the date. You will always receive a written quotation before you book.
 
 **Button:** `GET MY QUOTATION` → #quote
 
@@ -368,7 +368,7 @@ A 50% deposit confirms your booking and the balance is paid on the event day. Pa
 
 **H3 ·** How much does an emcee cost for a school or family event?
 
-From S$588 for a children's party, S$888 for a school event and S$1,288 for a full family day. You receive a written quotation. See our rates page for every service.
+Each package is quoted for your event, based on the programme, the hosting time and the date. You receive a written quotation before you book. See our rates page for every service.
 
 **H3 ·** Do you host children's birthday parties?
 
@@ -434,11 +434,11 @@ After submitting: "Thank you. We will reply with availability and next steps. Ne
 
 Send your date and the age of your audience. We will confirm availability and send a quotation.
 
-**Children's Party Host — From S$588**
+**Children's Party Host — Quoted for your event**
 
-**School Event Emcee — From S$888**
+**School Event Emcee — Quoted for your event**
 
-**Family Day Host — From S$1,288**
+**Family Day Host — Quoted for your event**
 
 **Button:** `CHECK AVAILABILITY` → #quote
 
@@ -454,13 +454,13 @@ Send your date and the age of your audience. We will confirm availability and se
 | Primary keyword | kids emcee singapore (100/mo) and school emcee singapore (100) |
 | Secondary keywords | children emcee singapore (100) · kids emcee (100) · children emcee (100) · youth emcee singapore (100) · youth emcee (100) · family emcee (100) · family emcee singapore (100) · school emcee (90) · family day emcee (80) · school engagement emcee (70) · school outreach emcee (60) · assembly talk emcee (40). Ahrefs Singapore, 23 Oct 2026 (Emcee Subpages tab). |
 | Owned by other pages | student programmes and holiday camps → /kids-youth-programs · family day planning → /event-planning. |
-| SEO title | Kids, School & Family Day Emcee Singapore \| From S$588  (54 characters) |
-| Meta description | Bilingual emcee for school events, children's parties, youth events and family days in Singapore. Three packages from S$588, hosted for every age.  (146 characters) |
+| SEO title | Kids, School & Family Day Emcee Singapore \| Bilingual Host  (58 characters) |
+| Meta description | Bilingual emcee for school events, children's parties, youth events and family days in Singapore. Three packages, each quoted for your event.  (141 characters) |
 | URL | /school-family-emcee |
 | H1 | An emcee for schools, kids and family days.  One H1 only. |
 | H2 structure | School, kids and family events we host · Choose your package · Which package suits your event? · Assemblies and speech days · School engagement and outreach · Children's party host in Singapore · Camps and youth events · Family days for every generation · Two languages, nobody left out · How booking works · Why parents and teachers book De Zhong · Brands and organisations we have worked with · What clients say · School and family emcee prices · Please read before booking · School and family event questions · Check De Zhong's availability · Fun for the kids, calm for the grown-ups |
 | Heading rule | The page's main keyword appears in at most two H2s; the rest are plain language. No paragraph or bullet repeats its own heading. |
-| Schema | Service (serviceType "School, kids and family emcee", areaServed Singapore) with an Offer per package while the prices show. FAQPage only if it still meets Google's rules. |
+| Schema | Service (serviceType "School, kids and family emcee", areaServed Singapore) with an No Offer while the packages are quoted. FAQPage only if it still meets Google's rules. |
 | Internal links | /kids-youth-programs, /event-planning, /event-support, /rates, /emcee (breadcrumb). |
 
 ## Page layout instructions
@@ -498,7 +498,7 @@ Real event photos only. WebP or AVIF, compressed. No keyword stuffing in ALT tex
 
 ## Most important message
 
-Three clear packages from S$588: a bilingual host who keeps every age involved, from party guests to grandparents.
+Three clear packages, each quoted for your event: a bilingual host who keeps every age involved, from party guests to grandparents.
 
 ## Client to confirm before launch
 

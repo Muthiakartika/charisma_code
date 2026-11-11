@@ -14,7 +14,7 @@ import { importLocalImage, seedContext } from '../helpers'
 import { seedFileName, seedImages } from '../media'
 import { buildPageLayout } from './build-page'
 import { parseBrief, withoutCharacterCount } from './parse-brief'
-import { recipes, type PageRecipe } from './recipes'
+import { NO_PHOTO, recipes, type PageRecipe } from './recipes'
 import type { Block } from './to-blocks'
 
 const published = { _status: 'published' as const }
@@ -160,6 +160,13 @@ const EVENT_PHOTOS: { file: string; alt: string; focal?: { x: number; y: number 
     file: 'team-leaders-presenting-pitch.webp',
     alt: 'Team members presenting their pitch on stage at a corporate team building day',
     focal: { x: 50, y: 45 },
+  },
+  // The children's party photo (ser-01.webp from the old site) with the two children's faces
+  // blurred: no parental consent yet, so no child may be recognisable (go-live changes, 11 Nov 2026)
+  {
+    file: 'kids-party-games-faces-blurred.webp',
+    alt: 'De Zhong hosting games at a children’s party (children’s faces blurred)',
+    focal: { x: 55, y: 35 },
   },
 ]
 
@@ -578,9 +585,15 @@ function finishLayout(
     ...done.flatMap(ctx.coversOn),
   ])
   const chosenFor = Object.entries(recipe.photoFor ?? {})
+  const withoutPhoto = new Set<Block>()
   for (const block of done) {
     if (block.blockType !== 'textImage') continue
     const pick = chosenFor.find(([start]) => normalise(block.heading).startsWith(normalise(start)))
+    if (pick?.[1] === NO_PHOTO) {
+      block.image = undefined
+      withoutPhoto.add(block)
+      continue
+    }
     const chosen = pick && ctx.img(pick[1])
     if (chosen) block.image = chosen
     if (!block.image) continue
@@ -601,7 +614,7 @@ function finishLayout(
       block.blockType === 'textImage' &&
       !block.table &&
       ((block.points as unknown[]) ?? []).length > 0
-    if (!isBand) continue
+    if (!isBand || withoutPhoto.has(block)) continue
     if (!block.image) {
       const photo = photos.shift()
       if (!photo) continue

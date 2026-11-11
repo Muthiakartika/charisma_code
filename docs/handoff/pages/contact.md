@@ -32,6 +32,8 @@ Team building, emceeing, workshops or a celebration: share a few details and we 
 
 We reply within 3 days, in English or Mandarin.
 
+Based in Singapore. Meetings by arrangement.
+
 **H3 ·** WhatsApp
 
 Fastest for a quick question or a date check.

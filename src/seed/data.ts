@@ -141,7 +141,8 @@ export const testimonials = [
   {
     key: 'jaz-hang',
     authorName: 'Jaz Hang',
-    authorRole: 'Pool party',
+    // No occasion label: "Pool party" sat under a corporate review (go-live changes, 11 Nov 2026)
+    authorRole: '',
     category: 'general',
     quote:
       'He blended into our culture and style very quickly, and his high energy and flexibility played a key role in the event’s success.',
