@@ -23,6 +23,15 @@ export const localeLabels: Record<Locale, string> = {
 }
 
 /**
+ * Whether visitors are pointed to the Chinese version: the 中文 switcher in the header, the zh-SG
+ * hreflang tags and the Chinese URLs in the sitemap. Off for the launch (go-live changes, 11 Nov 2026):
+ * the client has not reviewed /zh yet, and it still repeats prices removed from the English pages.
+ * While off, /zh pages that open (see showsChinese) carry "noindex". Turn it on once the client
+ * approves the Chinese copy and the draft in docs/zh-draft carries the go-live changes.
+ */
+export const chineseForVisitors = false
+
+/**
  * Whether the Chinese version of a page, project or article can be opened. On the real website
  * (NEXT_PUBLIC_SITE_ENV=production) only once its translation is "Approved". On staging and on a
  * developer's computer, drafts waiting for native-speaker review open too, so the client can

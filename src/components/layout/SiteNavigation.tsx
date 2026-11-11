@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState } from 'react'
 
-import type { Locale } from '@/i18n/config'
+import { chineseForVisitors, type Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { ResolvedLink } from '@/lib/links'
 
@@ -136,9 +136,12 @@ export function SiteNavigation({ items, cta, locale, labels }: Props) {
         </ul>
       </nav>
 
-      <div className="hidden xl:block">
-        <LanguageSwitcher locale={locale} labels={labels} />
-      </div>
+      {/* No 中文 switcher until the Chinese version is approved; a /zh page still links back to English */}
+      {(chineseForVisitors || locale !== 'en') && (
+        <div className="hidden xl:block">
+          <LanguageSwitcher locale={locale} labels={labels} />
+        </div>
+      )}
 
       {cta && (
         <Link href={cta.href} className="btn btn-primary hidden !min-h-11 !px-5 sm:inline-flex">
@@ -194,7 +197,7 @@ export function SiteNavigation({ items, cta, locale, labels }: Props) {
                 {cta.label}
               </Link>
             )}
-            <LanguageSwitcher locale={locale} labels={labels} />
+            {(chineseForVisitors || locale !== 'en') && <LanguageSwitcher locale={locale} labels={labels} />}
           </div>
         </nav>
       </div>

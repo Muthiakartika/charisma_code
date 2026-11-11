@@ -6,7 +6,7 @@
  */
 import type { Metadata } from 'next'
 
-import { defaultLocale, languageTags, type Locale } from '@/i18n/config'
+import { chineseForVisitors, defaultLocale, languageTags, type Locale } from '@/i18n/config'
 import type { Media, SeoDefault } from '@/payload-types'
 
 import type { SiteSettings } from './cms'
@@ -64,11 +64,13 @@ export function buildMetadata({
     [languageTags.en]: absoluteUrl(path),
     'x-default': absoluteUrl(path),
   }
-  if (hasChinese) languages[languageTags.zh] = absoluteUrl(localizePath(path, 'zh'))
+  if (hasChinese && chineseForVisitors) languages[languageTags.zh] = absoluteUrl(localizePath(path, 'zh'))
 
   return {
     title: { absolute: fullTitle },
     description,
+    // The Chinese version stays out of search until it is approved for visitors
+    ...(locale !== defaultLocale && !chineseForVisitors ? { robots: { index: false, follow: true } } : {}),
     alternates: {
       canonical: absoluteUrl(canonicalPath),
       languages,
