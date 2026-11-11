@@ -15,6 +15,7 @@ import config from '@payload-config'
 import { getPayload, type Payload } from 'payload'
 
 import { applyClientData20261109 } from './client-data-2026-11-09'
+import { applyGoLive20261111 } from './go-live-2026-11-11'
 import { importHandoff } from './import'
 
 /**
@@ -66,6 +67,35 @@ const UPDATES: {
     ],
     // The legal page's payment terms and hosting location, and TikTok in Social Links
     run: applyClientData20261109,
+  },
+  {
+    // docs/12-go-live-11-nov.md: D:\Office\go-live-changes.md and blog-plan.md of 11 Nov 2026
+    version: '2026-11-11',
+    note: 'go-live changes: unconfirmed prices quoted, offerings not run yet removed, less SOMA, photo swaps',
+    slugs: [
+      'home',
+      'services',
+      'rates',
+      'emcee',
+      'school-family-emcee',
+      'corporate-team-building',
+      'communication-coaching',
+      'corporate-workshops',
+      'kids-youth-programs',
+      'chinese-new-year-emcee',
+      'product-launch-events',
+      'creative-campaigns',
+      'event-planning',
+      'contact',
+      'corporate-emcee',
+      'conference-emcee',
+      'government-community-emcee',
+      'roadshow-emcee',
+      'event-support',
+      'about',
+    ],
+    // The retired blog posts, the Kids & Youth menu text and the "Pool party" review label
+    run: applyGoLive20261111,
   },
 ]
 const MARKER = 'content:dev-handoff'

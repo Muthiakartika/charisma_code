@@ -17,6 +17,10 @@ import { importChinese } from './import-zh'
 const UPDATES: { version: string; note: string }[] = [
   { version: '2026-11-05', note: 'Chinese draft, proofread on 5 Nov' },
   { version: '2026-11-09', note: 'Chinese draft updated with the client data of 5 Nov' },
+  // The go-live update (deploy.ts, 2026-11-11) rebuilds 20 English pages, which drops their Chinese
+  // text: this puts it back. Texts that changed in English have no Chinese twin yet and stay in
+  // English until docs/zh-draft is updated (the Chinese version is hidden from visitors meanwhile).
+  { version: '2026-11-11', note: 'Chinese draft re-applied after the go-live changes' },
 ]
 const MARKER = 'content:zh-draft'
 
