@@ -197,7 +197,7 @@ export function SiteNavigation({ items, cta, locale, labels }: Props) {
                 {cta.label}
               </Link>
             )}
-            {(chineseForVisitors || locale !== 'en') && <LanguageSwitcher locale={locale} labels={labels} />}
+            {(chineseForVisitors || locale !== 'en') && <LanguageSwitcher locale={locale} labels={labels} opens="up" />}
           </div>
         </nav>
       </div>
